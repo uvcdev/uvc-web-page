@@ -37,4 +37,38 @@ $(document).ready(function(){
 		$('html').css({'overflow':''});
 		allmenuClose();
 	});
+
+	slideControls = $('.slide-controls');
+
+	$(".fade").slick({
+		fade: true,
+		dots: true,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed:15000,
+		arrows: false,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		appendDots: slideControls,
+		customPaging: function(slider,i) {
+			var title = $('.slide[i]').attr('data-title');
+			return '<a class="pager__item"> '+title+' </a>';
+		}
+	});
+
+	// When the slide is changing
+	function playPauseVideo(slick, control){
+		var currentSlide, video;
+		currentSlide = slick.find(".slick-current");
+		video = currentSlide.find("video")[0];
+		if (video != null) {
+		  if (control === "play"){
+			video.play();
+		  } else {
+			video.pause();
+		  }
+		}
+	}
+
+
 })
