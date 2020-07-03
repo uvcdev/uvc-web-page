@@ -117,20 +117,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.slick-dots{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.slick-dots li{
-    float: left;
-}
-.slick-dots li::after{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 1px;
-    background: #222;
-    outline: 1px solid red;;
-}

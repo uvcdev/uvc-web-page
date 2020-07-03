@@ -10,26 +10,6 @@
     <link rel="stylesheet" href="asset/style/style.css">
 </head>
 <body>
-    <div class="allmenu_wrap">
-        <div id="allmenu">
-            <div class="allmenu_top">
-                <div class="btn__close_menu">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div> 
-            </div>
-            <div class="am_wrap">
-                <ul class="am_tab">
-                    <li class="tab1 on"><a href="#business"><span>사업분야</a></span></li>
-                    <li class="tab2"><a href="#solution"><span>솔루션</span></a></li>
-                    <li class="tab3"><a href="#company"><span>회사소개</span></a></li>
-                    <li class="tab4"><a href="#about"><span>오시는 길</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="allmenu_bg"></div>
-    </div>
     <header id="header">
         <div class="headerWrap">
             <div class="inner">
@@ -40,7 +20,7 @@
                     </a>
                 </h1>
 <!--  -->
-                <nav>
+                <nav class="pc">                                                               
                     <ul>
                         <li><a href="#business"><span>사업분야</span></a></li>
                         <li><a href="#solution"><span>솔루션</span></a></li>
@@ -48,7 +28,6 @@
                         <li><a href="#about"><span>오시는 길</span></a></li>
                     </ul>
                 </nav>
-
                 <div class="util_menu">
                     <div class="lang_util">
                         <div class="lang">
@@ -61,48 +40,59 @@
                         </ul>
                     </div>
 
-                    <div class="btn_menu">
+                    <div class="tb btn_menu">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div><!--header wrap-->
+        <ul class="tb tb_menu">
+            <li><a href="#business"><span>사업분야</span></a></li>
+            <li><a href="#solution"><span>솔루션</span></a></li>
+            <li><a href="#company"><span>회사소개</span></a></li>
+            <li><a href="#about"><span>오시는 길</span></a></li>
+        </ul>
     </header>
     <main>
         <div class="main_visual">
             <!--슬릭 슬라이더 들어가는 곳-->
             <section class="fade slider">
-                <div class="slide" data-title="no 1">
-                    <div class="videoArea">
-                        <video class="slide-video slide-media" loop="" muted="" preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="">
-                            <source src="asset/video/video1.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="slide_text">
-                        <div class="text_wrap">
-                            <h3><strong>강조</strong>제목 텍스트1</h3>
-                            <p>내용 텍스트입니다 <br/> 내용 텍스트입니다1</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide" data-title="no 2">
+                <div class="slide" data-title="1. 스마트 팩토리">
                     <div class="videoArea">
                         <video class="slide-video slide-media" loop="" muted="" preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="">
                             <source src="asset/video/video2.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide_text">
-                        <div class="text_wrap">
-                            <h3><strong>강조</strong>제목 텍스트2</h3>
-                            <p>내용 텍스트입니다 <br/> 내용 텍스트입니다2</p>
+                        <div class="inner">
+                            <div class="text_wrap">
+                                <h3>4차 산업 제조분야 <span>핵심기업</span></h3>
+                                <p>내용 텍스트입니다 <br/> 내용 텍스트입니다2</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>    
-            <div class="slide-controls"></div>       
-            <div class="scroll-down"><p>Scroll Down</p></div>
+                <div class="slide" data-title="2. OPC UA">
+                    <div class="videoArea">
+                        <video class="slide-video slide-media" loop="" muted="" preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="">
+                            <source src="asset/video/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide_text">
+                        <div class="inner">
+                            <div class="text_wrap">
+                                <h3>Your Factory On<span> Digital Twinning</span></h3>
+                                <p>유비씨는 국제표준화기구인 OPC UA Foundation Member로서 <br/>국내 최초로 인증된 사용 OPC UA 서버를 개발/공급하고 있습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main_inner">
+                <div class="slide-controls"></div>
+            </div>
         </div>
         <div id="content">
             <section id="business">
@@ -129,13 +119,14 @@
                         <p>자사 리뉴얼 작업중입니다.</p>
                     </div>
                     <div class="box-container">
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
+                        <div class="box"><a>1</a></div>
+                        <div class="box"><a>2</a></div>
+                        <div class="box"><a>3</a></div>
+                        <div class="box"><a>4</a></div>
+                        <div class="box"><a>5</a></div>
+                        <div class="box"><a>6</a></div>
                     </div>
+                <div class="bg_head">Solution</div>
                 </div>
             </section>
             <section id="company">
@@ -157,8 +148,8 @@
                         <h2>오시는 길</h2>
                         <p>자사 리뉴얼 작업중입니다.</p>
                     </div>
-                    <div class="box-container">
-                        <div class="box">오시는 길</div>
+                    <div class="box-container"> <!--구글맵 들어가는 곳-->
+                        <div id="googleMap" style="width:100%;height:400px;"></div>
                     </div>
                 </div>
             </section>
@@ -186,5 +177,15 @@
     <script src="asset/js/jquery-3.3.1.min.js"></script>
     <script src="asset/js/slick.min.js"></script>
     <script src="asset/js/script.js"></script>
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(37.392221, 126.958915),zoom:16,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEBTwdJE0cvs2SbWMwanqTP1tIXlY9weM&callback=myMap"></script>        
 </body>
 </html>
