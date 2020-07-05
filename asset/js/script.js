@@ -18,8 +18,8 @@ $(document).ready(function(){
     });
     
 	/*전체메뉴*/
-	$('.btn_menu').click(function(){
-		$('.tb_menu').slideToggle(400);
+	$('.mNav').click(function(){
+		$('.gnb').slideToggle(400);
 	});
 
 	slideControls = $('.slide-controls');
@@ -41,6 +41,13 @@ $(document).ready(function(){
 	});
 });
 
+$(window).resize(function(){
+	var wWidth = $(window).width();
+	if(wWidth > 1180 && $(".gnb").is(":hidden") ){
+		$(".gnb").removeAttr("style");
+	}
+});
+
 var cont = $("#content > section");
 var target = $(this);
 var index = target.index();
@@ -52,23 +59,28 @@ $(window).scroll(function(){
 
 	if(wScroll >= cont.eq(0).offset().top - $(window).height()/2 ){
 		cont.eq(0).addClass("show");
-		$('#business.show .section_head').delay(n*100).animate({opacity:1}, 300);
+		$('#business.show .section_head').animate({opacity:1}, 600);
+		$('#business.show .box-container').animate({opacity:1}, 1000);
 	}
 	if(wScroll >= cont.eq(1).offset().top - $(window).height()/2 ){
 		cont.eq(1).addClass("show");
-		$('#solution.show .section_head').delay(n*100).animate({opacity:1}, 300);
+		$('#solution.show .section_head').animate({opacity:1}, 600);
+		$('#solution.show .box-container').animate({opacity:1}, 1000);
 	}
 	if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){
 		for (var n = 0; n < 6; n++) {
-			$('#solution.show .box-container .box').eq(n).find('a').delay(n*100).animate({opacity:1}, 800);
+			$('#solution.show .box-container .box').eq(n).find('span').delay(n*100).animate({opacity:1}, 1200);
+			$('#solution.show .box-container .box').eq(n).find('p').delay(n*100).animate({opacity:1}, 1200);
 		};
 	}
 	if(wScroll >= cont.eq(2).offset().top - $(window).height()/2 ){
 		cont.eq(2).addClass("show");
-		$('#company.show .section_head').delay(n*100).animate({opacity:1}, 300);
+		$('#company.show .section_head').animate({opacity:1}, 600);
+		$('#company.show .box-container').animate({opacity:1}, 1000);
 	}
 	if(wScroll >= cont.eq(3).offset().top - $(window).height()/2 ){
 		cont.eq(3).addClass("show");
-		$('#about.show .section_head').delay(n*100).animate({opacity:1}, 300);
+		$('#about.show .section_head').animate({opacity:1}, 600);
+		$('#about.show .box-container').animate({opacity:1}, 1000);
 	}
 });

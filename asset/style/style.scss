@@ -18,14 +18,20 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
 }
-.bar1, .bar2, .bar3{
-    float: right;
+.img_box span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
-    height: 3px;
-    background: $white;
-    margin-top: 9px;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(.95);
+    box-sizing: border-box;
+    border: 2px solid #eee;
 }
-
+.box-container{
+    opacity: 0;
+}
 #header {
     position:fixed;
     top:0; 
@@ -34,40 +40,12 @@ body{
     height:110px; 
     background:rgba(0, 0, 0, .4);
     box-sizing:border-box; 
-    z-index:450; 
-    -webkit-transition: all .3s; 
-    -moz-transition: all .3s; 
-    -o-transition: all .3s; 
+    z-index:450;  
     transition: all .3s;
-
-    .tb_menu{
-        display: none;
-        width: 100%;
-        height: 400px;
-        background: #fff;
-
-        li {
-            width: 100%;
-            height: 25%;
-            line-height: 100px;
-            border-bottom: 1px solid #dfdfdf;
-            font-size: 20px;
-            text-align: center;
-
-            &:last-child{
-                border-bottom: none;
-            }
-
-            a{
-                color: #222;
-            }
-        }
-    }
 }
 
 .headerWrap {
     position:relative; 
-    width: 100%;
     height: 100%;
     margin:0 auto;
 
@@ -90,31 +68,25 @@ body{
                 img {
                     display: block;
                     width:100%;
-                    -webkit-transition: all .3s; 
-                    -moz-transition: all .3s; 
-                    -o-transition: all .3s; 
                     transition: all .3s;
                 }
             }
         }
         
-        nav{
-            position: absolute;
+        nav .gnb{
+            position: fixed;
             top: 0;
             left: 50%;
             padding-bottom: 10px;
             transform: translateX(-50%);
             z-index: 10;
 
-            ul li{
+            li{
                 position: relative;
                 display: inline-block;
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 110px;
-                -webkit-transition: all .3s; 
-                -moz-transition: all .3s; 
-                -o-transition: all .3s;
                 transition: all .3s; 
 
                 &:first-child a{
@@ -123,7 +95,7 @@ body{
 
                 a{
                     display: block;
-                    padding-left: 80px;
+                    padding-left: 60px;
                     color: $white;
                     
                     span{
@@ -163,7 +135,6 @@ body{
 
             .lang_util{
                 display: inline-block;
-                margin-right: 25px;
                 position: relative;
 
                 .lang{
@@ -220,15 +191,24 @@ body{
                 }
             }
 
-            .btn_menu{
+            .mNav{
+                display: none;
                 cursor: pointer;
                 display: inline-block;
                 width: 35px;
                 margin-left: 25px;
                 z-index: 600;
                 vertical-align: middle;
-                
 
+                div{
+                    display: none;
+                    float: right;
+                    width: 100%;
+                    height: 3px;
+                    background: $white;
+                    margin-top: 9px;
+                }
+                
                 .bar1{
                     margin-top: 0;                
                 }
@@ -257,7 +237,7 @@ body{
         }
     }
 
-    .bar1, .bar2, .bar3{
+    .mNav div{
         background: #222;
     }
 }
@@ -454,7 +434,7 @@ main .main_visual{
 
                 .img_box{
                     flex: 1.5;
-                    min-width: 300px;
+                    min-width: 256px;
                     min-height: 200px;
                     overflow: hidden;
                     transition: all .8s;
@@ -468,7 +448,7 @@ main .main_visual{
                         height: 100%;
                         transform: scale(1);
                         background: url("../images/img10.png") no-repeat;
-                        background-position: 50% 100%;
+                        background-position: 20% 100%;
                         background-size: cover;
                     }
 
@@ -553,8 +533,22 @@ main .main_visual{
                 font-size: 36px;
                 line-height: 360px;
                 text-align: center;
+                position: relative;
             
-                a{
+                .img_box{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+
+                    span{
+                        opacity: 0;
+                    }
+                } 
+                p{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     opacity: 0;
                 }
             }
@@ -600,6 +594,7 @@ main .main_visual{
                 }
                 
                 .img_box{
+                    position: relative;
                     flex: 1;
                     min-height: 400px;
                     background: url(../images/ceo_img.jpg) no-repeat;
@@ -654,11 +649,37 @@ footer{
 }
 
 
-@media only screen and (max-width:1280px){
-    .pc{
+@media only screen and (max-width: 1180px){
+    /*작은 모니터 pc*/
+    #header .headerWrap .inner #nav .gnb {
         display: none;
+        top: 110px;
+        width: 100%;
+        background: #fff;
+        padding-bottom: 0;
+
+        li {
+            width: 100%;
+            height: 25%;
+            line-height: 100px;
+            border-bottom: 1px solid #dfdfdf;
+            font-size: 20px;
+            text-align: center;
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            a{
+                color: #222;
+                padding: 0;
+            }
+        }
     }
-    
+    #header .headerWrap .inner .util_menu {top: 50%; transform: translateY(-50%);}
+    #header .headerWrap .inner .util_menu .mNav{display: block;}
+    #header .headerWrap .inner .util_menu .mNav div{display: block;}
+    #header .headerWrap .inner .util_menu .lang_util{display: none;}
 }
 
 
@@ -688,6 +709,14 @@ footer{
         .text_box{
             min-height: 400px;
             padding: 0;
+            
+            h4 {
+                margin-bottom: 40px;
+            }
+
+            p{
+                margin-bottom: 40px;
+            }
         }
 
         .img_box{
