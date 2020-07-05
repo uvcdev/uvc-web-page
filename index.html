@@ -15,7 +15,7 @@
             <div class="inner">
                 <h1>
                     <a href="#">
-                        <img class="logo" src="asset/images/uvc_logo_nav.png" alt="UVC"/>
+                        <img class="logo" src="asset/images/uvc_logo_foot.png" alt="UVC"/>
                         <span class="blind">UVC</span>
                     </a>
                 </h1>
@@ -84,7 +84,7 @@
                         <div class="inner">
                             <div class="text_wrap">
                                 <h3>Your Factory On<span> Digital Twinning</span></h3>
-                                <p>유비씨는 국제표준화기구인 OPC UA Foundation Member로서 <br/>국내 최초로 인증된 사용 OPC UA 서버를 개발/공급하고 있습니다</p>
+                                <p>UVC는 국제표준화기구인 OPC UA Foundation Member로서 <br/>국내 최초로 인증된 사용 OPC UA 서버를 개발/공급하고 있습니다</p>
                             </div>
                         </div>
                     </div>
@@ -103,10 +103,28 @@
                     </div>
                     <div class="box-container">
                         <div class="box">
-                            <h3>SMART FACTORY</h3>
+                            <div class="img_box">
+                                <div></div>
+                            </div>
+                            <div class="text_box">
+                                <div>
+                                    <h3>Smart Factory</h3>
+                                    <p>자사 리뉴얼 작업중입니다. 자사 리뉴얼 작업중입니다.</p>                                
+                                </div>
+                                <a href="#">바로가기 <img src="asset/images/more_btn_icon01.png" alt="바로가기 아이콘"></a>
+                            </div>
                         </div>
                         <div class="box">
-                            <h3>Flexing CPS</h3>
+                            <div class="img_box">
+                                <div></div>
+                            </div>
+                            <div class="text_box">
+                                <div>
+                                    <h3>Flexing CPS</h3>
+                                    <p>자사 리뉴얼 작업중입니다. 자사 리뉴얼 작업중입니다.</p>                                
+                                </div>
+                                <a href="http://www.uvc.co.kr/Content/img/uvc/solution/flexing-CPS-pdf-200526.pdf" target="_blank">바로가기 <img src="asset/images/more_btn_icon01.png" alt="바로가기 아이콘"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,11 +151,22 @@
                 <div class="inner">
                     <div class="section_head">
                         <h2>회사소개</h2>
-                        <p>자사 리뉴얼 작업중입니다.</p>
+                        <h3>CEO 인사말</h3>
                     </div>
                     <div class="box-container">
-                        <div class="box">기업 소개</div>
-                        <div class="box">CEO 인사말</div>
+                        <div class="box">
+                            <div class="img_box"></div>
+                            <div class="text_box">
+                                <h4>UVC 홈페이지 방문을 진심으로 환영합니다.</h4>
+                                <p> (주)유비씨는 다가오는 2020년 산업 IT 분야의 최고가 되기 위해 구성원 모두 각자
+                                        맡은 분야에서 정진하고 있으며, 구성원의 행복이 고객만족과 직결된다는 일념으로 모두가 행복한 삶을 누리기 위해 <b>'HAPPY WORK PLACE'</b> 라는 가치 아래 각종 지원을 제공하여 일과 생활의 균형을
+                                        실현 하고자 합니다.</p>
+                                <p> 하루가 다르게 발전하는 IT 기술들을 보면서 고객이 필요로 하는 최적의 기술을 적시에 제공하고 있는가를 항상 고민하게 됩니다. 
+                                    유비씨는 가장 가까운 곳에서 가장 최적의 기술과 솔루션으로 고객의 가치를 더 높이는데 집중하고 있습니다.
+                                    기술이 넘쳐나는 이 시대에 기술로 우뚝서는 행복한 회사가 되도록 최선을 다하겠습니다.</p>
+                                <p>대표 <b>조규종</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg_head">About us</div>
@@ -178,14 +207,28 @@
     <script src="asset/js/slick.min.js"></script>
     <script src="asset/js/script.js"></script>
     <script>
-        function myMap() {
-        var mapProp= {
-          center:new google.maps.LatLng(37.392221, 126.958915),zoom:16,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        (function(exports) {
+        "use strict";
+
+        function initMap() {
+          var myLatLng = {
+            lat: 37.392221,
+            lng: 126.958915
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"), {
+            zoom: 16,
+            center: myLatLng
+          });
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: "UVC"
+          });
         }
+
+        exports.initMap = initMap;
+      })((this.window = this.window || {}));
     </script>
-        
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEBTwdJE0cvs2SbWMwanqTP1tIXlY9weM&callback=myMap"></script>        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEBTwdJE0cvs2SbWMwanqTP1tIXlY9weM&callback=initMap&libraries=&v=weekly"></script>        
 </body>
 </html>

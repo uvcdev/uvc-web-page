@@ -1,8 +1,16 @@
 $(document).ready(function(){
 	/*헤더에 마우스 올리면 클래스 토글*/
     $('#header').hover(function(){
-        $(this).toggleClass("on");
-    });
+		$(this).toggleClass("on");
+	});
+	
+	$('#header').mouseover(function(){
+		$('.logo').attr("src","asset/images/uvc_logo_nav.png");
+	});
+
+	$('#header').mouseleave(function(){
+		$('.logo').attr("src","asset/images/uvc_logo_foot.png");
+	})
 
     /*유틸메뉴 언어선택*/
     $('.lang').click(function(){
@@ -42,22 +50,24 @@ var offset = section.offset().top;
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 
-	if(wScroll >= cont.eq(0).offset().top - $(window).height()/3 ){
+	if(wScroll >= cont.eq(0).offset().top - $(window).height()/2 ){
 		cont.eq(0).addClass("show");
 		$('#business.show .section_head').delay(n*100).animate({opacity:1}, 300);
 	}
-	if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){
+	if(wScroll >= cont.eq(1).offset().top - $(window).height()/2 ){
 		cont.eq(1).addClass("show");
 		$('#solution.show .section_head').delay(n*100).animate({opacity:1}, 300);
+	}
+	if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){
 		for (var n = 0; n < 6; n++) {
-			$('#solution.show .box-container .box').eq(n).find('a').delay(n*100).animate({opacity:1}, 300);
+			$('#solution.show .box-container .box').eq(n).find('a').delay(n*100).animate({opacity:1}, 800);
 		};
 	}
-	if(wScroll >= cont.eq(2).offset().top - $(window).height()/3 ){
+	if(wScroll >= cont.eq(2).offset().top - $(window).height()/2 ){
 		cont.eq(2).addClass("show");
 		$('#company.show .section_head').delay(n*100).animate({opacity:1}, 300);
 	}
-	if(wScroll >= cont.eq(3).offset().top - $(window).height()/3 ){
+	if(wScroll >= cont.eq(3).offset().top - $(window).height()/2 ){
 		cont.eq(3).addClass("show");
 		$('#about.show .section_head').delay(n*100).animate({opacity:1}, 300);
 	}
