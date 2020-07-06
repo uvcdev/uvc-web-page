@@ -863,11 +863,11 @@ footer{
             justify-content: space-around;
             flex: .5;
 
-            div h3, div p{
-                padding: 0;
+            div h3{
+                font-size: 30px;
             }
-            a{
-                margin-left: 0;
+            div p{
+                font-size: 20px;
             }
         }
 

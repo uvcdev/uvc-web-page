@@ -625,10 +625,10 @@ footer {
     #content #business .box-container .box .text_box {
       justify-content: space-around;
       flex: .5; }
-      #content #business .box-container .box .text_box div h3, #content #business .box-container .box .text_box div p {
-        padding: 0; }
-      #content #business .box-container .box .text_box a {
-        margin-left: 0; }
+      #content #business .box-container .box .text_box div h3 {
+        font-size: 30px; }
+      #content #business .box-container .box .text_box div p {
+        font-size: 20px; }
     #content #business .box-container .box:last-child .text_box {
       order: 1; }
   #content #company .box-container .box {
