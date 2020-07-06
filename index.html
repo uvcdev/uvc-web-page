@@ -35,12 +35,12 @@
                         </div>
                         <ul>
                             <li><a href="#">KOR</a></li>
-                            <li><a href="#">ENG</a></li>
+                            <li><a href="javascript:alert(&#39;준비중입니다.&#39;);">ENG</a></li>
                             <li><a href="javascript:alert(&#39;준비중입니다.&#39;);">CHN</a></li>
                         </ul>
                     </div>
 
-                    <div class="mNav">
+                    <div class="mNav"><span class="blind">모바일 메뉴 열기</span>
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
@@ -53,17 +53,16 @@
         <div class="main_visual">
             <!--슬릭 슬라이더 들어가는 곳-->
             <section class="fade slider">
-                <div class="slide" data-title="1. 스마트 팩토리">
+                <div class="slide" data-title="1. UVC History">
                     <div class="videoArea">
                         <video class="slide-video slide-media" loop="" muted="" preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="">
-                            <source src="asset/video/video2.mp4" type="video/mp4">
+                            <source src="asset/video/uvc_video_2.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide_text">
                         <div class="inner">
                             <div class="text_wrap">
-                                <h3>4차 산업 제조분야 <span>핵심기업</span></h3>
-                                <p>내용 텍스트입니다 <br/> 내용 텍스트입니다2</p>
+                                <h3>4차 산업 제조분야 <b>핵심기업</b></h3>
                             </div>
                         </div>
                     </div>
@@ -71,14 +70,27 @@
                 <div class="slide" data-title="2. OPC UA">
                     <div class="videoArea">
                         <video class="slide-video slide-media" loop="" muted="" preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="">
-                            <source src="asset/video/video1.mp4" type="video/mp4">
+                            <source src="asset/video/uvc_video_3.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide_text">
                         <div class="inner">
                             <div class="text_wrap">
-                                <h3>Your Factory On<span> Digital Twinning</span></h3>
-                                <p>UVC는 국제표준화기구인 OPC UA Foundation Member로서 <br/>국내 최초로 인증된 사용 OPC UA 서버를 개발/공급하고 있습니다</p>
+                                <h3>Your Factory On<b> Digital Twinning</b></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-title="3. Smart Factory">
+                    <div class="videoArea">
+                        <video class="slide-video slide-media" loop="" muted="" preload="metadata" webkit-playsinline="true" playsinline="true" autoplay="">
+                            <source src="asset/video/uvc_video_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide_text">
+                        <div class="inner">
+                            <div class="text_wrap">
+                                <h3>Your Factory On<b> Digital Twinning</b></h3>
                             </div>
                         </div>
                     </div>
@@ -106,7 +118,6 @@
                                     <h3>Smart Factory</h3>
                                     <p>자사 리뉴얼 작업중입니다. 자사 리뉴얼 작업중입니다.</p>                                
                                 </div>
-                                <a href="#">바로가기 <img src="asset/images/more_btn_icon01.png" alt="바로가기 아이콘"></a>
                             </div>
                         </div>
                         <div class="box">
@@ -170,6 +181,7 @@
                     <div class="box-container">
                         <div class="box">
                             <div class="img_box">
+                                <div></div>
                                 <span></span>
                             </div>
                             <div class="text_box">
@@ -191,10 +203,27 @@
                 <div class="inner">
                     <div class="section_head">
                         <h2>오시는 길</h2>
-                        <p>자사 리뉴얼 작업중입니다.</p>
                     </div>
                     <div class="box-container"> <!--구글맵 들어가는 곳-->
                         <div id="googleMap" style="width:100%;height:400px;"></div>
+                        <div class="box">
+                            <dl class="come">
+                                <dt class="building">(주)유비씨 <span class="come_btn"></span></dt>
+                                <dd><b>주소.</b> 경기도 안양시 동안구 시민대로248번길 25, 404호(안양창조산업진흥원)</dd>
+                                <dd><b>TEL.</b> (031)- 346 - 5497</dd>
+                            </dl>
+                        </div>
+                        <div class="box">
+                            <dl class="come">
+                                <dt class="car">자동차로 오시는 길 <span class="come_btn"></dt>
+                                <dd>안양시청대로(시민대로) &#8594; 안양시청방면 &#8594; 안양공원 방면 &#8594; 안양창조산업진흥원</dd>
+                            </dl>
+                            <dl class="come">
+                                <dt class="subway">지하철로 오시는 길 <span class="come_btn"></span></dt>
+                                <dd><b>4호선 평촌역 1번출구,</b> 안양시청 방향으로 약 500m 직진 &#8594; 지하 보도를 건너 약 100m 직진 &#8594; 왼쪽 방면 안양창조산업진흥원 </dd>
+                                <dd><b>4호선 범계역 2번출구,</b> 안양시청 방향으로 약 350m 직진 &#8594; 지하 보도를 건너 약 350m정도 직진 &#8594; 오른쪽 방면 안양창조산업진흥원</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -211,12 +240,7 @@
                     <li>Email: joshua@uvc.co.kr</li>
                 </ul>
             </address>
-            <p class="copy">copyright &copy; UVC</p>
-            <ul class="footer_sns">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <p class="copy">&copy;2020 UVC.co.,ltd. All Rights Reserved.</p>
         </div>
     </footer>
     <script src="asset/js/jquery-3.3.1.min.js"></script>
@@ -238,7 +262,7 @@
           var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            title: "UVC"
+            title: "(주)유비씨"
           });
         }
 

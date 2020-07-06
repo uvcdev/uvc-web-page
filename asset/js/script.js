@@ -20,6 +20,7 @@ $(document).ready(function(){
 	/*전체메뉴*/
 	$('.mNav').click(function(){
 		$('.gnb').slideToggle(400);
+		$(this).toggleClass("on");
 	});
 
 	slideControls = $('.slide-controls');
@@ -83,4 +84,20 @@ $(window).scroll(function(){
 		$('#about.show .section_head').animate({opacity:1}, 600);
 		$('#about.show .box-container').animate({opacity:1}, 1000);
 	}
+});
+
+/*main visual*/
+$('.text_wrap h3').mouseover(function(){
+	$('.slide_text').css({"background":"rgba(0, 0, 0, .4)"}, 600);
+	$(this).css({"opacity":"1"});
+});
+$('.text_wrap h3').mouseleave(function(){
+	$('.slide_text').css({"background":"rgba(0, 0, 0, .1)"}, 600);
+	$(this).css({"opacity":".4"});
+});
+
+
+/*way to come*/
+$('.come').click(function(){
+	$(this).toggleClass("on");
 });
