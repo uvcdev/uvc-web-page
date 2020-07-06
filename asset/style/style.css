@@ -28,6 +28,10 @@ body {
   box-sizing: border-box;
   border: 2px solid #eee; }
 
+.text_box {
+  word-break: keep-all;
+  line-height: 2; }
+
 .box-container {
   opacity: 0; }
 
@@ -338,7 +342,7 @@ main .main_visual {
     justify-content: space-around; }
     #content #business .box-container .box .img_box {
       cursor: pointer;
-      flex: 1.5;
+      flex: 1;
       min-width: 256px;
       min-height: 200px;
       transition: all .8s;
@@ -361,13 +365,17 @@ main .main_visual {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      justify-content: space-between;
-      padding: 0 20px;
-      box-sizing: border-box; }
+      justify-content: space-between; }
       #content #business .box-container .box .text_box div h3 {
-        font-size: 30px; }
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        padding: 0 40px;
+        box-sizing: border-box; }
       #content #business .box-container .box .text_box div p {
-        font-size: 20px; }
+        font-size: 20px;
+        padding: 0 40px;
+        box-sizing: border-box; }
       #content #business .box-container .box .text_box a {
         display: block;
         width: 200px;
@@ -375,14 +383,15 @@ main .main_visual {
         line-height: 50px;
         text-align: center;
         color: #fff;
-        background: #222; }
+        background: #222;
+        margin-left: 40px; }
         #content #business .box-container .box .text_box a:hover {
           background: #ed1c24; }
         #content #business .box-container .box .text_box a img {
           vertical-align: middle;
           margin-left: 10px; }
     #content #business .box-container .box:first-child .text_box {
-      text-align: right;
+      text-align: left;
       align-items: flex-end; }
     #content #business .box-container .box:last-child .text_box {
       order: -1; }
@@ -593,6 +602,8 @@ footer {
       #header .headerWrap .inner #nav .gnb li a {
         color: #222;
         padding: 0; }
+        #header .headerWrap .inner #nav .gnb li a span:after {
+          width: 0; }
   #header .headerWrap .inner .util_menu {
     top: 50%;
     transform: translateY(-50%); }
@@ -614,6 +625,10 @@ footer {
     #content #business .box-container .box .text_box {
       justify-content: space-around;
       flex: .5; }
+      #content #business .box-container .box .text_box div h3, #content #business .box-container .box .text_box div p {
+        padding: 0; }
+      #content #business .box-container .box .text_box a {
+        margin-left: 0; }
     #content #business .box-container .box:last-child .text_box {
       order: 1; }
   #content #company .box-container .box {

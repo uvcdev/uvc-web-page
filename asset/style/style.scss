@@ -33,6 +33,10 @@ body{
     box-sizing: border-box;
     border: 2px solid #eee;
 }
+.text_box{
+    word-break: keep-all;
+    line-height: 2;
+}
 .box-container{
     opacity: 0;
 }
@@ -458,7 +462,7 @@ main .main_visual{
 
                 .img_box{
                     cursor: pointer;
-                    flex: 1.5;
+                    flex: 1;
                     min-width: 256px;
                     min-height: 200px;
                     transition: all .8s;
@@ -487,16 +491,20 @@ main .main_visual{
                     flex-wrap: wrap;
                     flex-direction: column;
                     justify-content: space-between;
-                    padding: 0 20px;
-                    box-sizing: border-box;
  
                     div{
                         h3{
-                            font-size: 30px;
+                            font-size: 40px;
+                            margin-bottom: 20px;
+                            text-transform: uppercase;
+                            padding: 0 40px;
+                            box-sizing: border-box;
                         }
 
                         p{
                             font-size: 20px;
+                            padding: 0 40px;
+                            box-sizing: border-box;
                         }
                     }
                     a{
@@ -507,6 +515,7 @@ main .main_visual{
                         text-align: center;
                         color: #fff;
                         background: #222;
+                        margin-left: 40px;
 
                         &:hover{
                             background: $color-red;
@@ -519,7 +528,7 @@ main .main_visual{
                     }
                 }
                 &:first-child .text_box{
-                    text-align: right;
+                    text-align: left;
                     align-items: flex-end;
                 }
 
@@ -822,6 +831,10 @@ footer{
             a{
                 color: #222;
                 padding: 0;
+
+                span:after{
+                    width: 0;
+                }
             }
         }
     }
@@ -849,6 +862,13 @@ footer{
         .text_box{
             justify-content: space-around;
             flex: .5;
+
+            div h3, div p{
+                padding: 0;
+            }
+            a{
+                margin-left: 0;
+            }
         }
 
         &:last-child .text_box{
