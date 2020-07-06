@@ -1,12 +1,3 @@
-/************************************************************************
- * 설명       :   기본 스타일시트
- * 작성자     :   (주)웨이투원
- * 작성일     :   2013. 10. 18
- * 최종수정일 :   2019. 08. 26
- * 파일명     :   basic.css
-!important
-************************************************************************/
-
 @font-face { 
   font-family: 'Noto Sans KR'; 
   font-style: normal; 
@@ -59,8 +50,15 @@
 
 *:focus { outline:none; }
 
-body, input, textarea, select, button, table{margin:0; font-size:16px; font-family:'Noto Sans KR', Noto Sans KR, 'Lato','돋움', Dotum, Helvetica, AppleGothic, Sans-serif;}
+body, input, textarea, select, button, table{margin:0; font-family:'Noto Sans KR', Noto Sans KR, 'Lato','돋움', Dotum, Helvetica, AppleGothic, Sans-serif;}
 body, h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, form, fieldset, legend, button { margin: 0; padding: 0; }
+
+h2{
+  font-size:50px;
+}
+h4, dt, h3{
+  font-size: 24px;
+}
 
 img {max-width:100%;}
 img, fieldset{border:0 none}
@@ -84,7 +82,7 @@ a:hover, a:active, a:focus {text-decoration:none;}
 table a:hover, table a:active {text-decoration:underline;}
 table a.nonehoverline { text-decoration:none; }
 
-input, select, textarea {vertical-align:middle; font-size:1em; line-height:130%}
+input, select, textarea {vertical-align:middle; line-height:130%}
 input, textarea, select { border-width:1px; border-style: solid; border-color:#dfdfdf; background:#fff; outline:0;}
 input[type=button],
 input[type=submit],
@@ -96,4 +94,5 @@ input.check	{border:none; background:none;}
 input.radio	{border:0 none; background:none;}
 textarea.textarea {height:120px; padding:10px; box-sizing:border-box;}
 label {cursor:pointer;}
+
 .button {border:0 none; cursor:pointer}
