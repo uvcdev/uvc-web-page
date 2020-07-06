@@ -626,25 +626,33 @@ footer {
       justify-content: space-around;
       flex: .5; }
       #content #business .box-container .box .text_box div h3 {
-        font-size: 30px; }
+        font-size: 24px; }
       #content #business .box-container .box .text_box div p {
-        font-size: 20px; }
+        font-size: 18px;
+        word-break: normal; }
+      #content #business .box-container .box .text_box a {
+        font-size: 18px; }
     #content #business .box-container .box:last-child .text_box {
       order: 1; }
   #content #company .box-container .box {
     flex-direction: column; }
     #content #company .box-container .box .text_box {
-      min-height: 700px;
-      padding: 0; }
+      min-height: 600px;
+      padding: 0;
+      text-align: left; }
       #content #company .box-container .box .text_box h4 {
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        padding: 0 20px; }
       #content #company .box-container .box .text_box p {
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        padding: 0 20px; }
     #content #company .box-container .box .img_box {
       min-height: 400px;
       margin-bottom: 40px; } }
 
 @media only screen and (max-width: 768px) {
+  #content #company .box-container .box .text_box {
+    min-height: 880px; }
   /*아이패드*/ }
 
 @media only screen and (min-width: 481px) and (max-width: 640px) {

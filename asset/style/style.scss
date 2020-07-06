@@ -864,10 +864,14 @@ footer{
             flex: .5;
 
             div h3{
-                font-size: 30px;
+                font-size: 24px;
             }
             div p{
-                font-size: 20px;
+                font-size: 18px;
+                word-break: normal;
+            }
+            a{
+                font-size: 18px;
             }
         }
 
@@ -880,15 +884,18 @@ footer{
         flex-direction: column;
 
         .text_box{
-            min-height: 700px;
+            min-height: 600px;
             padding: 0;
+            text-align: left;
             
             h4 {
                 margin-bottom: 40px;
+                padding: 0 20px;
             }
 
             p{
                 margin-bottom: 40px;
+                padding: 0 20px;
             }
         }
 
@@ -900,6 +907,12 @@ footer{
 }
 
 @media only screen and (max-width: 768px){
+    #content #company .box-container .box{
+
+        .text_box{
+            min-height: 880px;
+        }
+    }
     /*아이패드*/
 }
 
