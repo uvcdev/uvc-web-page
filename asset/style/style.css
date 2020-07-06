@@ -634,7 +634,7 @@ footer {
   #content #company .box-container .box {
     flex-direction: column; }
     #content #company .box-container .box .text_box {
-      min-height: 400px;
+      min-height: 700px;
       padding: 0; }
       #content #company .box-container .box .text_box h4 {
         margin-bottom: 40px; }
