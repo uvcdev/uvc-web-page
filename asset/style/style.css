@@ -313,7 +313,7 @@ main .main_visual {
     justify-content: space-around;
     align-content: center; }
     #content section .box-container .box {
-      border: 1px solid #000; }
+      border: 2px solid #000; }
   #content section .bg_head {
     font-size: 160px;
     line-height: .72;
@@ -412,6 +412,9 @@ main .main_visual {
     line-height: 360px;
     text-align: center;
     position: relative; }
+    #content #solution .box-container .box:hover {
+      transition: all .6s;
+      border-color: #424ac1; }
     #content #solution .box-container .box .img_box {
       width: 100%;
       height: 100%;

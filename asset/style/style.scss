@@ -423,7 +423,7 @@ main .main_visual{
                 align-content: center;
             
                 .box{
-                    border: 1px solid $black;
+                    border: 2px solid $black;
                 }
             }
 
@@ -557,6 +557,11 @@ main .main_visual{
                 line-height: 360px;
                 text-align: center;
                 position: relative;
+
+                &:hover{
+                    transition: all .6s;
+                    border-color: $color-blue;
+                }
             
                 .img_box{
                     width: 100%;
