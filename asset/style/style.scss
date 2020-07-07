@@ -291,7 +291,7 @@ main .main_visual{
                 min-width: 100%;
                 min-height: 100vh;
                 object-fit: contain;
-                object-position: right;
+                object-position: center center;
             }
         }
 
@@ -453,6 +453,7 @@ main .main_visual{
                 display: flex;
                 border: none;
                 justify-content: space-around;
+                margin: 40px; //ie
 
                 .img_box{
                     cursor: pointer;
@@ -542,8 +543,8 @@ main .main_visual{
 
     #solution{
         .box-container{
+            max-width: 1600px;
             min-height: 900px;
-            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
@@ -552,8 +553,9 @@ main .main_visual{
             align-content: space-between;
 
             .box{
-                width: 360px;
-                height: 360px;
+                width: 400px;
+                height: 400px;
+                margin: 20px;
                 line-height: 360px;
                 text-align: center;
                 position: relative;
@@ -764,6 +766,10 @@ footer{
         ul li{
             display: inline-block;
             margin-right: 10px;
+
+            a{
+                color: #fff;
+            }
 
             &:after{
                 content: '';

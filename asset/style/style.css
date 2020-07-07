@@ -220,7 +220,7 @@ main .main_visual {
         min-width: 100%;
         min-height: 100vh;
         object-fit: contain;
-        object-position: right; }
+        object-position: center center; }
     main .main_visual .fade .slide_text {
       position: absolute;
       top: 0;
@@ -335,7 +335,8 @@ main .main_visual {
     min-height: 420px;
     display: flex;
     border: none;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin: 40px; }
     #content #business .box-container .box .img_box {
       cursor: pointer;
       flex: 1;
@@ -398,8 +399,8 @@ main .main_visual {
   right: 0; }
 
 #content #solution .box-container {
+  max-width: 1600px;
   min-height: 900px;
-  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -407,8 +408,9 @@ main .main_visual {
   justify-content: space-evenly;
   align-content: space-between; }
   #content #solution .box-container .box {
-    width: 360px;
-    height: 360px;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
     line-height: 360px;
     text-align: center;
     position: relative; }
@@ -556,6 +558,8 @@ footer {
   footer address ul li {
     display: inline-block;
     margin-right: 10px; }
+    footer address ul li a {
+      color: #fff; }
     footer address ul li:after {
       content: '';
       display: inline-block;
