@@ -11,11 +11,18 @@ body{
     color: $black;
     font-size: 18px;
 }
+h2, h3, h4, p{
+    width: 100%;
+    color: $black;
+}
 .inner {
     width: 100%;
     max-width: 80vw;
     margin: 0 auto;
     box-sizing: border-box;
+}
+.box{
+    outline: 1px solid red;
 }
 #header {
     position:fixed;
@@ -147,7 +154,6 @@ main{
 
     .main_visual{
         width: 100%;
-        height: 800px;
         margin-top: 220px;
         position: relative;
         overflow: hidden;
@@ -155,29 +161,76 @@ main{
         ul.slick-slider{
 
             li{
-                height: 800px;
-                color: $white;
-                text-align: center;
-                background: #ffdedec5;
-                background-position: center center;
+                width: 100%;
                 position: relative;
 
-                div{
-                    background: $dim;
+                .slide_header{
+                    background: #eee;
                     width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    height: 1000px;
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
+                    text-align: center;
 
                     h3{
-                        color: #fff;
+                        line-height: 1000px;
+                        width: 100%;
+                        height: 800px;
+                        color: $black;
                         font-size: 60px;
+                    }
+
+                    .sub_title{
+                        height: 200px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        background: $white;
+
+                        h4{
+                            color: $black;
+                            width: 100%;
+                        }
+                        p{
+                            color: $black;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .box-container{
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-content: space-around;
+                
+                    .box{
+                        width: 100%;
+                        display: flex;
+                        margin: 100px 0; /*ie align-content 미지원*/
+    
+                        .img_box{
+                            outline: 1px solid orange;
+                            flex: 1;
+                            background: #efefef;
+                            color: #222;
+                        }
+    
+                        .text_box{
+                            outline: 1px solid blue;
+                            flex: 1;
+                        }
+                    
+                        &:nth-child(2n) .img_box{
+                            order: 1;
+                        }
                     }
                 }
             }
@@ -188,7 +241,7 @@ main{
                 height: 80px;
                 border-radius: 50%;
                 z-index: 198;
-                border: 2px solid $white;
+                border: 2px solid $black;
                 background: transparent;
                 color: transparent;
                 position: relative;
@@ -204,7 +257,7 @@ main{
                     display: block;
                     width: 30px;
                     height: 2px;
-                    background: $white;
+                    background: $black;
                     position: absolute;
                     top: 50%;
                     left: 40%;
@@ -216,7 +269,7 @@ main{
                     display: block;
                     width: 30px;
                     height: 2px;
-                    background: $white;
+                    background: $black;
                     position: absolute;
                     top: 50%;
                     left: 65%;
@@ -225,63 +278,242 @@ main{
             }
             button.slick-prev{
                 position: absolute;
-                top: 50%;
+                top:  500px;
                 left: 10vw;
-                transform: translate(-50%, -50%) rotate(90deg);
+                transform:  translateY(-50%)  rotate(90deg);
             }
             button.slick-next{
                 position: absolute;
-                top: 50%;
+                top: 500px;
                 right: 10vw;
-                transform: translate(-50%, -50%) rotate(-90deg);
+                transform:  translateY(-50%)  rotate(-90deg);
             }
 
         }
-
-        .float_box{
-            background: #fff;
-            z-index: 180;
-            width: 80vw;
-            height: 200px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
     }
-    
-    .content{
-        width: 100%;
-        background: #fff;
+}
 
-        .inner {
+/*솔루션은 여기다 작업할 것*/
+.main_visual{
+    li h2{
+        font-size: 28px;
+    }
 
-            .box-container{
-                min-height: 2800px;
+    li.cps{
+
+    }
+    li.modeler{
+
+    }
+    li.edge{
+
+    }
+    li.edukit{
+        
+    }
+    li.erp{
+
+    }
+    li.mes{
+        .text_box{
+            padding: 0 40px;
+            box-sizing: border-box;
+
+            h2{
+                margin: 40px 0;
+                
+            }
+            ul {
                 width: 100%;
-                padding-bottom: 50px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-content: space-around;
-            
-                .box{
-                    width: 100%;
-                    height: 400px;
-                    display: flex;
 
-                    .img_box{
-                        flex: 1;
-                        border: 1px solid orange;
-                        background: url("../images/cps_2.jpg")no-repeat;
-                        background-size: cover;
+                li{
+                    width: 100%;
+                    text-indent: 25px;
+                    margin-bottom: 40px;
+
+                    strong{
+                        display: block;
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 25px;
+                        line-height: 50px;
+                        color: $white;
+                        background: linear-gradient(to right, $color-blue, $white );
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .text_box.list_box{
+            ul{
+                li{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $color-blue;
+                    ul{
+                        li{
+                            margin: 0;
+                            color: $black;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+        .text_box.gear{
+            position: relative;
+            ul{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-between;
+                li{
+                    width: 45%;
+                    height: 120px;
+                    text-indent: 0;
+                    text-align: center;
+                    position: relative;
+
+                    &:after{
+                        content: '';
+                        display: block;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        background: $color-blue;
+                        text-align: center;
+                        line-height: 120px;
+                        color:$white;
+                        position: absolute;
+                        top: 90%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        z-index: 190;
                     }
 
-                    .text_box{
-                        flex: 1;
-                        border: 1px solid blue;
+                    &:before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 90%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        background: url("../images/cloud.svg") no-repeat;
+                        background-size: contain;
+                        z-index: 195;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                li:nth-child(2)::before{
+                    background: url("../images/eye.svg") no-repeat;
+                    background-size: contain;
+                }
+                li:nth-child(3)::before{
+                    background: url("../images/gear.svg") no-repeat;
+                    background-size: contain;
+                }
+                li:last-child::before{
+                    background: url("../images/cycle.svg") no-repeat;
+                    background-size: contain;
+                }
+            }
+            svg{
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .table_box{
+            table{
+                thead{
+                    border: 2px solid $black;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: none;
+                    padding: 0 10px;
+                }
+                tr{
+                    th{
+                        border: 1px solid #666;
+                        width: 400px;
+                    }
+                    td{
+                        border: 1px solid #666;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .per_box{
+            width: 100%;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                
+                li{
+                    width: 200px;
+                    height: 200px;
+                    text-align: center;
+                    margin: 20px;
+                }
+            }
+        }
+        .order_box{
+            width: 100%;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                
+                li{
+                    text-align: center;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 10px solid $color-blue;
+                    position: relative;
+                    background: #fff;
+                    margin: 20px;
+
+                    span{
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        &:after{
+                            content:'';
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: url("../images/product.svg") no-repeat;
+                            background-size: contain;
+                        }
+                    }
+
+                    &:before{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(1.1);
+                        border: 10px solid #eee;
+                        border-radius: 50%;
                     }
                 }
             }
@@ -289,18 +521,19 @@ main{
     }
 }
 
+
 footer{
     font-size: 16px;
     background: #49494b;
     padding: 30px 0;
     box-sizing: border-box;
-    color: $white;
 
     address{
 
         ul li{
             display: inline-block;
             margin-right: 10px;
+            color: $white;
 
             &:after{
                 content: '';
@@ -324,6 +557,7 @@ footer{
     
     p{
      margin: 10px 0;
+     color: $white;
     }
     
 }
@@ -337,11 +571,32 @@ footer{
 
 
 @media only screen and (max-width:1024px){
+    main .main_visual ul li .inner .box-container .box{
+        flex-direction: column;
+    }
+    main .main_visual ul li.mes .inner .box-container .box .text_box.gear svg{
+        width: 200px;
+        height: 200px;
+    } 
     
 }
 
 @media only screen and (max-width: 768px){
-    
+    main .main_visual ul.slick-slider li.mes .text_box{
+        padding: 0;
+    }
+    main .main_visual ul li.mes .inner .box-container .box .text_box.gear svg{
+        display: none;
+    } 
+    main .main_visual ul li.mes .inner .box-container .box .text_box.gear ul li{
+        width: 100%;
+        outline: 1px solid red;
+        margin: 40px 0;
+
+        &:after, &:before{
+            top: 70%;
+        }
+    }
 }
 
 @media only screen and (min-width:481px) and (max-width:640px){
