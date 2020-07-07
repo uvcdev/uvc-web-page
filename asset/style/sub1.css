@@ -17,9 +17,6 @@ h2, h3, h4, p {
   margin: 0 auto;
   box-sizing: border-box; }
 
-.box {
-  outline: 1px solid red; }
-
 #header {
   position: fixed;
   top: 0;
@@ -171,12 +168,10 @@ main .main_visual {
         margin: 100px 0;
         /*ie align-content 미지원*/ }
         main .main_visual ul.slick-slider li .box-container .box .img_box {
-          outline: 1px solid orange;
           flex: 1;
           background: #efefef;
           color: #222; }
         main .main_visual ul.slick-slider li .box-container .box .text_box {
-          outline: 1px solid blue;
           flex: 1; }
         main .main_visual ul.slick-slider li .box-container .box:nth-child(2n) .img_box {
           order: 1; }
@@ -363,19 +358,11 @@ main .main_visual {
       .main_visual li.mes .order_box ul li span {
         display: block;
         position: absolute;
-        top: 50%;
+        bottom: 0;
         left: 50%;
-        transform: translate(-50%, -50%); }
-        .main_visual li.mes .order_box ul li span:after {
-          content: '';
-          width: 100px;
-          height: 100px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background: url("../images/product.svg") no-repeat;
-          background-size: contain; }
+        transform: translate(-50%, -50%);
+        z-index: 182;
+        font-weight: 700; }
       .main_visual li.mes .order_box ul li:before {
         content: "";
         display: block;
@@ -386,7 +373,19 @@ main .main_visual {
         left: 50%;
         transform: translate(-50%, -50%) scale(1.1);
         border: 10px solid #eee;
-        border-radius: 50%; }
+        border-radius: 50%;
+        z-index: 181; }
+      .main_visual li.mes .order_box ul li:after {
+        content: '';
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("../images/product.svg") no-repeat;
+        background-size: contain;
+        z-index: 181; }
 
 footer {
   font-size: 16px;
@@ -435,7 +434,6 @@ footer {
     display: none; }
   main .main_visual ul li.mes .inner .box-container .box .text_box.gear ul li {
     width: 100%;
-    outline: 1px solid red;
     margin: 40px 0; }
     main .main_visual ul li.mes .inner .box-container .box .text_box.gear ul li:after, main .main_visual ul li.mes .inner .box-container .box .text_box.gear ul li:before {
       top: 70%; } }
@@ -444,4 +442,6 @@ footer {
   /*모바일에서 제일 작은 크기*/
   .inner {
     width: 100%;
-    max-width: 90vw; } }
+    max-width: 90vw; }
+  .section_head h3 {
+    font-size: 20px; } }

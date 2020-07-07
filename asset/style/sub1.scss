@@ -21,9 +21,6 @@ h2, h3, h4, p{
     margin: 0 auto;
     box-sizing: border-box;
 }
-.box{
-    outline: 1px solid red;
-}
 #header {
     position:fixed;
     top:0; 
@@ -217,14 +214,12 @@ main{
                         margin: 100px 0; /*ie align-content 미지원*/
     
                         .img_box{
-                            outline: 1px solid orange;
                             flex: 1;
                             background: #efefef;
                             color: #222;
                         }
     
                         .text_box{
-                            outline: 1px solid blue;
                             flex: 1;
                         }
                     
@@ -486,21 +481,11 @@ main{
                     span{
                         display: block;
                         position: absolute;
-                        top: 50%;
+                        bottom: 0;
                         left: 50%;
                         transform: translate(-50%, -50%);
-
-                        &:after{
-                            content:'';
-                            width: 100px;
-                            height: 100px;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            background: url("../images/product.svg") no-repeat;
-                            background-size: contain;
-                        }
+                        z-index: 182;
+                        font-weight: 700;
                     }
 
                     &:before{
@@ -514,6 +499,20 @@ main{
                         transform: translate(-50%, -50%) scale(1.1);
                         border: 10px solid #eee;
                         border-radius: 50%;
+                        z-index: 181;
+                    }
+
+                    &:after{
+                        content:'';
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: url("../images/product.svg") no-repeat;
+                        background-size: contain;
+                        z-index: 181;
                     }
                 }
             }
@@ -590,7 +589,6 @@ footer{
     } 
     main .main_visual ul li.mes .inner .box-container .box .text_box.gear ul li{
         width: 100%;
-        outline: 1px solid red;
         margin: 40px 0;
 
         &:after, &:before{
@@ -608,5 +606,8 @@ footer{
     .inner{
         width: 100%;
         max-width: 90vw;
+    }
+    .section_head h3{
+        font-size: 20px;
     }
 }
