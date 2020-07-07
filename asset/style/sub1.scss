@@ -359,6 +359,7 @@ main{
         }
         .text_box.gear{
             position: relative;
+            width: 100%;
             ul{
                 width: 100%;
                 display: flex;
@@ -367,7 +368,7 @@ main{
                 align-content: space-between;
                 li{
                     width: 45%;
-                    height: 120px;
+                    height: 200px;
                     text-indent: 0;
                     text-align: center;
                     position: relative;
@@ -383,7 +384,7 @@ main{
                         line-height: 120px;
                         color:$white;
                         position: absolute;
-                        top: 90%;
+                        top: 50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
                         z-index: 190;
@@ -393,7 +394,7 @@ main{
                         content: '';
                         display: block;
                         position: absolute;
-                        top: 90%;
+                        top: 50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
                         background: url("../images/cloud.svg") no-repeat;
@@ -588,12 +589,8 @@ footer{
         display: none;
     } 
     main .main_visual ul li.mes .inner .box-container .box .text_box.gear ul li{
-        width: 100%;
-        margin: 40px 0;
-
-        &:after, &:before{
-            top: 70%;
-        }
+        width: 200px;
+        margin: 40px auto;
     }
 }
 
