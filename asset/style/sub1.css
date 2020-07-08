@@ -224,18 +224,18 @@ main .main_visual {
 .main_visual li h2 {
   font-size: 28px; }
 
-.main_visual li.mes .text_box {
+.main_visual li .text_box {
   padding: 0 40px;
   box-sizing: border-box; }
-  .main_visual li.mes .text_box h2 {
+  .main_visual li .text_box h2 {
     margin: 40px 0; }
-  .main_visual li.mes .text_box ul {
+  .main_visual li .text_box ul {
     width: 100%; }
-    .main_visual li.mes .text_box ul li {
+    .main_visual li .text_box ul li {
       width: 100%;
       text-indent: 25px;
       margin-bottom: 40px; }
-      .main_visual li.mes .text_box ul li strong {
+      .main_visual li .text_box ul li strong {
         display: block;
         width: 100%;
         height: 50px;
@@ -243,34 +243,34 @@ main .main_visual {
         line-height: 50px;
         color: #fff;
         background: linear-gradient(to right, #424ac1, #fff); }
-      .main_visual li.mes .text_box ul li span {
+      .main_visual li .text_box ul li span {
         display: block; }
 
-.main_visual li.mes .text_box.list_box ul li {
+.main_visual li .text_box.list_box ul li {
   font-size: 20px;
   font-weight: 600;
   color: #424ac1; }
-  .main_visual li.mes .text_box.list_box ul li ul li {
+  .main_visual li .text_box.list_box ul li ul li {
     margin: 0;
     color: #000;
     font-weight: 400; }
 
-.main_visual li.mes .text_box.gear {
+.main_visual li .text_box.gear {
   position: relative;
   width: 100%; }
-  .main_visual li.mes .text_box.gear ul {
+  .main_visual li .text_box.gear ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between; }
-    .main_visual li.mes .text_box.gear ul li {
+    .main_visual li .text_box.gear ul li {
       width: 45%;
       height: 200px;
       text-indent: 0;
       text-align: center;
       position: relative; }
-      .main_visual li.mes .text_box.gear ul li:after {
+      .main_visual li .text_box.gear ul li:after {
         content: '';
         display: block;
         width: 120px;
@@ -285,7 +285,7 @@ main .main_visual {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 190; }
-      .main_visual li.mes .text_box.gear ul li:before {
+      .main_visual li .text_box.gear ul li:before {
         content: '';
         display: block;
         position: absolute;
@@ -297,16 +297,16 @@ main .main_visual {
         z-index: 195;
         width: 80px;
         height: 80px; }
-    .main_visual li.mes .text_box.gear ul li:nth-child(2)::before {
+    .main_visual li .text_box.gear ul li:nth-child(2)::before {
       background: url("../images/eye.svg") no-repeat;
       background-size: contain; }
-    .main_visual li.mes .text_box.gear ul li:nth-child(3)::before {
+    .main_visual li .text_box.gear ul li:nth-child(3)::before {
       background: url("../images/gear.svg") no-repeat;
       background-size: contain; }
-    .main_visual li.mes .text_box.gear ul li:last-child::before {
+    .main_visual li .text_box.gear ul li:last-child::before {
       background: url("../images/cycle.svg") no-repeat;
       background-size: contain; }
-  .main_visual li.mes .text_box.gear svg {
+  .main_visual li .text_box.gear svg {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -314,40 +314,40 @@ main .main_visual {
     width: 300px;
     height: 300px; }
 
-.main_visual li.mes .table_box table thead {
+.main_visual li .table_box table thead {
   border: 2px solid #000;
   border-left: none;
   border-right: none;
   border-bottom: none;
   padding: 0 10px; }
 
-.main_visual li.mes .table_box table tr th {
+.main_visual li .table_box table tr th {
   border: 1px solid #666;
   width: 400px; }
 
-.main_visual li.mes .table_box table tr td {
+.main_visual li .table_box table tr td {
   border: 1px solid #666;
   width: 200px; }
 
-.main_visual li.mes .per_box {
+.main_visual li .per_box {
   width: 100%; }
-  .main_visual li.mes .per_box ul {
+  .main_visual li .per_box ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-    .main_visual li.mes .per_box ul li {
+    .main_visual li .per_box ul li {
       width: 200px;
       height: 200px;
       text-align: center;
       margin: 20px; }
 
-.main_visual li.mes .order_box {
+.main_visual li .order_box {
   width: 100%; }
-  .main_visual li.mes .order_box ul {
+  .main_visual li .order_box ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-    .main_visual li.mes .order_box ul li {
+    .main_visual li .order_box ul li {
       text-align: center;
       width: 200px;
       height: 200px;
@@ -356,7 +356,7 @@ main .main_visual {
       position: relative;
       background: #fff;
       margin: 20px; }
-      .main_visual li.mes .order_box ul li span {
+      .main_visual li .order_box ul li span {
         display: block;
         position: absolute;
         bottom: 0;
@@ -364,7 +364,7 @@ main .main_visual {
         transform: translate(-50%, -50%);
         z-index: 182;
         font-weight: 700; }
-      .main_visual li.mes .order_box ul li:before {
+      .main_visual li .order_box ul li:before {
         content: "";
         display: block;
         width: 100%;
@@ -376,7 +376,7 @@ main .main_visual {
         border: 10px solid #eee;
         border-radius: 50%;
         z-index: 181; }
-      .main_visual li.mes .order_box ul li:after {
+      .main_visual li .order_box ul li:after {
         content: '';
         width: 100px;
         height: 100px;
@@ -397,6 +397,8 @@ footer {
     display: inline-block;
     margin-right: 10px;
     color: #fff; }
+    footer address ul li a {
+      color: #fff; }
     footer address ul li:after {
       content: '';
       display: inline-block;

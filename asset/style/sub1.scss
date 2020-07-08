@@ -293,23 +293,7 @@ main{
     li h2{
         font-size: 28px;
     }
-
-    li.cps{
-
-    }
-    li.modeler{
-
-    }
-    li.edge{
-
-    }
-    li.edukit{
-        
-    }
-    li.erp{
-
-    }
-    li.mes{
+    li{
         .text_box{
             padding: 0 40px;
             box-sizing: border-box;
@@ -534,6 +518,10 @@ footer{
             display: inline-block;
             margin-right: 10px;
             color: $white;
+
+            a {
+                color: $white;
+            }
 
             &:after{
                 content: '';
