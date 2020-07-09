@@ -1,9 +1,9 @@
 $color-pink: #ffdede;
-$color-blue: #6770ac;
+$color-blue: #3a79c0;
 $color-red: #ed1c24;
 $dim: rgba(0, 0, 0, .2);
 $white: #fff;
-$normal: #222;
+$normal: rgb(46, 46, 46);
 html{
     scroll-behavior: smooth;
 }
@@ -12,28 +12,13 @@ body{
     color: $normal;
     font-size: 18px;
     overflow-x:hidden;
-    background: #f1f1f1;
+    background: #fff;
 }
 .inner {
     width: 100%;
     max-width: 80vw;
     margin: 0 auto;
     box-sizing: border-box;
-}
-.img_box{
-    cursor: pointer;
-    overflow:hidden;
-}
-.img_box span{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%) scaleX(.96) scaleY(.9);
-    box-sizing: border-box;
-    border: 2px solid #eee;
 }
 .text_box{
     word-break: keep-all;
@@ -428,18 +413,20 @@ main .main_visual{
     }
 
     #business{
+        background: $white;
+        
         .box-container{
             min-height: 1100px;
             flex-direction: column;
-            justify-content: space-around;
 
             .box{
                 width: 100%;
                 min-height: 420px;
                 display: flex;
                 border: none;
-                justify-content: space-around;
+                flex-wrap: wrap;
                 margin: 100px 0; //ie
+                opacity: 0;
 
                 &:last-child{
                     margin-bottom: 0;
@@ -447,31 +434,15 @@ main .main_visual{
 
                 .img_box{
                     cursor: pointer;
-                    flex: 1;
+                    width: 100%;
                     min-width: 256px;
-                    min-height: 200px;
+                    min-height: 500px;
                     transition: all .8s;
                     position: relative;
-                    
-                    div{
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        transform: scale(1);
-                        background: #222;
-                        background-position: 20% 100%;
-                        background-size: cover;
-                    }
-
-                    &:hover div{
-                        transition: all .8s;
-                        transform: scale(1.2);
-                    }
+                    margin-bottom: 40px;
                 }
                 .text_box{
-                    flex: 1;
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
@@ -479,14 +450,14 @@ main .main_visual{
  
                     div{
                         h3{
-                            margin-bottom: 20px;
+                            margin-bottom: 10px;
                             text-transform: uppercase;
-                            padding: 0 40px;
+                            padding: 0 20px;
                             box-sizing: border-box;
                         }
 
                         p{
-                            padding: 0 40px;
+                            padding: 0 20px;
                             box-sizing: border-box;
                         }
                     }
@@ -498,11 +469,12 @@ main .main_visual{
                         text-align: center;
                         color: #fff;
                         background: #222;
-                        margin-left: 40px;
+                        margin-left: 20px;
+                        margin-top: 40px;
                         transition: all .4s;
 
                         &:hover{
-                            background: $color-red;
+                            background: $color-blue;
                         }
 
                         img{
@@ -519,16 +491,23 @@ main .main_visual{
                     order: -1;
                 }
 
-                &:last-child .img_box div{
-                    background: #222;
-                    background-position: 50% 50%;
+                &:first-child .img_box{
+                    background: url("../images/smart2.jpg") no-repeat;
+                    background-position: 100% 0;
                     background-size: cover;
+                }
+
+                &:last-child .img_box{
+                    background: url("../images/smart.jpg") no-repeat;
+                    background-position: 100% 100%;
+                    background-size: contain;
                 }
             }
         }
     }
 
     #solution{
+        background: #fff;
         .box-container{
             margin: 0 auto;
             display: flex;
@@ -536,38 +515,60 @@ main .main_visual{
             flex-wrap: wrap;
 
             .box{
+                cursor: pointer;
                 width: 450px;
-                height: 300px;
-                margin: 10px 20px;
+                height: 280px;
+                margin: 100px 20px;
                 text-align: center;
                 position: relative;
-                border: 1px solid #efefef;
+                border: none;
+
+                &:hover .link{
+                    background: $color-blue;
+                    transition: all .4s;
+                }
+
+                &:hover .link a{
+                    color: #fff;
+                }
+
+                &:hover .img_box:before{
+                    transition: all .4s;
+                    opacity: .1;
+                }
 
                 p{
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 600;
-                    height: 40px;
-                    background: $color-blue;
+                    height: 80px;
                     line-height: 40px;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
                     width: 100%;
-
-                    &:after{
-                        content: '';
+                    opacity: 0;
+                    font-size: 24px;
+                    
+                    span{
                         display: block;
-                        position: absolute;
-                        top: -20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        border-width: 10px;
-                        border-style: solid;
-                        border-color: transparent transparent $color-blue transparent;
+                        font-size: 18px;
+                        color: #666;
+                        font-weight: 500;
                     }
+                }
+                .link{
+                    width: 200px;
+                    height: 50px;
+                    margin: 20px auto;
+                    border: 1px solid #dcdcdc;
+                    overflow: hidden;
+                    font-size: 14px;
+                    line-height: 50px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
                     
                     a{
-                        color: $white;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        color: #555;
                     }
                 }
 
@@ -576,43 +577,73 @@ main .main_visual{
                     height: 100%;
                     margin: 0 auto;
                     position: relative;
+                    opacity: 0;
+                    margin-bottom: 20px;
+
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        line-height: 280px;
+                        position: absolute;
+                        font-family: 'Montserrat', sans-serif;
+                        top: 0;
+                        left: 0;
+                        color: #fff;
+                        font-weight: 600;
+                        z-index: 182;
+                        opacity: 0;
+                    }
+
+                    &:before{
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: $color-blue;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 181;
+                    }
                 
                 }
 
                 &:first-child{
                     background: url("../images/cps.png") no-repeat;
                     background-size: cover;
-                    background-position: 50% 100%;
+                    background-position: 50% 50%;
                 }
 
                 &:nth-child(2){
                     background: url("../images/modeler.png") no-repeat;
                     background-size: cover;
-                    background-position: 50% 100%;
+                    background-position: 50% 50%;
                 }
 
                 &:nth-child(3){
                     background: url("../images/edge.png") no-repeat;
                     background-size: cover;
-                    background-position: 50% 100%;
+                    background-position: 50% 50%;
                 }
 
                 &:nth-child(4){
                     background: url("../images/edukit.png") no-repeat;
                     background-size: cover;
-                    background-position: 50% 100%;
+                    background-position: 50% 50%;
                 }
 
                 &:nth-child(5){
                     background: url("../images/erp.png") no-repeat;
                     background-size: cover;
-                    background-position: 50% 100%;
+                    background-position: 50% 50%;
                 }
 
                 &:nth-child(6){
                     background: url("../images/mes.png") no-repeat;
                     background-size: cover;
-                    background-position: 50% 100%;
+                    background-position: 50% 50%;
                 }
 
             }
@@ -621,6 +652,10 @@ main .main_visual{
     }
 
     #company{
+        background-image: linear-gradient(transparent 41px, #eee 42px,transparent 12px),linear-gradient(90deg,transparent 41px,#eee 42px,transparent 12px);
+        background-size: 100% 42px,42px 100%;
+        padding-top: 75px;
+        padding-bottom: 0;
 
         .box-container{
             width: 100%;
@@ -634,7 +669,7 @@ main .main_visual{
                     content: '';
                     position: absolute;
                     width: 4px;
-                    background-color: $color-blue;
+                    background-color: #7ab5c4;
                     top: 0;
                     bottom: 0;
                     left: 50%;
@@ -645,8 +680,8 @@ main .main_visual{
                     padding: 10px 40px;
                     box-sizing: border-box;
                     position: relative;
-                    background-color: inherit;
                     width: 50%;
+                    background: $white;
 
                     &:after {
                         content: '';
@@ -655,7 +690,7 @@ main .main_visual{
                         height: 25px;
                         right: -17px;
                         background-color: $white;
-                        border: 4px solid $color-blue;
+                        border: 4px solid #7ab5c4;
                         top: 15px;
                         border-radius: 50%;
                         z-index: 182;
@@ -664,22 +699,24 @@ main .main_visual{
                     .time_content {
                         padding: 20px 30px;
                         box-sizing: border-box;
-                        background-color: white;
-                        box-shadow: 4px 4px 0 $color-blue, 8px 8px 4px #bbb;
+                        box-shadow: 2px 2px 0 #efefef, 4px 4px 4px #bbb;
                         border: 1px solid #efefef;
                         position: relative;
 
                         h2{
                             font-family: 'Montserrat', sans-serif;
+                            font-size: 24px;
+                            font-weight: 600;
                         }
 
                         p{
-                            font-weight: 600;
                             line-height: 2;
+                            font-size: 18px;
+                            font-weight: 400;
 
                             strong{
                                 display: block;
-                                font-weight: 800;
+                                font-weight: 600;
                             }
 
                             span{
@@ -703,7 +740,7 @@ main .main_visual{
                         right: 28px;
                         border-style: solid;
                         border-width: 10px 0 10px 10px;
-                        border-color: transparent transparent transparent $color-blue;
+                        border-color: transparent transparent transparent #7ab5c4;
                     }
                 }
                     
@@ -720,7 +757,7 @@ main .main_visual{
                         left: 30px;
                         border-style: solid;
                         border-width: 10px 10px 10px 0;
-                        border-color: transparent $color-blue transparent transparent;
+                        border-color: transparent #7ab5c4 transparent transparent;
                         
                     }
 
@@ -750,22 +787,93 @@ main .main_visual{
 
                     h4{
                         text-align: left;
+                        opacity: 0;
+                    }
+
+                    p{
+                        margin:20px 0;
+                        opacity: 0;
+
+                        b{
+                            font-style: italic;
+                        }
                     }
                 }
+            }
+        }
+        .hello_uvc{
+            width:100%;
+            height: auto;
+            min-height: 500px;
+            position: relative;
+            background: url("../images/web_banner_UVC.jpg") no-repeat;
+            background-position: 10% 50%;
+            background-size: cover;
+            opacity: 0;
+
+            .important_link{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            &:after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 181;
+                background: rgba(0, 0, 0, 0);
+            }
+
+            .hello_text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: right;
+                padding-right:10vw;
+                box-sizing: border-box;
+                z-index: 182;
                 
-                .img_box{
-                    background: #222;
-                    outline: 1px solid #ddd;
-                    flex: 1;
-                    min-height: 400px;
+                h3{
+                    font-size: 80px;
+                    font-weight: 800;
+                    font-family: 'Montserrat', sans-serif;
+                    color: #7ab5c4;
+                    text-shadow: 4px 4px 0 #053150;
+                    margin: 100px 0 20px;
+                }
+    
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #053150;
+                    line-height: 1.8;
+                    letter-spacing: -2px;
+                    text-shadow: 2px 2px 0 $white;
+
+                    em{
+                        display: inline-block;
+                        font-size: 18px;
+                        color: #7ab5c4;
+                        font-family: 'Montserrat', sans-serif;
+                        margin-top: 40px;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
     }
 
-    #about{
+    section#about{
+        background: #eee;
+
         .box-container {
-            min-height: 600px;
 
             .box{
                 cursor: pointer;
@@ -964,19 +1072,9 @@ footer{
 @media only screen and (max-width:1024px){
 
     #content #business .box-container .box{
-        flex-direction: column;
-        min-height: 720px;
 
-        .text_box{
-            justify-content: space-around;
-            flex: .5;
-            div p{
-                word-break: normal;
-            }
-        }
-
-        &:last-child .text_box{
-            order: 1;
+        &:last-child .img_box{
+            min-height: 200px;
         }
     }
 
@@ -1034,19 +1132,55 @@ footer{
         .container.right {
             left: 0;
         }
+    }
+    #content #company .hello_uvc {
+        
+        .hello_text{
+        padding-left: 10vw;
+        word-break: keep-all;
+        
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+                font-family: 'Montserrat', sans-serif;
+                color: #7ab5c4;
+                text-shadow: 4px 4px 0 #053150;
+                margin: 100px 0 20px;
+            }
 
+            p{
+                font-size: 20px;
+                font-weight: 600;
+                color: #053150;
+                line-height: 2;
+                letter-spacing: -2px;
+            }
+        }
     }
 }
 
 @media only screen and (min-width:481px) and (max-width:640px){
+    .section_head h3{
+        letter-spacing: -.5px;
+        word-break: keep-all;
+        font-size: 20px;
+    }
     /*모바일*/
     .main_visual .main_inner .slide-controls .slick-dots li{
         display: block;
         width: 100%;
     }
+    #content #company .hello_uvc{
+        background-position: 20% 50%;
+    }
 }
 
 @media only screen and (min-width:320px) and (max-width:480px){
+    .section_head h3{
+        letter-spacing: -.5px;
+        word-break: keep-all;
+        font-size: 20px;
+    }
     /*모바일에서 제일 작은 크기*/
     .inner{
         width: 100%;
@@ -1055,5 +1189,13 @@ footer{
     .main_visual .main_inner .slide-controls .slick-dots li{
         width: 100%;
         display: block;
+    }
+    #content #company .hello_uvc{
+        background-position: 20% 50%;
+
+        .hello_text h3{
+            font-size: 32px;
+            margin-top: 40px;
+        }
     }
 }

@@ -31,23 +31,27 @@ $(window).scroll(function(){
 	if(wScroll >= cont.eq(0).offset().top - $(window).height()/2 ){
 		cont.eq(0).addClass("show");
 		$('#business.show .section_head').animate({opacity:1}, 600);
-		$('#business.show .box-container').animate({opacity:1}, 1000);
+		$('#business.show .box-container').animate({opacity:1}, 800);
+		$('#business.show .box-container .box').animate({opacity:1}, 1000);
 	}
 	if(wScroll >= cont.eq(1).offset().top - $(window).height()/2 ){
 		cont.eq(1).addClass("show");
 		$('#solution.show .section_head').animate({opacity:1}, 600);
-		$('#solution.show .box-container').animate({opacity:1}, 1000);
+		$('#solution.show .box-container').delay(1000).animate({opacity:1}, 1000);
 	}
 	if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){
 		for (var n = 0; n < 6; n++) {
-			$('#solution.show .box-container .box').eq(n).find('span').delay(n*100).animate({opacity:1}, 1200);
-			$('#solution.show .box-container .box').eq(n).find('p').delay(n*100).animate({opacity:1}, 1200);
+			$('#solution.show .box-container .box').eq(n).find('div').delay(n*300).animate({opacity:1}, 800);
+			$('#solution.show .box-container .box').eq(n).find('p').delay(n*300).animate({opacity:1}, 1000);
 		};
 	}
 	if(wScroll >= cont.eq(2).offset().top - $(window).height()/2 ){
 		cont.eq(2).addClass("show");
 		$('#company.show .section_head').animate({opacity:1}, 600);
 		$('#company.show .box-container').animate({opacity:1}, 1000);
+		$('#company.show .box-container .box .text_box h4').delay(1000).animate({opacity:1}, 600);
+		$('#company.show .box-container .box .text_box p').delay(1000).animate({opacity:1}, 600);
+		$('#company.show .hello_uvc').delay(1000).animate({opacity:1}, 600);
 	}
 	if(wScroll >= cont.eq(3).offset().top - $(window).height()/2 ){
 		cont.eq(3).addClass("show");
