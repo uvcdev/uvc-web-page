@@ -17,6 +17,14 @@ $(document).ready(function(){
 			return '<a class="pager__item">'+title+'</a>';
 		}
 	});
+
+	$("#business > .inner > .box-container > .box").slick({
+		fade: true,
+		infinite: true,
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 6000
+	});
 });
 
 var cont = $("#content > section");
