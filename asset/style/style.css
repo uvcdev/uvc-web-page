@@ -297,96 +297,66 @@ main .main_visual {
 
 #content #business {
   background: #fff; }
-  #content #business .box-container .box {
-    width: 100%;
-    min-height: 420px;
-    border: none;
-    opacity: 0; }
-    #content #business .box-container .box:last-child {
-      margin-bottom: 0; }
-    #content #business .box-container .box button {
-      display: block;
-      width: 60px;
-      height: 60px;
-      border: solid 6px #999;
-      border-radius: 100%;
-      transition: all .2s linear;
-      color: transparent;
-      background: #fff; }
-      #content #business .box-container .box button:before, #content #business .box-container .box button:after {
-        content: "";
-        position: absolute;
-        width: 35%;
-        height: 10%;
-        top: 41%;
-        left: 55%;
-        background: #999;
-        z-index: 2;
-        transform: translate(-50%, -50%) rotate(45deg);
-        transition: all .2s linear; }
-      #content #business .box-container .box button:after {
-        z-index: 3;
-        top: 59%;
-        left: 55%;
-        transform: translate(-50%, -50%) rotate(-45deg); }
-      #content #business .box-container .box button:hover {
-        border: solid 8px #777; }
-        #content #business .box-container .box button:hover:after, #content #business .box-container .box button:hover:before {
-          background: #777; }
-      #content #business .box-container .box button:active {
-        border: solid 8px #111; }
-        #content #business .box-container .box button:active:after, #content #business .box-container .box button:active:before {
-          background: #111; }
-    #content #business .box-container .box button.slick-arrow {
-      position: absolute;
-      top: 50%; }
-    #content #business .box-container .box button.slick-arrow.slick-prev {
-      transform: rotate(180deg);
-      left: 10%;
-      z-index: 182; }
-    #content #business .box-container .box button.slick-arrow.slick-next {
-      right: 10%;
-      z-index: 182; }
-    #content #business .box-container .box .slide_box {
-      width: 100%;
-      height: 700px;
-      box-sizing: border-box; }
-      #content #business .box-container .box .slide_box .img_box {
+  #content #business .box-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    #content #business .box-container .box {
+      cursor: pointer;
+      width: 35vw;
+      height: 500px;
+      margin: 10px;
+      border: none;
+      opacity: 0;
+      box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.2), 4px 4px 10px rgba(0, 0, 0, 0.2);
+      position: relative; }
+      #content #business .box-container .box:hover .text_box {
+        opacity: 1;
+        visibility: visible;
+        height: 50%; }
+      #content #business .box-container .box .img_box {
         width: 100%;
-        height: auto;
-        min-height: 500px;
+        height: 100%;
         background: url("../images/smart2.jpg") no-repeat;
         background-size: contain;
         background-position: 50% 50%; }
-      #content #business .box-container .box .slide_box:nth-child(2) .img_box {
+      #content #business .box-container .box:nth-child(2) .img_box {
         background: url("../images/smart.jpg") no-repeat;
         background-size: contain;
         background-position: 50% 50%; }
-      #content #business .box-container .box .slide_box .text_box div h3 {
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        padding: 0 10px;
-        box-sizing: border-box; }
-      #content #business .box-container .box .slide_box .text_box div p {
-        padding: 0 10px;
-        box-sizing: border-box; }
-      #content #business .box-container .box .slide_box .text_box a {
-        display: block;
-        width: 200px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        color: #fff;
-        background: #222;
-        margin: 20px 0 20px 10px;
-        transition: all .4s; }
-        #content #business .box-container .box .slide_box .text_box a:hover {
-          background: #7ab5c4; }
-        #content #business .box-container .box .slide_box .text_box a img {
-          vertical-align: middle;
-          margin-left: 10px; }
-      #content #business .box-container .box .slide_box:first-child .text_box {
-        text-align: left; }
+      #content #business .box-container .box .text_box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all .4s ease-in-out;
+        background: rgba(255, 255, 255, 0.9); }
+        #content #business .box-container .box .text_box div h3 {
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          padding: 0 10px;
+          box-sizing: border-box; }
+        #content #business .box-container .box .text_box div p {
+          padding: 0 10px;
+          box-sizing: border-box;
+          font-weight: 500; }
+        #content #business .box-container .box .text_box a {
+          display: block;
+          width: 100px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: #fff;
+          background: #222;
+          margin: 20px 0 20px 10px;
+          transition: all .4s; }
+          #content #business .box-container .box .text_box a:hover {
+            background: #7ab5c4; }
 
 #content #solution {
   background: #fff; }
@@ -557,7 +527,7 @@ main .main_visual {
         font-weight: 600;
         color: #053150;
         line-height: 1.8;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         text-shadow: 2px 2px 0 #fff; }
         #content #company .hello_uvc .hello_text p em {
           display: inline-block;
@@ -704,6 +674,17 @@ footer {
     word-break: keep-all; } }
 
 @media only screen and (max-width: 1024px) {
+  #content #business .box-container .box {
+    width: 100%; }
+    #content #business .box-container .box .img_box {
+      background-size: cover; }
+    #content #business .box-container .box:nth-child(2) .img_box {
+      background-size: cover; }
+  #content #solution .box-container .box p {
+    font-size: 20px; }
+    #content #solution .box-container .box p span {
+      font-size: 16px;
+      letter-spacing: -1px; }
   #content #company .box-container .box {
     flex-direction: column; }
     #content #company .box-container .box .text_box {
@@ -720,12 +701,6 @@ footer {
     min-height: 0; } }
 
 @media only screen and (max-width: 768px) {
-  #content #business .box-container {
-    flex-flow: column wrap;
-    justify-content: start;
-    align-items: center; }
-    #content #business .box-container .box {
-      width: 100%; }
   #content #solution .box-container {
     flex-flow: column wrap;
     align-items: center; }
@@ -741,7 +716,7 @@ footer {
       text-shadow: 4px 4px 0 #053150;
       margin: 100px 0 20px; }
     #content #company .hello_uvc .hello_text p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       color: #053150;
       line-height: 2;
@@ -771,6 +746,8 @@ footer {
   .main_visual .main_inner .slide-controls .slick-dots li {
     width: 100%;
     display: block; }
+  #content #business .box-container .box:hover .text_box {
+    height: 100%; }
   #content #company .hello_uvc {
     background-position: 20% 50%; }
     #content #company .hello_uvc .hello_text h3 {

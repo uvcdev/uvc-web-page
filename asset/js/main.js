@@ -18,13 +18,13 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#business > .inner > .box-container > .box").slick({
-		fade: true,
-		infinite: true,
-		arrows: true,
-		autoplay: true,
-		autoplaySpeed: 6000
-	});
+	// $("#business > .inner > .box-container > .box").slick({
+	// 	fade: true,
+	// 	infinite: true,
+	// 	arrows: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 6000
+	// });
 });
 
 var cont = $("#content > section");
