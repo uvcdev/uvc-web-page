@@ -437,14 +437,14 @@ main .main_visual{
                 .img_box{
                     width: 100%;
                     height: 100%;
-                    background: url("../images/smart2.jpg") no-repeat;
+                    background: url("../images/smart.jpg") no-repeat;
                     background-size: contain;
                     background-position: 50% 50%;
                 }
 
                 &:nth-child(2){
                     .img_box{
-                        background: url("../images/smart.jpg") no-repeat;
+                        background: url("../images/smart.png") no-repeat;
                         background-size: contain;
                         background-position: 50% 50%;
                     }
@@ -822,19 +822,19 @@ main .main_visual{
                 }
 
                 .building:before{
-                    background: url(../images/company.png) no-repeat;
+                    background: url("../images/company.png") no-repeat;
                     background-size: cover;
                     background-position: 100% 100%;
                 }
 
                 .car:before{
-                    background: url(../images/car.png) no-repeat;
+                    background: url("../images/car.png") no-repeat;
                     background-size: cover;
                     background-position: 100% 100%;
                 }
 
                 .subway:before{
-                    background: url(../images/subway.png) no-repeat;
+                    background: url("../images/subway.png") no-repeat;
                     background-size: cover;
                     background-position: 100% 100%;
                 }
@@ -949,9 +949,11 @@ footer{
 
             .img_box{
                 background-size: cover;
+                background-position: 0% 100%;
             }
             &:nth-child(2) .img_box{
                 background-size: cover;
+                background-position: 100% 100%;
             }
         }
     }
