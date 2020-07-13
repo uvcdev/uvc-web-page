@@ -10,6 +10,7 @@ body {
   background: #fff; }
 
 .inner {
+  outline: 10px solid yellowgreen;
   width: 100%;
   max-width: 80vw;
   margin: 0 auto;
@@ -304,7 +305,7 @@ main .main_visual {
     #content #business .box-container .box {
       cursor: pointer;
       width: 35vw;
-      height: 500px;
+      height: 22vw;
       margin: 10px;
       border: none;
       opacity: 0;
@@ -318,11 +319,11 @@ main .main_visual {
         width: 100%;
         height: 100%;
         background: url("../images/smart.jpg") no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: 50% 50%; }
       #content #business .box-container .box:nth-child(2) .img_box {
-        background: url("../images/smart.png") no-repeat;
-        background-size: contain;
+        background: url("../images/smart2.jpg") no-repeat;
+        background-size: cover;
         background-position: 50% 50%; }
       #content #business .box-container .box .text_box {
         position: absolute;
@@ -456,15 +457,18 @@ main .main_visual {
   padding-bottom: 0; }
   #content #company .box-container {
     width: 100%; }
+    #content #company .box-container .section_head.diagram {
+      padding: 0; }
     #content #company .box-container .box {
       border: none;
       width: 100%;
-      margin: 30px 0; }
+      display: flex;
+      flex-flow: row wrap; }
       #content #company .box-container .box .text_box {
+        flex: 1;
         padding: 0 40px;
         box-sizing: border-box; }
         #content #company .box-container .box .text_box h3 {
-          text-align: center;
           font-size: 20px; }
         #content #company .box-container .box .text_box h4 {
           text-align: left;
@@ -474,14 +478,124 @@ main .main_visual {
           opacity: 0; }
           #content #company .box-container .box .text_box p b {
             font-style: italic; }
-    #content #company .box-container .box.cer {
-      width: 100%;
-      display: flex;
-      min-height: 400px; }
-      #content #company .box-container .box.cer .img_box {
-        flex: 1; }
-        #content #company .box-container .box.cer .img_box img {
-          height: auto; }
+      #content #company .box-container .box .cer {
+        width: 30vw;
+        display: flex; }
+        #content #company .box-container .box .cer .img_box {
+          flex: 1; }
+          #content #company .box-container .box .cer .img_box img {
+            height: auto; }
+      #content #company .box-container .box .text_box.ceo {
+        text-align: left;
+        margin-bottom: 40px; }
+    #content #company .box-container .box.diabox {
+      line-height: 180px;
+      color: #fff;
+      background: #7ab5c4;
+      padding: 40px 0; }
+      #content #company .box-container .box.diabox div {
+        outline: 4px solid red;
+        cursor: pointer;
+        height: 180px;
+        position: relative;
+        overflow: hidden; }
+        #content #company .box-container .box.diabox div:hover:before {
+          opacity: 0;
+          top: 50%; }
+        #content #company .box-container .box.diabox div:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 50%;
+          height: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 183; }
+        #content #company .box-container .box.diabox div:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: rgba(255, 255, 255, 0.5);
+          z-index: 182;
+          opacity: 0;
+          transition: all .4s; }
+    #content #company .box-container .box.device {
+      justify-content: space-around;
+      text-align: center; }
+      #content #company .box-container .box.device .circle {
+        width: 180px;
+        border-radius: 50%;
+        font-size: 16px;
+        letter-spacing: -1px; }
+        #content #company .box-container .box.device .circle:before {
+          border-radius: 50%; }
+        #content #company .box-container .box.device .circle:nth-child(1) {
+          margin-top: 100px; }
+          #content #company .box-container .box.device .circle:nth-child(1):after {
+            background: url("../images/phone.svg") no-repeat;
+            background-size: contain; }
+        #content #company .box-container .box.device .circle:nth-child(2):after {
+          background: url("../images/goggles.svg") no-repeat;
+          background-size: contain; }
+        #content #company .box-container .box.device .circle:nth-child(3) {
+          margin-top: 100px; }
+          #content #company .box-container .box.device .circle:nth-child(3):after {
+            background: url("../images/tablet.svg") no-repeat;
+            background-size: contain;
+            transform: translate(-50%, -50%) rotate(90deg); }
+    #content #company .box-container .box.cad {
+      justify-content: center;
+      text-align: center; }
+      #content #company .box-container .box.cad .rec {
+        width: 800px;
+        height: 360px;
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        letter-spacing: -1px; }
+        #content #company .box-container .box.cad .rec:after {
+          width: 100%;
+          height: 100%;
+          background: url("../images/cad_ebom.png") no-repeat;
+          background-size: cover; }
+    #content #company .box-container .box.space {
+      justify-content: center;
+      text-align: center; }
+      #content #company .box-container .box.space .rec {
+        width: 800px;
+        height: 360px;
+        font-size: 16px;
+        letter-spacing: -1px; }
+        #content #company .box-container .box.space .rec:after {
+          width: 100%;
+          height: 100%; }
+    #content #company .box-container .box.service {
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 40px; }
+      #content #company .box-container .box.service .circle {
+        width: 180px;
+        border-radius: 50%;
+        font-size: 16px;
+        letter-spacing: -1px; }
+        #content #company .box-container .box.service .circle:before {
+          border-radius: 50%; }
+        #content #company .box-container .box.service .circle:nth-child(1):after {
+          background: url("../images/maintenance.svg") no-repeat;
+          background-size: contain; }
+        #content #company .box-container .box.service .circle:nth-child(2) {
+          margin-top: 100px; }
+          #content #company .box-container .box.service .circle:nth-child(2):after {
+            background: url("../images/global.svg") no-repeat;
+            background-size: contain; }
+        #content #company .box-container .box.service .circle:nth-child(3):after {
+          background: url("../images/brain.svg") no-repeat;
+          background-size: contain; }
   #content #company .hello_uvc {
     width: 100%;
     height: auto;
@@ -675,32 +789,40 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   #content #business .box-container .box {
-    width: 100%; }
+    width: 80vw;
+    height: 50vw; }
     #content #business .box-container .box .img_box {
       background-size: cover;
       background-position: 0% 100%; }
     #content #business .box-container .box:nth-child(2) .img_box {
       background-size: cover;
-      background-position: 100% 100%; }
+      background-position: 50% 100%; }
   #content #solution .box-container .box p {
     font-size: 20px; }
     #content #solution .box-container .box p span {
       font-size: 16px;
       letter-spacing: -1px; }
-  #content #company .box-container .box {
-    flex-direction: column; }
-    #content #company .box-container .box .text_box {
-      padding: 0;
-      text-align: left; }
-      #content #company .box-container .box .text_box h4 {
-        margin-bottom: 20px; }
-      #content #company .box-container .box .text_box p {
-        margin-bottom: 20px; }
-    #content #company .box-container .box .img_box {
-      min-height: 400px;
-      margin-bottom: 40px; }
+  #content #company .box-container .box .text_box {
+    padding: 0;
+    text-align: left; }
+    #content #company .box-container .box .text_box h4 {
+      margin-bottom: 20px; }
+    #content #company .box-container .box .text_box p {
+      margin-bottom: 20px; }
   #content #company .box-container .box.cer .img_box {
-    min-height: 0; } }
+    min-height: 0; }
+  #content #company .box-container .box.device .circle {
+    width: 12vw;
+    height: 12vw; }
+  #content #company .box-container .box.cad .rec {
+    width: 12vw;
+    height: 8vw; }
+  #content #company .box-container .box.space .rec {
+    width: 24vw;
+    height: 8vw; }
+  #content #company .box-container .box.service .circle {
+    width: 12vw;
+    height: 12vw; } }
 
 @media only screen and (max-width: 768px) {
   #content #solution .box-container {
@@ -722,7 +844,23 @@ footer {
       font-weight: 600;
       color: #053150;
       line-height: 2;
-      letter-spacing: -2px; } }
+      letter-spacing: -2px; }
+  #content #company .box-container .box.device .circle {
+    width: 18vw;
+    height: 18vw; }
+    #content #company .box-container .box.device .circle:nth-child(1), #content #company .box-container .box.device .circle:nth-child(3) {
+      margin-top: 50px; }
+  #content #company .box-container .box.cad .rec {
+    width: 12vw;
+    height: 8vw; }
+  #content #company .box-container .box.space .rec {
+    width: 24vw;
+    height: 8vw; }
+  #content #company .box-container .box.service .circle {
+    width: 18vw;
+    height: 18vw; }
+    #content #company .box-container .box.service .circle:nth-child(2) {
+      margin-top: 50px; } }
 
 @media only screen and (min-width: 481px) and (max-width: 640px) {
   .section_head h3 {
@@ -748,8 +886,17 @@ footer {
   .main_visual .main_inner .slide-controls .slick-dots li {
     width: 100%;
     display: block; }
-  #content #business .box-container .box:hover .text_box {
-    height: 100%; }
+  #content #business .box-container .box {
+    height: 70vw; }
+    #content #business .box-container .box .text_box a {
+      height: 30px;
+      line-height: 30px; }
+    #content #business .box-container .box:hover .text_box {
+      height: 100%; }
+      #content #business .box-container .box:hover .text_box h3 {
+        font-size: 18px; }
+      #content #business .box-container .box:hover .text_box p {
+        font-size: 16px; }
   #content #company .hello_uvc {
     background-position: 20% 50%; }
     #content #company .hello_uvc .hello_text h3 {

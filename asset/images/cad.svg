@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="540" viewBox="0 0 600 540">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #6a944a;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #af3333;
+      }
+
+      .cls-4 {
+        font-size: 36px;
+        fill: #fff;
+        font-family: "YiSunShin Dotum B";
+      }
+    </style>
+  </defs>
+  <path id="모양_1_복사_2" data-name="모양 1 복사 2" class="cls-1" d="M105,170h6V391h-6V170Zm0,103.453v-6h59v6H105Zm0,119v-6h59v6H105Z"/>
+  <path id="모양_1_복사_3" data-name="모양 1 복사 3" class="cls-2" d="M363,174h6V395h-6V174Zm0,103.453v-6h59v6H363Zm0,119v-6h59v6H363Z"/>
+  <path id="모서리가_둥근_직사각형_1" data-name="모서리가 둥근 직사각형 1" class="cls-1" d="M44.244,92.776H257.238a10,10,0,0,1,10,10v61.608a10,10,0,0,1-10,10H44.244a10,10,0,0,1-10-10V102.776A10,10,0,0,1,44.244,92.776Z"/>
+  <rect id="모서리가_둥근_직사각형_1_복사" data-name="모서리가 둥근 직사각형 1 복사" class="cls-3" x="151.156" y="226.656" width="162.032" height="81.594" rx="10" ry="10"/>
+  <path id="모서리가_둥근_직사각형_1_복사_2" data-name="모서리가 둥근 직사각형 1 복사 2" class="cls-1" d="M161.031,333.313H303.079a10,10,0,0,1,10,10v61.625a10,10,0,0,1-10,10H161.031a10,10,0,0,1-10-10V343.313A10,10,0,0,1,161.031,333.313Z"/>
+  <path id="모서리가_둥근_직사각형_1_복사_3" data-name="모서리가 둥근 직사각형 1 복사 3" class="cls-2" d="M310.244,92.776H523.238a10,10,0,0,1,10,10v61.608a10,10,0,0,1-10,10H310.244a10,10,0,0,1-10-10V102.776A10,10,0,0,1,310.244,92.776Z"/>
+  <rect id="모서리가_둥근_직사각형_1_복사_3-2" data-name="모서리가 둥근 직사각형 1 복사 3" class="cls-3" x="417.156" y="226.656" width="162.032" height="81.594" rx="10" ry="10"/>
+  <path id="모서리가_둥근_직사각형_1_복사_3-3" data-name="모서리가 둥근 직사각형 1 복사 3" class="cls-2" d="M427.031,333.313H569.079a10,10,0,0,1,10,10v61.625a10,10,0,0,1-10,10H427.031a10,10,0,0,1-10-10V343.313A10,10,0,0,1,427.031,333.313Z"/>
+  <text id="Assembly_A" data-name="Assembly A" class="cls-4" x="54" y="142">Assembly A</text>
+  <text id="Part_A" data-name="Part A" class="cls-4" x="177" y="278">Part A</text>
+  <text id="Part_A_복사_2" data-name="Part A 복사 2" class="cls-4" x="445" y="278">Part A</text>
+  <text id="Part_B" data-name="Part B" class="cls-4" x="182" y="384">Part B</text>
+  <text id="Part_B-2" data-name="Part B" class="cls-4" x="447" y="381">Part B</text>
+  <text id="Assembly_A-2" data-name="Assembly A" class="cls-4" x="320" y="142">Assembly A</text>
+</svg>
