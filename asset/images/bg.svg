@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="800" viewBox="0 0 1920 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #777;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-59" y="-62" width="1087" height="927" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="3.939" dy="0.695" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="7.874"/>
+      <feFlood result="flood" flood-opacity="0.27"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="사각형_1_복사" data-name="사각형 1 복사" class="cls-1" d="M960,720V80L1920,0V800Z"/>
+  <path id="사각형_1" data-name="사각형 1" class="cls-2" d="M0,720V80L960,0V800Z"/>
+</svg>
