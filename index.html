@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UVC | Smart Factory using OPC UA</title> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap">
     <link rel="stylesheet" href="asset/style/basic.css">
     <link rel="stylesheet" href="asset/style/slick.css">
+    <link rel="stylesheet" href="asset/style/aos.css">
     <link rel="stylesheet" href="asset/style/style.css">
 </head>
 <body>
@@ -81,15 +82,16 @@
                     </div>
                 </div>
             </section>
-            <div class="main_inner">
-                <div class="slide-controls"></div>
-            </div>
+            <div class="slide-controls"></div>
         </div>
         <div id="content">
             <section id="business">
                 <div class="inner">
                     <div class="section_head">
                         <h2>스마트팩토리 국제 표준 기술을 확보한 UVC 사업</h2>
+                        <p>
+                            섹션 헤드에 대한 설명을 입력하세요
+                        </p>
                     </div>
                     <div class="box-container">
                         <div class="box">
@@ -115,6 +117,9 @@
                 <div class="inner">
                     <div class="section_head">
                         <h2>기술적 문제 대응에 특화된 UVC 솔루션</h2>
+                        <p>
+                            섹션 헤드에 대한 설명을 입력하세요
+                        </p>
                     </div>
                     <div class="box-container">
                         <div class="box">
@@ -150,34 +155,50 @@
                 <div class="bg_rec"></div>
                 <div class="bg_gold"></div>
                 <div class="section_head">
-                    <h2>국제 표준 CPS 원천기술 보유기업 UVC<br/><b>3D분야 프로젝트 확대</b></h2>
+                    <h2>국제 표준 CPS 원천기술 보유기업 UVC <b>3D분야 프로젝트 확대</b></h2>
+                    <p>
+                        섹션 헤드에 대한 설명을 입력하세요
+                    </p>
                 </div>
                 <div class="box-container">
                     <div class="box">
                         <div class="text_box con">
                             <ul class="con_slide">
-                                <li class="vr">
+                                <li class="sh">
                                     <div></div>
                                     <section>
-                                        <h3>3D 쇼룸</h3>
+                                        <h3>3D AR/VR/MR 협업</h3>
                                     </section>
                                 </li>
-                                <li class="go">
+                                <li class="ho">
                                     <div></div>
+                                    <section>
+                                        <h3>3D AR 고글</h3>
+                                    </section>
                                 </li>
                                 <li class="mo">
                                     <div></div>
+                                    <section>
+                                        <h3>모바일 AR 랜더링</h3>
+                                    </section>
                                 </li>
                                 <li class="idea">
                                     <div></div>
+                                    <section>
+                                        <h3>모니터링 이데아</h3>
+                                    </section>
                                 </li>
-                                <li class="co">
+                                <li class="re">
                                     <div></div>
+                                    <section>
+                                        <h3>VR 랜더링</h3>
+                                    </section>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div><!--box-container-->
+                <div class="happy"></div>
             </section>
             <section id="about">
                 <div class="inner">
@@ -215,7 +236,7 @@
                 <ul>
                     <li>UVC</li>
                     <li>대표 이사: 조규종</li>
-                    <li>경기도 안양시 동안구 시민대로248번길 25, 404호(안양창조산업진흥원)</li>
+                    <li>경기도 안양시 동안구 시민대로248번길 25, 404호(안양창조산업진흥원)</li><br/>
                     <li>TEL: (031) 346 - 5497</li>
                     <li>Email: <a href="mailto:joshua@uvc.co.kr">joshua@uvc.co.kr</a></li>
                 </ul>
@@ -225,6 +246,7 @@
     </footer>
     <script src="asset/js/jquery-3.3.1.min.js"></script>
     <script src="asset/js/slick.min.js"></script>
+    <script src="asset/js/aos.js"></script>
     <script src="asset/js/header_footer.js"></script>
     <script src="asset/js/main.js"></script>
     <script>
@@ -249,6 +271,11 @@
 
         exports.initMap = initMap;
       })((this.window = this.window || {}));
+
+      //aos
+      AOS.init({
+        duration: 1200
+      })
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEBTwdJE0cvs2SbWMwanqTP1tIXlY9weM&callback=initMap&libraries=&v=weekly"></script>   
 </body>
