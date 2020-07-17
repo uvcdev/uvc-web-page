@@ -1,5 +1,5 @@
 $color-pink: #ffdede;
-$color-blue: #75A5CA;
+$color-blue: #7576ca;
 $color-red: #ed1c24;
 $dim: rgba(0, 0, 0, .2);
 $dimd: rgba(255, 255, 255, .4);
@@ -12,7 +12,7 @@ html{
 body{
     font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic, sans-serif;
     color: $normal;
-    font-size: 18px;
+    font-size: 15px;
     overflow-x:hidden;
     background: $white;
 }
@@ -26,6 +26,7 @@ body{
     word-break: keep-all;
     line-height: 2;
 }
+/*header*/
 #header {
     position:fixed;
     top:0; 
@@ -255,7 +256,7 @@ body{
         background: $normal;
     }
 }
-
+/*main_visual*/
 main .main_visual{
     width: 100%;
     height: 100vh;
@@ -302,7 +303,6 @@ main .main_visual{
                         width: 100%;
                         font-size: 70px;
                         color: #fff;
-                        font-weight: 500;
                         padding: 20px 0;
                         text-shadow: 2px 2px 0 rgb(100, 100, 100),
                                      4px 4px 0 rgb(100, 100, 100);
@@ -374,6 +374,7 @@ main .main_visual{
             box-sizing: border-box !important;
             margin: 0 auto;
             text-align: center;
+            word-break: keep-all;
 
             h2{
                 max-width: 70vw;
@@ -381,14 +382,19 @@ main .main_visual{
                 line-height: 1;
                 font-size: 30px;
                 margin: 0 auto;
+            
+                b{
+                    font-weight: bold;
+                }
             }
             p{
-                max-width: 80vw;;
+                max-width: 80vw;
                 font-weight: 400;
                 line-height: 2;
-                font-size: 18px;
+                font-size: 15px;
                 padding: 20px 0;
                 margin: 0 auto;
+
             }
         }
 
@@ -402,7 +408,7 @@ main .main_visual{
             }
         }
     }
-
+/*business*/
     #business{
         background-size: cover;
         background-position: 50% 50%;
@@ -418,27 +424,84 @@ main .main_visual{
                 justify-content: space-around;
                 cursor: pointer;
                 border: 1px solid $white;
-                box-shadow: 15px 15px 20px 0 rgba(0,0,0,.15);
-                background: $dimd;
+
+                //box 두번째 줄의 text box
+                &:nth-child(2){
+                    .text_box:first-child{
+                        flex: 2;
+                    }
+                    .text_box:last-child{
+                        flex: 1;
+                    }
+                    
+                }
 
                 .text_box{
-                    flex: 2;
+                    height: 300px;
+                    flex: 1;
                     padding: 20px;
                     box-sizing: border-box;
+                    box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
+
+                    &:hover div p, &:hover div a{
+                        opacity: 1;
+                        transition: all .4s;
+                    }
+
+                    //box text box의 공통사항
+                    &:first-child{
+                        flex: 1;
+                        margin-right: 40px;
+                    }
+
+                    &:last-child{
+                        flex: 2;
+                    }
+
+                    h3{
+                        margin-bottom: 10px;
+                        box-sizing: border-box;
+                        color: $white;
+
+                        b{
+                            font-family: 'Titillium Web', sans-serif;
+                            font-weight: 700;
+                        }
+                    }
 
                     div{
-                        h3{
-                            margin-bottom: 10px;
-                            text-transform: uppercase;
-                            padding: 0 10px;
-                            box-sizing: border-box;
-                            color: $normal;
+                        width: 100%;
+                        height: 50%;
+                        
+                        p{
+                            opacity: 0;
+                            color: $white;
+                        }
+                        a{
+                            opacity: 0;
+                            color: $white;
                         }
                     }
                 }
-                .img_box{
-                    background: #ffdede;
-                    flex: 1;
+                .b1{
+                    background: url("../images/b1_2.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                }
+                .b2{
+                    background: url("../images/b2.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                }
+                .b3{
+                    background: url("../images/b3.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: 50% 30%;
+                }
+                .b4{
+                    background: url("../images/b4.jpg")no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
                 }
             }
             .box:nth-child(2){
@@ -446,7 +509,7 @@ main .main_visual{
             }
         }
     }
-
+/*solution*/
     #solution{
         padding-bottom: 80px;
         background: #000;
@@ -542,7 +605,7 @@ main .main_visual{
             }
         }
     }
-
+/*company*/
     #company{
         padding-bottom: 0;
         background: $white;
@@ -556,8 +619,13 @@ main .main_visual{
             h2{
                 color: $normal;
                 position: relative;
-                letter-spacing: -.5px;
-                line-height: 2;
+                letter-spacing: -1px;
+                line-height: 1.4;
+                font-weight: 400;
+                
+                b{
+                    font-weight: bold;
+                }
 
                 &:before{
                     content:"";
@@ -617,7 +685,7 @@ main .main_visual{
                             border-radius: 50%;
                             position: absolute;
                             transform: translateY(-50%);
-                            top: 45%;
+                            top: 40%;
                             z-index: 182;
                             //background-image: linear-gradient(to right top, #6795da, #00b6f4, #00d2d8, #00e58c, #a8eb12);
                             box-shadow: 15px 15px 20px 0 rgba(0,0,0,.15);
@@ -664,9 +732,11 @@ main .main_visual{
                                 background: $white;
                                 box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
                                 h3{
+                                    font-family: 'Titillium Web', sans-serif;
                                     color: $normal;
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     text-align: center;
+                                    font-weight: 700;
                                 }
                             }
                         }
@@ -712,13 +782,74 @@ main .main_visual{
         }
         .happy{
             width: 100%;
-            height: 600px;
-            background: url("../images/happy_work_place.jpg")no-repeat;
+            height: 500px;
+            background: url("../images/happy_work_place.jpg")no-repeat fixed;
             background-size: cover;
             background-position: 50% 50%;
+
+            .box-container{
+                position: relative;
+                .box{
+                    width: 30vw;
+                    height: 400px;
+                    background: $white;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10%;
+                    padding: 40px;
+                    box-sizing: border-box;
+
+                    .text_box{
+                        h2{
+                            font-family: 'Titillium Web', sans-serif;
+                            line-height: 1.4;
+                        }
+                        p{
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 1.7;
+                            padding-top: 14px;
+                        }
+                        a{
+                            border: 1px solid $normal;
+                            padding: 8px 48px;
+                            display: inline-block;
+                            font-size: 14px;
+                            color: $normal;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            z-index: 182;
+
+                            &:after{
+                                content:"";
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 0;
+                                height: 100%;
+                                background: $normal;
+                                transition: width .25s;
+                                z-index: -1;
+                            }
+
+                            &:hover{
+                                color: #fff;
+
+                                &:after{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-
+/*about*/
     #about{
         padding-top: 0;
         padding-bottom: 0;
@@ -728,14 +859,14 @@ main .main_visual{
             }
         }
 
+        #googleMap{
+            width:100%;
+            height:400px;
+            box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
+        }
+
         .box-container {
             padding-bottom: 50px;
-
-            #googleMap{
-                width:100%;
-                height:400px;
-                box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
-            }
 
             .box{
                 cursor: pointer;
@@ -747,13 +878,11 @@ main .main_visual{
                    width: 100%;
 
                     dt{
-                        font-weight: 600;
-                        font-size: 20px;
+                        font-size: 18px;
                     }
 
                     dd{
-                        font-weight: 400;
-                        font-size: 16px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -767,7 +896,7 @@ main .main_visual{
                     position: relative;
                     margin-top: 30px;
                     box-shadow: 0 8px 10px 0 rgba(0,0,0,.15);
-                    background: $dimd;
+                    background: transparent;
                     box-sizing: border-box;
 
                     &:before{
@@ -843,11 +972,11 @@ main .main_visual{
         }
     }
 }
-
+/*footer*/
 footer{
-    font-size: 16px;
+    font-size: 15px;
     background: $normal;
-    padding: 30px;
+    padding: 40px;
     box-sizing: border-box;
     color: $white;
 
@@ -864,7 +993,7 @@ footer{
                 content: '';
                 display: inline-block;
                 width: 1px;
-                height: 16px;
+                height: 15px;
                 background: #bbb;
                 margin-left: 10px;
             }
@@ -928,6 +1057,10 @@ footer{
             right: 30px;
         }
     }
+    #content #company .happy .box-container .box{
+        width: 40vw;
+    }
+    
 }
 @media only screen and (min-width: 1181px) and (max-width: 1239px){
     #content #solution .box-container .box{
@@ -946,6 +1079,10 @@ footer{
             right: 10px;
         }
     }
+    #content #company .happy .box-container .box{
+        width: 40vw;
+    }
+    
 }
 
 @media only screen and (max-width: 1180px){
@@ -1015,6 +1152,14 @@ footer{
             right: 0;
         }
     }
+    #content #company .happy .box-container .box{
+        width: 40vw;
+        .text_box{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
 }
 
 
@@ -1052,10 +1197,28 @@ footer{
             right: 10px;
         }
     }
+    #content #company .happy .box-container .box{
+        .text_box{
+            h2{
+                font-size: 30px;
+                letter-spacing: -1px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
     /*아이패드*/
+    #content #business .box-container .box{
+        flex-flow: column wrap;
+        margin: 0 !important;
+        
+        .text_box{
+            margin: 10px 0 !important;
+            flex: none;
+        }
+
+    }
     #content #solution .box-container .box {
         min-width: 256.3px;
         min-height: 220px;
@@ -1070,6 +1233,15 @@ footer{
             right: 10px;
             h3{
                 font-size: 16px;
+            }
+        }
+    }
+    #content #company .happy .box-container .box{
+        width: 50vw;
+        .text_box{
+            h2{
+                font-size: 30px;
+                letter-spacing: -1px;
             }
         }
     }
@@ -1104,6 +1276,25 @@ footer{
             right: 0;
         }
     }
+    #content #company .happy {
+        height: 400px;
+        .box-container {
+            .box{
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                transform: translateY(0);
+                padding: 0 40px;
+                .text_box{
+                    h2{
+                        font-size: 30px;
+                        letter-spacing: -1px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:480px){
@@ -1114,11 +1305,6 @@ footer{
     .main_visual .main_inner .slide-controls .slick-dots li{
         width: 100%;
         display: block;
-    }
-    #content #business .box-container{
-        .box{
-            height: 70vw;
-        }
     }
     #content #solution .box-container{
         justify-content: center;

@@ -53,12 +53,6 @@ $(document).ready(function(){
 	});
 });
 
-var cont = $("#content > section");
-var target = $(this);
-var index = target.index();
-var section = cont.eq(index);
-var offset = section.offset().top;
-
 /*main visual*/
 $('.text_wrap h3').mouseover(function(){
 	$('.slide_text').css({"background":"rgba(0, 0, 0, .6)"}, 600);
