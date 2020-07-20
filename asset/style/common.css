@@ -74,7 +74,6 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 #header.on .mNav div { background: #222; }
 
 /*footer*/
-/*footer*/
 footer { font-size: 15px; background: #222; padding: 40px; box-sizing: border-box; color: #fff; }
 
 footer address ul li { display: inline-block; margin-right: 10px; }
