@@ -1,12 +1,17 @@
 .sub_visual{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 .visual_bg{
-    background: url("../images/share.jpg")no-repeat;
+    background: url("../images/solution.jpg")no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
+}
+.tab_menu{
+    position: sticky;
+    width: 100%;
+    height: 70px;
 }
