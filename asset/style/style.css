@@ -149,11 +149,19 @@ main .main_visual .slide-controls .slick-dots li.slick-active a { font-weight: 8
 
 #content #business .box-container .box .b1 { background: url("../images/b1.jpg") no-repeat; background-size: cover; background-position: 50% 50%; flex: 2; margin-right: 40px; }
 
+#content #business .box-container .box .b1:hover { background: linear-gradient(180deg, rgba(0, 0, 0, 0.44), transparent 80%, transparent), url("../images/b1.jpg") no-repeat; background-size: cover; background-position: 50% 50%; box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3); }
+
 #content #business .box-container .box .b2 { background: url("../images/b2.jpg") no-repeat; background-size: cover; background-position: 50% 50%; flex: 1; }
+
+#content #business .box-container .box .b2:hover { background: linear-gradient(180deg, rgba(0, 0, 0, 0.44), transparent 80%, transparent), url("../images/b2.jpg") no-repeat; background-size: cover; background-position: 50% 50%; box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3); }
 
 #content #business .box-container .box .b3 { background: url("../images/b3.jpg") no-repeat; background-size: cover; background-position: 50% 30%; flex: 1; }
 
+#content #business .box-container .box .b3:hover { background: linear-gradient(180deg, rgba(0, 0, 0, 0.44), transparent 80%, transparent), url("../images/b3.jpg") no-repeat; background-size: cover; background-position: 50% 50%; box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3); }
+
 #content #business .box-container .box .b4 { background: url("../images/b4.jpg") no-repeat; background-size: cover; background-position: 50% 50%; flex: 2; margin-left: 40px; }
+
+#content #business .box-container .box .b4:hover { background: linear-gradient(180deg, rgba(0, 0, 0, 0.44), transparent 80%, transparent), url("../images/b4.jpg") no-repeat; background-size: cover; background-position: 50% 50%; box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3); }
 
 #content #business .box-container .box:nth-child(2) { margin: 40px 0 0; }
 
