@@ -16,6 +16,7 @@ body{
     font-size: 15px;
     overflow-x:hidden;
     background: $white;
+    font-weight: 400;
 }
 .inner {
     width: 100%;
@@ -108,7 +109,6 @@ body{
                     width: 100%;
                     opacity: 1;
                 }
-
             }
         }
         .util_menu{
@@ -229,6 +229,36 @@ body{
         background: $normal;
     }
 }
+
+/*main*/
+.section_head{
+    padding: 80px 0 40px;
+    box-sizing: border-box !important;
+    margin: 0 auto;
+    text-align: center;
+    word-break: keep-all;
+    h2{
+        max-width: 70vw;
+        font-weight: 500;
+        line-height: 1;
+        font-size: 30px;
+        margin: 0 auto;
+        font-family: 'Noto Sans KR', sans-serif;
+        b{
+            font-weight: bold;
+            font-family: 'Titillium Web', sans-serif;
+        }
+    }
+    p{
+        max-width: 80vw;
+        font-weight: 400;
+        line-height: 2;
+        font-size: 15px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+}
+
 
 /*footer*/
 footer{

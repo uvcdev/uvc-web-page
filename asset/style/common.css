@@ -2,7 +2,7 @@
 /*공통 css*/
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
-body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic, sans-serif; color: #222; font-size: 15px; overflow-x: hidden; background: #fff; }
+body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic, sans-serif; color: #222; font-size: 15px; overflow-x: hidden; background: #fff; font-weight: 400; }
 
 .inner { width: 100%; max-width: 80vw; margin: 0 auto; box-sizing: border-box; }
 
@@ -72,6 +72,15 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 #header.on .lang span:after { border-color: #222 transparent transparent transparent; }
 
 #header.on .mNav div { background: #222; }
+
+/*main*/
+.section_head { padding: 80px 0 40px; box-sizing: border-box !important; margin: 0 auto; text-align: center; word-break: keep-all; }
+
+.section_head h2 { max-width: 70vw; font-weight: 500; line-height: 1; font-size: 30px; margin: 0 auto; font-family: 'Noto Sans KR', sans-serif; }
+
+.section_head h2 b { font-weight: bold; font-family: 'Titillium Web', sans-serif; }
+
+.section_head p { max-width: 80vw; font-weight: 400; line-height: 2; font-size: 15px; padding: 20px 0; margin: 0 auto; }
 
 /*footer*/
 footer { font-size: 15px; background: #222; padding: 40px; box-sizing: border-box; color: #fff; }
