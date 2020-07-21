@@ -405,15 +405,14 @@ main .main_visual{
             }
         }
     }
-/*company*/
-    #company{
+/*rnd*/
+    #rnd{
         padding-bottom: 0;
         background: $white;
         box-shadow: none;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-
         .section_head{
             display: inline-block;
             h2{
@@ -575,6 +574,12 @@ main .main_visual{
                 }
             }
         }
+    }
+
+/*company*/
+    #company{
+        padding: 0;
+        box-shadow: none;
         .happy{
             width: 100%;
             height: 500px;
@@ -594,6 +599,7 @@ main .main_visual{
                     right: 10%;
                     padding: 40px;
                     box-sizing: border-box;
+                    border: none;
 
                     .text_box{
                         h2{
@@ -613,8 +619,8 @@ main .main_visual{
                             font-size: 14px;
                             color: $normal;
                             position: absolute;
-                            bottom: 0;
-                            left: 0;
+                            bottom: 40px;
+                            left: 40px;
                             z-index: 182;
 
                             &:after{
@@ -781,7 +787,7 @@ main .main_visual{
             }
         }
     }
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         div  {
             width: 300px;
         }
@@ -803,7 +809,7 @@ main .main_visual{
             width: 100%;
         }
     }
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         div  {
             width: 280px;
         }
@@ -831,7 +837,7 @@ main .main_visual{
             height: 200px;
         }
     }
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         height: 300px;
         div  {
             width: 240px;
@@ -876,7 +882,7 @@ main .main_visual{
         }
     }
 
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         height: 300px;
         div  {
             width: 260px;
@@ -913,7 +919,7 @@ main .main_visual{
         min-width: 256.3px;
         min-height: 220px;
     }
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         height: 330px;
         div  {
             width: 80%;
@@ -957,7 +963,7 @@ main .main_visual{
             height: 160px;
         }
     }
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         div  {
             width: 320px;
             height: 240px;
@@ -999,7 +1005,7 @@ main .main_visual{
     #content #solution .box-container{
         justify-content: center;
     }
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         height: 280px;
         margin-bottom: 80px;
         div  {
@@ -1013,7 +1019,7 @@ main .main_visual{
     }
 }
 @media only screen and (max-width:360px){
-    #content #company .box-container .box .text_box.con .con_slide.slick-slider li{
+    #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li{
         height: 200px;
         div  {
             width: 100%;

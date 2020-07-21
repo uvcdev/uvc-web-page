@@ -25,7 +25,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner nav .gnb li:first-child a { padding-left: 0px; }
 
-.headerWrap .inner nav .gnb li a { display: block; width: 140px; margin: 0 auto; text-align: center; color: #fff; }
+.headerWrap .inner nav .gnb li a { display: block; width: 110px; margin: 0 auto; text-align: center; color: #fff; }
 
 .headerWrap .inner nav .gnb li a span { position: relative; display: block; }
 
