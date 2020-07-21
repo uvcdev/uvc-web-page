@@ -1,5 +1,55 @@
-.sub_visual { width: 100%; height: 600px; }
+/*main_visual (sub_visual)*/
+.sub_visual { width: 100%; }
 
-.visual_bg { background: url("../images/solution.jpg") no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; width: 100%; height: 100%; }
+.visual_bg { background: url("../images/solution.jpg") no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; width: 100%; height: 450px; }
 
-.tab_menu { position: sticky; width: 100%; height: 70px; }
+/*tab_menu*/
+.sub_visual nav { position: relative; }
+
+.sub_visual nav .tab_menu { width: 100%; height: 50px; line-height: 50px; position: absolute; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.6); border: 1px solid #bbb; border-left: none; border-right: none; }
+
+.sub_visual nav .tab_menu ul li { float: left; width: 150px; text-align: center; position: relative; border: 1px solid #bbb; border-top: none; border-bottom: none; box-sizing: border-box; }
+
+.sub_visual nav .tab_menu ul li span { color: #fff; }
+
+.sub_visual nav .tab_menu ul li a { color: #fff; display: block; width: 100%; height: 100%; }
+
+.sub_visual nav .tab_menu ul li.tab_list { position: relative; cursor: pointer; box-sizing: border-box; }
+
+.sub_visual nav .tab_menu ul li.tab_list:after { content: ""; display: block; position: absolute; top: 50%; right: 4px; transform: translateY(-50%); border-style: solid; border-width: 5px; border-color: #fff transparent transparent transparent; }
+
+.sub_visual nav .tab_menu ul li.tab_list ul { border: none; display: none; position: absolute; top: 50px; left: 0; width: 100%; background: rgba(0, 0, 0, 0.6); }
+
+.sub_visual nav .tab_menu ul li.tab_list ul li { width: 100%; }
+
+/*main*/
+main section { padding: 80px 0; }
+
+main section .box-container { padding-bottom: 80px; }
+
+main section .box-container .box { display: flex; flex-flow: row wrap; }
+
+main section .box-container .box .img_box { min-height: 300px; flex: 1; background: url("../images/mes_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
+main section .box-container .box .img_box.erp { background: url("../images/erp_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
+main section .box-container .box .text_box.head { flex: 1; }
+
+main section .box-container .box .text_box.head b { font-family: 'Titillium Web', sans-serif; }
+
+main section .box-container .box .text_box.head h2 { display: inline-block; }
+
+main section .box-container .box .text_box.head h2 span { display: block; font-size: 20px; }
+
+main section .dl_box { width: 100%; display: flex; flex-flow: row wrap; }
+
+main section .dl_box dl { flex: 1; padding: 40px; margin: 0 10px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15); box-sizing: border-box; }
+
+main section .dl_box dl dt { font-size: 22px; margin-bottom: 40px; font-weight: 700; }
+
+main section .dl_box dl dd { font-size: 16px; margin: 20px 0; letter-spacing: -1px; }
+
+@media only screen and (max-width: 768px) { main section .box-container .box .img_box { flex: none; width: 100%; height: 400px; }
+  main section .box-container .box .text_box { flex: none; padding: 0 40px; }
+  main section .dl_box { flex-flow: column wrap; }
+  main section .dl_box dl { flex: none; margin: 10px 0; } }

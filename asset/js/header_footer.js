@@ -8,11 +8,11 @@ $(document).ready(function(){
 	}); //hover기능은 로드가 전부 되지 않았을때 반대로 되는 경우가 있음
 	
 	$('#header').mouseover(function(){
-		$('.logo').attr("src","asset/images/uvc_logo_nav.png");
+		$('.logo').attr("src","https://github.com/uvcdev/uvc-web-page/blob/master/asset/images/uvc_logo_nav.png?raw=true");
 	});
 
 	$('#header').mouseleave(function(){
-		$('.logo').attr("src","asset/images/uvc_logo_foot.png");
+		$('.logo').attr("src","https://github.com/uvcdev/uvc-web-page/blob/master/asset/images/uvc_logo_foot.png?raw=true");
 	})
 
     /*유틸메뉴 언어선택*/
