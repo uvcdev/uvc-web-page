@@ -499,7 +499,7 @@ main .main_visual{
                         li{
                             cursor: grab;
                             height: 400px;
-                            margin: 0 20px 80px;
+                            margin: 0 20px;
                             transition: all .8s;
                             position: relative;
 
@@ -578,7 +578,7 @@ main .main_visual{
 
 /*company*/
     #company{
-        padding: 0;
+        padding: 80px 0 0;
         box-shadow: none;
         .happy{
             width: 100%;
