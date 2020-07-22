@@ -26,7 +26,7 @@
         <div class="headerWrap">
             <div class="inner">
                 <h1>
-                    <a href="#">
+                    <a href="../../index.html">
                         <img class="logo" src="../../asset/images/uvc_logo_foot.png" alt="UVC"/>
                         <span class="blind">UVC</span>
                     </a>
@@ -64,25 +64,6 @@
     <main>
         <div class="sub_visual">
             <div class="visual_bg"></div>
-            <nav>
-                <div class="tab_menu">
-                    <ul class="inner">
-                        <li class="tab_list">
-                            <span>Flexing ERP</span>
-                            <ul>
-                                <li><a href="#"><span>Flexing CPS</span></a></li>
-                                <li><a href="#"><span>OPC UA Modeler</span></a></li>
-                                <li><a href="#"><span>Flexing EDGE</span></a></li>
-                                <li><a href="#"><span>Flexing Edu kit</span></a></li>
-                                <li style="background: #7576ca"><a href="#"><span style="color: #fff;">Flexing ERP</span></a></li>
-                                <li><a href="../mes/index.html"><span>Flexing MES</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="sub_list"><a href="#"><span>솔루션</span></a></li>
-                        <li class="home"><a href="../../index.html"><img src="../../asset/images/home.svg" alt="홈으로 가기"></a></li>
-                    </ul>
-                </div>
-            </nav>
         </div><!--sub_visual-->
         <section id="mes">
             <div class="inner">
@@ -171,6 +152,26 @@
         $('.tab_list').click(function(){
             $(this).find('ul').slideToggle(400);
         });
+
+        /*$('.tab_menu').addClass('original').clone().insertAfter('.tab_menu').addClass('cloned').css('position','fixed').css('top','70px').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+        scrollIntervalID = setInterval(stickIt, 10);
+
+        function stickIt() {
+        var orgElementPos = $('.original').offset();
+        orgElementTop = orgElementPos.top;               
+
+            if ($(window).scrollTop() >= (orgElementTop)) {   
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;  
+                widthOrgElement = orgElement.css('width');
+                $('.cloned').css('left',leftOrgElement+'px').css('top','70px').css('width',widthOrgElement).show();
+                $('.original').css('visibility','hidden');
+            } else {
+                $('.cloned').hide();
+                $('.original').css('visibility','visible');
+            }
+        }*/
     </script>
 </body>
 </html>
