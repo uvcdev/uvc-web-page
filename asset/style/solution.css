@@ -1,31 +1,49 @@
+body { letter-spacing: -.5px; }
+
+dd { word-break: keep-all; }
+
 /*main_visual (sub_visual)*/
 .sub_visual { width: 100%; }
 
-.visual_bg { background: url("../images/solution.jpg") no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; width: 100%; height: 450px; }
+.visual_bg { background: url("../images/solution.jpg") no-repeat; background-size: cover; background-position: 50% 20%; width: 100%; height: 450px; }
 
 /*tab_menu*/
 .sub_visual nav { position: relative; }
 
-.sub_visual nav .tab_menu { width: 100%; height: 50px; line-height: 50px; position: absolute; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.6); border: 1px solid #bbb; border-left: none; border-right: none; }
+.sub_visual nav .tab_menu { width: 100%; height: 60px; line-height: 60px; position: absolute; bottom: -60px; left: 0; background: #7576ca; }
 
-.sub_visual nav .tab_menu ul li { float: left; width: 150px; text-align: center; position: relative; border: 1px solid #bbb; border-top: none; border-bottom: none; box-sizing: border-box; }
+.sub_visual nav .tab_menu ul li { text-align: center; float: right; position: relative; box-sizing: border-box; padding: 0 20px; }
 
-.sub_visual nav .tab_menu ul li span { color: #fff; }
+.sub_visual nav .tab_menu ul li span { color: #fff; font-size: 16px; letter-spacing: -1px; }
 
-.sub_visual nav .tab_menu ul li a { color: #fff; display: block; width: 100%; height: 100%; }
+.sub_visual nav .tab_menu ul li a { color: #222; display: block; width: 100%; height: 100%; }
 
-.sub_visual nav .tab_menu ul li.tab_list { position: relative; cursor: pointer; box-sizing: border-box; }
+.sub_visual nav .tab_menu ul li.home { position: relative; }
 
-.sub_visual nav .tab_menu ul li.tab_list:after { content: ""; display: block; position: absolute; top: 50%; right: 4px; transform: translateY(-50%); border-style: solid; border-width: 5px; border-color: #fff transparent transparent transparent; }
+.sub_visual nav .tab_menu ul li.home img { width: 25px; height: 25px; vertical-align: middle; }
 
-.sub_visual nav .tab_menu ul li.tab_list ul { border: none; display: none; position: absolute; top: 50px; left: 0; width: 100%; background: rgba(0, 0, 0, 0.6); }
+.sub_visual nav .tab_menu ul li.home:after { content: ""; background: url("../images/arrow.svg") no-repeat; background-size: contain; background-position: 50% 50%; display: block; position: absolute; top: 50%; transform: translateY(-50%); right: 0; width: 15px; height: 15px; }
 
-.sub_visual nav .tab_menu ul li.tab_list ul li { width: 100%; }
+.sub_visual nav .tab_menu ul li.sub_list { position: relative; }
+
+.sub_visual nav .tab_menu ul li.sub_list:after { content: ""; background: url("../images/arrow.svg") no-repeat; background-size: contain; background-position: 50% 50%; display: block; position: absolute; top: 50%; transform: translateY(-50%); right: 0; width: 15px; height: 15px; }
+
+.sub_visual nav .tab_menu ul li.tab_list { padding: 0 60px 0 20px; position: relative; cursor: pointer; box-sizing: border-box; }
+
+.sub_visual nav .tab_menu ul li.tab_list span { text-align: right; }
+
+.sub_visual nav .tab_menu ul li.tab_list:after { content: ""; display: block; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); border-style: solid; border-width: 5px; border-color: #fff transparent transparent transparent; }
+
+.sub_visual nav .tab_menu ul li.tab_list ul { display: none; position: absolute; top: 60px; left: 0; width: 100%; background: #fff; border: 1px solid #bbb; }
+
+.sub_visual nav .tab_menu ul li.tab_list ul li { width: 100%; height: 60px; overflow: hidden; text-align: left; }
+
+.sub_visual nav .tab_menu ul li.tab_list ul li span { color: #222; }
 
 /*main*/
 main section { padding: 80px 0; }
 
-main section .box-container { padding-bottom: 80px; }
+main section .box-container { padding-top: 80px; }
 
 main section .box-container .box { display: flex; flex-flow: row wrap; }
 
@@ -37,9 +55,25 @@ main section .box-container .box .text_box.head { flex: 1; }
 
 main section .box-container .box .text_box.head b { font-family: 'Titillium Web', sans-serif; }
 
-main section .box-container .box .text_box.head h2 { display: inline-block; }
+main section .box-container .box .text_box.head h2 { display: inline-block; padding-bottom: 40px; }
 
 main section .box-container .box .text_box.head h2 span { display: block; font-size: 20px; }
+
+main section .box-container .box .text_box.head h3 { font-size: 18px; font-weight: 500; letter-spacing: -.5px; }
+
+main section .info_box .box { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; }
+
+main section .info_box .box .img_box { flex: 1.5; min-height: 400px; background: url("../images/info_mes.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
+main section .info_box .box .img_box.erp { background: url("../images/info_erp.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
+main section .info_box .box .text_box { flex: 1; }
+
+main section .info_box .box .text_box dl { text-align: center; margin: 80px 0; }
+
+main section .info_box .box .text_box dl dt { letter-spacing: -.5px; font-size: 20px; font-weight: 600; }
+
+main section .info_box .box .text_box dl dd { letter-spacing: -1px; }
 
 main section .dl_box { width: 100%; display: flex; flex-flow: row wrap; }
 
@@ -51,5 +85,11 @@ main section .dl_box dl dd { font-size: 16px; margin: 20px 0; letter-spacing: -1
 
 @media only screen and (max-width: 768px) { main section .box-container .box .img_box { flex: none; width: 100%; height: 400px; }
   main section .box-container .box .text_box { flex: none; padding: 0 40px; }
+  main section .info_box .box .img_box { order: -1; flex: none; width: 100%; height: auto; }
+  main section .info_box .box .text_box { display: flex; flex-flow: column wrap; align-content: center; justify-content: center; }
+  main section .info_box .box .text_box dl { min-height: 150px; margin: 10px; }
   main section .dl_box { flex-flow: column wrap; }
   main section .dl_box dl { flex: none; margin: 10px 0; } }
+
+@media only screen and (max-width: 480px) { .sub_visual nav .tab_menu ul li.sub_list { display: none; }
+  main section .info_box .box .img_box { min-height: 200px; } }
