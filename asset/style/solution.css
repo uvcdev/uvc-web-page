@@ -59,6 +59,6 @@ main section .dl_box dl dd { font-size: 16px; margin: 20px 0; letter-spacing: -1
   main section .box-container .box .text_box { flex: none; padding: 0 40px; }
   main section .info_box .box .img_box { order: -1; flex: none; width: 100%; height: auto; }
   main section .info_box .box .text_box { display: flex; flex-flow: column wrap; align-content: center; justify-content: center; }
-  main section .info_box .box .text_box dl { min-height: 150px; margin: 10px; }
+  main section .info_box .box .text_box dl { min-height: 220px; text-align: left; margin: 10px; }
   main section .dl_box { flex-flow: column wrap; }
   main section .dl_box dl { flex: none; margin: 10px 0; } }
