@@ -81,9 +81,11 @@ main {
                 flex-flow: row wrap;
                 justify-content: center;
                 align-items: center;
-                .img_box.mes{
+                .img_box{
                     flex: 1.5;
                     min-height: 400px;
+                }
+                .img_box.mes{
                     background: url("../images/info_mes.png") no-repeat;
                     background-size: contain;
                     background-position: 50% 50%;
@@ -203,9 +205,6 @@ main {
 }
 
 @media only screen and (max-width:480px){
-    main section .info_box .box .img_box{
-        min-height: 200px;
-    }
 }
 @media only screen and (max-width:360px){
 }

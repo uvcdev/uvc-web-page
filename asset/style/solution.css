@@ -62,5 +62,3 @@ main section .dl_box dl dd { font-size: 16px; margin: 20px 0; letter-spacing: -1
   main section .info_box .box .text_box dl { min-height: 150px; margin: 10px; }
   main section .dl_box { flex-flow: column wrap; }
   main section .dl_box dl { flex: none; margin: 10px 0; } }
-
-@media only screen and (max-width: 480px) { main section .info_box .box .img_box { min-height: 200px; } }
