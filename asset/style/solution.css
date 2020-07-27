@@ -33,7 +33,9 @@ main section .box-container .box .text_box.head h3 { font-size: 18px; font-weigh
 
 main section .info_box .box { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; }
 
-main section .info_box .box .img_box.mes { flex: 1.5; min-height: 400px; background: url("../images/info_mes.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+main section .info_box .box .img_box { flex: 1.5; min-height: 400px; }
+
+main section .info_box .box .img_box.mes { background: url("../images/info_mes.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
 main section .info_box .box .img_box.erp { background: url("../images/info_erp.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
