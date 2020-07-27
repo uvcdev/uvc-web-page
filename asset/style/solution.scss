@@ -36,6 +36,8 @@ main {
                 .img_box{
                     min-height: 300px;
                     flex: 1;
+                }
+                .img_box.mes{
                     background: url("../images/mes_solution.png")no-repeat;
                     background-size: contain;
                     background-position: 50% 50%;
@@ -45,6 +47,12 @@ main {
                     background-size: contain;
                     background-position: 50% 50%;
                 }
+                .img_box.modeler{
+                    background: url("../images/modeler_solution.png")no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                }
+                
 
                 .text_box.head{
                     flex: 1;
@@ -73,7 +81,7 @@ main {
                 flex-flow: row wrap;
                 justify-content: center;
                 align-items: center;
-                .img_box{
+                .img_box.mes{
                     flex: 1.5;
                     min-height: 400px;
                     background: url("../images/info_mes.png") no-repeat;

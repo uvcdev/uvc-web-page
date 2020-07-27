@@ -13,9 +13,13 @@ main section { padding: 80px 0; }
 
 main section .box-container .box { display: flex; flex-flow: row wrap; }
 
-main section .box-container .box .img_box { min-height: 300px; flex: 1; background: url("../images/mes_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+main section .box-container .box .img_box { min-height: 300px; flex: 1; }
+
+main section .box-container .box .img_box.mes { background: url("../images/mes_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
 main section .box-container .box .img_box.erp { background: url("../images/erp_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
+main section .box-container .box .img_box.modeler { background: url("../images/modeler_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
 main section .box-container .box .text_box.head { flex: 1; }
 
@@ -29,7 +33,7 @@ main section .box-container .box .text_box.head h3 { font-size: 18px; font-weigh
 
 main section .info_box .box { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; }
 
-main section .info_box .box .img_box { flex: 1.5; min-height: 400px; background: url("../images/info_mes.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+main section .info_box .box .img_box.mes { flex: 1.5; min-height: 400px; background: url("../images/info_mes.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
 main section .info_box .box .img_box.erp { background: url("../images/info_erp.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
