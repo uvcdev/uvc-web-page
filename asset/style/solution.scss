@@ -1,6 +1,6 @@
 $gray: #bbb;
 $color-blue: #7576ca;
-$dim: rgba(0, 0, 0, .4);
+$dim: rgba(0, 0, 0, .8);
 $dimd: rgba(255, 255, 255, .4);
 $white: #fff;
 $normal: #222;
@@ -19,7 +19,6 @@ dd{
     background: url("../images/solution.jpg")no-repeat;
     background-size: cover;
     background-position: 50% 20%;
-    //background-attachment: fixed;
     width: 100%;
     height: 450px;
     box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
@@ -30,6 +29,7 @@ main {
     section{
         padding: 80px 0;
         .box-container{
+            margin-bottom: 80px;
             .box{
                 display: flex;
                 flex-flow: row wrap;
@@ -47,13 +47,21 @@ main {
                     background-size: contain;
                     background-position: 50% 50%;
                 }
+                .img_box.edu{
+                    background: url("../images/edu.png")no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                }
+                .img_box.edge{
+                    background: url("../images/edge_solution.png") no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                }
                 .img_box.modeler{
                     background: url("../images/modeler_solution.png")no-repeat;
                     background-size: contain;
                     background-position: 50% 50%;
                 }
-                
-
                 .text_box.head{
                     flex: 1;
                     b{
@@ -61,7 +69,6 @@ main {
                     }
                     h2{
                         display: inline-block;
-                        padding-bottom: 40px;
                         span{
                             display: block;
                             font-size: 20px;
@@ -82,7 +89,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 .img_box{
-                    flex: 1.5;
+                    flex: 2;
                     min-height: 400px;
                 }
                 .img_box.mes{
@@ -95,20 +102,442 @@ main {
                     background-size: contain;
                     background-position: 50% 50%;
                 }
+                .img_box.edu{
+                    .exp-container{
+                        display: flex;
+                        flex-flow: row wrap;
+                        .exp{
+                        width: 100%;
+                            height: 300px;
+                            background: url("../../asset/images/edu_exp.png") no-repeat;
+                            background-size: contain;
+                            background-position: 50% 50%;
+                            position: relative;
+
+                            .more{
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50% 50% 50% 0;
+                                background: linear-gradient(to bottom, rgb(250, 122, 87), rgb(208, 8, 5));
+                                margin: -20px 0 0 -20px;
+                                cursor: pointer;
+                            }
+                            .more_dash{
+                                position: absolute;
+                                transform: rotate(-45deg) translateX(-50%);
+                                left: 50%;
+                                top: 5%;
+                                animation: moredash 2s ease-in-out;
+                                animation-iteration-count: infinite;
+                            }
+                            .more_arms{
+                                position: absolute;
+                                transform: rotate(-45deg) translateX(-50%) translateY(-50%);
+                                left: 50%;
+                                top: 50%;
+                                animation: morearms 2s ease-in-out;
+                                animation-iteration-count: infinite;
+                            }
+                            #dash_modal{
+                                width: 100%;
+                                height: 100%;
+                                display: none;
+                                position: fixed;
+                                z-index: 100;
+                                top: 0;
+                                left: 0;
+                                background: $dim;
+                                animation: fadeIn .6s linear;
+                                overflow: hidden;
+                            }
+                            #arms_modal{
+                                width: 100%;
+                                height: 100%;
+                                display: none;
+                                position: fixed;
+                                z-index: 100;
+                                top: 0;
+                                left: 0;
+                                background: $dim;
+                                animation: fadeIn .6s linear;
+                                overflow: hidden;
+                            }
+                            .modal_contents{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 50vw;
+                                height: 60vh;
+                                background: #fff;
+                                animation: slideIn .6s linear;
+
+                                .modal_header{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 50px;
+                                    background: $normal;
+
+                                    .modal_closed{
+                                        width: 50px;
+                                        height: 50px;
+                                        float: right;
+                                        position: relative;
+                                        cursor: pointer;
+
+                                        .bar1, .bar2{
+                                            width: 30px;
+                                            height: 3px;
+                                            background: $white;
+                                            display: inline-block;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                        }
+                                        .bar1{
+                                            transform: translate(-50%) rotate(-45deg);
+                                        }
+                                        .bar2{
+                                            transform: translate(-50%) rotate(45deg);
+                                        }
+                                    }
+                                }
+                                .dash{
+                                    background: $gray;
+                                    color: $normal;
+                                    text-align: center;
+                                    position: relative;
+                                    top: 50px;
+                                }
+                                .arms{
+                                    background: $gray;
+                                    color: $normal;
+                                    text-align: center;
+                                    position: relative;
+                                    top: 50px;
+                                }
+                            }
+                        }
+                        .exp_info{
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
                 .text_box{
                     flex: 1;
                     dl{
-                        text-align: center;
-                        margin: 80px 0;
-
+                        text-align: right;
+                        width: 100%;
+                        height: 130px;
+                        padding: 0 10px;
+                        box-sizing: border-box;
                         dt{
                             letter-spacing: -.5px;
                             font-size: 20px;
                             font-weight: 600;
                         }
-
                         dd{
                             letter-spacing: -1px;
+                        }
+                    }
+                }
+                .text_box.right{
+                    dl{
+                        text-align: left;
+                    }
+                }
+                .text_box.edu{
+                    flex: 2;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    div{
+                        width: 50%;
+                        p{
+                            width: 100%;
+                            height: 200px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            flex-flow: row wrap;
+
+                            b{
+                                flex: 2;
+                                font-size: 17px;
+                                letter-spacing: -1px; 
+                                font-weight: 600;
+                            }
+                            span{
+                                margin: 0 20px;
+                                flex: 1;
+                                display: inline-block;
+                                img{
+                                    min-width: 40px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+                .diagram-container{
+                    background: rgba(0, 0, 0, .05);
+                    padding: 20px;
+                    font-family: 'Titillium Web', sans-serif;
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 40px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 800;
+                    position: relative;
+
+                    .diagram_head{
+                        position: absolute;
+                        top: -50px;
+                        right: 20px;
+                        display: inline-block;
+                        height: 50px;
+                        padding: 0 20px;
+                        background: rgba(0, 0, 0, .05);
+                        border-top-left-radius: 24px;
+                        border-top-right-radius: 24px;
+                        
+                        h3{
+                            font-size: 16px;
+                            line-height: 50px;
+                        }
+                    }
+                    
+                    .block-container{
+                        flex: 1;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        box-sizing: border-box;
+
+                        h3{
+                            width: 100%;
+                            font-size: 18px;
+                        }
+
+                        .block { 
+                            width: 100%;
+                            margin: 10px 20px;
+                            height: 50px;
+                            color: $white;
+                            background: #92b879;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            line-height: 1;
+                        }
+                    }
+
+                    .diagram_left{
+                        width: 80%;
+                        height: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        .first{
+                            padding: 10px 0;
+                            width: 100%;
+                            display: flex; //block_container in first
+                            flex-flow: row wrap;
+                            .block-container{
+                                .block{
+                                    height: 60px;
+                                    background: #4a792a;
+                                }
+                            }
+                            .block-container.middle{
+                                flex: 1.5;
+                                background: #b6d4dd;
+                                .block{
+                                    height: 50px;
+                                    background: #3498db;
+                                }
+                                .block:nth-child(2){
+                                    background: #094064;
+                                }
+                            }
+                            .block-container.end{
+                                .block:nth-child(2){
+                                    background: #ffd966;
+                                    color: $normal;
+                                }
+                                .block:nth-child(3){
+                                    background: #ffd966;
+                                    color: $normal;
+                                }
+                                .block:nth-child(4){
+                                    background: #000;
+                                }
+                            }
+                        }
+                        .second{
+                            padding: 10px 0;
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 16px;
+                            div{
+                                width: 100%;
+                                margin: 0 20px;
+                                height: 40px;
+                                background: #000;
+                                border-radius: 25px;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: $white;
+
+                                &:after{
+                                    position: absolute;
+                                    right: 50px;
+                                    top: -30px;
+                                    content: "";
+                                    width: 0;
+                                    height: 0;
+                                    transform: translateY(-20%);
+                                    border-style: solid;
+                                    border-width: 25px;
+                                    border-color:  transparent transparent #000 transparent;
+                                }
+                            }
+                        }
+                        .last{
+                            padding: 10px 0;
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            .block-container:first-child{
+                                flex: none;
+                                width: 100%;
+                                background: #b1defb;
+                                position: relative;
+
+                                &:after{
+                                    position: absolute;
+                                    top: -35px;
+                                    left: 100px;
+                                    content: "";
+                                    width: 0;
+                                    height: 0;
+                                    transform: translateY(-20%);
+                                    border-style: solid;
+                                    border-width: 25px;
+                                    border-color: transparent transparent #b1defb transparent;
+                                }
+                                .block{
+                                    flex: 1;
+                                    display: flex;
+                                    height: 50px;
+                                    margin: 10px;
+                                    p {
+                                        flex: 1;
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background: #094064;
+                                    }
+                                    p:last-child{
+                                        background: #74c7ff;
+                                    }
+                                }
+                            }
+                            .block-container:last-child{
+                                flex: none;
+                                width: 100%;
+                                margin-top: 10px;
+                                div{
+                                    flex: 1.8;
+                                    margin: 0;
+                                    height: 45px;
+                                    background: #7bb952;
+                                    color: $white;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: relative;
+
+                                    &:before{
+                                        position: absolute;
+                                        top: -35px;
+                                        content: "";
+                                        width: 0;
+                                        height: 0;
+                                        transform: translateY(-20%);
+                                        border-style: solid;
+                                        border-width: 25px;
+                                        border-color: transparent transparent #7bb952 transparent;
+                                    }
+
+                                    &:after{
+                                        position: absolute;
+                                        top: -35px;
+                                        content: "";
+                                        width: 0;
+                                        height: 0;
+                                        transform: translateY(-20%);
+                                        border-style: solid;
+                                        border-width: 25px;
+                                        border-color: transparent transparent #7bb952 transparent;
+                                    }
+                                }
+                                div:first-child{
+                                    &:before{
+                                        left: 10%;
+                                    }
+                                    &:after{
+                                        left: 50%;
+                                    }
+                                }
+                                div:last-child{
+                                    flex: 1;
+                                    background: #ffd966;
+                                    color: $normal;
+                                    p{
+                                        width: 30%;
+                                        height: 50%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        background: #7bb952;
+                                    }
+                                    &:before{
+                                        left: -60px;
+                                    }
+                                    &:after{
+                                        left: 50%;
+                                        border-color: transparent transparent #ffd966 transparent;  
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .diagram_right{
+                        width: 20%;
+                        .side{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            .block-container{
+                                background: #dcfdc6;
+                                .block{
+                                    height: 260px;
+                                    background: #7bb952;
+                                }
+                                .block:last-child{
+                                    background: #4a792a;
+                                }
+                            }
                         }
                     }
                 }
@@ -118,14 +547,12 @@ main {
             width: 100%;
             display: flex;
             flex-flow: row wrap;
-
             dl{
                 flex: 1;
                 padding: 40px;
                 margin: 0 10px;
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,.15);
                 box-sizing: border-box;
-
                 dt{
                     font-size: 22px;
                     margin-bottom: 40px;
@@ -140,6 +567,36 @@ main {
         }
     }
 }
+@keyframes slideIn{
+    from{
+        top: 0; 
+        opacity: 0;
+    } to {
+        top: 50%; 
+        opacity: 1;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@keyframes moredash{
+    from{
+        top: 2%;
+    } to{
+        top: 5%;
+    }
+}
+@keyframes morearms{
+    from{
+        top: 47%;
+    } to{
+        top: 50%;
+    }
+}
 
 @media only screen and (min-width: 1240px) and (max-width: 1599px){
     
@@ -150,12 +607,22 @@ main {
     
 }
 
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1180px){  
+    main section .info_box .box .text_box.edu{
+        div{
+            width: 100%;
+            height: 100px;
+        }
+    }
 }
 
 
 @media only screen and (max-width:1024px){
-
+    main section .info_box .box .text_box.edu{
+        div{
+            height: 120px;
+        }
+    }
     
 }
 
@@ -168,27 +635,24 @@ main {
         }
         .text_box{
             flex: none;
-            padding: 0 40px;
         }
     }
-    main section .info_box .box{
-        
+    main section .info_box .box {
         .img_box{
             order:-1;
             flex: none;
             width: 100%;
             height: auto;
+            margin: 10px 0 20px;
         }
         .text_box{
             display: flex;
             flex-flow: column wrap;
-            align-content: center;
+            align-content: space-between;
             justify-content: center;
             dl{
-                min-height: 220px;
+                min-height: 160px;
                 text-align: left;
-                margin: 10px;
-                
             }
         }
     }
@@ -202,6 +666,23 @@ main {
 }
 
 @media only screen and (max-width:640px){
+    main section .info_box .box .text_box.edu{
+        flex: none;
+        width: 100%;
+        div{
+            height: 80px;
+            p{
+                span{
+                    img{
+                        flex: 1;
+                    }
+                }
+                b{
+                    flex: 8;
+                }
+            }
+        }
+    }
     
 }
 

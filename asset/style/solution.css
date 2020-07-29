@@ -11,6 +11,8 @@ dd { word-break: keep-all; }
 /*main*/
 main section { padding: 80px 0; }
 
+main section .box-container { margin-bottom: 80px; }
+
 main section .box-container .box { display: flex; flex-flow: row wrap; }
 
 main section .box-container .box .img_box { min-height: 300px; flex: 1; }
@@ -19,13 +21,17 @@ main section .box-container .box .img_box.mes { background: url("../images/mes_s
 
 main section .box-container .box .img_box.erp { background: url("../images/erp_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
+main section .box-container .box .img_box.edu { background: url("../images/edu.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
+main section .box-container .box .img_box.edge { background: url("../images/edge_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
 main section .box-container .box .img_box.modeler { background: url("../images/modeler_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
 main section .box-container .box .text_box.head { flex: 1; }
 
 main section .box-container .box .text_box.head b { font-family: 'Titillium Web', sans-serif; }
 
-main section .box-container .box .text_box.head h2 { display: inline-block; padding-bottom: 40px; }
+main section .box-container .box .text_box.head h2 { display: inline-block; }
 
 main section .box-container .box .text_box.head h2 span { display: block; font-size: 20px; }
 
@@ -33,19 +39,143 @@ main section .box-container .box .text_box.head h3 { font-size: 18px; font-weigh
 
 main section .info_box .box { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; }
 
-main section .info_box .box .img_box { flex: 1.5; min-height: 400px; }
+main section .info_box .box .img_box { flex: 2; min-height: 400px; }
 
 main section .info_box .box .img_box.mes { background: url("../images/info_mes.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
 main section .info_box .box .img_box.erp { background: url("../images/info_erp.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
+main section .info_box .box .img_box.edu .exp-container { display: flex; flex-flow: row wrap; }
+
+main section .info_box .box .img_box.edu .exp-container .exp { width: 100%; height: 300px; background: url("../../asset/images/edu_exp.png") no-repeat; background-size: contain; background-position: 50% 50%; position: relative; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .more { width: 30px; height: 30px; border-radius: 50% 50% 50% 0; background: linear-gradient(to bottom, #fa7a57, #d00805); margin: -20px 0 0 -20px; cursor: pointer; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .more_dash { position: absolute; transform: rotate(-45deg) translateX(-50%); left: 50%; top: 5%; animation: moredash 2s ease-in-out; animation-iteration-count: infinite; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .more_arms { position: absolute; transform: rotate(-45deg) translateX(-50%) translateY(-50%); left: 50%; top: 50%; animation: morearms 2s ease-in-out; animation-iteration-count: infinite; }
+
+main section .info_box .box .img_box.edu .exp-container .exp #dash_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
+
+main section .info_box .box .img_box.edu .exp-container .exp #arms_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50vw; height: 60vh; background: #fff; animation: slideIn .6s linear; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .modal_header { position: absolute; top: 0; left: 0; width: 100%; height: 50px; background: #222; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .modal_header .modal_closed { width: 50px; height: 50px; float: right; position: relative; cursor: pointer; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .modal_header .modal_closed .bar1, main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .modal_header .modal_closed .bar2 { width: 30px; height: 3px; background: #fff; display: inline-block; position: absolute; top: 50%; left: 50%; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .modal_header .modal_closed .bar1 { transform: translate(-50%) rotate(-45deg); }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .modal_header .modal_closed .bar2 { transform: translate(-50%) rotate(45deg); }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .dash { background: #bbb; color: #222; text-align: center; position: relative; top: 50px; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .arms { background: #bbb; color: #222; text-align: center; position: relative; top: 50px; }
+
+main section .info_box .box .img_box.edu .exp-container .exp_info { width: 100%; text-align: center; }
+
 main section .info_box .box .text_box { flex: 1; }
 
-main section .info_box .box .text_box dl { text-align: center; margin: 80px 0; }
+main section .info_box .box .text_box dl { text-align: right; width: 100%; height: 130px; padding: 0 10px; box-sizing: border-box; }
 
 main section .info_box .box .text_box dl dt { letter-spacing: -.5px; font-size: 20px; font-weight: 600; }
 
 main section .info_box .box .text_box dl dd { letter-spacing: -1px; }
+
+main section .info_box .box .text_box.right dl { text-align: left; }
+
+main section .info_box .box .text_box.edu { flex: 2; display: flex; flex-flow: row wrap; justify-content: center; }
+
+main section .info_box .box .text_box.edu div { width: 50%; }
+
+main section .info_box .box .text_box.edu div p { width: 100%; height: 200px; margin-bottom: 20px; display: flex; flex-flow: row wrap; }
+
+main section .info_box .box .text_box.edu div p b { flex: 2; font-size: 17px; letter-spacing: -1px; font-weight: 600; }
+
+main section .info_box .box .text_box.edu div p span { margin: 0 20px; flex: 1; display: inline-block; }
+
+main section .info_box .box .text_box.edu div p span img { min-width: 40px; height: auto; }
+
+main section .info_box .box .diagram-container { background: rgba(0, 0, 0, 0.05); padding: 20px; font-family: 'Titillium Web', sans-serif; width: 100%; display: flex; margin-bottom: 40px; text-align: center; font-size: 14px; font-weight: 800; position: relative; }
+
+main section .info_box .box .diagram-container .diagram_head { position: absolute; top: -50px; right: 20px; display: inline-block; height: 50px; padding: 0 20px; background: rgba(0, 0, 0, 0.05); border-top-left-radius: 24px; border-top-right-radius: 24px; }
+
+main section .info_box .box .diagram-container .diagram_head h3 { font-size: 16px; line-height: 50px; }
+
+main section .info_box .box .diagram-container .block-container { flex: 1; display: flex; flex-flow: row wrap; justify-content: center; box-sizing: border-box; }
+
+main section .info_box .box .diagram-container .block-container h3 { width: 100%; font-size: 18px; }
+
+main section .info_box .box .diagram-container .block-container .block { width: 100%; margin: 10px 20px; height: 50px; color: #fff; background: #92b879; position: relative; display: flex; justify-content: center; align-items: center; line-height: 1; }
+
+main section .info_box .box .diagram-container .diagram_left { width: 80%; height: 100%; display: flex; flex-flow: row wrap; }
+
+main section .info_box .box .diagram-container .diagram_left .first { padding: 10px 0; width: 100%; display: flex; flex-flow: row wrap; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container .block { height: 60px; background: #4a792a; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container.middle { flex: 1.5; background: #b6d4dd; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container.middle .block { height: 50px; background: #3498db; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container.middle .block:nth-child(2) { background: #094064; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container.end .block:nth-child(2) { background: #ffd966; color: #222; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container.end .block:nth-child(3) { background: #ffd966; color: #222; }
+
+main section .info_box .box .diagram-container .diagram_left .first .block-container.end .block:nth-child(4) { background: #000; }
+
+main section .info_box .box .diagram-container .diagram_left .second { padding: 10px 0; width: 100%; display: flex; flex-flow: row wrap; justify-content: center; align-items: center; font-size: 16px; }
+
+main section .info_box .box .diagram-container .diagram_left .second div { width: 100%; margin: 0 20px; height: 40px; background: #000; border-radius: 25px; position: relative; display: flex; justify-content: center; align-items: center; color: #fff; }
+
+main section .info_box .box .diagram-container .diagram_left .second div:after { position: absolute; right: 50px; top: -30px; content: ""; width: 0; height: 0; transform: translateY(-20%); border-style: solid; border-width: 25px; border-color: transparent transparent #000 transparent; }
+
+main section .info_box .box .diagram-container .diagram_left .last { padding: 10px 0; width: 100%; display: flex; flex-flow: row wrap; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:first-child { flex: none; width: 100%; background: #b1defb; position: relative; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:first-child:after { position: absolute; top: -35px; left: 100px; content: ""; width: 0; height: 0; transform: translateY(-20%); border-style: solid; border-width: 25px; border-color: transparent transparent #b1defb transparent; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:first-child .block { flex: 1; display: flex; height: 50px; margin: 10px; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:first-child .block p { flex: 1; height: 100%; display: flex; justify-content: center; align-items: center; background: #094064; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:first-child .block p:last-child { background: #74c7ff; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child { flex: none; width: 100%; margin-top: 10px; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div { flex: 1.8; margin: 0; height: 45px; background: #7bb952; color: #fff; display: flex; justify-content: center; align-items: center; position: relative; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:before { position: absolute; top: -35px; content: ""; width: 0; height: 0; transform: translateY(-20%); border-style: solid; border-width: 25px; border-color: transparent transparent #7bb952 transparent; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:after { position: absolute; top: -35px; content: ""; width: 0; height: 0; transform: translateY(-20%); border-style: solid; border-width: 25px; border-color: transparent transparent #7bb952 transparent; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:first-child:before { left: 10%; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:first-child:after { left: 50%; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:last-child { flex: 1; background: #ffd966; color: #222; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:last-child p { width: 30%; height: 50%; position: absolute; top: 0; left: 0; background: #7bb952; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:last-child:before { left: -60px; }
+
+main section .info_box .box .diagram-container .diagram_left .last .block-container:last-child div:last-child:after { left: 50%; border-color: transparent transparent #ffd966 transparent; }
+
+main section .info_box .box .diagram-container .diagram_right { width: 20%; }
+
+main section .info_box .box .diagram-container .diagram_right .side { width: 100%; height: 100%; display: flex; }
+
+main section .info_box .box .diagram-container .diagram_right .side .block-container { background: #dcfdc6; }
+
+main section .info_box .box .diagram-container .diagram_right .side .block-container .block { height: 260px; background: #7bb952; }
+
+main section .info_box .box .diagram-container .diagram_right .side .block-container .block:last-child { background: #4a792a; }
 
 main section .dl_box { width: 100%; display: flex; flex-flow: row wrap; }
 
@@ -55,10 +185,33 @@ main section .dl_box dl dt { font-size: 22px; margin-bottom: 40px; font-weight: 
 
 main section .dl_box dl dd { font-size: 16px; margin: 20px 0; letter-spacing: -1px; }
 
+@keyframes slideIn { from { top: 0;
+    opacity: 0; }
+  to { top: 50%;
+    opacity: 1; } }
+
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@keyframes moredash { from { top: 2%; }
+  to { top: 5%; } }
+
+@keyframes morearms { from { top: 47%; }
+  to { top: 50%; } }
+
+@media only screen and (max-width: 1180px) { main section .info_box .box .text_box.edu div { width: 100%; height: 100px; } }
+
+@media only screen and (max-width: 1024px) { main section .info_box .box .text_box.edu div { height: 120px; } }
+
 @media only screen and (max-width: 768px) { main section .box-container .box .img_box { flex: none; width: 100%; height: 400px; }
-  main section .box-container .box .text_box { flex: none; padding: 0 40px; }
-  main section .info_box .box .img_box { order: -1; flex: none; width: 100%; height: auto; }
-  main section .info_box .box .text_box { display: flex; flex-flow: column wrap; align-content: center; justify-content: center; }
-  main section .info_box .box .text_box dl { min-height: 220px; text-align: left; margin: 10px; }
+  main section .box-container .box .text_box { flex: none; }
+  main section .info_box .box .img_box { order: -1; flex: none; width: 100%; height: auto; margin: 10px 0 20px; }
+  main section .info_box .box .text_box { display: flex; flex-flow: column wrap; align-content: space-between; justify-content: center; }
+  main section .info_box .box .text_box dl { min-height: 160px; text-align: left; }
   main section .dl_box { flex-flow: column wrap; }
   main section .dl_box dl { flex: none; margin: 10px 0; } }
+
+@media only screen and (max-width: 640px) { main section .info_box .box .text_box.edu { flex: none; width: 100%; }
+  main section .info_box .box .text_box.edu div { height: 80px; }
+  main section .info_box .box .text_box.edu div p span img { flex: 1; }
+  main section .info_box .box .text_box.edu div p b { flex: 8; } }
