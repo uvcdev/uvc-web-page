@@ -65,7 +65,7 @@
         <div class="sub_visual">
             <div class="visual_bg"></div>
         </div><!--sub_visual-->
-        <section id="mes">
+        <section>
             <div class="inner">
                 <div class="box-container">
                     <div class="box">
@@ -76,7 +76,8 @@
                                 <b>Flexing EDGE</b>
                             </h2>
                             <h3>    
-                                EDGE에 대해 설명이 필요한데 아직 생각이 안 나니까 이렇게 써놔야겠다.
+                                Flexing Edge는 OPC UA Server을 통하여 실시간으로 자동 모델링합니다. 쉽고 빠르게 설치할 수 있으며 작동법도 간편합니다.
+                                Edge를 사용하여 클러스터링을 통한 분산처리와 다중화 기술을 경험해보세요.
                             </h3>
                         </div>
                     </div> <!--box-->
@@ -87,82 +88,225 @@
                             <div class="diagram_head">
                                 <h3>Flexing EDGE Block Diagram</h3>
                             </div>
-                            <div class="diagram_left">
-                                <div class="first">
-                                    <div class="block-container">
-                                        <div class="block">Alerts & <br/>Notifications</div>
-                                        <div class="block">Model <br/>Serving</div>
-                                        <div class="block">Machine <br/>Learning</div>
-                                        <div class="block">Data <br/>Logging</div>
-                                    </div>
-                                    <div class="block-container middle">
-                                        <h3>OPC UA Server</h3>
-                                        <div class="block">Address <br/>Space</div>
-                                        <div class="block">UA <br/>Binary</div>
-                                        <div class="block">UA Secure <br/>Conversation</div>
-                                        <div class="block">UC <br/>TCP</div>
-                                    </div>
-                                    <div class="block-container end">
-                                        <h3>Docker Image</h3>
-                                        <div class="block">Local <br/>Database</div>
-                                        <div class="block">Meta <br/>Data</div>
-                                        <div class="block">GRPC <br/>Server</div>
-                                    </div>
-                                </div>
-                                <div class="second">
-                                    <div>GRPC Communication</div>
-                                </div>
-                                <div class="last">
-                                    <div class="block-container">
-                                        <h3>Docker Image</h3>
-                                        <div class="block">
-                                            <p>MQIT</p>
-                                            <p>Grpc<br/>Client</p>
-                                        </div>
-                                        <div class="block">
-                                            <p>OPC UA</p>
-                                            <p>Grpc<br/>Client</p>
-                                        </div>
-                                        <div class="block">
-                                            <p>FANUC</p>
-                                            <p>Grpc<br/>Client</p>
-                                        </div>
-                                        <div class="block">
-                                            <p>Modbus</p>
-                                            <p>Grpc<br/>Client</p>
-                                        </div>
-                                    </div>
-                                    <div class="block-container">
-                                        <div>TCP / IP STACK</div>
-                                        <div>Serial
-                                            <p class="color_block"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="diagram_right">
-                                <div class="side">
-                                    <div class="block-container">
-                                        <div class="block">Micro <br/>Service<br/> Managing</div>
-                                        <div class="block">Additional <br/>Services</div>
-                                    </div>
-                                </div>
+                            <div class="diagram">
+                                <img src="../../asset/images/diagram_edge.png" alt="Flexing EDGE 다이어그램 이미지">
+                                <ul>
+                                    <li>OPC UA Framework 기반 Historian, Alarm, Method 탑재</li>
+                                    <li>클라우드 연계 기능과 MQTT , PubSub@TSN 기반의 통신</li>
+                                    <li>Modbus 통신, 사설 비표준 통신 모두 OPC UA 변환</li>
+                                    <li>데이터 필터링으로 전송대역 절약</li>
+                                    <li>다른 엣지 컴퓨터로 P2P 통신 가능</li>
+                                    <li>엣지가 컴퓨터 기능을 하여 네트워크 단절 시 단독 작동</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                <div class="dl_box">
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
+                </div>
+                <div class="install_box">
+                    <div class="install_head">
+                        <div>
+                            <h3>쉽고 빠른 설치</h3>
+                            <p>변수가 많아 오래 있기 힘든 현장에서 EDGE를 간편하게 작동시켜 보세요.</p>
+                        </div>
+                        <table>
+                            <legend>Edge Device</legend>
+                            <colgroup>
+                                <col/>
+                                <col/>
+                                <col/>
+                                <col/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="th_left">구분</th>
+                                    <th class="th_right">기능</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>터치 모니터</th>
+                                    <td>부착 된 모니터로 OPC UA Server 실시간 확인 가능</td>
+                                </tr>
+                                <tr>
+                                    <th>스크린 확장</th>
+                                    <td>외부 HDMI, VGA로 확장 가능</td>
+                                </tr>
+                                <tr>
+                                    <th>인터페이스</th>
+                                    <td>넉넉한 외부 인터페이스로 현장의 다양한 장비 연결 가능</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="../../asset/images/install_edge_1.png" alt="">
+                            </div>
+                            <h3>STEP 1</h3>
+                            <p>전원 넣기</p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../../asset/images/install_edge_2.png" alt="">
+                            </div>
+                            <h3>STEP 2</h3>
+                            <p>LAN 선 꽂기</p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../../asset/images/install_edge_3.png" alt="">
+                            </div>
+                            <h3>STEP 3</h3>
+                            <p>전원 버튼 ON</p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../../asset/images/install_edge_4.png" alt="">
+                            </div>
+                            <h3>STEP 4</h3>
+                            <p>PROCESS 자동로드</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="categories_box">
+                    <ul>
+                        <li class="pro">
+                            <div>
+                                <h3><span>스마트팩토리 EDGE / 태양광</span>Flexing EDGE PRO</h3>
+                                <p></p>
+                            </div>
+                            <table>
+                                <legend>스마트팩토리 EDGE / 태양광용 Flexing EDGE PRO</legend>
+                                <colgroup>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="th_left">구분</th>
+                                        <th class="th_right">내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>CPU</th>
+                                        <td>Intel Core4 4200,2.5Ghz 4G SSD 64G</td>
+                                    </tr>
+                                    <tr>
+                                        <th>OS</th>
+                                        <td>Windows 10 IO : RS232 * 4, Rs422/485 *2 HDMI*1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Communication</th>
+                                        <td>TCP/IP , Wifi, Bluetooth, Ethernet</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Protocol</th>
+                                        <td>OPC UA, Modbus, Fanuc, KuKa, etc ..</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Size</th>
+                                        <td>237 * 204 * 68 (L*W*H) 6kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="beige">
+                            <div>
+                                <h3><span>태양광 / SCADA</span>Flexing EDGE Lite</h3>
+                                <p></p>
+                            </div>
+                            <table>
+                                <legend>태양광 / SCADA용 Flexing EDGE Lite</legend>
+                                <colgroup>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="th_left">구분</th>
+                                        <th class="th_right">내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>CPU</th>
+                                        <td>ARM Cortex-A9 Quad-Core 2G 8MMC 8G</td>
+                                    </tr>
+                                    <tr>
+                                        <th>OS</th>
+                                        <td>Lynux IO : HDMI*1 RS232*1, Di 4/Do 2/ AI 1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Communication</th>
+                                        <td> TCP/IP , Wifi, Bluetooth, Ethernet, Nb-Iot</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Protocol</th>
+                                        <td>OPC UA, Modbus, 표준인버터</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Size</th>
+                                        <td>180 * 110 * 40 (L*W*H)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="lite">
+                            <div>
+                                <h3><span>스마트팩토리 EDGE / 태양광</span>Flexing EDGE Lite</h3>
+                                <p></p>
+                            </div>
+                            <table>
+                                <legend>스마트팩토리 EDGE / 태양광용 Flexing EDGE Lite</legend>
+                                <colgroup>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="th_left">구분</th>
+                                        <th class="th_right">내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>CPU</th>
+                                        <td>Intel Bay Traill J1900 Quad Core 2.0Ghz 4G SSD 32G</td>
+                                    </tr>
+                                    <tr>
+                                        <th>OS</th>
+                                        <td>Windows 10 IO : LAN HDMI*1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Communication</th>
+                                        <td> CP/IP , Wifi, Bluetooth, Ethernet</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Protocol</th>
+                                        <td>OPC UA, Modbus, Fanuc, KuKa, etc ..</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Size</th>
+                                        <td>126* 134 * 38 (L*W*H) 0.55kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
                 </div>
             </div><!--inner-->
         </section>

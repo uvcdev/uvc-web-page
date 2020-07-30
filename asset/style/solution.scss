@@ -29,7 +29,7 @@ main {
     section{
         padding: 80px 0;
         .box-container{
-            margin-bottom: 80px;
+            margin-bottom: 20px;
             .box{
                 display: flex;
                 flex-flow: row wrap;
@@ -231,7 +231,7 @@ main {
                     dl{
                         text-align: right;
                         width: 100%;
-                        height: 130px;
+                        min-height: 160px;
                         padding: 0 10px;
                         box-sizing: border-box;
                         dt{
@@ -309,234 +309,30 @@ main {
                             line-height: 50px;
                         }
                     }
-                    
-                    .block-container{
-                        flex: 1;
+                    .diagram{
+                        width: 100%;
                         display: flex;
-                        flex-flow: row wrap;
                         justify-content: center;
-                        box-sizing: border-box;
-
-                        h3{
-                            width: 100%;
-                            font-size: 18px;
-                        }
-
-                        .block { 
-                            width: 100%;
-                            margin: 10px 20px;
-                            height: 50px;
-                            color: $white;
-                            background: #92b879;
-                            position: relative;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            line-height: 1;
-                        }
-                    }
-
-                    .diagram_left{
-                        width: 80%;
-                        height: 100%;
-                        display: flex;
                         flex-flow: row wrap;
-                        .first{
-                            padding: 10px 0;
-                            width: 100%;
-                            display: flex; //block_container in first
-                            flex-flow: row wrap;
-                            .block-container{
-                                .block{
-                                    height: 60px;
-                                    background: #4a792a;
-                                }
-                            }
-                            .block-container.middle{
-                                flex: 1.5;
-                                background: #b6d4dd;
-                                .block{
-                                    height: 50px;
-                                    background: #3498db;
-                                }
-                                .block:nth-child(2){
-                                    background: #094064;
-                                }
-                            }
-                            .block-container.end{
-                                .block:nth-child(2){
-                                    background: #ffd966;
-                                    color: $normal;
-                                }
-                                .block:nth-child(3){
-                                    background: #ffd966;
-                                    color: $normal;
-                                }
-                                .block:nth-child(4){
-                                    background: #000;
-                                }
-                            }
+                        align-items: center;
+                        img{
+                            width: 60%;
+                            height: auto;
                         }
-                        .second{
-                            padding: 10px 0;
+                        ul{
                             width: 100%;
                             display: flex;
-                            flex-flow: row wrap;
-                            justify-content: center;
+                            flex-flow: row nowrap;
                             align-items: center;
-                            font-size: 16px;
-                            div{
+                            li{
                                 width: 100%;
-                                margin: 0 20px;
-                                height: 40px;
-                                background: #000;
-                                border-radius: 25px;
-                                position: relative;
+                                background: rgba(0, 0, 0, .05);
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                color: $white;
-
-                                &:after{
-                                    position: absolute;
-                                    right: 50px;
-                                    top: -30px;
-                                    content: "";
-                                    width: 0;
-                                    height: 0;
-                                    transform: translateY(-20%);
-                                    border-style: solid;
-                                    border-width: 25px;
-                                    border-color:  transparent transparent #000 transparent;
-                                }
-                            }
-                        }
-                        .last{
-                            padding: 10px 0;
-                            width: 100%;
-                            display: flex;
-                            flex-flow: row wrap;
-                            .block-container:first-child{
-                                flex: none;
-                                width: 100%;
-                                background: #b1defb;
-                                position: relative;
-
-                                &:after{
-                                    position: absolute;
-                                    top: -35px;
-                                    left: 100px;
-                                    content: "";
-                                    width: 0;
-                                    height: 0;
-                                    transform: translateY(-20%);
-                                    border-style: solid;
-                                    border-width: 25px;
-                                    border-color: transparent transparent #b1defb transparent;
-                                }
-                                .block{
-                                    flex: 1;
-                                    display: flex;
-                                    height: 50px;
-                                    margin: 10px;
-                                    p {
-                                        flex: 1;
-                                        height: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        background: #094064;
-                                    }
-                                    p:last-child{
-                                        background: #74c7ff;
-                                    }
-                                }
-                            }
-                            .block-container:last-child{
-                                flex: none;
-                                width: 100%;
-                                margin-top: 10px;
-                                div{
-                                    flex: 1.8;
-                                    margin: 0;
-                                    height: 45px;
-                                    background: #7bb952;
-                                    color: $white;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    position: relative;
-
-                                    &:before{
-                                        position: absolute;
-                                        top: -35px;
-                                        content: "";
-                                        width: 0;
-                                        height: 0;
-                                        transform: translateY(-20%);
-                                        border-style: solid;
-                                        border-width: 25px;
-                                        border-color: transparent transparent #7bb952 transparent;
-                                    }
-
-                                    &:after{
-                                        position: absolute;
-                                        top: -35px;
-                                        content: "";
-                                        width: 0;
-                                        height: 0;
-                                        transform: translateY(-20%);
-                                        border-style: solid;
-                                        border-width: 25px;
-                                        border-color: transparent transparent #7bb952 transparent;
-                                    }
-                                }
-                                div:first-child{
-                                    &:before{
-                                        left: 10%;
-                                    }
-                                    &:after{
-                                        left: 50%;
-                                    }
-                                }
-                                div:last-child{
-                                    flex: 1;
-                                    background: #ffd966;
-                                    color: $normal;
-                                    p{
-                                        width: 30%;
-                                        height: 50%;
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        background: #7bb952;
-                                    }
-                                    &:before{
-                                        left: -60px;
-                                    }
-                                    &:after{
-                                        left: 50%;
-                                        border-color: transparent transparent #ffd966 transparent;  
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .diagram_right{
-                        width: 20%;
-                        .side{
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            .block-container{
-                                background: #dcfdc6;
-                                .block{
-                                    height: 260px;
-                                    background: #7bb952;
-                                }
-                                .block:last-child{
-                                    background: #4a792a;
-                                }
+                                padding: 5px;
+                                min-height: 100px;
+                                margin: 0 10px;
                             }
                         }
                     }
@@ -564,6 +360,147 @@ main {
                     letter-spacing: -1px;
                 }
             }
+        }
+        .install_box{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            div.install_head{
+                flex: 1;
+                padding-right: 20px;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            ul{
+                flex: 1.5;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+                li{
+                    flex: 1;
+                    color: $white;
+                    padding: 40px 10px;
+                    box-sizing: border-box;
+                    h3{
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                    div{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background:#fff;
+                        margin: 0 auto;
+
+                        img{
+                            display: inline-block;
+                            width: 100%;
+                            height: auto;
+                            
+                        }
+                    }//div
+                }//li
+            }
+        }
+        .categories_box{
+            padding-top: 40px;
+            ul{
+                li{
+                    display: flex;
+                    flex-flow: row wrap;
+                    margin: 40px 0;
+                    div{
+                        flex: 1;
+                        h3{
+                            font-family: 'Titillium Web', sans-serif;
+                            padding: 20px;
+                            span{
+                                font-family: 'Noto Sans KR', sans-serif;
+                                display: block;
+                                font-size: 16px;
+                                font-weight: 400;
+
+                            }
+                        }
+                        p{
+                            width: 100%;
+                            height: 80%;
+                        }
+                    }
+                    table{
+                        flex: 1;
+                    }
+                }
+                li.pro{
+                    div{
+                        p{
+                            background: url("../images/edge_pro.png")no-repeat;
+                            background-position: 50% 50%;
+                            background-size: contain;
+                        }
+                    }
+                }
+                li.beige{
+                    table{
+                        order: -1;   
+                    }
+                    div{
+                        h3{
+                            text-align: right;
+                        }
+                        p{
+                            background: url("../images/edge_lite_2.png") no-repeat;
+                            background-position: 50% 50%;
+                            background-size: contain;
+                        }
+                    }
+                }
+                li.lite{
+                    div{
+                        p{
+                            background: url("../images/edge_solution.png")no-repeat;
+                            background-position: 50% 50%;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+table{
+    margin:40px 0;
+    text-align: left;
+    box-sizing: border-box;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    thead{
+        background: $normal;
+        th{
+            padding: 10px;
+            box-sizing: border-box;
+            color: $white;
+        }
+        th.th_left{
+            border-top-left-radius: 18px;
+        }
+        th.th_right{
+            border-top-right-radius: 18px;
+        }
+    }
+    tbody{
+        th, td{
+            padding: 10px;
+        }
+        tr:nth-child(2n){
+            background: #ebebeb;
         }
     }
 }
@@ -603,7 +540,12 @@ main {
     
 }
 @media only screen and (min-width: 1181px) and (max-width: 1239px){
-    
+    main section .install_box ul{
+            li{
+                flex: none;
+                width: 50%;
+        }
+    }
     
 }
 
@@ -612,6 +554,12 @@ main {
         div{
             width: 100%;
             height: 100px;
+        }
+    }
+    main section .install_box ul{
+        li{
+            flex: none;
+            width: 50%;
         }
     }
 }
@@ -623,7 +571,38 @@ main {
             height: 120px;
         }
     }
-    
+    main section .info_box .box .diagram-container .diagram{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        ul{
+            flex-flow: row wrap;
+            justify-content: center;
+            li{
+                width: 26%;
+                margin: 10px;
+
+            }
+        }
+    }
+    main section .install_box div.install_head{
+        flex: none;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+    main section .install_box ul{
+        flex: none;
+        width: 100%;
+        li{
+            width: 25%;
+            div{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -648,12 +627,18 @@ main {
         .text_box{
             display: flex;
             flex-flow: column wrap;
-            align-content: space-between;
+            align-items: space-between;
             justify-content: center;
             dl{
-                min-height: 160px;
-                text-align: left;
+                min-height: 200px;
+                text-align: center;
             }
+        }
+        .text_box.right dl{
+            text-align: center;
+        }
+        .diagram-container{
+            margin-top: 80px;
         }
     }
     main section .dl_box {
@@ -661,6 +646,34 @@ main {
         dl{
             flex: none;
             margin: 10px 0;
+        }
+    }
+    main section .install_box ul{
+        flex: none;
+        width: 100%;
+        flex-flow: row wrap;
+        li{
+            width: 50%;
+        }
+    }
+    main section .categories_box ul{
+        li{
+            div{
+                flex: none;
+                width: 100%;
+                p{
+                    height: 300px;
+                }
+            }
+            table{
+                flex: none;
+                width: 100%;
+            }
+        }
+        li.beige{
+            div{
+                order: -1;
+            }
         }
     }
 }
@@ -683,10 +696,26 @@ main {
             }
         }
     }
-    
+    main section .info_box .box .diagram-container .diagram{
+        ul{
+            li{
+                width: 24%;
+                margin: 10px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:480px){
+    main section .info_box .box .diagram-container .diagram{
+        ul{
+            li{
+                width: 35%;
+                margin: 10px;
+                min-height: 140px;
+            }
+        }
+    }
 }
 @media only screen and (max-width:360px){
 }
