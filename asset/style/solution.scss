@@ -226,6 +226,18 @@ main {
                         }
                     }
                 }
+                .img_box.modeler{
+                    flex: none;
+                    width: 100%;
+                    min-height: auto;
+                    margin-bottom: 40px;
+                    img{
+                        width: 50%;
+                        height: auto;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
                 .text_box{
                     flex: 1;
                     dl{
@@ -359,58 +371,6 @@ main {
                     margin: 20px 0;
                     letter-spacing: -1px;
                 }
-            }
-        }
-        .dl_box.modeler{
-            dl{
-                position: relative;
-                &:after{
-                    position: absolute;
-                    top: -25px;
-                    right: -25px;
-                    content: "";
-                    display: block;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    box-shadow: 0 8px 16px 0 rgba(0,0,0,.15);
-                    z-index: 180;
-                }
-                &:before{
-                    position: absolute;
-                    top: -20px;
-                    right: -20px;
-                    content: "";
-                    display: block;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    box-shadow: 0 8px 16px 0 rgba(0,0,0,.15);
-                    z-index: 182;
-                }
-            }
-            dl:first-child{
-                flex: 1;
-            }
-            dl:last-child{
-                flex: 2;
-            }
-            dl:first-child:after{
-                background: #f64756;
-            }
-            dl:last-child:after{
-                background: #00d832;
-            }
-            dl:first-child:before{
-                background: url("../images/times-solid.svg")no-repeat;
-                background-size:contain;
-                background-position: 50% 50%;
-            }
-            dl:last-child:before{
-                background: url("../images/check-solid.svg")no-repeat;
-                background-size:contain;
-                background-position: 50% 50%;
-
             }
         }
         .install_box{
@@ -725,6 +685,12 @@ table{
             div{
                 order: -1;
             }
+        }
+    }
+    main section .info_box .box .img_box.modeler{
+        margin: 10px 0 20px;
+        img{
+            width: 100%;
         }
     }
 }
