@@ -24,6 +24,10 @@ $(document).ready(function(){
 	$('.mNav').click(function(){
 		$('.gnb').slideToggle(400);
 		$(this).toggleClass("on");
+		$('li').click(function(){
+			$('.gnb').css({"display":"none"});
+			$('.mNav').removeClass("on");
+		});
 	});
 
 	$('.gnb > .sol').mouseover(function(){
