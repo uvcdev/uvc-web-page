@@ -127,7 +127,7 @@ main {
                         display: flex;
                         flex-flow: row wrap;
                         .exp{
-                        width: 100%;
+                            width: 100%;
                             height: 300px;
                             background: url("../../asset/images/edu_exp.png") no-repeat;
                             background-size: contain;
@@ -182,61 +182,58 @@ main {
                                 animation: fadeIn .6s linear;
                                 overflow: hidden;
                             }
+                            .modal_closed{
+                                width: 50px;
+                                height: 50px;
+                                float: right;
+                                position: absolute;
+                                top: 10%;
+                                right: 10%;
+                                cursor: pointer;
+
+                                .bar1, .bar2{
+                                    width: 30px;
+                                    height: 3px;
+                                    background: $white;
+                                    display: inline-block;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                }
+                                .bar1{
+                                    transform: translate(-50%) rotate(-45deg);
+                                }
+                                .bar2{
+                                    transform: translate(-50%) rotate(45deg);
+                                }
+                            }
                             .modal_contents{
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
-                                width: 50vw;
-                                height: 60vh;
                                 background: #fff;
                                 animation: slideIn .6s linear;
-
-                                .modal_header{
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 50px;
-                                    background: $normal;
-
-                                    .modal_closed{
-                                        width: 50px;
-                                        height: 50px;
-                                        float: right;
-                                        position: relative;
-                                        cursor: pointer;
-
-                                        .bar1, .bar2{
-                                            width: 30px;
-                                            height: 3px;
-                                            background: $white;
-                                            display: inline-block;
-                                            position: absolute;
-                                            top: 50%;
-                                            left: 50%;
-                                        }
-                                        .bar1{
-                                            transform: translate(-50%) rotate(-45deg);
-                                        }
-                                        .bar2{
-                                            transform: translate(-50%) rotate(45deg);
-                                        }
-                                    }
-                                }
                                 .dash{
-                                    background: $gray;
                                     color: $normal;
                                     text-align: center;
                                     position: relative;
-                                    top: 50px;
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                        height: auto;
+                                    }
                                 }
                                 .arms{
                                     background: $gray;
                                     color: $normal;
                                     text-align: center;
                                     position: relative;
-                                    top: 50px;
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                        height: auto;
+                                    }
                                 }
                             }
                         }

@@ -25,6 +25,16 @@ $(document).ready(function(){
 		$('.gnb').slideToggle(400);
 		$(this).toggleClass("on");
 	});
+
+	$('.gnb > .sol').mouseover(function(){
+		$('.nav_dim').css({"height":"60px", "visibility":"visible", "opacity":"1"});
+		$('.gnb > .sol > ul').css({"visibility":"visible", "opacity":"1"});
+	});
+	$('.gnb > .sol').mouseleave(function(){
+		$('.nav_dim').css({"height":"0", "visibility":"hidden", "opacity":"0"});
+		$('.gnb > .sol > ul').css({"visibility":"hidden", "opacity":"0"});
+	});
+
 });
     
 $(window).resize(function(){
