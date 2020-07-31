@@ -37,8 +37,7 @@ $(document).ready(function() {
     
 	/*전체메뉴*/
 	$('.mNav').click(function(){
-		const mNav = $(this)
-		console.log(mNav.name);
+		const mNav = $(this);
 		const isOn = mNav.attr('name')
 		if (isOn === 'on') {
 			$('.gnb').slideUp(400);
