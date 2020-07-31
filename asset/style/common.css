@@ -9,17 +9,25 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 /*header*/
 #header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; background: rgba(0, 0, 0, 0.4); box-sizing: border-box; z-index: 450; transition: all .3s; }
 
-.nav_dim { width: 100%; opacity: 0; height: 0; visibility: hidden; background: #fff; position: absolute; top: 69px; left: 0; z-index: 181; transition: all .3s; }
+.nav_dim { width: 100%; opacity: 0; height: 0; visibility: hidden; background: #fff; position: absolute; top: 69px; left: 0; z-index: 181; transition: all .3s; border-bottom: 1px solid #dfdfdf; }
 
 .headerWrap { position: relative; height: 100%; margin: 0 auto; }
 
 .headerWrap .inner { height: 100%; position: relative; }
 
-.headerWrap .inner h1 { position: absolute; top: 50%; left: 0; width: 160px; transform: translateY(-50%); transition: all .3s; z-index: 453; }
+.headerWrap .inner h1 { position: absolute; top: 0; left: 0; width: 160px; height: 100%; transition: all .3s; z-index: 453; }
 
 .headerWrap .inner h1 a { display: block; }
 
-.headerWrap .inner h1 a img { display: block; width: 100%; transition: all .3s; }
+.headerWrap .inner h1 a img { display: block; width: 100%; transition: all .3s; position: absolute; top: 50%; transform: translateY(-50%); left: 0; }
+
+.headerWrap .inner h1 a img.foot { z-index: 455; opacity: 1; }
+
+.headerWrap .inner h1 a img.color { z-index: 454; opacity: 0; visibility: hidden; }
+
+.headerWrap .inner h1 a img.foot.active { opacity: 0; visibility: hi; }
+
+.headerWrap .inner h1 a img.color.active { opacity: 1; z-index: 456; visibility: visible; }
 
 .headerWrap .inner nav { position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 70px; z-index: 451; }
 
@@ -29,7 +37,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner nav .gnb li a { color: #fff; }
 
-.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; top: 65px; left: 50%; transform: translate(-50%); z-index: 452; opacity: 0; visibility: hidden; transition: all .3s; }
+.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; top: 68px; left: 50%; transform: translate(-50%); z-index: 452; opacity: 0; visibility: hidden; transition: all .3s; }
 
 .headerWrap .inner nav .gnb li.sol ul li { z-index: 452; font-size: 16px; line-height: 60px; }
 
@@ -111,12 +119,20 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 @media only screen and (min-width: 2800px) { body, .inner { max-width: 2800px; margin: 0 auto; }
   #header { max-width: 2800px; left: 50%; transform: translateX(-50%); } }
 
-@media only screen and (max-width: 1180px) { /*작은 모니터 pc*/
+@media only screen and (max-width: 1180px) { #header { border: 1px solid #dfdfdf; background: white; }
+  #header h1 a img.foot { display: none; }
+  #header h1 a img.color { display: block; opacity: 1; visibility: visible; }
+  #header nav ul li a { color: #222; }
+  #header .lang span { color: #222; }
+  #header .lang span:after { border-color: #222 transparent transparent transparent; }
+  #header .mNav div { background: #222; }
+  /*작은 모니터 pc*/
   #header .headerWrap .inner h1 { width: 100px; }
   #header .nav_dim { display: none; opacity: 0; visibility: hidden; }
   #header .headerWrap .inner #nav .gnb { display: none; top: 70px; width: 100%; padding-bottom: 0; max-width: 100vw; }
-  #header .headerWrap .inner #nav .gnb li { position: relative; background: #fff; top: 70px; width: 100%; line-height: 80px; border-bottom: 1px solid #dfdfdf; font-size: 18px; text-align: center; margin: 0; }
+  #header .headerWrap .inner #nav .gnb li { position: relative; background: #fff; top: 70px; width: 100%; line-height: 80px; border-bottom: 1px solid #dfdfdf; font-size: 18px; margin: 0; }
   #header .headerWrap .inner #nav .gnb li:last-child { border-bottom: none; }
+  #header .headerWrap .inner #nav .gnb li a span:after { display: none; }
   #header .headerWrap .inner #nav .gnb li.sol ul { display: none; opacity: 0; visibility: hidden; }
   #header .headerWrap .inner .util_menu { top: 50%; transform: translateY(-50%); }
   #header .headerWrap .inner .util_menu .mNav { display: inline-block; }

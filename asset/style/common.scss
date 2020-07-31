@@ -47,6 +47,7 @@ body{
     left: 0;
     z-index: 181;
     transition: all .3s;
+    border-bottom: 1px solid #dfdfdf;
 }
 .headerWrap {
     position:relative; 
@@ -57,10 +58,10 @@ body{
         position: relative;
         h1 {
             position: absolute; 
-            top:50%;
+            top:0;
             left:0;
             width:160px;
-            transform: translateY(-50%);
+            height: 100%;
             transition: all .3s; 
             z-index: 453;
             a {
@@ -69,6 +70,28 @@ body{
                     display: block;
                     width:100%;
                     transition: all .3s;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+                img.foot{
+                    z-index: 455;
+                    opacity: 1;
+                }
+                img.color{
+                    z-index: 454;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                img.foot.active{
+                    opacity: 0;
+                    visibility: hi;
+                }
+                img.color.active{
+                    opacity: 1;
+                    z-index: 456;
+                    visibility: visible;
                 }
             }
         }
@@ -104,7 +127,7 @@ body{
                     ul{
                         position: absolute;
                         width: 100%;
-                        top: 65px;
+                        top: 68px;
                         left: 50%;
                         transform: translate(-50%);
                         z-index: 452;
@@ -359,6 +382,36 @@ footer{
 }
 
 @media only screen and (max-width: 1180px){
+    #header{
+        h1{
+            a{
+                img.foot{
+                    display: none;
+                }
+                img.color{
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        border: 1px solid #dfdfdf;
+        background: rgba(255, 255, 255, 1);
+        nav ul li a{
+            color: $normal;
+        }
+        .lang{  
+            span{
+                color: $normal;
+                &:after{
+                    border-color: $normal transparent transparent transparent;
+                }
+            }
+        }
+        .mNav div{
+            background: $normal;
+        }
+    }
     /*작은 모니터 pc*/
     #header .headerWrap .inner h1{
         width: 100px;
@@ -383,11 +436,17 @@ footer{
             line-height: 80px;
             border-bottom: 1px solid #dfdfdf;
             font-size: 18px;
-            text-align: center;
             margin: 0;
 
             &:last-child{
                 border-bottom: none;
+            }
+            a{
+                span{
+                    &:after{
+                        display: none;
+                    }
+                }
             }
         }
         li.sol{
