@@ -116,6 +116,10 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 .headerWrap .inner #nav .gnb > li a span:hover:after { width: 100%; }
 
+.headerWrap .inner #nav .gnb > li.sol.active > a > span { color: #7576ca; }
+
+.headerWrap .inner #nav .gnb > li.sol.active > a > span:after { width: 100%; }
+
 @media only screen and (min-width: 2800px) { body, .inner { max-width: 2800px; margin: 0 auto; }
   #header { max-width: 2800px; left: 50%; transform: translateX(-50%); } }
 

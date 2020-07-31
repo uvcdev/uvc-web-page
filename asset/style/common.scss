@@ -367,6 +367,13 @@ footer{
     }
 }
 
+.headerWrap .inner #nav .gnb > li.sol.active > a > span{
+    color: $color-blue;
+    &:after{
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 2800px){
     body, .inner{
         max-width: 2800px;
