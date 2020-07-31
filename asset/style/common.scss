@@ -134,11 +134,9 @@ body{
                         opacity: 0;
                         visibility: hidden;
                         transition: all .3s;
-                        
                         li{
-                            z-index: 452;
                             font-size: 16px;
-                            line-height: 60px;
+                            line-height: 55px;
                         }
                     }
                 }
@@ -433,16 +431,14 @@ footer{
             background: $white;
             top: 70px;
             width: 100%;
-            line-height: 80px;
+            line-height: 50px;
             border-bottom: 1px solid #dfdfdf;
             font-size: 18px;
             margin: 0;
-
-            &:last-child{
-                border-bottom: none;
-            }
+            text-align: left;
             a{
                 span{
+                    padding: 0 30px;
                     &:after{
                         display: none;
                     }
@@ -451,9 +447,19 @@ footer{
         }
         li.sol{
             ul{
-                display: none;
-                opacity: 0;
-                visibility: hidden;
+                position: relative;
+                top: 0;
+                opacity: 1;
+                visibility: visible;
+                li{
+                    top: 0;
+                    left: 0;
+                    a{
+                        span{
+                            padding: 0 60px;
+                        }
+                    }
+                }
             }
         }
     }

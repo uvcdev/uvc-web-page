@@ -30,6 +30,21 @@ $(document).ready(function() {
 	}); //hover기능은 로드가 전부 되지 않았을때 반대로 되는 경우가 있음
 
 	
+
+	$('.gnb > .sol').mouseover(function(){
+		if(window.innerWidth > 1180){
+			$('.nav_dim').css({"height":"60px", "visibility":"visible", "opacity":"1"});
+			$('.gnb > .sol > ul').css({"visibility":"visible", "opacity":"1"});
+		}
+	});
+	$('.gnb > .sol').mouseleave(function(){
+		if(window.innerWidth > 1180){
+			$('.nav_dim').css({"height":"0", "visibility":"hidden", "opacity":"0"});
+			$('.gnb > .sol > ul').css({"visibility":"hidden", "opacity":"0"});
+		}
+	});
+
+	
     /*유틸메뉴 언어선택*/
     $('.lang').click(function(){
 		$('.lang_util ul').slideToggle(400);
@@ -48,20 +63,11 @@ $(document).ready(function() {
 			$(this).toggleClass("on");
 			mNav.attr('name', 'on')
 		}
-		$('li').click(function(){
+		$('.gnb > li').click(function(){
 			$('.gnb').slideUp(400)
 			mNav.attr('name', 'off')
 			$('.mNav').removeClass("on");
 		});
-	});
-
-	$('.gnb > .sol').mouseover(function(){
-		$('.nav_dim').css({"height":"60px", "visibility":"visible", "opacity":"1"});
-		$('.gnb > .sol > ul').css({"visibility":"visible", "opacity":"1"});
-	});
-	$('.gnb > .sol').mouseleave(function(){
-		$('.nav_dim').css({"height":"0", "visibility":"hidden", "opacity":"0"});
-		$('.gnb > .sol > ul').css({"visibility":"hidden", "opacity":"0"});
 	});
 
 });
