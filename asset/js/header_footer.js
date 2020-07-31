@@ -17,13 +17,13 @@ $(document).ready(function() {
 
 	/*헤더에 마우스 올리면 클래스 토글*/
     $('#header').mouseenter(function(){
-		if($(windiow).width() > 1180) {
+		if(window.innerWidth > 1180) {
 			$(this).addClass("on");
 			$('h1 a img.color').addClass("active");
 		}
 	});
 	$('#header').mouseleave(function(){
-		if($(windiow).width() > 1180) {
+		if(window.innerWidth > 1180) {
 			$(this).removeClass("on");
 			$('h1 a img.color').removeClass("active");
 		}
@@ -32,14 +32,14 @@ $(document).ready(function() {
 	
 
 	$('.gnb > .sol').mouseover(function(){
-		if($(windiow).width() > 1180){
+		if(window.innerWidth > 1180){
 			$('.nav_dim').css({"height":"60px", "visibility":"visible", "opacity":"1"});
 			$('.gnb > .sol > ul').css({"visibility":"visible", "opacity":"1"});
 			$(this).addClass("active");
 		}
 	});
 	$('.gnb > .sol').mouseleave(function(){
-		if($(windiow).width() > 1180){
+		if(window.innerWidth > 1180){
 			$('.nav_dim').css({"height":"0", "visibility":"hidden", "opacity":"0"});
 			$('.gnb > .sol > ul').css({"visibility":"hidden", "opacity":"0"});
 			$(this).removeClass("active");
