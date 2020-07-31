@@ -254,7 +254,7 @@ main .main_visual{
                     background: url("../images/b1.jpg") no-repeat;
                     background-size: cover;
                     background-position: 50% 50%;
-                    flex: 2;
+                    flex: 1.5;
                     margin-right: 40px;
 
                     &:hover{
@@ -280,7 +280,7 @@ main .main_visual{
                 .b3{
                     background: url("../images/b3.jpg") no-repeat;
                     background-size: cover;
-                    background-position: 50% 30%;
+                    background-position: 50% 50%;
                     flex: 1;
 
                     &:hover{
@@ -294,7 +294,7 @@ main .main_visual{
                     background: url("../images/b4.jpg")no-repeat;
                     background-size: cover;
                     background-position: 50% 50%;
-                    flex: 2;
+                    flex: 1.5;
                     margin-left: 40px;
 
                     &:hover{

@@ -42,6 +42,11 @@ main {
                     background-size: contain;
                     background-position: 50% 50%;
                 }
+                .img_box.cpsmain{
+                    background: url("../images/cps_solution.png")no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                }
                 .img_box.erp{
                     background: url("../images/erp_solution.png")no-repeat;
                     background-size: contain;
@@ -91,6 +96,21 @@ main {
                 .img_box{
                     flex: 2;
                     min-height: 400px;
+                }
+                .img_box.cps{
+                    flex: none;
+                    width: 100%;
+                    img{
+                        width: 80%;
+                        height: auto;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                .img_box.cps.first{
+                    img{
+                        width: 50%;
+                    }
                 }
                 .img_box.mes{
                     background: url("../images/info_mes.png") no-repeat;
@@ -253,6 +273,45 @@ main {
                         }
                         dd{
                             letter-spacing: -1px;
+                        }
+                    }
+                }
+                .text_box.cps{
+                    flex: none;
+                    width: 50%;
+                    display: flex;
+                    flex-flow: row wrap;
+               
+                    dl{
+                        width: 100%;
+                        text-align: left;
+                        padding: 20px;
+                        box-sizing: border-box;
+
+                        dt{
+                            background: $normal;
+                            padding: 10px 20px;
+                            box-sizing: border-box;
+                            color: $white;
+                            margin-bottom: 20px;
+                            border-radius: 24px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        dd{
+                            font-size: 16px;
+                            margin: 0 0 10px 20px;
+                            font-weight: 500;
+                        }
+                    }
+                    p{
+                        width: 100%;
+                        margin-bottom: 40px;
+                        img{
+                            display: block;
+                            width: 80%;
+                            height: auto;
+                            margin: 0 auto;
                         }
                     }
                 }
@@ -484,6 +543,112 @@ main {
                 }
             }
         }
+        .story_container{
+            background: url("../images/car_bg.png")no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            
+            .cps_story{
+                width: 100%;
+                padding: 40px;
+                max-width: 80vw;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                margin-bottom: 40px;
+    
+                div{
+                    padding: 20px;
+                    box-sizing: border-box;
+                    flex: 1;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                }
+                div.car_company{
+                    color: $white;
+                    flex: 2;
+    
+                    h3, h4, ul{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    ul{
+                        display: flex;
+                        flex-flow: row wrap;
+                        li{
+                            width: 50%;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                div.cps_arrow{
+                    position: relative;
+                    p{
+                        font-size: 20px;
+                        text-align: center;
+                        color: $white;
+                        font-weight: 600;
+                    }
+                    span{
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        img{
+                            display: block;
+                            margin: 0 auto;
+                            width: 30%;
+                            height: auto;
+                        }
+                    }
+                }
+                div.table_box{
+                    flex: 2;
+                    table{
+                        thead{
+                            th:nth-child(1){
+                                background: $normal;
+                                color: $white;
+                            }
+                            th:nth-child(2){
+                                background: $normal;
+                                color: $white;
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td{
+                                    border: 1px solid rgba(0, 0, 0, .05);
+                                    border-left: none;
+                                    border-right: none;
+                                    background: $white;
+                                }
+                                td:nth-child(2n){
+                                    font-weight: 600;
+                                }
+                            }
+                            tr:nth-child(2n){
+                                td{
+                                    background: $white;
+                                }
+                            }
+                            tr:last-child{
+                                td{
+                                    border: none;
+                                }
+                                td.td_left{
+                                    border-bottom-left-radius: 18px;
+                                }
+                                td.td_right{
+                                    border-bottom-right-radius: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 table{
@@ -558,7 +723,9 @@ table{
                 width: 50%;
         }
     }
-    
+    main section .info_box .box .text_box.cps {
+        min-height: 400px;
+    }
 }
 
 @media only screen and (max-width: 1180px){  
@@ -572,6 +739,32 @@ table{
         li{
             flex: none;
             width: 50%;
+        }
+    }
+    main section .info_box .box .text_box.cps {
+        min-height: 400px;
+    }
+    main section .story_container .cps_story{
+        div{
+            flex: none;
+            padding-bottom: 0;
+        }
+        div.car_company{
+            flex: none;
+            width: 100%;
+            h3, h4{
+                margin-bottom: 40px;
+            }
+            ul li{
+                margin-bottom: 20px;
+            }
+        }
+        div.cps_arrow{
+            display: none;
+        }
+        div.table_box{
+            flex: none;
+            width: 100%;
         }
     }
 }
@@ -614,6 +807,9 @@ table{
                 height: 80px;
             }
         }
+    }
+    main section .info_box .box .text_box.cps {
+        width: 100%;
     }
 }
 
@@ -730,6 +926,27 @@ table{
                 width: 35%;
                 margin: 10px;
                 min-height: 140px;
+            }
+        }
+    }
+    main section .info_box .box .text_box.cps {
+        dl{
+            dt{
+                font-size: 16px;
+            }
+            dd{
+                font-size: 14px;
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    main section .story_container .cps_story{
+        div.car_company{
+            ul li{
+                margin-bottom: 20px;
+                width: 100%;
             }
         }
     }
