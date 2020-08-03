@@ -31,15 +31,15 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner nav { position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 70px; z-index: 451; }
 
-.headerWrap .inner nav .gnb { padding-bottom: 10px; width: 100%; margin: 0 auto; display: flex; justify-content: center; max-width: 100vw; }
+.headerWrap .inner nav .gnb { width: 100%; margin: 0 auto; display: flex; justify-content: center; max-width: 100vw; height: 100%; }
 
 .headerWrap .inner nav .gnb li { display: inline-block; font-size: 18px; font-weight: 400; line-height: 70px; margin: 0 10px; min-width: 110px; text-align: center; }
 
 .headerWrap .inner nav .gnb li a { color: #fff; }
 
-.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; top: 68px; left: 50%; transform: translate(-50%); z-index: 452; opacity: 0; visibility: hidden; transition: all .3s; }
+.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; height: 60px; top: 65px; left: 50%; transform: translateX(-50%); z-index: 452; opacity: 0; visibility: hidden; transition: all .3s; }
 
-.headerWrap .inner nav .gnb li.sol ul li { font-size: 16px; line-height: 55px; }
+.headerWrap .inner nav .gnb li.sol ul li { font-size: 16px; line-height: 60px; }
 
 .headerWrap .inner .util_menu { position: absolute; right: 0; top: 15px; z-index: 452; }
 
@@ -116,9 +116,11 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 .headerWrap .inner #nav .gnb > li a span:hover:after { width: 100%; }
 
-.headerWrap .inner #nav .gnb > li.sol.active > a > span { color: #7576ca; }
+.headerWrap .inner #nav .gnb > li.sol.active > a > span { color: #7576ca; position: relative; }
 
-.headerWrap .inner #nav .gnb > li.sol.active > a > span:after { width: 100%; }
+.headerWrap .inner #nav .gnb > li.sol.active > a > span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
+
+.headerWrap .inner #nav .gnb > li.sol.active > a > span:hover:after { width: 100%; }
 
 @media only screen and (min-width: 2800px) { body, .inner { max-width: 2800px; margin: 0 auto; }
   #header { max-width: 2800px; left: 50%; transform: translateX(-50%); } }
