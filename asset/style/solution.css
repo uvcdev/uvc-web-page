@@ -133,7 +133,7 @@ main section .info_box .box .diagram-container .diagram_head h3 { font-size: 16p
 
 main section .info_box .box .diagram-container .diagram { width: 100%; display: flex; justify-content: center; flex-flow: row wrap; align-items: center; }
 
-main section .info_box .box .diagram-container .diagram img { width: 60%; height: auto; }
+main section .info_box .box .diagram-container .diagram img { width: 50%; height: auto; }
 
 main section .info_box .box .diagram-container .diagram ul { width: 100%; display: flex; flex-flow: row nowrap; align-items: center; }
 
