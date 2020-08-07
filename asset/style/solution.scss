@@ -407,6 +407,43 @@ main {
                 }
             }
         }
+        .modeler_box{
+            padding-bottom: 40px;
+            display: flex;
+            flex-flow: row wrap;
+            section{
+                padding: 0;
+                flex: 1;
+                dl{
+                    width: 80%;
+                    padding-top: 40px;
+                    margin: 0 auto;
+                    dt{
+                        background: $normal;
+                        background: linear-gradient(90deg, rgba(34,34,34,1) 43%, rgba(55,53,50,0) 100%);
+                        color: $white;
+                        border-top-left-radius: 24px;
+                        border-bottom-left-radius: 24px;
+                        padding: 10px 20px;
+                        font-size: 20px;
+                        font-weight: 800;
+                    }
+                    dd{
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 10px 20px;
+                    }
+                }
+                img{
+                }
+            }
+            .img_section{
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
         .dl_box{
             width: 100%;
             display: flex;
@@ -646,6 +683,33 @@ main {
                 }
             }
         }
+        .slide_box{
+            padding-top: 40px;
+            ul{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                li{
+                    width: 45%;
+                    margin: 20px;
+                    box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
+                    position: relative;
+                    img{
+                        width: 100%;
+                    }
+                    span{
+                        display: inline-block;
+                        position: absolute;
+                        bottom: -20px;
+                        right: -20px;
+                        padding: 20px;
+                        background: $white;
+                        box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
     }
 }
 table{
@@ -764,6 +828,10 @@ table{
             width: 100%;
         }
     }
+    main section .inner .modeler_box section{
+        flex: none;
+        width: 100%;
+    }
 }
 
 
@@ -807,6 +875,17 @@ table{
     }
     main section .info_box .box .text_box.cps {
         width: 100%;
+    }
+    main section .inner .slide_box{
+        ul{
+            justify-content: center;
+            li{
+                width: 80%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -914,6 +993,22 @@ table{
             }
         }
     }
+    main section .inner .slide_box{
+        ul{
+            li{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+                span{
+                    position: static;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:480px){
@@ -944,6 +1039,14 @@ table{
             ul li{
                 margin-bottom: 20px;
                 width: 100%;
+            }
+        }
+    }
+    main section .inner .modeler_box section{
+        dl{
+            dt{
+                background: #222 !important;
+                border-radius: 24px !important;
             }
         }
     }
