@@ -43,7 +43,7 @@ body{
     visibility: hidden;
     background: $white;
     position: absolute;
-    top:  69px;
+    top: 70px;
     left: 0;
     z-index: 181;
     transition: all .3s;
@@ -128,7 +128,7 @@ body{
                         position: absolute;
                         width: 100%;
                         height: 60px;
-                        top: 65px;
+                        top: 70px;
                         left: 50%;
                         transform: translateX(-50%);
                         z-index: 452;
@@ -137,7 +137,6 @@ body{
                         transition: all .3s;
                         li{
                             font-size: 16px;
-                            line-height: 60px;
                         }
                     }
                 }
@@ -456,7 +455,6 @@ footer{
             background: $white;
             top: 70px;
             width: 100%;
-            line-height: 50px;
             border-bottom: 1px solid #dfdfdf;
             font-size: 18px;
             margin: 0;
@@ -473,12 +471,13 @@ footer{
         li.sol{
             ul{
                 position: relative;
-                top: 0;
-                opacity: 1;
-                visibility: visible;
+                top: -70px;
+                opacity: 1 !important;
+                visibility: visible !important;
+                height: auto;
                 li{
-                    top: 0;
                     left: 0;
+                    font-size: 16px !important;
                     a{
                         span{
                             padding: 0 60px;

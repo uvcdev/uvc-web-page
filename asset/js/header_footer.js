@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 	$('.gnb > .sol').mouseover(function(){
 		if(window.innerWidth > 1180){
-			$('.nav_dim').css({"height":"60px", "visibility":"visible", "opacity":"1"});
+			$('.nav_dim').css({"height":"68px", "visibility":"visible", "opacity":"1"});
 			$('.gnb > .sol > ul').css({"visibility":"visible", "opacity":"1"});
 			$(this).addClass("active");
 		}
