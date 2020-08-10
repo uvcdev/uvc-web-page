@@ -411,11 +411,12 @@ main {
             padding-bottom: 40px;
             display: flex;
             flex-flow: row wrap;
+            align-items: center;
             section{
                 padding: 0;
                 flex: 1;
                 dl{
-                    width: 80%;
+                    width: 100%;
                     padding-top: 40px;
                     margin: 0 auto;
                     dt{
@@ -434,13 +435,15 @@ main {
                         padding: 10px 20px;
                     }
                 }
-                img{
-                }
             }
             .img_section{
                 img{
                     display: block;
                     margin: 0 auto;
+                }
+                p{
+                    text-align: center;
+                    font-weight: 600;
                 }
             }
         }
@@ -831,6 +834,9 @@ table{
     main section .inner .modeler_box section{
         flex: none;
         width: 100%;
+    }
+    main section .modeler_box .img_section{
+        order: -1;
     }
 }
 
