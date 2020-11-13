@@ -66,5 +66,5 @@ $('.text_wrap h3').mouseleave(function(){
 
 /*way to come*/
 $('.come').click(function(){
-	$(this).toggleClass("on");
+	$(this).addClass("on");
 });

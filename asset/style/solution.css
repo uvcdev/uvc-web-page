@@ -53,6 +53,8 @@ main section .info_box .box .img_box.mes { background: url("../images/info_mes.p
 
 main section .info_box .box .img_box.erp { background: url("../images/info_erp.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
+main section .info_box .box .img_box.erp.en { background: url("../images/info_erp_en.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+
 main section .info_box .box .img_box.edu .exp-container { display: flex; flex-flow: row wrap; }
 
 main section .info_box .box .img_box.edu .exp-container .exp { width: 100%; height: 300px; background: url("../../asset/images/edu_exp.png") no-repeat; background-size: contain; background-position: 50% 50%; position: relative; }
@@ -282,7 +284,7 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
 @media only screen and (min-width: 1181px) and (max-width: 1239px) { main section .install_box ul li { flex: none; width: 50%; }
   main section .info_box .box .text_box.cps { min-height: 400px; } }
 
-@media only screen and (max-width: 1180px) { main section .info_box .box .text_box.edu div { width: 100%; height: 100px; }
+@media only screen and (max-width: 1180px) { main section .info_box .box .text_box.edu div { width: 100%; height: 200px; }
   main section .install_box ul li { flex: none; width: 50%; }
   main section .info_box .box .text_box.cps { min-height: 400px; }
   main section .story_container .cps_story div { flex: none; padding-bottom: 0; }
@@ -294,8 +296,7 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .inner .modeler_box section { flex: none; width: 100%; }
   main section .modeler_box .img_section { order: -1; } }
 
-@media only screen and (max-width: 1024px) { main section .info_box .box .text_box.edu div { height: 120px; }
-  main section .info_box .box .diagram-container .diagram img { width: 100%; height: auto; }
+@media only screen and (max-width: 1024px) { main section .info_box .box .diagram-container .diagram img { width: 100%; height: auto; }
   main section .info_box .box .diagram-container .diagram ul { flex-flow: row wrap; justify-content: center; }
   main section .info_box .box .diagram-container .diagram ul li { width: 26%; margin: 10px; }
   main section .install_box div.install_head { flex: none; width: 100%; padding-bottom: 20px; padding-right: 0; }
@@ -340,3 +341,5 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .info_box .box .text_box.cps p { margin-bottom: 0; }
   main section .story_container .cps_story div.car_company ul li { margin-bottom: 20px; width: 100%; }
   main section .inner .modeler_box section dl dt { background: #222 !important; border-radius: 24px !important; } }
+
+@media only screen and (max-width: 360px) { main section .info_box .box .text_box.edu div { height: 100px; } }
