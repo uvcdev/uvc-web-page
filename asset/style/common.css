@@ -108,19 +108,19 @@ footer address ul li:last-child:after { width: 0; margin-left: 0; }
 footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 /*media*/
-.headerWrap .inner #nav .gnb > li a span { display: block; width: 100%; height: 100%; position: relative; }
+#header .headerWrap .inner #nav .gnb > li a span { display: block; width: 100%; height: 100%; position: relative; }
 
-.headerWrap .inner #nav .gnb > li a span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
+#header .headerWrap .inner #nav .gnb > li a span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
 
-.headerWrap .inner #nav .gnb > li a span:hover { color: #7576ca; }
+#header .headerWrap .inner #nav .gnb > li a span:hover { color: #7576ca; }
 
-.headerWrap .inner #nav .gnb > li a span:hover:after { width: 100%; }
+#header .headerWrap .inner #nav .gnb > li a span:hover:after { width: 100%; }
 
-.headerWrap .inner #nav .gnb > li.sol.active > a > span { color: #7576ca; position: relative; }
+#header.on .headerWrap .inner #nav .gnb > li.sol > a > span { color: #7576ca; position: relative; }
 
-.headerWrap .inner #nav .gnb > li.sol.active > a > span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
+#header.on .headerWrap .inner #nav .gnb > li.sol > a > span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
 
-.headerWrap .inner #nav .gnb > li.sol.active > a > span:hover:after { width: 100%; }
+#header.on .headerWrap .inner #nav .gnb > li.sol > a > span:hover:after { width: 100%; }
 
 @media only screen and (min-width: 2800px) { body, .inner { max-width: 2800px; margin: 0 auto; }
   #header { max-width: 2800px; left: 50%; transform: translateX(-50%); } }

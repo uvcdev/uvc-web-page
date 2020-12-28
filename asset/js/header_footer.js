@@ -27,11 +27,11 @@ $(document).ready(function() {
 			$(this).removeClass("on");
 			$('h1 a img.color').removeClass("active");
 		}
-	}); //hover기능은 로드가 전부 되지 않았을때 반대로 되는 경우가 있음
+	}); //hover기능은 로드가 전부 되지 않았을때 반대로 되는 경우가 있음, 두가지 경우도 로드 되지 않았을 때 반대로 되는 경우가 있음
 
 	
 
-	$('.gnb > .sol').mouseover(function(){
+	$('.gnb > .sol').mouseenter(function(){
 		if(window.innerWidth > 1180){
 			$('.nav_dim').css({"height":"68px", "visibility":"visible", "opacity":"1"});
 			$('.gnb > .sol > ul').css({"visibility":"visible", "opacity":"1"});
