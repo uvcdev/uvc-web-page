@@ -7,7 +7,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 .inner { width: 100%; max-width: 80vw; margin: 0 auto; box-sizing: border-box; }
 
 /*header*/
-#header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; background: rgba(0, 0, 0, 0.4); box-sizing: border-box; z-index: 450; transition: all .3s; }
+#header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; background: rgba(0, 0, 0, 0.4); box-sizing: border-box; z-index: 450; /*transition: all .3s;*/ }
 
 .nav_dim { width: 100%; opacity: 0; height: 0; visibility: hidden; background: #fff; position: absolute; top: 69px; left: 0; z-index: 181; transition: all .3s; border-bottom: 1px solid #dfdfdf; }
 
@@ -15,11 +15,11 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner { height: 100%; position: relative; }
 
-.headerWrap .inner h1 { position: absolute; top: 0; left: 0; width: 160px; height: 100%; transition: all .3s; z-index: 453; }
+.headerWrap .inner h1 { position: absolute; top: 0; left: 0; width: 160px; height: 100%; /*transition: all .3s; */ z-index: 453; }
 
 .headerWrap .inner h1 a { display: block; }
 
-.headerWrap .inner h1 a img { display: block; width: 100%; transition: all .3s; position: absolute; top: 50%; transform: translateY(-50%); left: 0; }
+.headerWrap .inner h1 a img { display: block; width: 100%; /*transition: all .3s;*/ position: absolute; top: 50%; transform: translateY(-50%); left: 0; }
 
 .headerWrap .inner h1 a img.foot { z-index: 455; opacity: 1; }
 
@@ -37,7 +37,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner nav .gnb li a { color: #fff; }
 
-.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; height: 60px; top: 70px; left: 50%; transform: translateX(-50%); z-index: 452; opacity: 0; visibility: hidden; transition: all .3s; }
+.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; height: 60px; top: 70px; left: 50%; transform: translateX(-50%); z-index: 452; opacity: 0; visibility: hidden; /*transition: all .3s;*/ }
 
 .headerWrap .inner nav .gnb li.sol ul li { font-size: 16px; }
 
@@ -59,7 +59,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner .util_menu .mNav { display: none; cursor: pointer; display: inline-block; width: 35px; margin-left: 25px; z-index: 600; vertical-align: middle; position: relative; }
 
-.headerWrap .inner .util_menu .mNav div { display: none; float: right; width: 100%; height: 3px; background: #fff; margin-top: 9px; transition: all .4s; }
+.headerWrap .inner .util_menu .mNav div { display: none; float: right; width: 100%; height: 3px; background: #fff; margin-top: 9px; /*transition: all .4s;*/ }
 
 .headerWrap .inner .util_menu .mNav .bar1 { margin-top: 0; }
 
@@ -112,15 +112,11 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 #header .headerWrap .inner #nav .gnb > li a span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
 
-#header .headerWrap .inner #nav .gnb > li a span:hover { color: #7576ca; }
+#header .headerWrap .inner #nav .gnb > li a span.active { color: #7576ca; }
 
-#header .headerWrap .inner #nav .gnb > li a span:hover:after { width: 100%; }
+#header .headerWrap .inner #nav .gnb > li a span.active:after { width: 100%; }
 
-#header.on .headerWrap .inner #nav .gnb > li.sol > a > span { color: #7576ca; position: relative; }
-
-#header.on .headerWrap .inner #nav .gnb > li.sol > a > span:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; display: block; width: 0; height: 4px; background: #7576ca; transition: all .3s; }
-
-#header.on .headerWrap .inner #nav .gnb > li.sol > a > span:hover:after { width: 100%; }
+#header .headerWrap .inner #nav .gnb > li.sol.active > a > span { color: #7576ca; }
 
 @media only screen and (min-width: 2800px) { body, .inner { max-width: 2800px; margin: 0 auto; }
   #header { max-width: 2800px; left: 50%; transform: translateX(-50%); } }

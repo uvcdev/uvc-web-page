@@ -34,7 +34,7 @@ body{
     background:rgba(0, 0, 0, .4);
     box-sizing:border-box; 
     z-index:450;  
-    transition: all .3s;
+    /*transition: all .3s;*/
 }
 .nav_dim{
     width: 100%;
@@ -62,14 +62,14 @@ body{
             left:0;
             width:160px;
             height: 100%;
-            transition: all .3s; 
+            /*transition: all .3s; */
             z-index: 453;
             a {
                 display:block;
                 img {
                     display: block;
                     width:100%;
-                    transition: all .3s;
+                    /*transition: all .3s;*/
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
@@ -134,7 +134,7 @@ body{
                         z-index: 452;
                         opacity: 0;
                         visibility: hidden;
-                        transition: all .3s;
+                        /*transition: all .3s;*/
                         li{
                             font-size: 16px;
                         }
@@ -216,7 +216,7 @@ body{
                     height: 3px;
                     background: $white;
                     margin-top: 9px;
-                    transition: all .4s;
+                    /*transition: all .4s;*/
                 }
                 .bar1{
                     margin-top: 0;                
@@ -358,37 +358,17 @@ footer{
         background: $color-blue;
         transition: all .3s;
     }
-    &:hover{
-        color: $color-blue;
+}
+#header .headerWrap .inner #nav .gnb > li a span.active{
+    color: $color-blue;
 
-        &:after{
-            width: 100%;
-        }
+    &:after{
+        width: 100%;
     }
 }
 
-#header.on .headerWrap .inner #nav .gnb > li.sol > a > span{
+#header .headerWrap .inner #nav .gnb > li.sol.active > a > span{
     color: $color-blue;
-    position: relative;
-    &:after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        display: block;
-        width: 0;
-        height: 4px;
-        background: $color-blue;
-        transition: all .3s;
-    }
-
-    &:hover{
-        &:after{
-            width: 100%;
-        }
-    }
 }
 
 @media only screen and (min-width: 2800px){
