@@ -50,6 +50,21 @@ $('.gnb > .sol').mouseleave(function(){
 	}
 });
 
+$('.gnb > .com').mouseenter(function(){
+	if(window.innerWidth > 1180){
+		$('.nav_dim').css({"height":"68px", "visibility":"visible", "opacity":"1"});
+		$('.gnb > .com > ul').css({"visibility":"visible", "opacity":"1"});
+		$(this).addClass("active");
+	}
+});
+$('.gnb > .com').mouseleave(function(){
+	if(window.innerWidth > 1180){
+		$('.nav_dim').css({"height":"0", "visibility":"hidden", "opacity":"0"});
+		$('.gnb > .com > ul').css({"visibility":"hidden", "opacity":"0"});
+		$(this).removeClass("active");
+	}
+});
+
 
 /*유틸메뉴 언어선택*/
 $('.lang').click(function(){

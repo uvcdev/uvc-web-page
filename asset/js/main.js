@@ -68,3 +68,8 @@ $('.text_wrap h3').mouseleave(function(){
 $('.come').click(function(){
 	$(this).addClass("on");
 });
+
+/*clcik new transform animation*/
+// $('.notice').click("on", function(e){
+// 	$(this).css({"transform":"scale(1.2)", "transition":"600ms"});
+// });

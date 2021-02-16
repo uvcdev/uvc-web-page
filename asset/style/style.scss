@@ -5,6 +5,21 @@ $dim: rgba(0, 0, 0, .2);
 $dimd: rgba(255, 255, 255, .4);
 $white: #fff;
 $normal: #222;
+$place-holder: #e7e7e7;
+$line-cnt: 2;
+$line-height: 1;
+
+@mixin ellipsis($line-cnt, $line-height) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line-cnt;
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: $line-height;
+    height: $line-height * $line-cnt; 
+}
+
 .text_box{
     word-break: keep-all;
     line-height: 2;
@@ -123,7 +138,7 @@ main .main_visual{
         padding: 50px 0;
         
         .section_head{
-            padding: 80px 0 40px;
+            padding: 2em 0 1em;
             box-sizing: border-box !important;
             margin: 0 auto;
             text-align: center;
@@ -159,7 +174,6 @@ main .main_visual{
             box-sizing: border-box;
         
             .box{
-                border: 2px solid $normal;
             }
         }
     }
@@ -169,27 +183,82 @@ main .main_visual{
         background-position: 50% 50%;
         width: 100%;
         overflow: hidden;
-        padding-bottom: 80px;
         
         .box-container{
 
             .box{
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: space-around;
+                justify-content: space-between;
                 cursor: pointer;
                 border: 1px solid $white;
 
                 .text_box{
                     height: 300px;
-                    flex: 1;
-                    padding: 20px;
+                    width: 25% !important;
                     box-sizing: border-box;
-                    box-shadow: 0 15px 20px 0 rgba(0,0,0,.15);
+                    box-shadow: none;
+                    position: relative;
+                    overflow: hidden;
+                    &:before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 0px;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 80% !important;
+                        max-height: 80% !important;
+                        background: #d2d2d2;
+                    }
 
-                    &:hover div p, &:hover div a{
-                        opacity: 1;
-                        transition: all .4s;
+                    .imgbox{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        align-content: center;
+                        img{
+                            display: block;
+                            width: 40%;
+                            height: auto;
+                            margin: 0 auto;
+                        }
+                        h3{
+                            width: 100% !important;
+                            background: linear-gradient(to right, (#0DA23E 0%, #186E5E 43%, #204876 81%, #23397F 100%));
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-weight: 900;
+                            font-family: 'Noto Sans KR', sans-serif !important;
+                            text-align: center;
+                            margin-top: 2em;
+                        }
+                    }
+
+                    section{
+                        width: 100%;
+                        height: 100%;
+                        padding: 20px !important;
+                        box-sizing: border-box;
+                        box-shadow: none;
+                        transition: all .8s;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(100%);
+                        background-size: cover;
+                        background-position: 50% 50%;
+                        h3{
+                            transition: all .8s;
+                            transform: translateY(100%);
+                        }
+                        div{
+                            transition: all .8s;
+                            transform: translateY(50%);
+                        }
                     }
 
                     h3{
@@ -205,26 +274,19 @@ main .main_visual{
                     }
 
                     div{
-                        width: 100%;
-                        height: 200px;
-                        position: relative;
                         
                         p{
-                            opacity: 0;
                             color: $white;
                             font-size: 16px;
                             letter-spacing: -.5px;
                         }
                         a{
-                            opacity: 0;
+                            margin-top: 1em !important;
                             color: $white;
                             display: inline-block;
                             padding: 2px 10px;
                             border: 1px solid $white;
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            z-index: 181;
+                            position: relative;
 
                             &:hover{
                                 color: $normal;
@@ -245,63 +307,53 @@ main .main_visual{
                                 width: 0;
                                 height: 100%;
                                 background: transparent;
-                                transition: width .5s;
+                                transition: width .8s;
                             }
                         }
                     }
                 }
                 .b1{
-                    background: url("../images/b1.jpg") no-repeat;
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    flex: 1.5;
-                    margin-right: 40px;
-
-                    &:hover{
-                        background: linear-gradient(180deg, rgba(0, 0, 0, .44), transparent 80%, transparent), url("../images/b1.jpg") no-repeat;
+                    section{
+                        background:url("../images/b1.jpg") no-repeat;
                         background-size: cover;
                         background-position: 50% 50%;
-                        box-shadow: 0 20px 30px 0 rgba(0,0,0,.3);
                     }
                 }
                 .b2{
-                    background: url("../images/b2.jpg") no-repeat;
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    flex: 1;
-
-                    &:hover{
-                        background: linear-gradient(180deg, rgba(0, 0, 0, .44), transparent 80%, transparent), url("../images/b2.jpg") no-repeat;
+                    section{
+                        background:url("../images/b2.jpg") no-repeat;
                         background-size: cover;
                         background-position: 50% 50%;
-                        box-shadow: 0 20px 30px 0 rgba(0,0,0,.3);
                     }
                 }
                 .b3{
-                    background: url("../images/b3.jpg") no-repeat;
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    flex: 1;
-
-                    &:hover{
-                        background: linear-gradient(180deg, rgba(0, 0, 0, .44), transparent 80%, transparent), url("../images/b3.jpg") no-repeat;
+                    section{
+                        background:url("../images/b3.jpg") no-repeat;
                         background-size: cover;
                         background-position: 50% 50%;
-                        box-shadow: 0 20px 30px 0 rgba(0,0,0,.3);
                     }
                 }
                 .b4{
-                    background: url("../images/b4.jpg")no-repeat;
-                    background-size: cover;
-                    background-position: 50% 50%;
-                    flex: 1.5;
-                    margin-left: 40px;
-
-                    &:hover{
-                        background: linear-gradient(180deg, rgba(0, 0, 0, .44), transparent 80%, transparent), url("../images/b4.jpg") no-repeat;
+                    &:before{
+                        width: 0;
+                    }
+                    section{
+                        background:url("../images/b4.jpg") no-repeat;
                         background-size: cover;
                         background-position: 50% 50%;
-                        box-shadow: 0 20px 30px 0 rgba(0,0,0,.3);
+                    }
+                }
+                .b1, .b2, .b3, .b4{
+                    &:hover{
+                        section{
+                            transform: translateY(0%);
+                            h3{
+                                transform: translateY(0%);
+                            }
+                            div{
+                                transform: translateY(0%);
+                            }
+                        }
                     }
                 }
             }
@@ -623,8 +675,114 @@ main .main_visual{
 
 /*company*/
     #company{
-        padding: 80px 0 0;
+        padding: 0 !important;
         box-shadow: none;
+        .inner{
+            .notice-container{
+                padding-bottom: 6em;
+                .notice-header{
+                    .noticemore{
+                        font-family: 'Titillium Web', sans-serif;
+                        font-weight: bold;
+                        display: block;
+                        text-align: right !important;
+                        color: $normal !important;
+                        padding-right: 3.5em;
+                        span{
+                            width: 100%;
+                            svg{
+                                width: 3em;
+                            }
+                        }
+                    }
+                }
+                .notice-content{
+                    cursor: pointer;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    box-sizing: border-box;
+                    .noticebox{
+                        width: calc(100%/3);
+                        height: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        &:hover{
+                            .notice{
+                                &:after{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .notice{
+                            position: relative;
+                            width: 80%;
+                            height: 100%;
+                            &:before{
+                                content: "";
+                                display: block;
+                                width: 100%;
+                                height: .2em;
+                                background-color: $place-holder;
+                                position: absolute;
+                                bottom: -1em;
+                                left: 0;
+                                transition: .8s;
+                                z-index: 1;
+                            }
+                            &:after{
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: .2em;
+                                background-color: $color-blue;
+                                position: absolute;
+                                bottom: -1em;
+                                left: 0;
+                                transition: .8s;
+                                z-index: 2;
+                            }
+                            .noticeurl{
+                                display: block;
+                                color: $normal;
+                                width: 100%;
+                                height: 100%;
+                                .noticephoto{
+                                    width: 100%;
+                                    height: 20em;
+                                    background-repeat: no-repeat !important;
+                                    background-position: center center !important;
+                                    background-size: cover !important;
+                                }
+                                .noticetext{
+                                    padding: 1em;
+                                    box-sizing: border-box;
+                                    overflow: hidden;
+                                    width: 100%;
+                                    min-height: 14em;
+                                    display: flex;
+                                    flex-flow: column wrap;
+                                    justify-content: space-around;
+                                    align-content: flex-start;
+                                    span{
+                                        color: $color-blue;
+                                        font-weight: bold;
+                                        font-size: 1em;
+                                    }
+                                    h4{
+                                        @include ellipsis(2, 1.3em); 
+                                    }
+                                    p{
+                                        @include ellipsis(2, 1.3em); //
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .happy{
             width: 100%;
             height: 500px;
@@ -846,6 +1004,21 @@ main .main_visual{
     
 }
 @media only screen and (min-width: 1181px) and (max-width: 1239px){
+    #content #business .box-container .box{
+        .text_box{
+            width: 50% !important;
+            .imgbox h3{
+                font-size: 1.8em;
+                margin-top: .5em;
+            }
+        }
+        .text_box.b2{
+            &:before{
+                width: 0px !important;
+            }
+        }
+    }
+
     #content #solution .box-container .box{
         min-width: 320px;
         min-height: 280px;
@@ -873,6 +1046,26 @@ main .main_visual{
         font-size: 50px;
         word-break: keep-all;
     }
+    #content #business .box-container .box .text_box{
+        width: 50% !important;
+        .imgbox h3{
+            font-size: 1.8em;
+            margin-top: .5em;
+        }
+    }
+    #content #business .box-container .box .text_box{
+        &:before{
+            width: 100% !important;
+            height: 1px !important;
+            top: 100% !important;
+        }
+    }
+    
+    #content #business .box-container .box .text_box.b3, #content #business .box-container .box .text_box.b4 {
+        &:before{
+            height: 0 !important;
+        }
+    }
     #content #solution .box-container .box {
         min-width: 260px;
         min-height: 260px;
@@ -891,6 +1084,35 @@ main .main_visual{
         section{
             width: 150px;
             right: 0;
+        }
+    }
+    #content #company .inner .notice-container {
+        .notice-header{
+            .noticemore{
+                padding-right: 6em;
+            }
+        }
+        .notice-content {
+            width: 100%;
+            .noticebox{
+                width: 100% !important;
+                margin-bottom: 3em;
+                .notice{
+                    .noticephoto{
+                        height: 20vw;
+                        background-size: cover;
+                        background-position: 50% 50%;
+                    }
+                    .noticetext{
+                        h4{
+                            @include ellipsis(1, 1em); 
+                        }
+                        p{
+                            @include ellipsis(1, 1em); //
+                        }
+                    }
+                }
+            }
         }
     }
     #content #company .happy .box-container .box{
@@ -950,15 +1172,20 @@ main .main_visual{
 
 @media only screen and (max-width: 768px){
     /*아이패드*/
-    #content #business .box-container .box{
-        flex-flow: column wrap;
-        margin: 0 !important;
-        
-        .text_box{
-            margin: 10px 0 !important;
-            flex: none;
+    #content #business .box-container .box .text_box{
+        width: 100% !important;
+        margin-bottom: 2em;
+        .imgbox{
+            img{
+                width: 30%;
+            }
+            h3{
+                margin-top: 0;
+            }
         }
-
+    }
+    #content #business .box-container .box .text_box.b4{
+        margin-bottom: 0 !important;
     }
     #content #solution .box-container .box {
         min-width: 256.3px;
@@ -1015,6 +1242,19 @@ main .main_visual{
         }
         section{
             right: 0;
+        }
+    }
+    #content #company .inner .notice-container {
+        .notice-content {
+            .noticebox{
+                .notice{
+                    .noticephoto{
+                        height: 30vw;
+                        background-size: cover;
+                        background-position: 50% 50%;
+                    }
+                }
+            }
         }
     }
     #content #company .happy {

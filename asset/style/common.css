@@ -33,13 +33,13 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner nav .gnb { width: 100%; margin: 0 auto; display: flex; justify-content: center; max-width: 100vw; height: 100%; }
 
-.headerWrap .inner nav .gnb li { display: inline-block; font-size: 18px; font-weight: 400; line-height: 70px; margin: 0 10px; min-width: 110px; text-align: center; }
+.headerWrap .inner nav .gnb li { display: inline-block; font-size: 18px; font-weight: 400; line-height: 70px; margin: 0 5px; min-width: 110px; text-align: center; }
 
 .headerWrap .inner nav .gnb li a { color: #fff; }
 
-.headerWrap .inner nav .gnb li.sol ul { position: absolute; width: 100%; height: 60px; top: 70px; left: 50%; transform: translateX(-50%); z-index: 452; opacity: 0; visibility: hidden; /*transition: all .3s;*/ }
+.headerWrap .inner nav .gnb li.sol ul, .headerWrap .inner nav .gnb li.com ul { position: absolute; left: 50%; transform: translateX(-50%); width: 100%; z-index: 452; opacity: 0; visibility: hidden; /*transition: all .3s;*/ }
 
-.headerWrap .inner nav .gnb li.sol ul li { font-size: 16px; }
+.headerWrap .inner nav .gnb li.sol ul li, .headerWrap .inner nav .gnb li.com ul li { font-size: .9rem; }
 
 .headerWrap .inner .util_menu { position: absolute; right: 0; top: 15px; z-index: 452; }
 
@@ -59,7 +59,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner .util_menu .mNav { display: none; cursor: pointer; display: inline-block; width: 35px; margin-left: 25px; z-index: 600; vertical-align: middle; position: relative; }
 
-.headerWrap .inner .util_menu .mNav div { display: none; float: right; width: 100%; height: 3px; background: #fff; margin-top: 9px; /*transition: all .4s;*/ }
+.headerWrap .inner .util_menu .mNav div { display: none; float: right; width: 100%; height: 3px; background: #fff; margin-top: 9px; }
 
 .headerWrap .inner .util_menu .mNav .bar1 { margin-top: 0; }
 
@@ -118,8 +118,13 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 #header .headerWrap .inner #nav .gnb > li.sol.active > a > span { color: #7576ca; }
 
-@media only screen and (min-width: 2800px) { body, .inner { max-width: 2800px; margin: 0 auto; }
-  #header { max-width: 2800px; left: 50%; transform: translateX(-50%); } }
+#header .headerWrap .inner #nav .gnb > li.com.active > a > span { color: #7576ca; }
+
+@media only screen and (min-width: 2800px) { .inner { width: 90vw; margin: 0 auto; }
+  #header { max-width: 100vw; }
+  #content #business .box-container .box .text_box .imgbox img { width: 30% !important; } }
+
+@media only screen and (min-width: 3800px) { #content #business .box-container .box .text_box .imgbox img { width: 20% !important; } }
 
 @media only screen and (max-width: 1180px) { #header { border: 1px solid #dfdfdf; background: white; }
   #header h1 a img.foot { display: none; }
@@ -135,9 +140,9 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
   #header .headerWrap .inner #nav .gnb li { position: relative; background: #fff; top: 70px; width: 100%; border-bottom: 1px solid #dfdfdf; font-size: 18px; margin: 0; text-align: left; }
   #header .headerWrap .inner #nav .gnb li a span { padding: 0 30px; }
   #header .headerWrap .inner #nav .gnb li a span:after { display: none; }
-  #header .headerWrap .inner #nav .gnb li.sol ul { position: relative; top: -70px; opacity: 1 !important; visibility: visible !important; height: auto; }
-  #header .headerWrap .inner #nav .gnb li.sol ul li { left: 0; font-size: 16px !important; }
-  #header .headerWrap .inner #nav .gnb li.sol ul li a span { padding: 0 60px; }
+  #header .headerWrap .inner #nav .gnb li.sol ul, #header .headerWrap .inner #nav .gnb li.com ul { position: relative; top: -70px; opacity: 1 !important; visibility: visible !important; height: auto; left: 50% !important; transform: translateX(-50%) !important; }
+  #header .headerWrap .inner #nav .gnb li.sol ul li, #header .headerWrap .inner #nav .gnb li.com ul li { left: 0; font-size: 16px !important; }
+  #header .headerWrap .inner #nav .gnb li.sol ul li a span, #header .headerWrap .inner #nav .gnb li.com ul li a span { padding: 0 60px; }
   #header .headerWrap .inner .util_menu { top: 50%; transform: translateY(-50%); }
   #header .headerWrap .inner .util_menu .mNav { display: inline-block; }
   #header .headerWrap .inner .util_menu .mNav div { display: block; } }
