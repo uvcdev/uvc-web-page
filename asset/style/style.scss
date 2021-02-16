@@ -20,7 +20,10 @@ $line-height: 1;
     height: $line-height * $line-cnt; 
 }
 
+
+//why not
 .text_box{
+    font-weight: normal;
     word-break: keep-all;
     line-height: 2;
 }
