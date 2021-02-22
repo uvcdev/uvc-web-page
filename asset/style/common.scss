@@ -448,6 +448,7 @@ footer{
             font-size: 18px;
             margin: 0;
             text-align: left;
+            line-height: 50px;
             a{
                 span{
                     padding: 0 30px;
@@ -481,4 +482,23 @@ footer{
     #header .headerWrap .inner .util_menu {top: 50%; transform: translateY(-50%);}
     #header .headerWrap .inner .util_menu .mNav{display: inline-block;}
     #header .headerWrap .inner .util_menu .mNav div{display: block;}
+}
+@media only screen and (max-width: 1180px){
+    
+    #header .headerWrap .inner #nav .gnb {
+        
+        li {
+            font-size: 14px;
+            line-height: 40px;
+        }
+        li.sol, li.com{
+            ul{
+                
+                li{
+                    left: 0;
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
 }
