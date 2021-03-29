@@ -85,24 +85,32 @@ section{
                 ul{
                     width: 90%;
                     margin: 0 auto;
-                    border-top: .15em solid $gray;
                     min-height: 225px;
-                    overflow: auto;
                     li{
                         width: 100%;
-                        padding: 1.5em 0 1em;
+                        padding: 1.5em 0 1em 1em;
                         position: relative;
                         box-sizing: border-box;
-                        
-                        &:after{
+                        transition: box-shadow .6s, transform .3s;
+                        z-index: 10;
+                        margin-bottom: .6em;
+                        border-bottom: 1px solid $gray;
+                        background: #fff;
+
+                        &:first-child{
+                            border-top: 1px solid $gray;
+                        }
+
+                        &:before{
                             content: "";
                             display: block;
                             position: absolute;
-                            bottom: 0;
+                            top: 0;
                             left: 0;
-                            width: 100%;
-                            height: .2em;
-                            background: #efefef;
+                            background: #ddd;
+                            width: .6em;
+                            height: 100%;
+                            transition: background-color .6s ease;
                         }
                         strong{
                             //존재 하지않는 기사가 나올때
@@ -122,11 +130,6 @@ section{
                                 width: 100%;
                                 height: 100%;
                                 color: $normal;
-                                h6{
-                                    width: 5%;
-                                    text-align: center;
-                                    font-size: 1em;
-                                }
                                 section{
                                     width: 20%;
                                     height: 150px;
@@ -141,7 +144,7 @@ section{
                                     }
                                 }
                                 div{
-                                    width: 75%;
+                                    width: 80%;
                                     padding: 0 1rem;
                                     box-sizing: border-box;
                                     span{
@@ -186,6 +189,14 @@ section{
                                     }
                                 }
                             }
+                        }
+                    }
+                    li:hover{
+                        box-shadow: 6px 6px 10px rgba(0, 0, 0, .2);
+                        transform: translateY(-2em);
+                        z-index: 11;
+                        &:before{
+                            background: $color-blue;
                         }
                     }
                 }

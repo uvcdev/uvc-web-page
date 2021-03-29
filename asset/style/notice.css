@@ -28,11 +28,13 @@ section .inner #noticeBoard .pager #prevValue p { transform: rotate(135deg); -we
 
 section .inner #noticeBoard .container { width: 100%; }
 
-section .inner #noticeBoard .container ul { width: 90%; margin: 0 auto; border-top: 0.15em solid #bbb; min-height: 225px; overflow: auto; }
+section .inner #noticeBoard .container ul { width: 90%; margin: 0 auto; min-height: 225px; }
 
-section .inner #noticeBoard .container ul li { width: 100%; padding: 1.5em 0 1em; position: relative; box-sizing: border-box; }
+section .inner #noticeBoard .container ul li { width: 100%; padding: 1.5em 0 1em 1em; position: relative; box-sizing: border-box; transition: box-shadow .6s, transform .3s; z-index: 10; margin-bottom: .6em; border-bottom: 1px solid #bbb; background: #fff; }
 
-section .inner #noticeBoard .container ul li:after { content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: .2em; background: #efefef; }
+section .inner #noticeBoard .container ul li:first-child { border-top: 1px solid #bbb; }
+
+section .inner #noticeBoard .container ul li:before { content: ""; display: block; position: absolute; top: 0; left: 0; background: #ddd; width: .6em; height: 100%; transition: background-color .6s ease; }
 
 section .inner #noticeBoard .container ul li strong { display: flex; justify-content: center; align-items: center; margin-bottom: .5em; }
 
@@ -40,13 +42,11 @@ section .inner #noticeBoard .container ul li article { width: 100%; height: 100%
 
 section .inner #noticeBoard .container ul li article a { display: flex; justify-content: space-between; flex-flow: row wrap; width: 100%; height: 100%; color: #222; }
 
-section .inner #noticeBoard .container ul li article a h6 { width: 5%; text-align: center; font-size: 1em; }
-
 section .inner #noticeBoard .container ul li article a section { width: 20%; height: 150px; padding: 0 !important; margin: 0 !important; }
 
 section .inner #noticeBoard .container ul li article a section p { width: 100%; height: 100%; background-size: cover !important; background-position: center center !important; background-repeat: no-repeat !important; }
 
-section .inner #noticeBoard .container ul li article a div { width: 75%; padding: 0 1rem; box-sizing: border-box; }
+section .inner #noticeBoard .container ul li article a div { width: 80%; padding: 0 1rem; box-sizing: border-box; }
 
 section .inner #noticeBoard .container ul li article a div span { width: 100%; font-size: .8rem; color: #444; }
 
@@ -55,3 +55,7 @@ section .inner #noticeBoard .container ul li article a div h1 { font-size: 1.2em
 section .inner #noticeBoard .container ul li article a div p { margin-top: 1em; max-height: 4.2em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; /* 라인수 */ -webkit-box-orient: vertical; word-wrap: break-word; line-height: 1.4em; height: 4.2em; padding: 0 .2em; font-size: .95em; box-sizing: border-box; width: 100%; color: #444; }
 
 section .inner #noticeBoard .container ul li article a div span.moreview { color: #7576ca; width: 100%; display: block; margin-top: 2em; font-size: .8em; text-align: right; }
+
+section .inner #noticeBoard .container ul li:hover { box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); transform: translateY(-2em); z-index: 11; }
+
+section .inner #noticeBoard .container ul li:hover:before { background: #7576ca; }
