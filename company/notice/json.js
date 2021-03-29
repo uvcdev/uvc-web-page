@@ -14,7 +14,6 @@ function render(){
             var row = "<li>" 
                         + "<article>" 
                         + "<a href='" + jsonArrName.url + "'" + "target='_blank'>"
-                        + "<h6>" + jsonArrName.index + "</h6>"
                         + "<section>"
                         + "<p style='background: url(" + ".\/JSON\/" + jsonArrName.image + ")'>" + "</p>"
                         + "</section>"
