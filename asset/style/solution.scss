@@ -128,17 +128,38 @@ main {
                     background-position: 50% 50%;
                 }
                 .img_box.edu{
+                    background: #f9f9f9;
+                    padding: 40px 0;
+                    width: 100%;
+                    order: -1;
+                    flex: none;
+                    min-height: 0;
+                    margin-bottom: 30px;
                     .exp-container{
                         display: flex;
                         flex-flow: row wrap;
                         .exp{
-                            width: 100%;
-                            height: 300px;
-                            background: url("../../asset/images/edu_exp.png") no-repeat;
-                            background-size: contain;
-                            background-position: 50% 50%;
                             position: relative;
-
+                            width: 100%;
+                            h4{
+                                text-align: center;
+                            }
+                            .exp-rel{
+                                display: block;
+                                max-width: 391px;
+                                max-height: 313px;
+                                min-width: 391px;
+                                min-height: 313px;
+                                margin: 0 auto;
+                            }
+                            .open{
+                                width: 391px;
+                                height: 313px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
                             .more{
                                 width: 30px;
                                 height: 30px;
@@ -149,97 +170,19 @@ main {
                             }
                             .more_dash{
                                 position: absolute;
-                                transform: rotate(-45deg) translateX(-50%);
-                                left: 50%;
-                                top: 5%;
+                                transform: rotate(-45deg) translate(-50%, -50%);
+                                left: 75%;
+                                top: 30%;
                                 animation: moredash 2s ease-in-out;
                                 animation-iteration-count: infinite;
                             }
                             .more_arms{
                                 position: absolute;
-                                transform: rotate(-45deg) translateX(-50%) translateY(-50%);
-                                left: 50%;
-                                top: 50%;
+                                transform: rotate(-45deg) translate(-50%, -50%);
+                                left: 75%;
+                                top: 47%;
                                 animation: morearms 2s ease-in-out;
                                 animation-iteration-count: infinite;
-                            }
-                            #dash_modal{
-                                width: 100%;
-                                height: 100%;
-                                display: none;
-                                position: fixed;
-                                z-index: 100;
-                                top: 0;
-                                left: 0;
-                                background: $dim;
-                                animation: fadeIn .6s linear;
-                                overflow: hidden;
-                            }
-                            #arms_modal{
-                                width: 100%;
-                                height: 100%;
-                                display: none;
-                                position: fixed;
-                                z-index: 100;
-                                top: 0;
-                                left: 0;
-                                background: $dim;
-                                animation: fadeIn .6s linear;
-                                overflow: hidden;
-                            }
-                            .modal_closed{
-                                width: 50px;
-                                height: 50px;
-                                float: right;
-                                position: absolute;
-                                top: 10%;
-                                right: 10%;
-                                cursor: pointer;
-
-                                .bar1, .bar2{
-                                    width: 30px;
-                                    height: 3px;
-                                    background: $white;
-                                    display: inline-block;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                }
-                                .bar1{
-                                    transform: translate(-50%) rotate(-45deg);
-                                }
-                                .bar2{
-                                    transform: translate(-50%) rotate(45deg);
-                                }
-                            }
-                            .modal_contents{
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                background: #fff;
-                                animation: slideIn .6s linear;
-                                .dash{
-                                    color: $normal;
-                                    text-align: center;
-                                    position: relative;
-                                    img{
-                                        display: block;
-                                        width: 100%;
-                                        height: auto;
-                                    }
-                                }
-                                .arms{
-                                    background: $gray;
-                                    color: $normal;
-                                    text-align: center;
-                                    position: relative;
-                                    img{
-                                        display: block;
-                                        width: 100%;
-                                        height: auto;
-                                    }
-                                }
                             }
                         }
                         .exp_info{
@@ -289,6 +232,7 @@ main {
                         text-align: left;
                         padding: 20px;
                         box-sizing: border-box;
+                        min-height: 0;
 
                         dt{
                             background: $normal;
@@ -323,33 +267,48 @@ main {
                     }
                 }
                 .text_box.edu{
-                    flex: 2;
+                    width: 100%;
+                    flex: none;
                     display: flex;
                     flex-flow: row wrap;
-                    justify-content: center;
+                    justify-content: space-around;
+                    margin-bottom: 30px;
+                    max-width: 1500px;
                     div{
-                        width: 50%;
+                        width: 320px;
+                        height: 320px;
+                        font-size: 17px;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: flex-start;
+                        align-content: space-around;
+                        margin: 1rem;
+                        border: 1px solid rgba(0,0,0,.055);
+                        box-shadow: 0 3px 15px rgba(0, 0, 0, .05);
+                        padding: .5rem;
+                        box-sizing: border-box;
+                        b{
+                            width: 100%;
+                            color: $normal;
+                            font-size: 20px;
+                        }
                         p{
                             width: 100%;
-                            height: 200px;
-                            margin-bottom: 20px;
-                            display: flex;
-                            flex-flow: row wrap;
 
-                            b{
-                                flex: 2;
-                                font-size: 17px;
-                                letter-spacing: -1px; 
-                                font-weight: 600;
-                            }
-                            span{
-                                margin: 0 20px;
-                                flex: 1;
-                                display: inline-block;
-                                img{
-                                    min-width: 40px;
-                                    height: auto;
-                                }
+                        }
+                        span.icon-span{
+                            width: 150px;
+                            height: 150px;
+                            margin: 0 auto;
+                            border-radius: 50%;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 0 3px 10px rgba(57, 76, 255, .15);
+                            img{
+                                transform: scale(.8);
                             }
                         }
                     }
@@ -360,7 +319,7 @@ main {
                     font-family: 'Titillium Web', sans-serif;
                     width: 100%;
                     display: flex;
-                    margin-bottom: 40px;
+                    margin-bottom: 20px;
                     text-align: center;
                     font-size: 14px;
                     font-weight: 800;
@@ -412,43 +371,126 @@ main {
                 }
             }
         }
+        #dash_modal{
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $dim;
+            animation: fadeIn .6s linear;
+            overflow: hidden;
+        }
+        #arms_modal{
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background: $dim;
+            animation: fadeIn .6s linear;
+            overflow: hidden;
+        }
+        .modal_closed{
+            width: 50px;
+            height: 50px;
+            float: right;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            cursor: pointer;
+            z-index: 602;
+            .bar1, .bar2{
+                width: 30px;
+                height: 3px;
+                background: $white;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+            .bar1{
+                transform: translate(-50%) rotate(-45deg);
+            }
+            .bar2{
+                transform: translate(-50%) rotate(45deg);
+            }
+        }
+        .modal_contents{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            animation: slideIn .6s linear;
+            .dash{
+                color: $normal;
+                text-align: center;
+                position: relative;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .arms{
+                background: $gray;
+                color: $normal;
+                text-align: center;
+                position: relative;
+            }
+        }
+
+
+
         .modeler_box{
             padding-bottom: 40px;
             display: flex;
             flex-flow: row wrap;
             align-items: center;
+            min-height: 420px;
             section{
                 padding: 0;
                 flex: 1;
+                display: flex;
+                flex-flow: row wrap;
                 dl{
                     width: 100%;
-                    padding-top: 40px;
                     margin: 0 auto;
+                    padding-top: 40px;
                     dt{
-                        background: $normal;
-                        background: linear-gradient(90deg, rgba(34,34,34,1) 43%, rgba(55,53,50,0) 100%);
+                        display: inline-block;
+                        background: #222;
                         color: $white;
-                        border-top-left-radius: 24px;
-                        border-bottom-left-radius: 24px;
-                        padding: 10px 20px;
-                        font-size: 20px;
+                        padding: 5px 10px;
+                        font-size: 18px;
                         font-weight: 800;
                     }
                     dd{
-                        font-size: 18px;
+                        width: 100%;
+                        font-size: 16px;
                         font-weight: 600;
-                        padding: 10px 20px;
+                        line-height: 2;
                     }
                 }
             }
             .img_section{
+                display: flex;
+                flex-flow: row wrap;
                 img{
                     display: block;
-                    margin: 0 auto;
+                    width: 100%;
+                    height: auto;
                 }
                 p{
-                    text-align: center;
                     font-weight: 600;
+                    width: 100%;
                 }
             }
         }
@@ -768,9 +810,9 @@ table{
 }
 @keyframes moredash{
     from{
-        top: 2%;
+        top: 28%;
     } to{
-        top: 5%;
+        top: 31%;
     }
 }
 @keyframes morearms{
@@ -792,26 +834,14 @@ table{
                 width: 50%;
         }
     }
-    main section .info_box .box .text_box.cps {
-        min-height: 400px;
-    }
 }
 
-@media only screen and (max-width: 1180px){  
-    main section .info_box .box .text_box.edu{
-        div{
-            width: 100%;
-            height: 200px;
-        }
-    }
+@media only screen and (max-width: 1180px){
     main section .install_box ul{
         li{
             flex: none;
             width: 50%;
         }
-    }
-    main section .info_box .box .text_box.cps {
-        min-height: 400px;
     }
     main section .story_container .cps_story{
         div{
@@ -862,6 +892,10 @@ table{
             }
         }
     }
+    main section .info_box.modeler .box .diagram-container{
+        margin-top: 100px;
+
+    }
     main section .install_box div.install_head{
         flex: none;
         width: 100%;
@@ -891,6 +925,13 @@ table{
                     width: 100%;
                 }
             }
+        }
+    }
+    main section .dl_box {
+        flex-flow: column wrap;
+        dl{
+            flex: none;
+            margin: 10px 0;
         }
     }
 }
@@ -930,13 +971,6 @@ table{
             margin-top: 80px;
         }
     }
-    main section .dl_box {
-        flex-flow: column wrap;
-        dl{
-            flex: none;
-            margin: 10px 0;
-        }
-    }
     main section .install_box ul{
         flex: none;
         width: 100%;
@@ -974,23 +1008,6 @@ table{
 }
 
 @media only screen and (max-width:640px){
-    main section .info_box .box .text_box.edu{
-        flex: none;
-        width: 100%;
-        div{
-            height: 80px;
-            p{
-                span{
-                    img{
-                        flex: 1;
-                    }
-                }
-                b{
-                    flex: 8;
-                }
-            }
-        }
-    }
     main section .info_box .box .diagram-container .diagram{
         ul{
             li{
@@ -1048,6 +1065,17 @@ table{
             }
         }
     }
+
+    main section .info_box .box .img_box.edu .exp-container .exp .exp-rel{
+        min-width: 250px;
+        min-height: 200px;
+        max-width: 250px;
+        max-height: 200px;
+    }
+    main section .info_box .box .img_box.edu .exp-container .exp .open{
+        width: 250px;
+        height: 200px;
+    }
     main section .inner .modeler_box section{
         dl{
             dt{
@@ -1058,7 +1086,14 @@ table{
     }
 }
 @media only screen and (max-width:360px){
-    main section .info_box .box .text_box.edu div {
-        height: 100px;
+    main section .info_box .box .text_box.edu{
+        div{
+            width: 200px;
+            height: 200px;
+            span.icon-span{
+                width: 100px;
+                height: 100px;
+            }
+        }
     }
 }

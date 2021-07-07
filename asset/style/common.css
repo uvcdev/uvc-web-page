@@ -4,7 +4,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic, sans-serif; color: #222; font-size: 15px; overflow-x: hidden; background: #fff; font-weight: 400; }
 
-.inner { width: 100%; max-width: 80vw; margin: 0 auto; box-sizing: border-box; }
+.inner { width: 100%; max-width: 1500px; margin: 0 auto; box-sizing: border-box; }
 
 /*header*/
 #header { position: fixed; top: 0; left: 0; width: 100%; height: 70px; background: rgba(0, 0, 0, 0.4); box-sizing: border-box; z-index: 450; /*transition: all .3s;*/ }
@@ -57,7 +57,7 @@ body { font-family: "Noto Sans KR", Lato, 돋움, Dotum, Helvetica, AppleGothic,
 
 .headerWrap .inner .util_menu .lang_util ul li a { color: #222; padding: 0 8px; display: block; }
 
-.headerWrap .inner .util_menu .mNav { display: none; cursor: pointer; display: inline-block; width: 35px; margin-left: 25px; z-index: 600; vertical-align: middle; position: relative; }
+.headerWrap .inner .util_menu .mNav { cursor: pointer; display: inline-block; width: 35px; margin-left: 25px; z-index: 600; vertical-align: middle; position: relative; }
 
 .headerWrap .inner .util_menu .mNav div { display: none; float: right; width: 100%; height: 3px; background: #fff; margin-top: 9px; }
 
@@ -120,11 +120,12 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 #header .headerWrap .inner #nav .gnb > li.com.active > a > span { color: #7576ca; }
 
-@media only screen and (min-width: 2800px) { .inner { width: 90vw; margin: 0 auto; }
-  #header { max-width: 100vw; }
+@media only screen and (min-width: 2800px) { #header { max-width: 100vw; }
   #content #business .box-container .box .text_box .imgbox img { width: 30% !important; } }
 
 @media only screen and (min-width: 3800px) { #content #business .box-container .box .text_box .imgbox img { width: 20% !important; } }
+
+@media only screen and (max-width: 1600px) { .inner { max-width: 90vw !important; } }
 
 @media only screen and (max-width: 1180px) { #header { border: 1px solid #dfdfdf; background: white; }
   #header h1 a img.foot { display: none; }
