@@ -22,9 +22,9 @@ section .inner #noticeBoard .pager button { width: 3em; height: 3em; display: fl
 
 section .inner #noticeBoard .pager button p { border: solid #bbb; border-width: 0 1px 1px 0; display: inline-block; padding: 4px; }
 
-section .inner #noticeBoard .pager #nextValue p { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
+section .inner #noticeBoard .pager #nextValue p, section .inner #noticeBoard .pager #nextValueEn p { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
 
-section .inner #noticeBoard .pager #prevValue p { transform: rotate(135deg); -webkit-transform: rotate(135deg); }
+section .inner #noticeBoard .pager #prevValue p, section .inner #noticeBoard .pager #prevValueEn p { transform: rotate(135deg); -webkit-transform: rotate(135deg); }
 
 section .inner #noticeBoard .container { width: 100%; }
 

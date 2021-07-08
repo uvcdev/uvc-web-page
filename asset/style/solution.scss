@@ -397,31 +397,6 @@ main {
             animation: fadeIn .6s linear;
             overflow: hidden;
         }
-        .modal_closed{
-            width: 50px;
-            height: 50px;
-            float: right;
-            position: absolute;
-            top: 10%;
-            right: 10%;
-            cursor: pointer;
-            z-index: 602;
-            .bar1, .bar2{
-                width: 30px;
-                height: 3px;
-                background: $white;
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-            }
-            .bar1{
-                transform: translate(-50%) rotate(-45deg);
-            }
-            .bar2{
-                transform: translate(-50%) rotate(45deg);
-            }
-        }
         .modal_contents{
             position: absolute;
             top: 50%;
@@ -444,6 +419,32 @@ main {
                 color: $normal;
                 text-align: center;
                 position: relative;
+            }
+            .modal_closed{
+                width: 50px;
+                height: 50px;
+                float: right;
+                position: absolute;
+                top: -25px;
+                right: -50px;
+                cursor: pointer;
+                transform: translate(-50%, -50%);
+                z-index: 602;
+                .bar1, .bar2{
+                    width: 30px;
+                    height: 3px;
+                    background: $white;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+                .bar1{
+                    transform: translate(-50%) rotate(-45deg);
+                }
+                .bar2{
+                    transform: translate(-50%) rotate(45deg);
+                }
             }
         }
 
@@ -634,7 +635,7 @@ main {
             
             .cps_story{
                 width: 100%;
-                padding: 40px;
+                padding: 40px 0;
                 max-width: 80vw;
                 margin: 0 auto;
                 display: flex;
@@ -761,6 +762,26 @@ main {
             }
         }
     }
+    .video_box.cps{
+        width: 100%;
+        background-color: #f9f9f9;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        div.inner > div{
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        p{
+            text-align: center;
+            padding: 20px;
+            background: $white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+            font-weight: 600;
+            margin: 30px auto 0;
+            width: max-content;
+        }
+    }
 }
 table{
     margin:40px 0;
@@ -872,6 +893,17 @@ table{
     }
     main section .modeler_box .img_section{
         order: -1;
+    }
+
+    main .video_box.cps{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main section .modal_contents .arms{
+        #edu_video{
+            height: 400px !important;
+        }
     }
 }
 
@@ -1005,6 +1037,16 @@ table{
             width: 100%;
         }
     }
+    main .video_box.cps{
+        #cps_video{
+            height: 280px !important;
+        }
+    }
+    main section .modal_contents .arms{
+        #edu_video{
+            height: 280px !important;
+        }
+    }
 }
 
 @media only screen and (max-width:640px){
@@ -1030,6 +1072,16 @@ table{
                     text-align: center;
                 }
             }
+        }
+    }
+    main .video_box.cps{
+        #cps_video{
+            height: 200px !important;
+        }
+    }
+    main section .modal_contents .arms{
+        #edu_video{
+            height: 200px !important;
         }
     }
 }
@@ -1084,6 +1136,11 @@ table{
             }
         }
     }
+    main section .modal_contents .arms{
+        #edu_video{
+            height: 160px !important;
+        }
+    }
 }
 @media only screen and (max-width:360px){
     main section .info_box .box .text_box.edu{
@@ -1094,6 +1151,11 @@ table{
                 width: 100px;
                 height: 100px;
             }
+        }
+    }
+    main section .modal_contents .arms{
+        #edu_video{
+            height: 120px !important;
         }
     }
 }
