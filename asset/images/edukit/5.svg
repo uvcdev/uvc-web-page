@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#394CFF;}
+</style>
+<g id="Website">
+	<path class="st0" d="M456,16H56c-22.1,0-40,17.9-40,40v288c0,22.1,17.9,40,40,40h152v64h-48c-13.3,0-24,10.7-24,24s10.7,24,24,24
+		h192c13.3,0,24-10.7,24-24s-10.7-24-24-24h-48v-64h152c22.1,0,40-17.9,40-40V56C496,33.9,478.1,16,456,16z M56,32h400
+		c13.3,0,24,10.7,24,24v248H32V56C32,42.7,42.7,32,56,32z M360,472c0,4.4-3.6,8-8,8H160c-4.4,0-8-3.6-8-8s3.6-8,8-8h192
+		C356.4,464,360,467.6,360,472z M288,448h-64v-64h64V448z M456,368H56c-13.3,0-24-10.7-24-24v-24h448v24
+		C480,357.3,469.3,368,456,368z"/>
+	<path class="st0" d="M432,336h16v16h-16V336z"/>
+	<path class="st0" d="M400,336h16v16h-16V336z"/>
+	<path class="st0" d="M48,64h16v16H48V64z"/>
+	<path class="st0" d="M80,64h16v16H80V64z"/>
+	<path class="st0" d="M112,64h32v16h-32V64z"/>
+	<path class="st0" d="M48,96h32v16H48V96z"/>
+	<path class="st0" d="M96,96h16v16H96V96z"/>
+	<path class="st0" d="M48,128h16v16H48V128z"/>
+	<path class="st0" d="M80,128h32v16H80V128z"/>
+	<path class="st0" d="M48,160h32v16H48V160z"/>
+	<path class="st0" d="M96,160h16v16H96V160z"/>
+	<path class="st0" d="M184,272h144c13.3,0,24-10.7,24-24v-96c0-13.3-10.7-24-24-24h-16v-8c0-13.3-10.7-24-24-24h-8v-8
+		c0-13.3-10.7-24-24-24c-13.3,0-24,10.7-24,24v8h-8c-13.3,0-24,10.7-24,24v8h-16c-13.3,0-24,10.7-24,24v96
+		C160,261.3,170.7,272,184,272z M248,88c0-4.4,3.6-8,8-8s8,3.6,8,8v8h-16V88z M216,120c0-4.4,3.6-8,8-8h64c4.4,0,8,3.6,8,8v8h-80
+		V120z M176,152c0-4.4,3.6-8,8-8h144c4.4,0,8,3.6,8,8v96c0,4.4-3.6,8-8,8H184c-4.4,0-8-3.6-8-8V152z"/>
+	<path class="st0" d="M216,208c13.3,0,24-10.7,24-24s-10.7-24-24-24s-24,10.7-24,24S202.7,208,216,208z M216,176c4.4,0,8,3.6,8,8
+		s-3.6,8-8,8s-8-3.6-8-8S211.6,176,216,176z"/>
+	<path class="st0" d="M296,208c13.3,0,24-10.7,24-24s-10.7-24-24-24s-24,10.7-24,24S282.7,208,296,208z M296,176c4.4,0,8,3.6,8,8
+		s-3.6,8-8,8s-8-3.6-8-8S291.6,176,296,176z"/>
+	<path class="st0" d="M232,224h48v16h-48V224z"/>
+	<path class="st0" d="M200,224h16v16h-16V224z"/>
+	<path class="st0" d="M296,224h16v16h-16V224z"/>
+	<path class="st0" d="M128,96h16v16h-16V96z"/>
+	<path class="st0" d="M128,128h16v16h-16V128z"/>
+	<path class="st0" d="M128,160h16v16h-16V160z"/>
+	<path class="st0" d="M48,192h16v16H48V192z"/>
+	<path class="st0" d="M80,192h32v16H80V192z"/>
+	<path class="st0" d="M48,224h32v16H48V224z"/>
+	<path class="st0" d="M96,224h16v16H96V224z"/>
+	<path class="st0" d="M128,192h16v16h-16V192z"/>
+	<path class="st0" d="M128,224h16v16h-16V224z"/>
+	<path class="st0" d="M48,256h16v16H48V256z"/>
+	<path class="st0" d="M80,256h32v16H80V256z"/>
+	<path class="st0" d="M128,256h16v16h-16V256z"/>
+	<path class="st0" d="M448,64h16v16h-16V64z"/>
+	<path class="st0" d="M416,64h16v16h-16V64z"/>
+	<path class="st0" d="M368,64h32v16h-32V64z"/>
+	<path class="st0" d="M432,96h32v16h-32V96z"/>
+	<path class="st0" d="M400,96h16v16h-16V96z"/>
+	<path class="st0" d="M448,128h16v16h-16V128z"/>
+	<path class="st0" d="M400,128h32v16h-32V128z"/>
+	<path class="st0" d="M432,160h32v16h-32V160z"/>
+	<path class="st0" d="M400,160h16v16h-16V160z"/>
+	<path class="st0" d="M368,96h16v16h-16V96z"/>
+	<path class="st0" d="M368,128h16v16h-16V128z"/>
+	<path class="st0" d="M368,160h16v16h-16V160z"/>
+	<path class="st0" d="M448,192h16v16h-16V192z"/>
+	<path class="st0" d="M400,192h32v16h-32V192z"/>
+	<path class="st0" d="M432,224h32v16h-32V224z"/>
+	<path class="st0" d="M400,224h16v16h-16V224z"/>
+	<path class="st0" d="M368,192h16v16h-16V192z"/>
+	<path class="st0" d="M368,224h16v16h-16V224z"/>
+	<path class="st0" d="M448,256h16v16h-16V256z"/>
+	<path class="st0" d="M400,256h32v16h-32V256z"/>
+	<path class="st0" d="M368,256h16v16h-16V256z"/>
+</g>
+</svg>

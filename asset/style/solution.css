@@ -55,37 +55,23 @@ main section .info_box .box .img_box.erp { background: url("../images/info_erp.p
 
 main section .info_box .box .img_box.erp.en { background: url("../images/info_erp_en.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
+main section .info_box .box .img_box.edu { background: #f9f9f9; padding: 40px 0; width: 100%; order: -1; flex: none; min-height: 0; margin-bottom: 30px; }
+
 main section .info_box .box .img_box.edu .exp-container { display: flex; flex-flow: row wrap; }
 
-main section .info_box .box .img_box.edu .exp-container .exp { width: 100%; height: 300px; background: url("../../asset/images/edu_exp.png") no-repeat; background-size: contain; background-position: 50% 50%; position: relative; }
+main section .info_box .box .img_box.edu .exp-container .exp { position: relative; width: 100%; }
+
+main section .info_box .box .img_box.edu .exp-container .exp h4 { text-align: center; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .exp-rel { display: block; max-width: 391px; max-height: 313px; min-width: 391px; min-height: 313px; margin: 0 auto; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .open { width: 391px; height: 313px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 main section .info_box .box .img_box.edu .exp-container .exp .more { width: 30px; height: 30px; border-radius: 50% 50% 50% 0; background: linear-gradient(to bottom, #fa7a57, #d00805); margin: -20px 0 0 -20px; cursor: pointer; }
 
-main section .info_box .box .img_box.edu .exp-container .exp .more_dash { position: absolute; transform: rotate(-45deg) translateX(-50%); left: 50%; top: 5%; animation: moredash 2s ease-in-out; animation-iteration-count: infinite; }
+main section .info_box .box .img_box.edu .exp-container .exp .more_dash { position: absolute; transform: rotate(-45deg) translate(-50%, -50%); left: 75%; top: 30%; animation: moredash 2s ease-in-out; animation-iteration-count: infinite; }
 
-main section .info_box .box .img_box.edu .exp-container .exp .more_arms { position: absolute; transform: rotate(-45deg) translateX(-50%) translateY(-50%); left: 50%; top: 50%; animation: morearms 2s ease-in-out; animation-iteration-count: infinite; }
-
-main section .info_box .box .img_box.edu .exp-container .exp #dash_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
-
-main section .info_box .box .img_box.edu .exp-container .exp #arms_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_closed { width: 50px; height: 50px; float: right; position: absolute; top: 10%; right: 10%; cursor: pointer; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_closed .bar1, main section .info_box .box .img_box.edu .exp-container .exp .modal_closed .bar2 { width: 30px; height: 3px; background: #fff; display: inline-block; position: absolute; top: 50%; left: 50%; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_closed .bar1 { transform: translate(-50%) rotate(-45deg); }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_closed .bar2 { transform: translate(-50%) rotate(45deg); }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_contents { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; animation: slideIn .6s linear; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .dash { color: #222; text-align: center; position: relative; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .dash img { display: block; width: 100%; height: auto; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .arms { background: #bbb; color: #222; text-align: center; position: relative; }
-
-main section .info_box .box .img_box.edu .exp-container .exp .modal_contents .arms img { display: block; width: 100%; height: auto; }
+main section .info_box .box .img_box.edu .exp-container .exp .more_arms { position: absolute; transform: rotate(-45deg) translate(-50%, -50%); left: 75%; top: 47%; animation: morearms 2s ease-in-out; animation-iteration-count: infinite; }
 
 main section .info_box .box .img_box.edu .exp-container .exp_info { width: 100%; text-align: center; }
 
@@ -103,7 +89,7 @@ main section .info_box .box .text_box dl dd { letter-spacing: -1px; }
 
 main section .info_box .box .text_box.cps { flex: none; width: 50%; display: flex; flex-flow: row wrap; }
 
-main section .info_box .box .text_box.cps dl { width: 100%; text-align: left; padding: 20px; box-sizing: border-box; }
+main section .info_box .box .text_box.cps dl { width: 100%; text-align: left; padding: 20px; box-sizing: border-box; min-height: 0; }
 
 main section .info_box .box .text_box.cps dl dt { background: #222; padding: 10px 20px; box-sizing: border-box; color: #fff; margin-bottom: 20px; border-radius: 24px; display: flex; justify-content: center; }
 
@@ -115,19 +101,19 @@ main section .info_box .box .text_box.cps p img { display: block; width: 80%; he
 
 main section .info_box .box .text_box.right dl { text-align: left; }
 
-main section .info_box .box .text_box.edu { flex: 2; display: flex; flex-flow: row wrap; justify-content: center; }
+main section .info_box .box .text_box.edu { width: 100%; flex: none; display: flex; flex-flow: row wrap; justify-content: space-around; margin-bottom: 30px; max-width: 1500px; }
 
-main section .info_box .box .text_box.edu div { width: 50%; }
+main section .info_box .box .text_box.edu div { width: 320px; height: 320px; font-size: 17px; display: flex; flex-flow: row wrap; justify-content: center; text-align: center; align-items: flex-start; align-content: space-around; margin: 1rem; border: 1px solid rgba(0, 0, 0, 0.055); box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05); padding: .5rem; box-sizing: border-box; }
 
-main section .info_box .box .text_box.edu div p { width: 100%; height: 200px; margin-bottom: 20px; display: flex; flex-flow: row wrap; }
+main section .info_box .box .text_box.edu div b { width: 100%; color: #222; font-size: 20px; }
 
-main section .info_box .box .text_box.edu div p b { flex: 2; font-size: 17px; letter-spacing: -1px; font-weight: 600; }
+main section .info_box .box .text_box.edu div p { width: 100%; }
 
-main section .info_box .box .text_box.edu div p span { margin: 0 20px; flex: 1; display: inline-block; }
+main section .info_box .box .text_box.edu div span.icon-span { width: 150px; height: 150px; margin: 0 auto; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; box-shadow: 0 3px 10px rgba(57, 76, 255, 0.15); }
 
-main section .info_box .box .text_box.edu div p span img { min-width: 40px; height: auto; }
+main section .info_box .box .text_box.edu div span.icon-span img { transform: scale(0.8); }
 
-main section .info_box .box .diagram-container { background: rgba(0, 0, 0, 0.05); padding: 20px; font-family: 'Titillium Web', sans-serif; width: 100%; display: flex; margin-bottom: 40px; text-align: center; font-size: 14px; font-weight: 800; position: relative; }
+main section .info_box .box .diagram-container { background: rgba(0, 0, 0, 0.05); padding: 20px; font-family: 'Titillium Web', sans-serif; width: 100%; display: flex; margin-bottom: 20px; text-align: center; font-size: 14px; font-weight: 800; position: relative; }
 
 main section .info_box .box .diagram-container .diagram_head { position: absolute; top: -50px; right: 20px; display: inline-block; height: 50px; padding: 0 20px; background: rgba(0, 0, 0, 0.05); border-top-left-radius: 24px; border-top-right-radius: 24px; }
 
@@ -141,19 +127,41 @@ main section .info_box .box .diagram-container .diagram ul { width: 100%; displa
 
 main section .info_box .box .diagram-container .diagram ul li { width: 100%; background: rgba(0, 0, 0, 0.05); display: flex; justify-content: center; align-items: center; padding: 5px; min-height: 100px; margin: 0 10px; }
 
-main section .modeler_box { padding-bottom: 40px; display: flex; flex-flow: row wrap; align-items: center; }
+main section #dash_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
 
-main section .modeler_box section { padding: 0; flex: 1; }
+main section #arms_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
 
-main section .modeler_box section dl { width: 100%; padding-top: 40px; margin: 0 auto; }
+main section .modal_contents { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; animation: slideIn .6s linear; }
 
-main section .modeler_box section dl dt { background: #222; background: linear-gradient(90deg, #222222 43%, rgba(55, 53, 50, 0) 100%); color: #fff; border-top-left-radius: 24px; border-bottom-left-radius: 24px; padding: 10px 20px; font-size: 20px; font-weight: 800; }
+main section .modal_contents .dash { color: #222; text-align: center; position: relative; }
 
-main section .modeler_box section dl dd { font-size: 18px; font-weight: 600; padding: 10px 20px; }
+main section .modal_contents .dash img { display: block; width: 100%; height: auto; }
 
-main section .modeler_box .img_section img { display: block; margin: 0 auto; }
+main section .modal_contents .arms { background: #bbb; color: #222; text-align: center; position: relative; }
 
-main section .modeler_box .img_section p { text-align: center; font-weight: 600; }
+main section .modal_contents .modal_closed { width: 50px; height: 50px; float: right; position: absolute; top: -25px; right: -50px; cursor: pointer; transform: translate(-50%, -50%); z-index: 602; }
+
+main section .modal_contents .modal_closed .bar1, main section .modal_contents .modal_closed .bar2 { width: 30px; height: 3px; background: #fff; display: inline-block; position: absolute; top: 50%; left: 50%; }
+
+main section .modal_contents .modal_closed .bar1 { transform: translate(-50%) rotate(-45deg); }
+
+main section .modal_contents .modal_closed .bar2 { transform: translate(-50%) rotate(45deg); }
+
+main section .modeler_box { padding-bottom: 40px; display: flex; flex-flow: row wrap; align-items: center; min-height: 420px; }
+
+main section .modeler_box section { padding: 0; flex: 1; display: flex; flex-flow: row wrap; }
+
+main section .modeler_box section dl { width: 100%; margin: 0 auto; padding-top: 40px; }
+
+main section .modeler_box section dl dt { display: inline-block; background: #222; color: #fff; padding: 5px 10px; font-size: 18px; font-weight: 800; }
+
+main section .modeler_box section dl dd { width: 100%; font-size: 16px; font-weight: 600; line-height: 2; }
+
+main section .modeler_box .img_section { display: flex; flex-flow: row wrap; }
+
+main section .modeler_box .img_section img { display: block; width: 100%; height: auto; }
+
+main section .modeler_box .img_section p { font-weight: 600; width: 100%; }
 
 main section .dl_box { width: 100%; display: flex; flex-flow: row wrap; }
 
@@ -205,7 +213,7 @@ main section .categories_box ul li.lite div p { background: url("../images/edge_
 
 main section .story_container { background: url("../images/car_bg.png") no-repeat; background-size: cover; background-position: 50% 50%; }
 
-main section .story_container .cps_story { width: 100%; padding: 40px; max-width: 80vw; margin: 0 auto; display: flex; flex-flow: row wrap; margin-bottom: 40px; }
+main section .story_container .cps_story { width: 100%; padding: 40px 0; max-width: 80vw; margin: 0 auto; display: flex; flex-flow: row wrap; margin-bottom: 40px; }
 
 main section .story_container .cps_story div { padding: 20px; box-sizing: border-box; flex: 1; display: flex; flex-flow: row wrap; justify-content: center; }
 
@@ -253,6 +261,12 @@ main section .slide_box ul li img { width: 100%; }
 
 main section .slide_box ul li span { display: inline-block; position: absolute; bottom: -20px; right: -20px; padding: 20px; background: #fff; box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15); font-weight: 600; }
 
+main .video_box.cps { width: 100%; background-color: #f9f9f9; margin-top: 30px; padding-bottom: 30px; }
+
+main .video_box.cps div.inner > div { display: flex; justify-content: center; padding-top: 30px; }
+
+main .video_box.cps p { text-align: center; padding: 20px; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); font-weight: 600; margin: 30px auto 0; width: max-content; }
+
 table { margin: 40px 0; text-align: left; box-sizing: border-box; box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15); border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; }
 
 table thead { background: #222; }
@@ -275,18 +289,15 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
 @keyframes fadeIn { from { opacity: 0; }
   to { opacity: 1; } }
 
-@keyframes moredash { from { top: 2%; }
-  to { top: 5%; } }
+@keyframes moredash { from { top: 28%; }
+  to { top: 31%; } }
 
 @keyframes morearms { from { top: 47%; }
   to { top: 50%; } }
 
-@media only screen and (min-width: 1181px) and (max-width: 1239px) { main section .install_box ul li { flex: none; width: 50%; }
-  main section .info_box .box .text_box.cps { min-height: 400px; } }
+@media only screen and (min-width: 1181px) and (max-width: 1239px) { main section .install_box ul li { flex: none; width: 50%; } }
 
-@media only screen and (max-width: 1180px) { main section .info_box .box .text_box.edu div { width: 100%; height: 200px; }
-  main section .install_box ul li { flex: none; width: 50%; }
-  main section .info_box .box .text_box.cps { min-height: 400px; }
+@media only screen and (max-width: 1180px) { main section .install_box ul li { flex: none; width: 50%; }
   main section .story_container .cps_story div { flex: none; padding-bottom: 0; }
   main section .story_container .cps_story div.car_company { flex: none; width: 100%; }
   main section .story_container .cps_story div.car_company h3, main section .story_container .cps_story div.car_company h4 { margin-bottom: 40px; }
@@ -294,11 +305,14 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .story_container .cps_story div.cps_arrow { display: none; }
   main section .story_container .cps_story div.table_box { flex: none; width: 100%; }
   main section .inner .modeler_box section { flex: none; width: 100%; }
-  main section .modeler_box .img_section { order: -1; } }
+  main section .modeler_box .img_section { order: -1; }
+  main .video_box.cps { width: 90%; margin: 0 auto; }
+  main section .modal_contents .arms #edu_video { height: 400px !important; } }
 
 @media only screen and (max-width: 1024px) { main section .info_box .box .diagram-container .diagram img { width: 100%; height: auto; }
   main section .info_box .box .diagram-container .diagram ul { flex-flow: row wrap; justify-content: center; }
   main section .info_box .box .diagram-container .diagram ul li { width: 26%; margin: 10px; }
+  main section .info_box.modeler .box .diagram-container { margin-top: 100px; }
   main section .install_box div.install_head { flex: none; width: 100%; padding-bottom: 20px; padding-right: 0; }
   main section .install_box ul { flex: none; width: 100%; }
   main section .install_box ul li { width: 25%; }
@@ -306,7 +320,9 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .info_box .box .text_box.cps { width: 100%; }
   main section .inner .slide_box ul { justify-content: center; }
   main section .inner .slide_box ul li { width: 80%; }
-  main section .inner .slide_box ul li img { width: 100%; } }
+  main section .inner .slide_box ul li img { width: 100%; }
+  main section .dl_box { flex-flow: column wrap; }
+  main section .dl_box dl { flex: none; margin: 10px 0; } }
 
 @media only screen and (max-width: 768px) { main section .box-container .box .img_box { flex: none; width: 100%; height: 400px; }
   main section .box-container .box .text_box { flex: none; }
@@ -315,8 +331,6 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .info_box .box .text_box dl { min-height: 200px; text-align: center; }
   main section .info_box .box .text_box.right dl { text-align: center; }
   main section .info_box .box .diagram-container { margin-top: 80px; }
-  main section .dl_box { flex-flow: column wrap; }
-  main section .dl_box dl { flex: none; margin: 10px 0; }
   main section .install_box ul { flex: none; width: 100%; flex-flow: row wrap; }
   main section .install_box ul li { width: 50%; }
   main section .categories_box ul li div { flex: none; width: 100%; }
@@ -324,22 +338,27 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .categories_box ul li table { flex: none; width: 100%; }
   main section .categories_box ul li.beige div { order: -1; }
   main section .info_box .box .img_box.modeler { margin: 10px 0 20px; }
-  main section .info_box .box .img_box.modeler img { width: 100%; } }
+  main section .info_box .box .img_box.modeler img { width: 100%; }
+  main .video_box.cps #cps_video { height: 280px !important; }
+  main section .modal_contents .arms #edu_video { height: 280px !important; } }
 
-@media only screen and (max-width: 640px) { main section .info_box .box .text_box.edu { flex: none; width: 100%; }
-  main section .info_box .box .text_box.edu div { height: 80px; }
-  main section .info_box .box .text_box.edu div p span img { flex: 1; }
-  main section .info_box .box .text_box.edu div p b { flex: 8; }
-  main section .info_box .box .diagram-container .diagram ul li { width: 24%; margin: 10px; }
+@media only screen and (max-width: 640px) { main section .info_box .box .diagram-container .diagram ul li { width: 24%; margin: 10px; }
   main section .inner .slide_box ul li { width: 100%; }
   main section .inner .slide_box ul li img { width: 100%; }
-  main section .inner .slide_box ul li span { position: static; width: 100%; box-sizing: border-box; text-align: center; } }
+  main section .inner .slide_box ul li span { position: static; width: 100%; box-sizing: border-box; text-align: center; }
+  main .video_box.cps #cps_video { height: 200px !important; }
+  main section .modal_contents .arms #edu_video { height: 200px !important; } }
 
 @media only screen and (max-width: 480px) { main section .info_box .box .diagram-container .diagram ul li { width: 35%; margin: 10px; min-height: 140px; }
   main section .info_box .box .text_box.cps dl dt { font-size: 16px; }
   main section .info_box .box .text_box.cps dl dd { font-size: 14px; }
   main section .info_box .box .text_box.cps p { margin-bottom: 0; }
   main section .story_container .cps_story div.car_company ul li { margin-bottom: 20px; width: 100%; }
-  main section .inner .modeler_box section dl dt { background: #222 !important; border-radius: 24px !important; } }
+  main section .info_box .box .img_box.edu .exp-container .exp .exp-rel { min-width: 250px; min-height: 200px; max-width: 250px; max-height: 200px; }
+  main section .info_box .box .img_box.edu .exp-container .exp .open { width: 250px; height: 200px; }
+  main section .inner .modeler_box section dl dt { background: #222 !important; border-radius: 24px !important; }
+  main section .modal_contents .arms #edu_video { height: 160px !important; } }
 
-@media only screen and (max-width: 360px) { main section .info_box .box .text_box.edu div { height: 100px; } }
+@media only screen and (max-width: 360px) { main section .info_box .box .text_box.edu div { width: 200px; height: 200px; }
+  main section .info_box .box .text_box.edu div span.icon-span { width: 100px; height: 100px; }
+  main section .modal_contents .arms #edu_video { height: 120px !important; } }

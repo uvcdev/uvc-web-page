@@ -40,7 +40,7 @@
                                 <li><a href="../index.html"><span>Flexing CPS</span></a></li>
                                 <li><a href="../modeler/index.html"><span>OPC UA Modeler</span></a></li>
                                 <li><a href="../edge/index.html"><span>Flexing EDGE</span></a></li>
-                                <li><a href="../edukit/index.html"><span>Flexing Edu Kit</span></a></li>
+                                <li><a href="../edukit/index.html"><span>Flexing EduKit</span></a></li>
                                 <li><a href="../erp/index.html"><span>Flexing ERP</span></a></li>
                                 <li><a href="../mes/index.html"><span>Flexing MES</span></a></li>
                             </ul>
@@ -96,7 +96,7 @@
                     </div> <!--box-->
                 </div> <!--box-container-->
                 <div class="info_box">
-                    <div class="box">
+                    <div class="box" style="margin-bottom: 20px;">
                         <div class="diagram-container">
                             <div class="diagram_head">
                                 <h3>Flexing CPS Block Diagram</h3>
@@ -114,7 +114,6 @@
                                 <dd>그래픽 기반의 드래그 방식으로 손쉬운 모델링 작성 지원</dd>
                                 <dd>모델링 가져오기 및 수정으로 쉬운 모델 생성 기능 제공</dd>
                             </dl>
-                            <p><img src="../../asset/images/cps_info_modeling.png" alt="그래픽 기반 모델링"></p>
                         </div>
                         <div class="text_box cps">
                             <dl>
@@ -124,7 +123,6 @@
                                 <dd>공장 필드의 여러 개의 OPC UA Server를 계층적 구조로 하나로 통합</dd>
                                 <dd>수평적 데이터 교환시 외부 시스템은 중앙 Address Space 만 필요</dd>
                             </dl>
-                            <p><img src="../../asset/images/cps_info_address_space.png" alt="Centralized Address Space"></p>
                         </div>
                         <div class="text_box cps">
                             <dl>
@@ -134,67 +132,67 @@
                                 <dd>OPC UA 프로토콜을 Rest API로 변환 지원</dd>
                                 <dd>클라우드 연동, 확장성을 고려한 MQTT 신호 발생</dd>
                             </dl>
-                            <p><img src="../../asset/images/cps_info_MQTT.png" alt="표준 OPC UA프로토콜을 적용한 산업용 네트워크 통합"></p>
                         </div>
                         <div class="text_box cps">
                             <dl>
-                                <dt>실시간 데이터 수집 및 머신러닝</dt>
-                                <dd>Centralized Address Space와 웹 표준 데시보드 상호 연결</dd>
-                                <dd>실시간 모니터링 체계 구축</dd>
+                                <dt>실시간 데이터 수집 및 데이터 분석</dt>
+                                <dd>실시간 데이터 EDA 처리 및 관리</dd>
+                                <dd>수집 데이터를 활용하여 다양한 알고리즘의 모델 생성 기능</dd>
                                 <dd>실시간 이상 감지 및 Alarm</dd>
-                                <dd>머신러닝을 통한 판단 모델 Edge 전송 및 CPS 반영</dd>
+                                <dd>판단 모델 Edge 전송 및 CPS 반영</dd>
                             </dl>
-                            <p><img src="../../asset/images/cps_info_machine.png" alt="실시간 데이터 수집 및 머신러닝"></p>
                         </div>
                     </div>
                 </div>
             </div><!--inner-->
             <div class="story_container">
-                <div class="cps_story">
-                    <div class="car_company">
-                        <h3>안산 자동차부품 공장에 적용 사례</h3>
-                        <h4>A사 중견 제조 업체</h4>
-                        <ul>
-                            <li>매출 2000억원</li> 
-                            <li>년 순이익 20억</li> 
-                            <li>10개 라인 보유</li> 
-                            <li>완전한 자동화 기술 구축</li> 
-                        </ul>
-                    </div>
-                    <div class="cps_arrow">
-                        <p>스마트팩토리<br/>컨설팅 추진</p>
-                        <span><img src="../../asset/images/arrow.png" alt="스마트팩토리 컨설팅 추진"></span>
-                    </div>
-                    <div class="table_box">
-                        <table class="cps">
-                            <legend>기존 컨설팅 결과 대비</legend>
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="th_left">기존 CPS 컨설팅</th>
-                                    <th class="th_right">Flexing CPS 컨설팅</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>구축비용 40억</td>
-                                    <td>구축비용 4억</td>
-                                </tr>
-                                <tr>
-                                    <td>데이터 통합 문제</td>
-                                    <td>OPC UA 및 Edge 기술을 통한 데이터 통합 가능</td>
-                                </tr>
-                                <tr>
-                                    <td class="td_left">결과 확신성 및 구축 전문성 부족</td>
-                                    <td class="td_right">CPS 전문 기술 보유</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="inner">
+                    <div class="cps_story">
+                        <div class="car_company">
+                            <h3>안산 자동차부품 공장에 적용 사례</h3>
+                            <h4>A사 중견 제조 업체</h4>
+                            <ul>
+                                <li>매출 2000억원</li> 
+                                <li>년 순이익 20억</li> 
+                                <li>10개 라인 보유</li> 
+                                <li>완전한 자동화 기술 구축</li> 
+                            </ul>
+                        </div>
+                        <div class="cps_arrow">
+                            <p>스마트팩토리<br/>컨설팅 추진</p>
+                            <span><img src="../../asset/images/arrow.png" alt="스마트팩토리 컨설팅 추진"></span>
+                        </div>
+                        <div class="table_box">
+                            <table class="cps">
+                                <legend>기존 컨설팅 결과 대비</legend>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="th_left">기존 CPS 컨설팅</th>
+                                        <th class="th_right">Flexing CPS 컨설팅</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>구축비용 40억</td>
+                                        <td>구축비용 4억</td>
+                                    </tr>
+                                    <tr>
+                                        <td>데이터 통합 문제</td>
+                                        <td>OPC UA 및 Edge 기술을 통한 데이터 통합 가능</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_left">결과 확신성 및 구축 전문성 부족</td>
+                                        <td class="td_right">CPS 전문 기술 보유</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,10 +214,24 @@
                                     <dd>불확실성과 전문성 부족으로 인한 도입 의사결정 문제 해결</dd>
                                 </dl>
                             </div> <!--dl-->
+                            <div class="slide_box">
+                                <ul>
+                                    <li><img src="../../asset/images/solution_flexing_cps_dashboard_1.png" alt="FLEXING_CPS_dashboard_모니터링"><span>FLEXING CPS 모니터링</span></li>
+                                    <li><img src="../../asset/images/solution_flexing_cps_dashboard_2.png" alt="FLEXING_CPS_dashboard_모델러"><span>FLEXING CPS 모델러</span></li>
+                                    <li><img src="../../asset/images/solution_flexing_cps_dashboard_3.png" alt="FLEXING_CPS_dashboard_프로파일 메이커"><span>FLEXING CPS 프로파일 메이커</span></li>
+                                    <li><img src="../../asset/images/solution_flexing_cps_dashboard_4.png" alt="FLEXING_CPS_dashboard_머신러닝 학습"><span>FLEXING CPS 머신러닝 학습</span></li>
+                                </ul>
+                            </div>
                         </div> <!--box-->
                     </div> <!--info_box-->
                 </div> <!--box-container-->
             </div><!--inner-->
+            <div class="video_box cps">
+                <div class="inner">
+                    <div><video id="cps_video" src="../../asset/video/cps.mp4" height="380" controls type="video/mp4"></video></div>
+                    <p>Flexing CPS Solution 소개 영상</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

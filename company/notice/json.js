@@ -75,12 +75,32 @@ $(document).ready(()=> {
         render()
     })
 
+    $('#nextValueEn').click(()=>{
+        //넥스트 버튼
+        startIndex += pageSize
+        if(startIndex >= newsLength){
+            startIndex -= pageSize
+            alert('Last !')
+        }
+        render()
+    })
+
     $('#prevValue').click(()=>{
         // 이전 버튼
         startIndex -= pageSize
         if(startIndex < 0){
             startIndex = 0
             alert('첫 번째 페이지입니다')
+        }
+        render()
+    })
+
+    $('#prevValueEn').click(()=>{
+        // 이전 버튼
+        startIndex -= pageSize
+        if(startIndex < 0){
+            startIndex = 0
+            alert('First !')
         }
         render()
     })
