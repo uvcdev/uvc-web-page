@@ -208,15 +208,15 @@ main .main_visual .slide-controls .slick-dots li.slick-active a { font-weight: 8
 
 #content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl { display: block; color: #222; width: 100%; height: 100%; }
 
-#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticephoto { width: 100%; height: 20em; background-repeat: no-repeat !important; background-position: center center !important; background-size: cover !important; }
+#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticephoto { width: 100%; height: 13em; background-repeat: no-repeat !important; background-position: center center !important; background-size: cover !important; }
 
-#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext { padding: 1em; box-sizing: border-box; overflow: hidden; width: 100%; min-height: 14em; display: flex; flex-flow: column wrap; justify-content: space-around; align-content: flex-start; }
+#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext { padding: 1em; box-sizing: border-box; overflow: hidden; width: 100%; min-height: 11em; display: flex; flex-flow: column wrap; justify-content: space-around; align-content: flex-start; }
 
-#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext span { color: #7576ca; font-weight: bold; font-size: 1em; }
+#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext span { color: #7576ca; font-weight: bold; font-size: .9em; }
 
-#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext h4 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; line-height: 1.3em; height: 2.6em; }
+#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext h4 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; line-height: 1.3em; height: 1.3em; font-size: 1.15em; }
 
-#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; line-height: 1.3em; height: 2.6em; }
+#content #company .inner .notice-container .notice-content .noticebox .notice .noticeurl .noticetext p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; line-height: 1.3em; height: 2.6em; font-size: 1.1em; }
 
 #content #company .happy { width: 100%; height: 500px; background: url("../images/happy_work_place.jpg") no-repeat fixed; background-size: cover; background-position: 50% 50%; }
 

@@ -753,7 +753,7 @@ main .main_visual{
                                 height: 100%;
                                 .noticephoto{
                                     width: 100%;
-                                    height: 20em;
+                                    height: 13em;
                                     background-repeat: no-repeat !important;
                                     background-position: center center !important;
                                     background-size: cover !important;
@@ -763,7 +763,7 @@ main .main_visual{
                                     box-sizing: border-box;
                                     overflow: hidden;
                                     width: 100%;
-                                    min-height: 14em;
+                                    min-height: 11em;
                                     display: flex;
                                     flex-flow: column wrap;
                                     justify-content: space-around;
@@ -771,13 +771,15 @@ main .main_visual{
                                     span{
                                         color: $color-blue;
                                         font-weight: bold;
-                                        font-size: 1em;
+                                        font-size: .9em;
                                     }
                                     h4{
-                                        @include ellipsis(2, 1.3em); 
+                                        @include ellipsis(1, 1.3em);
+                                        font-size: 1.15em;
                                     }
                                     p{
-                                        @include ellipsis(2, 1.3em); //
+                                        @include ellipsis(2, 1.3em);
+                                        font-size: 1.1em;
                                     }
                                 }
                             }
