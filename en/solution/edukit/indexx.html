@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../asset/images/uvc_72.ico">
     <link rel="apple-touch-icon-precomposed" href="../../../asset/images/uvc_57.ico">
     <link rel="shortcut icon" href="../../../asset/images/favicon02.ico">
-    <link rel="stylesheet" href="../../../asset/style/slick.css">
     <link rel="stylesheet" href="../../../asset/style/basic.css">
     <link rel="stylesheet" href="../../../asset/style/common.css">
     <link rel="stylesheet" href="../../../asset/style/solution.css">
@@ -94,10 +93,53 @@
                         </div>
                     </div> <!--box-->
                 </div> <!--box-container-->
-                <div class="details-container edu">
-                    <h4>FLEXING EDUKIT을 도입해야 하는 이유</h4>
+                
+                <div class="info_box">
+                    <div class="box">
+                        <div class="text_box edu">
+                           
+                        </div>
+                        <div class="img_box edu">
+                            <div class="exp-container">
+                                <div class="exp">
+                                    <h4>Experiencing EDUKIT</h4>
+                                    <img src="../../../asset/images/edu_exp.png" alt="edukit" class="exp-rel">
+                                    <div class="open">
+                                        <div class="more more_dash"></div>
+                                        <div class="more more_arms"></div>
+                                    </div>
+                                </div>
+                                <div class="exp_info">
+                                    <div class="bin"></div>
+                                    <p>Click on a pin to take a closer look at EDUKIT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="dl_box edu">
+                <div id="dash_modal">
+                    <div class="modal_contents">
+                        <div class="modal_closed">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                        <div class="dash">
+                            <img src="../../../asset/images/edu_exp_dash.png" alt="Flexing Edukit Dashboard">
+                        </div>
+                    </div>
+                </div>
+                <div id="arms_modal">
+                    <div class="modal_contents">
+                        <div class="modal_closed">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                        <div class="arms">
+                            <video id="edu_video" src="../../../asset/video/edukit.mp4" height="600" controls type="video/mp4"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="dl_box">
                     <dl>
                         <dt>Practical Curriculum</dt>
                         <dd>Composition of curricula based on specialized training courses in smart factories</dd>
@@ -111,105 +153,7 @@
                         <dd>Practitioners and students can understand standard communication platforms using multiple individual OPC UA embedded devices</dd>
                     </dl>
                 </div>
-                <div class="info_box edu">
-                    <div class="box">
-                        <div class="img_box edu">
-                            <div class="exp-container">
-                                <div class="exp fir">
-                                    <img src="../../../asset/images/edu_exp.png" alt="edukit" class="exp-rel">
-                                </div>
-                                <div class="exp sec">
-                                    <img src="../../../asset/images/edu_set.png" alt="edukit Configuration" class="edu-con">
-                                    <div class="config fir">
-                                        <span>제품구성</span> <p>FLEXING EDUKIT 장비, FLEXING EDUKIT 매뉴얼, OT 교육용 교안, IT 교육용 교안</p>
-                                    </div>
-                                    <div class="config">
-                                        <span>장비구성</span> <p>1호기 반출 공정, 2호기 가공 공정, 3호기 분류 공정, 컨베이어 벨트, 컬러센서, Vision 센서, 제어용 PLC, HMI, Edge pc</p>
-                                    </div>
-                                </div>
-                                <div class="exp thi">
-                                    <img src="../../../asset/images/edukit_portal.png" alt="flexing edukit portal screen" class="edukit-screen">
-                                    <div class="para-container">
-                                        <p class="paragraph">Edukit Portal에 접속하여 Dashboard를 활용해보세요 <br/>
-                                            <b id="more_dash">EduKit Portal</b>
-                                        </p>
-                                        <img src="../../../asset/images/edu_screen_ex.png" alt="flexing edukit dashboard screen" class="edu-screen">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-container edu">
-                        <h4>FLEXING EDUKIT을 다양하게 활용하는 방법</h4>
-                    </div>
-                    <div class="box">
-                        <div class="text_box edu">
-                            <h5><span>OT 활용방안</span></h5>
-                            <div><b>Factory Configuration</b> <span class="icon-span"><img src="../../../asset/images/edukit/1.svg" alt="flexing edukit"></span> 
-                                <p>Kit assembly, learning factory configuration via wire connection</p></div>
-                            <div><b>PLC control configuration</b> <span class="icon-span"><img src="../../../asset/images/edukit/2.svg" alt="flexing edukit"></span> 
-                                <p>Provide PLC Memory Map Protocol document</p></div>
-                            <div><b>Ladder Programming</b> <span class="icon-span"><img src="../../../asset/images/edukit/3.svg" alt="flexing edukit"></span> 
-                                <p>PLC operation and ladder programming</p></div>
-                            <div><b>Sensor and motor control</b> <span class="icon-span"><img src="../../../asset/images/edukit/4.svg" alt="flexing edukit"></span> 
-                                <p>Sensor data collection and equipment control through Edge</p></div>
-                            <div><b>HMI operation practice</b> <span class="icon-span"><img src="../../../asset/images/edukit/5.svg" alt="flexing edukit"></span> 
-                                <p>HMI operation practice used in real factory</p></div>
-                            <div><b>HMI Production</b> <span class="icon-span"><img src="../../../asset/images/edukit/6.svg" alt="flexing edukit"></span> 
-                                <p>HMI Screen Configuration and Operation</p></div>
-                        </div>
-                        <div class="text_box edu"> 
-                            <h5><span>IT 활용방안</span></h5>
-                            <div><b>Vision image recognition practice</b> <span class="icon-span"><img src="../../../asset/images/edukit/7.svg" alt="flexing edukit"></span> 
-                                <p>Vision image recognition practice using Python code</p></div>
-                            <div><b>OPC UA modeling practice</b> <span class="icon-span"><img src="../../../asset/images/edukit/8.svg" alt="flexing edukit"></span> 
-                                <p>OPC UA Standard Server Modeling</p></div>
-                            <div><b>OPC UA Protocol Interworking</b> <span class="icon-span"><img src="../../../asset/images/edukit/9.svg" alt="flexing edukit"></span> 
-                                <p>TAG value linkage</p></div>
-                            <div><b>Production Efficiency Control</b> <span class="icon-span"><img src="../../../asset/images/edukit/10.svg" alt="flexing edukit"></span> 
-                                <p>Learning the relationship between machine speed and demand growth</p></div>
-                            <div><b>Dashboard Configuration</b> <span class="icon-span"><img src="../../../asset/images/edukit/11.svg" alt="flexing edukit"></span> 
-                                <p>Education Kit Dashboard Configuration</p></div>
-                            <div><b>Data Analysis</b> <span class="icon-span"><img src="../../../asset/images/edukit/12.svg" alt="flexing edukit"></span> 
-                                <p>EDUKIT data analysis</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="dash_modal">
-                    <div class="modal_contents">
-                        <div class="modal_closed">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                        </div>
-                        <div class="dash">
-                           <div class="dash_slide">
-                                <p class="slide slick-slide">
-                                    <img src="../../../asset/images/edu_modal/edu_con.png" alt="">
-                                    <span class="slide-show-title">장비 데이터 확인, 장비 제어, 알람 세팅, 알람 확인</span>
-                                </p>
-                                <p class="slide slick-slide">
-                                    <img src="../../../asset/images/edu_modal/edu_model.png" alt="">
-                                    <span class="slide-show-title">EDUKiT 모듈 OPC UA 모델링</span>
-                                </p>
-                                <p class="slide slick-slide">
-                                    <img src="../../../asset/images/edu_modal/edu_dash.png" alt="">
-                                    <span class="slide-show-title">Edukit Dashboard 모니터링</span>
-                                </p>
-                                <p class="slide slick-slide">
-                                    <img src="../../../asset/images/edu_modal/edu_tag.png" alt="">
-                                    <span class="slide-show-title">Modeler Tag Setting</span>
-                                </p>                         
-                           </div>
-                        </div>
-                    </div>
-                </div>
             </div><!--inner-->
-            <div class="video_box edu">
-                <div class="inner">
-                    <div><video id="edu_video" src="../../../asset/video/edukit.mp4" height="400" controls type="video/mp4"></video></div>
-                    <p>Flexing Edukit Video</p>
-                </div>
-            </div>
         </section>
     </main>
     <footer>
@@ -228,8 +172,26 @@
     </footer>
     <script src="../../../asset/js/jquery-3.3.1.min.js"></script>
     <script src="../../../asset/js/header_footer.js"></script>
-    <script src="../../../asset/js/slick.min.js"></script>
-    <script src="../../../asset/js/solution.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.more_dash').click(function(){
+                $('#dash_modal').css({'display': 'block'});
+                $('html').css({'overflowY': 'hidden'});
+            });
+            $('.modal_closed').click(function(){
+                $('#dash_modal').css({'display': 'none'});
+                $('html').css({'overflowY': 'scroll'});
+            });
+            $('.more_arms').click(function(){
+                $('#arms_modal').css({'display': 'block'});
+                $('html').css({'overflowY': 'hidden'});
+            });
+            $('.modal_closed').click(function(){
+                $('#arms_modal').css({'display': 'none'});
+                $('html').css({'overflowY': 'scroll'});
+            });
+        });
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84012218-1"></script>
     <script>

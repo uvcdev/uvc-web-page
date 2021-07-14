@@ -125,7 +125,7 @@ footer p { margin: 10px 0; color: #ddd; font-size: 14px; }
 
 @media only screen and (min-width: 3800px) { #content #business .box-container .box .text_box .imgbox img { width: 20% !important; } }
 
-@media only screen and (max-width: 1600px) { .inner { max-width: 90vw !important; } }
+@media only screen and (max-width: 1600px) { .inner { max-width: 95vw !important; } }
 
 @media only screen and (max-width: 1180px) { #header { border: 1px solid #dfdfdf; background: white; }
   #header h1 a img.foot { display: none; }
