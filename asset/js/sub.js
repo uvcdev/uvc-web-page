@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     /*유틸메뉴 언어선택*/
     $('.lang').click(function(){
-		$('.lang_util ul').slideToggle(400);
+		  $('.lang_util ul').slideToggle(400);
     });
 
     $(".main_visual > ul").slick({

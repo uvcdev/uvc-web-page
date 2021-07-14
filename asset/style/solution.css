@@ -15,7 +15,7 @@ main section .box-container { margin-bottom: 20px; }
 
 main section .box-container .box { display: flex; flex-flow: row wrap; }
 
-main section .box-container .box .img_box { min-height: 300px; flex: 1; }
+main section .box-container .box .img_box { width: 400px; height: 300px; flex: none; }
 
 main section .box-container .box .img_box.mes { background: url("../images/mes_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
@@ -23,7 +23,7 @@ main section .box-container .box .img_box.cpsmain { background: url("../images/c
 
 main section .box-container .box .img_box.erp { background: url("../images/erp_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
-main section .box-container .box .img_box.edu { background: url("../images/edu.png") no-repeat; background-size: contain; background-position: 50% 50%; }
+main section .box-container .box .img_box.edu { background: url("../images/edu_exp2.png") no-repeat; background-size: cover; background-position: 50% 50%; }
 
 main section .box-container .box .img_box.edge { background: url("../images/edge_solution.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
@@ -38,6 +38,8 @@ main section .box-container .box .text_box.head h2 { display: inline-block; }
 main section .box-container .box .text_box.head h2 span { display: block; font-size: 20px; }
 
 main section .box-container .box .text_box.head h3 { font-size: 18px; font-weight: 500; letter-spacing: -.5px; }
+
+main section .details-container.edu { text-align: center; margin-bottom: 30px; }
 
 main section .info_box .box { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; }
 
@@ -55,25 +57,53 @@ main section .info_box .box .img_box.erp { background: url("../images/info_erp.p
 
 main section .info_box .box .img_box.erp.en { background: url("../images/info_erp_en.png") no-repeat; background-size: contain; background-position: 50% 50%; }
 
-main section .info_box .box .img_box.edu { background: #f9f9f9; padding: 40px 0; width: 100%; order: -1; flex: none; min-height: 0; margin-bottom: 30px; }
+main section .info_box .box .img_box.edu { background: #fff; width: 100%; flex: none; min-height: 0; margin-bottom: 30px; box-sizing: border-box; }
 
-main section .info_box .box .img_box.edu .exp-container { display: flex; flex-flow: row wrap; }
+main section .info_box .box .img_box.edu .exp-container { width: 100%; display: flex; flex-flow: row wrap; box-sizing: border-box; padding: 0; position: relative; }
 
-main section .info_box .box .img_box.edu .exp-container .exp { position: relative; width: 100%; }
+main section .info_box .box .img_box.edu .exp-container .exp { box-sizing: border-box; padding: 1rem; display: flex; flex-flow: row wrap; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .config { border: 1px solid #222; position: relative; width: 95%; margin: 0 auto 1rem; padding: .5rem 0; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .config span { position: absolute; top: -.5rem; left: -.5rem; background: #222; color: #fff; display: block; padding: .25rem 1rem; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .config p { border-radius: .15rem; position: relative; padding: 1rem 1rem 1rem 6rem; word-break: keep-all; }
+
+main section .info_box .box .img_box.edu .exp-container .exp .config.fir { order: -1; }
 
 main section .info_box .box .img_box.edu .exp-container .exp h4 { text-align: center; }
 
 main section .info_box .box .img_box.edu .exp-container .exp .exp-rel { display: block; max-width: 391px; max-height: 313px; min-width: 391px; min-height: 313px; margin: 0 auto; }
 
-main section .info_box .box .img_box.edu .exp-container .exp .open { width: 391px; height: 313px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+main section .info_box .box .img_box.edu .exp-container .exp.fir { width: 40%; order: 0; position: relative; display: flex; justify-content: center; align-items: center; }
 
-main section .info_box .box .img_box.edu .exp-container .exp .more { width: 30px; height: 30px; border-radius: 50% 50% 50% 0; background: linear-gradient(to bottom, #fa7a57, #d00805); margin: -20px 0 0 -20px; cursor: pointer; }
+main section .info_box .box .img_box.edu .exp-container .exp.fir:after { content: ''; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 16%; height: 2px; border-bottom: 1px dashed #394cff; display: block; }
 
-main section .info_box .box .img_box.edu .exp-container .exp .more_dash { position: absolute; transform: rotate(-45deg) translate(-50%, -50%); left: 75%; top: 30%; animation: moredash 2s ease-in-out; animation-iteration-count: infinite; }
+main section .info_box .box .img_box.edu .exp-container .exp.fir:before { content: ''; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 20%; height: 2px; border-bottom: 1px dashed #394cff; display: block; }
 
-main section .info_box .box .img_box.edu .exp-container .exp .more_arms { position: absolute; transform: rotate(-45deg) translate(-50%, -50%); left: 75%; top: 47%; animation: morearms 2s ease-in-out; animation-iteration-count: infinite; }
+main section .info_box .box .img_box.edu .exp-container .exp.sec, main section .info_box .box .img_box.edu .exp-container .exp.thi { width: 30%; border: 1px dashed #394cff; }
 
-main section .info_box .box .img_box.edu .exp-container .exp_info { width: 100%; text-align: center; }
+main section .info_box .box .img_box.edu .exp-container .exp.sec { order: -1; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi { order: 1; display: flex; flex-flow: row wrap; align-items: flex-end; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container { width: 100%; height: 50%; display: flex; flex-flow: row wrap; align-items: flex-end; align-content: flex-end; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container p.paragraph { width: 40%; height: 100%; display: inline-flex; flex-flow: row wrap; align-content: space-between; font-weight: bold; word-break: keep-all; box-sizing: border-box; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container #more_dash { display: inline-block; border: 1px solid #222; cursor: pointer; padding: .25rem 1rem; margin-top: 1rem; position: relative; transition: color .6s ease; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container #more_dash:hover { color: #fff !important; z-index: 0; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container #more_dash:hover:after { width: 100%; }
+
+main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container #more_dash:after { content: ''; display: block; width: 0; height: 100%; position: absolute; top: 0; left: 0; background: #222; transition: width .6s ease; z-index: -1; }
+
+main section .info_box .box .img_box.edu .exp-container .edu-con { display: block; margin: 0 auto; width: 90%; height: auto; }
+
+main section .info_box .box .img_box.edu .exp-container .edu-screen { display: block; width: 60%; height: auto; box-sizing: border-box; }
+
+main section .info_box .box .img_box.edu .exp-container .edukit-screen { display: block; width: 100%; height: auto; max-height: 50% !important; }
 
 main section .info_box .box .img_box.modeler { flex: none; width: 100%; min-height: auto; margin-bottom: 40px; }
 
@@ -101,17 +131,21 @@ main section .info_box .box .text_box.cps p img { display: block; width: 80%; he
 
 main section .info_box .box .text_box.right dl { text-align: left; }
 
-main section .info_box .box .text_box.edu { width: 100%; flex: none; display: flex; flex-flow: row wrap; justify-content: space-around; margin-bottom: 30px; max-width: 1500px; }
+main section .info_box .box .text_box.edu { width: 50%; flex: none; display: flex; flex-flow: row wrap; justify-content: space-around; margin-bottom: 30px; max-width: 1500px; box-sizing: border-box; border: 1px solid #394cff; position: relative; }
 
-main section .info_box .box .text_box.edu div { width: 320px; height: 320px; font-size: 17px; display: flex; flex-flow: row wrap; justify-content: center; text-align: center; align-items: flex-start; align-content: space-around; margin: 1rem; border: 1px solid rgba(0, 0, 0, 0.055); box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05); padding: .5rem; box-sizing: border-box; }
+main section .info_box .box .text_box.edu h5 { width: 100%; text-align: center; font-weight: normal; color: #fff; position: relative; top: -15px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-size: 1rem; }
 
-main section .info_box .box .text_box.edu div b { width: 100%; color: #222; font-size: 20px; }
+main section .info_box .box .text_box.edu h5 span { background: #394cff; padding: .25rem 1rem; }
 
-main section .info_box .box .text_box.edu div p { width: 100%; }
+main section .info_box .box .text_box.edu div { width: 50%; height: 120px; font-size: 15px; display: flex; padding-top: .5em; flex-flow: row wrap; justify-content: center; align-items: center; border: 1px solid rgba(0, 0, 0, 0.055); box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05); box-sizing: border-box; }
 
-main section .info_box .box .text_box.edu div span.icon-span { width: 150px; height: 150px; margin: 0 auto; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; box-shadow: 0 3px 10px rgba(57, 76, 255, 0.15); }
+main section .info_box .box .text_box.edu div b { width: calc(100% - 100px); order: 0; color: #222; padding: 0 .5rem; color: #394cff; text-indent: 1rem; height: calc(50px + .5em); display: inline-flex; align-items: center; letter-spacing: -1px; word-break: keep-all; }
 
-main section .info_box .box .text_box.edu div span.icon-span img { transform: scale(0.8); }
+main section .info_box .box .text_box.edu div p { width: 100%; box-sizing: border-box; word-break: keep-all; height: calc(100% - (50px + .5em)); display: inline-flex; align-items: center; padding: 1em 1em 3em 6em; }
+
+main section .info_box .box .text_box.edu div span.icon-span { width: 50px; order: -1; height: 50px; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; box-shadow: 0 3px 10px rgba(57, 76, 255, 0.15); }
+
+main section .info_box .box .text_box.edu div span.icon-span img { transform: scale(0.6); }
 
 main section .info_box .box .diagram-container { background: rgba(0, 0, 0, 0.05); padding: 20px; font-family: 'Titillium Web', sans-serif; width: 100%; display: flex; margin-bottom: 20px; text-align: center; font-size: 14px; font-weight: 800; position: relative; }
 
@@ -127,17 +161,33 @@ main section .info_box .box .diagram-container .diagram ul { width: 100%; displa
 
 main section .info_box .box .diagram-container .diagram ul li { width: 100%; background: rgba(0, 0, 0, 0.05); display: flex; justify-content: center; align-items: center; padding: 5px; min-height: 100px; margin: 0 10px; }
 
-main section #dash_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
+main section #dash_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 451; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
 
-main section #arms_modal { width: 100%; height: 100%; display: none; position: fixed; z-index: 100; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); animation: fadeIn .6s linear; overflow: hidden; }
+main section .modal_contents { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: slideIn .6s linear; }
 
-main section .modal_contents { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; animation: slideIn .6s linear; }
+main section .modal_contents .dash { color: #222; text-align: center; }
 
-main section .modal_contents .dash { color: #222; text-align: center; position: relative; }
+main section .modal_contents .dash .dash_slide { width: 800px; height: 566px; overflow: hidden; }
 
-main section .modal_contents .dash img { display: block; width: 100%; height: auto; }
+main section .modal_contents .dash .dash_slide .slide.slick-slide { color: #fff; width: 800px; height: 566px; display: flex; justify-content: center; align-items: center; align-content: space-around; flex-flow: row wrap; }
 
-main section .modal_contents .arms { background: #bbb; color: #222; text-align: center; position: relative; }
+main section .modal_contents .dash .dash_slide .slide.slick-slide img { width: 95%; display: block; margin: 0 auto; height: auto; }
+
+main section .modal_contents .dash .dash_slide .slide.slick-slide .slide-show-title { font-weight: bold; font-size: 1.25rem; width: 100%; text-shadow: 6px 6px 13px black; }
+
+main section .modal_contents .dash .slick-dots { position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); display: flex; width: 100%; justify-content: center; }
+
+main section .modal_contents .dash .slick-dots li { width: 15px; height: 15px; border-radius: 50%; margin: 0 5px; box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25) !important; }
+
+main section .modal_contents .dash .slick-dots li button { width: 100%; height: 100%; border-radius: inherit; background-color: rgba(255, 255, 255, 0.75) !important; color: transparent; }
+
+main section .modal_contents .dash .slick-dots li.slick-active button { background-color: #394cff !important; }
+
+main section .modal_contents .dash .slick-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 101; }
+
+main section .modal_contents .dash .slick-arrow.slick-prev { left: -50px; }
+
+main section .modal_contents .dash .slick-arrow.slick-next { right: -50px; }
 
 main section .modal_contents .modal_closed { width: 50px; height: 50px; float: right; position: absolute; top: -25px; right: -50px; cursor: pointer; transform: translate(-50%, -50%); z-index: 602; }
 
@@ -170,6 +220,8 @@ main section .dl_box dl { flex: 1; padding: 40px; margin: 0 10px; box-shadow: 0 
 main section .dl_box dl dt { font-size: 22px; margin-bottom: 40px; font-weight: 700; }
 
 main section .dl_box dl dd { font-size: 16px; margin: 20px 0; letter-spacing: -1px; }
+
+main section .dl_box.edu { margin-bottom: 30px; }
 
 main section .install_box { display: flex; flex-flow: row wrap; align-items: center; }
 
@@ -261,11 +313,11 @@ main section .slide_box ul li img { width: 100%; }
 
 main section .slide_box ul li span { display: inline-block; position: absolute; bottom: -20px; right: -20px; padding: 20px; background: #fff; box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15); font-weight: 600; }
 
-main .video_box.cps { width: 100%; background-color: #f9f9f9; margin-top: 30px; padding-bottom: 30px; }
+main .video_box { width: 100%; background-color: #f9f9f9; margin-top: 30px; padding-bottom: 30px; }
 
-main .video_box.cps div.inner > div { display: flex; justify-content: center; padding-top: 30px; }
+main .video_box div.inner > div { display: flex; justify-content: center; padding-top: 30px; }
 
-main .video_box.cps p { text-align: center; padding: 20px; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); font-weight: 600; margin: 30px auto 0; width: max-content; }
+main .video_box p { text-align: center; padding: 20px; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); font-weight: 600; margin: 30px auto 0; width: max-content; }
 
 table { margin: 40px 0; text-align: left; box-sizing: border-box; box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15); border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; }
 
@@ -289,13 +341,9 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
 @keyframes fadeIn { from { opacity: 0; }
   to { opacity: 1; } }
 
-@keyframes moredash { from { top: 28%; }
-  to { top: 31%; } }
-
-@keyframes morearms { from { top: 47%; }
-  to { top: 50%; } }
-
-@media only screen and (min-width: 1181px) and (max-width: 1239px) { main section .install_box ul li { flex: none; width: 50%; } }
+@media only screen and (min-width: 1181px) and (max-width: 1239px) { main section .install_box ul li { flex: none; width: 50%; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container { justify-content: flex-end; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container p.paragraph { width: 100%; height: 40%; } }
 
 @media only screen and (max-width: 1180px) { main section .install_box ul li { flex: none; width: 50%; }
   main section .story_container .cps_story div { flex: none; padding-bottom: 0; }
@@ -307,9 +355,27 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .inner .modeler_box section { flex: none; width: 100%; }
   main section .modeler_box .img_section { order: -1; }
   main .video_box.cps { width: 90%; margin: 0 auto; }
-  main section .modal_contents .arms #edu_video { height: 400px !important; } }
+  main section #edu_video { height: 400px !important; }
+  main section .info_box .box .text_box.edu { width: 100%; }
+  main section .info_box .box .text_box.edu div { width: 33%; }
+  main section .info_box .box .img_box.edu { padding: 0 !important; }
+  main section .info_box .box .img_box.edu .exp-container .exp.fir, main section .info_box .box .img_box.edu .exp-container .exp.sec, main section .info_box .box .img_box.edu .exp-container .exp.thi { width: 100%; }
+  main section .info_box .box .img_box.edu .exp-container .exp.fir:after, main section .info_box .box .img_box.edu .exp-container .exp.fir:before { transform: translate(-50%, -50%); }
+  main section .info_box .box .img_box.edu .exp-container .exp.fir:after { left: 50% !important; top: 40px !important; width: 5px; height: 60px; border-bottom-color: transparent; border-right: 2px dashed #394cff; }
+  main section .info_box .box .img_box.edu .exp-container .exp.fir:before { left: 50% !important; top: initial; bottom: -20px; width: 5px; height: 60px; border-bottom-color: transparent; border-right: 2px dashed #394cff; }
+  main section .info_box .box .img_box.edu .exp-container .exp .exp-rel { margin: 1rem auto 60px; }
+  main section .info_box .box .img_box.edu .exp-container .edu-screen { width: 40%; }
+  main section .info_box .box .img_box.edu .exp-container .edu-con { width: 60%; order: 1; }
+  main section .info_box .box .img_box.edu .exp-container .exp .config { width: 49%; }
+  main section .info_box .box .img_box.edu .exp-container .exp .config span { left: 50%; transform: translateX(-50%); }
+  main section .info_box .box .img_box.edu .exp-container .exp .config p { padding: 1rem !important; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi { align-items: flex-start; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .edukit-screen { width: 50%; flex: none; max-height: none !important; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container { width: 48%; height: 100%; justify-content: flex-end; align-content: space-between; box-sizing: border-box; flex: none; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container p.paragraph { width: 100%; height: auto; justify-content: space-between; } }
 
-@media only screen and (max-width: 1024px) { main section .info_box .box .diagram-container .diagram img { width: 100%; height: auto; }
+@media only screen and (max-width: 1024px) { main section .box-container .box .text_box.head { flex: none; width: 100%; }
+  main section .info_box .box .diagram-container .diagram img { width: 100%; height: auto; }
   main section .info_box .box .diagram-container .diagram ul { flex-flow: row wrap; justify-content: center; }
   main section .info_box .box .diagram-container .diagram ul li { width: 26%; margin: 10px; }
   main section .info_box.modeler .box .diagram-container { margin-top: 100px; }
@@ -322,15 +388,17 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .inner .slide_box ul li { width: 80%; }
   main section .inner .slide_box ul li img { width: 100%; }
   main section .dl_box { flex-flow: column wrap; }
-  main section .dl_box dl { flex: none; margin: 10px 0; } }
+  main section .dl_box dl { flex: none; margin: 10px 0; }
+  main section .modal_contents .dash .dash_slide { width: 580px; height: 400px; }
+  main section .modal_contents .dash .dash_slide .slide.slick-slide { width: 580px; height: 400px; }
+  main section .modal_contents .dash .dash_slide .slide.slick-slide img { width: 90%; height: auto; } }
 
-@media only screen and (max-width: 768px) { main section .box-container .box .img_box { flex: none; width: 100%; height: 400px; }
-  main section .box-container .box .text_box { flex: none; }
-  main section .info_box .box .img_box { order: -1; flex: none; width: 100%; height: auto; margin: 10px 0 20px; }
+@media only screen and (max-width: 768px) { main section .info_box .box .img_box { order: -1; flex: none; width: 100%; height: auto; margin: 10px 0 20px; }
   main section .info_box .box .text_box { display: flex; flex-flow: column wrap; justify-content: center; }
   main section .info_box .box .text_box dl { min-height: 200px; text-align: center; }
   main section .info_box .box .text_box.right dl { text-align: center; }
   main section .info_box .box .diagram-container { margin-top: 80px; }
+  main section .info_box .box .text_box.edu div { width: 50%; }
   main section .install_box ul { flex: none; width: 100%; flex-flow: row wrap; }
   main section .install_box ul li { width: 50%; }
   main section .categories_box ul li div { flex: none; width: 100%; }
@@ -340,25 +408,42 @@ table tbody tr:nth-child(2n) { background: #ebebeb; }
   main section .info_box .box .img_box.modeler { margin: 10px 0 20px; }
   main section .info_box .box .img_box.modeler img { width: 100%; }
   main .video_box.cps #cps_video { height: 280px !important; }
-  main section .modal_contents .arms #edu_video { height: 280px !important; } }
+  main section #edu_video { height: 280px !important; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .edukit-screen { width: 100%; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container { width: 100%; height: 212.5px; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container p.paragraph { width: calc(100% - 260px); }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container .edu-screen { width: 260px; height: 210px; } }
 
 @media only screen and (max-width: 640px) { main section .info_box .box .diagram-container .diagram ul li { width: 24%; margin: 10px; }
   main section .inner .slide_box ul li { width: 100%; }
   main section .inner .slide_box ul li img { width: 100%; }
   main section .inner .slide_box ul li span { position: static; width: 100%; box-sizing: border-box; text-align: center; }
   main .video_box.cps #cps_video { height: 200px !important; }
-  main section .modal_contents .arms #edu_video { height: 200px !important; } }
+  main section #edu_video { height: 200px !important; }
+  main section .info_box .box .text_box.edu div { width: 100%; }
+  main section .info_box .box .img_box.edu .exp-container .exp .edu-con { width: 80%; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container { height: auto; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container p.paragraph { width: calc(100% - 180px); height: auto; }
+  main section .info_box .box .img_box.edu .exp-container .exp.thi .para-container .edu-screen { width: 180px; height: 130px; }
+  main section .modal_contents .dash .dash_slide { width: 380px; height: 260px; }
+  main section .modal_contents .dash .dash_slide .slide.slick-slide { width: 380px; height: 260px; }
+  main section .modal_contents .dash .dash_slide .slide.slick-slide img { width: 90%; height: auto; } }
 
-@media only screen and (max-width: 480px) { main section .info_box .box .diagram-container .diagram ul li { width: 35%; margin: 10px; min-height: 140px; }
+@media only screen and (max-width: 480px) { main section .box-container .box .img_box { width: 300px; height: 200px; }
+  main section .box-container .box .text_box.head { flex: none; width: 100%; }
+  main section .info_box .box .diagram-container .diagram ul li { width: 35%; margin: 10px; min-height: 140px; }
   main section .info_box .box .text_box.cps dl dt { font-size: 16px; }
   main section .info_box .box .text_box.cps dl dd { font-size: 14px; }
   main section .info_box .box .text_box.cps p { margin-bottom: 0; }
   main section .story_container .cps_story div.car_company ul li { margin-bottom: 20px; width: 100%; }
+  main section .info_box .box .img_box.edu .exp-container .exp .config { width: 100%; }
+  main section .info_box .box .img_box.edu .exp-container .exp .edu-con { width: 100%; }
   main section .info_box .box .img_box.edu .exp-container .exp .exp-rel { min-width: 250px; min-height: 200px; max-width: 250px; max-height: 200px; }
   main section .info_box .box .img_box.edu .exp-container .exp .open { width: 250px; height: 200px; }
   main section .inner .modeler_box section dl dt { background: #222 !important; border-radius: 24px !important; }
-  main section .modal_contents .arms #edu_video { height: 160px !important; } }
+  main section #edu_video { height: 160px !important; }
+  main section .modal_contents .dash .dash_slide { width: 280px; height: 240px; }
+  main section .modal_contents .dash .dash_slide .slide.slick-slide { width: 280px; height: 240px; }
+  main section .modal_contents .dash .dash_slide .slide.slick-slide img { width: 90%; height: auto; } }
 
-@media only screen and (max-width: 360px) { main section .info_box .box .text_box.edu div { width: 200px; height: 200px; }
-  main section .info_box .box .text_box.edu div span.icon-span { width: 100px; height: 100px; }
-  main section .modal_contents .arms #edu_video { height: 120px !important; } }
+@media only screen and (max-width: 360px) { main section #edu_video { height: 120px !important; } }
