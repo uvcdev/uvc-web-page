@@ -176,7 +176,9 @@ main .main_visual .slide-controls .slick-dots li.slick-active a { font-weight: 8
 
 #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li.slick-slide.slick-center:hover div { transition: all .8s; }
 
-#content #rnd .box-container .box .text_box.con .con_slide.slick-slider li.ho div { background: url("../images/hololens.jpg") no-repeat; background-size: cover; background-position: 50% 50%; }
+#content #rnd .box-container .box .text_box.con .con_slide.slick-slider li.ho div { background: url("../images/ar_untact.png") no-repeat; background-size: cover; background-position: 50% 50%; }
+
+#content #rnd .box-container .box .text_box.con .con_slide.slick-slider li.vr div { background: url("../images/vr_untact.png") no-repeat; background-size: cover; background-position: 50% 50%; }
 
 #content #rnd .box-container .box .text_box.con .con_slide.slick-slider li.mo div { background: url("../images/mobile.jpg") no-repeat; background-size: cover; background-position: 50% 50%; }
 
