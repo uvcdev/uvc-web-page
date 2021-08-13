@@ -644,7 +644,14 @@ main .main_visual{
                         }
                         li.ho{
                             div{
-                                background: url("../images/hololens.jpg")no-repeat;
+                                background: url("../images/ar_untact.png")no-repeat;
+                                background-size: cover;
+                                background-position:50% 50%;
+                            }
+                        }
+                        li.vr{
+                            div{
+                                background: url("../images/vr_untact.png")no-repeat;
                                 background-size: cover;
                                 background-position:50% 50%;
                             }
