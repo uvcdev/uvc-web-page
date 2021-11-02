@@ -15,9 +15,9 @@ $line-height: 1;
     display: -webkit-box;
     -webkit-line-clamp: $line-cnt;
     -webkit-box-orient: vertical;
-    word-wrap:break-word; 
+    word-wrap:break-word;
     line-height: $line-height;
-    height: $line-height * $line-cnt; 
+    height: $line-height * $line-cnt;
 }
 
 
@@ -38,12 +38,12 @@ main .main_visual{
         width: 100%;
         height: 100vh;
         position: relative;
-        
+
         .videoArea{
         width: 100%;
         box-sizing: border-box;
         height: 100vh;
-    
+
             video {
                 min-width: 100%;
                 min-height: 100vh;
@@ -95,14 +95,14 @@ main .main_visual{
         position: absolute;
         bottom: 10vh;
         left: 10%;
-    
+
         .slick-dots{
             cursor: pointer;
-            
+
             li {
                 display: inline-block;
                 margin-left: 15px;
-    
+
                 &:after{
                     content: '';
                     display: inline-block;
@@ -113,18 +113,18 @@ main .main_visual{
                     background: $white;
                     transition: width .4s linear;
                 }
-    
+
                 a{
                     color: #fff;
                     text-shadow: 2px 2px 0 rgb(100, 100, 100);
                 }
             }
             li.slick-active {
-    
+
                 &:after{
                     width: 40px;
                 }
-    
+
                 a{
                     font-weight: 800;
                 }
@@ -139,7 +139,7 @@ main .main_visual{
         position: relative;
         box-shadow: 0 15px 20px 0 rgba(0,0,0,.3);
         padding: 50px 0;
-        
+
         .section_head{
             padding: 2em 0 1em;
             box-sizing: border-box !important;
@@ -154,7 +154,7 @@ main .main_visual{
                 font-size: 30px;
                 margin: 0 auto;
                 font-family: 'Noto Sans KR', sans-serif;
-            
+
                 b{
                     font-weight: bold;
                     font-family: 'Titillium Web', sans-serif;
@@ -175,7 +175,7 @@ main .main_visual{
             width: 100%;
             height: 100%;
             box-sizing: border-box;
-        
+
             .box{
             }
         }
@@ -186,7 +186,7 @@ main .main_visual{
         background-position: 50% 50%;
         width: 100%;
         overflow: hidden;
-        
+
         .box-container{
 
             .box{
@@ -277,7 +277,7 @@ main .main_visual{
                     }
 
                     div{
-                        
+
                         p{
                             color: $white;
                             font-size: 16px;
@@ -371,7 +371,7 @@ main .main_visual{
         background: #000;
         box-shadow: none;
         z-index: 182;
-        
+
         .section_head{
             position: relative;
             z-index: 182;
@@ -399,7 +399,7 @@ main .main_visual{
                 box-sizing: border-box;
                 margin: 10px 0;
                 cursor: pointer;
-                
+
                 &:after{
                     content: "";
                     display: block;
@@ -452,7 +452,7 @@ main .main_visual{
                     width: 100%;
                     font-size: 20px;
                     color: $white;
-                    
+
                     span{
                         font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
                         display: block;
@@ -591,7 +591,7 @@ main .main_visual{
                             left: 40px;
                         }
                         button.slick-arrow.slick-next{
-                            
+
                             background: url("../images/next.svg")no-repeat;
                             background-size: cover;
                             right: 40px;
@@ -934,7 +934,7 @@ main .main_visual{
                         width: 30px;
                         height: 1px;
                         background: $normal;
-                        
+
                         &:after{
                             content: '';
                             display: block;
@@ -949,7 +949,7 @@ main .main_visual{
                         }
                     }
                 }
- 
+
                 dd{
                     display: none;
                     padding: 20px 20px 0;
@@ -984,14 +984,14 @@ main .main_visual{
                     display: block;
                 }
             }
-            
+
         }
     }
 }
 
 @media only screen and (min-width: 1240px) and (max-width: 1599px){
     #content #solution .box-container {
-        
+
         .box{
             min-width: 360px;
             min-height: 360px;
@@ -1013,7 +1013,7 @@ main .main_visual{
     #content #company .happy .box-container .box{
         width: 40vw;
     }
-    
+
 }
 @media only screen and (min-width: 1181px) and (max-width: 1239px){
     #content #business .box-container .box{
@@ -1050,7 +1050,7 @@ main .main_visual{
     #content #company .happy .box-container .box{
         width: 40vw;
     }
-    
+
 }
 
 @media only screen and (max-width: 1180px){
@@ -1072,7 +1072,7 @@ main .main_visual{
             top: 100% !important;
         }
     }
-    
+
     #content #business .box-container .box .text_box.b3, #content #business .box-container .box .text_box.b4 {
         &:before{
             height: 0 !important;
@@ -1081,7 +1081,7 @@ main .main_visual{
     #content #solution .box-container .box {
         min-width: 260px;
         min-height: 260px;
-        
+
         .img_box{
             width: 100%;
             height: 200px;
@@ -1117,7 +1117,7 @@ main .main_visual{
                     }
                     .noticetext{
                         h4{
-                            @include ellipsis(1, 1em); 
+                            @include ellipsis(1, 1em);
                         }
                         p{
                             @include ellipsis(1, 1em); //
