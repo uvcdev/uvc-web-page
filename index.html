@@ -26,8 +26,11 @@
             const url = "src/popup.html";
             const checkUrlArr = ['https://uvc.co.kr/', 'http://uvc.co.kr/', 'https://uvc.co.kr', 'http://uvc.co.kr',
                 'https://uvc.co.kr/index.html', 'http://uvc.co.kr/index.html']
+            // const checkUrlArr = 'file:///C:/Users/UVC/workspace/uvc-web-page/index.html'
             const name = "bootcamp popup";
-            const option = "width = 485, height = 695, top = 200, left = 50"
+            const left = window.screen.availWidth - 565
+            // console.log('window.screen : ', window.screen.availWidth)
+            const option = "width = 485, height = 695, top = 170, left = "+ left
 
             if (checkUrlArr.indexOf(location.href) !== -1) {
                 window.open(url, name, option);
