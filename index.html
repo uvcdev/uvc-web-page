@@ -24,16 +24,26 @@
     <script>
         function popup(){
             const url = "src/popup.html";
+            const nWidth = 485;
+            const nHeight = 695;
             const checkUrlArr = ['https://uvc.co.kr/', 'http://uvc.co.kr/', 'https://uvc.co.kr', 'http://uvc.co.kr',
                 'https://uvc.co.kr/index.html', 'http://uvc.co.kr/index.html']
-            // const checkUrlArr = 'file:///C:/Users/UVC/workspace/uvc-web-page/index.html'
             const name = "bootcamp popup";
-            const left = window.screen.availWidth - 565
-            // console.log('window.screen : ', window.screen.availWidth)
-            const option = "width = 485, height = 695, top = 170, left = "+ left
 
-            if (checkUrlArr.indexOf(location.href) !== -1) {
-                window.open(url, name, option);
+            let xPos = (document.body.offsetWidth) - (nWidth + 50);
+            xPos += window.screenLeft; /* 듀얼 모니터일 때 */
+            const yPos = 170;
+
+            let strOption = "";
+            strOption += "left=" + xPos + "px,"; /* 창의 화면 왼쪽에서의 위치 지정( 음수 사용 불가 )  */
+            strOption += "top=" + yPos + "px,"; /* 창의 화면 위쪽에서의 위치 지정( 음수 사용 불가 ) */
+            strOption += "width=" + nWidth + "px,"; /* 창의 넓이 지정 */
+            strOption += "height=" + nHeight + "px,"; /* 창의 높이 지정 */
+            strOption += "toolbar=no,menubar=no,location=no,";
+            strOption += "resizable=yes,status=yes"; /* 창의 리사이즈(resizable) 가능 여부 지정( IE 에서만 동작 ) */
+
+            if (checkUrlArr.indexOf(location.href) !== -1) { /* checkUrlArr 변수안의 url 에서만 팝업창 생성 */
+                window.open(url, name, strOption);
             }
         }
     </script>
