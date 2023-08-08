@@ -1,0 +1,38 @@
+/* history default */
+.his-def-form dl{display: table; width: 100%;}
+.his-def-form dl dt,.his-def-form dd{display: table-cell;}
+.depth01-dt,.depth02-dt,.depth03-dt{width: 140px; padding-right: 30px;}
+.depth01-dt input, .depth02-dt input{ width: 92%!important;}
+.his-def-form dl dt strong, .his-def-form dl dd strong{font-size: 16px;}
+.his-def-form dl + dl{margin-top: 16px;}
+
+.his-def-form .depth01 + .depth01{border-top: 1px dashed #ddd; padding-top: 16px;}
+.history-content .insert{position: relative;}
+.his-def-form .depth02-dt .insert{position: relative;}
+.his-def-form table{width: 100%;}
+.his-def-form table tr{border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.his-def-form table tr + tr{border-top: 0;}
+.his-def-form table .check{width: 40px;}
+.his-def-form table th{background-color: #f9f9f9; padding: 12px; text-align: center; }
+.his-def-form table td{background-color: #fff; padding: 28px 12px;   text-align: center; vertical-align: top;}
+.his-def-form table th input{width: auto;}
+.his-def-form td.top-depth{width: 200px;}
+.his-def-form td.top-depth strong{font-size: 16px;}
+
+.his-def-form input[type=text],.his-def-form input[type=password]{width: 98% }
+.his-def-form input[type=button]{font-weight:700; cursor: pointer; padding-left:24px; padding-right:24px;}
+
+
+/* history - default view */
+.history-list-table .history-content-list{text-align: left;}
+.histroy-table-view dl{display: table; width: 100%;}
+.histroy-table-view dl + dl{margin-top: 12px;}
+.histroy-table-view dt,.histroy-table-view dd{display: table-cell;}
+.histroy-table-view dt.step-year{font-weight: bold; width: 100px;}
+.histroy-table-view dt.step-month{font-weight: bold; color: #939496; width: 70px;}
+.histroy-table-view dl.step02 dd{width: calc(100% - 70px);}
+.histroy-table-view  dd li{font-size: 15px; list-style-type: disc;}
+
+.history-move-btn{position: absolute; left: 0; bottom: 0; }
+.history-move-btn .select-history{display: inline-block;vertical-align: top;}
+.history-move-btn button{display: inline-block; vertical-align: top; height: 40px;}

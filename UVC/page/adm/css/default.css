@@ -1,0 +1,236 @@
+
+/* ****************************************** */
+/* ********** 공통 ********* */
+/* ****************************************** */
+
+.adm_body_container + .adm_body_container{margin-top: 32px;}
+.adm_container{ width: 100%; min-height: 100vh; padding-left:240px;}
+
+/* 전체 */
+.adm_body_wrap{width: 100%; padding: 30px;}
+
+.adm_header{width: 100%; padding:60px 60px 94px 60px}
+.adm_common_header h2.page-title{font-size: 32px; display: block; border-bottom: 1px solid #ddd;}
+.adm_common_header .page-crumb li{display: inline-block; font-size: 14px; font-weight: 600; position: relative; }
+.adm_common_header .page-crumb li:nth-child(1){opacity: 0.5;}
+.adm_common_header .page-crumb li::before{ content: "-"; margin-right: 10px; font-weight: 700;}
+.adm_common_header .page-crumb li:nth-child(1)::before{display: none;}
+
+.adm_lang ul li{display: inline-block; font-weight: 600; color: #a0a0a0; cursor: pointer; transition: all .2s; background-color: #dae0e1; padding: 12px 30px; border-radius: .25rem; font-size: 16px; }
+.adm_lang ul li + li{margin-left: 8px;}
+.adm_lang ul li.lang_on{background-color:#fff; color:#18b0e2; }
+.adm_lang ul li:hover{background-color:#fff; color:#18b0e2}
+
+/* 포스트 스타일 */
+.post-section + .post-section{margin-top: 24px;}
+.post-box{background-color: #fff; padding: 24px 32px; border-radius: 8px; border: 1px solid #ddd;}
+.post-box h5.post-title{margin-bottom: 8px;}
+.post-table{width: 100%; display: table;border-top: 1px solid #ddd;}
+.post-table:last-child{ border-bottom: 1px solid #ddd;}
+.post-table{border-top: 1px solid #ddd; }
+.post-table dt,.post-table dd{display: table-cell; padding: 16px 24px; font-size: 15px;}
+.post-table dt{background-color:#f9f9f9; min-width: 226px; vertical-align: top;}
+.post-table dd{background-color: #fff;width: 100%; ;}
+
+.post-table{width: 100%; display: table;}
+.post-table tr{border-top: 1px solid #ddd;}
+.post-table:last-child{ border-bottom: 1px solid #ddd;}
+.post-table th,.post-table td{padding: 16px 24px; font-size: 15px;}
+.post-table th{background-color:#f9f9f9; width: 226px; vertical-align: top;}
+.post-table td{background-color: #fff; vertical-align: top;}
+
+.post-use-list li{display: inline-block; font-weight: bold; vertical-align: top;}
+.post-use-list li + li{padding-left: 20px;}
+
+.select-part li.select-part-li{display: inline-block; vertical-align: top;}
+
+/* 썸노트 */
+.post-summer-note-zone iframe{width: 100%; height: 600px;}
+/* 팝업 */
+.board-table-con .popup-table td{vertical-align: middle;}
+
+/* 테이블 */
+.board-table{width: 100%; font-size: 16px;}
+.board-table tr{border-top: 1px solid #ddd; }
+.board-table tr:last-child{ border-bottom:1px solid #ddd}
+.board-table th{background-color: #f9f9f9; padding: 12px; text-align: center; }
+.board-table td{background-color: #fff; padding: 12px;   text-align: center; vertical-align: top;}
+.board-table .check{width: 40px;}
+.board-table .thumb-nail img{width: 80px;margin: 0 auto;display: block; }
+.board-table .thumb-nail-long img{max-width: 150px; margin: 0 auto; display: block;}
+
+/* 테이블 추가 기능 테이블 */
+.tabel-edit-wrap{max-width: 1600px; overflow-x: auto;}
+.table-edit tr{border-top: 1px solid #ddd;}
+.table-edit tr:last-child{ border-bottom:1px solid #ddd}
+.table-edit tr td{padding: 8px 24px;}
+.table-edit tr td + td{border-left:1px solid #ddd}
+
+/* faq테이블 추가 */
+.faq-table td + td{border-left: 1px solid #ddd;}
+.faq-table .faq-cont{width: 80%;}
+.faq-table td.faq-cont{text-align: left;}
+.faq-table .contents-box dl{width: 100%; display: table;}
+.faq-table .contents-box dl + dl{margin-top: 8px;}
+.faq-table .contents-box dl dt,.faq-table .contents-box dl dd{display: table-cell;}
+.faq-table .contents-box dl dt{width: 40px; font-weight: bold;}
+
+/* 이미지 업로드 */
+.img-upload-con .essencial{position: relative !important;}
+.img-upload{width:72px; height:72px; position:relative; margin-bottom:8px; display: inline-block; margin-right:4px; border:1px solid #dcdee1;}
+.img-upload-main{border:1px solid #4c5057;}
+.img-upload input[type="file"]{width:0;height:0;opacity:0}
+.img-upload label{content:"";  text-align: center; position:absolute; left:0; right:0; top:0; bottom:0; cursor:pointer;}
+.img-upload label{background:url(../img/icon-plus.png) no-repeat center center;}
+.img-upload img{width:100%;height:100%;}
+.img-upload .return-btn{position: absolute; 
+    background-color:#fff; border:1px solid #dcdee1; display: block; top:50%; left:50%;
+    transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);
+    font-size:11px; width:48px; text-align: center; cursor: pointer; border-radius: 4px;}
+
+.img-upload .delete-btn{width: 17px; height:17px; position:absolute; border-radius: 0;top:0; right:0;background:url(../img/upload-close-black.png)no-repeat center center;z-index:5;}
+.img-load{width:128px; height:128px; position:relative; margin-bottom:8px; display: inline-block; margin-right:4px; border:1px solid #dcdee1; cursor: pointer;}
+.img-load img{height:100%; width: 100%;}
+
+.file-upload{border-radius: 4px; padding:9px 24px; font-weight: bold; display:inline-block; vertical-align: top;}
+
+/* 제품 특징 스타일  업로드  */
+.post-ul-list li{position: relative;}
+.post-ul-list li + li{margin-top: 8px;}
+.post-ul-list li input.input-ft{width: 98%; }
+/* 파일 업로드 */
+.file-insert .input-box{position: relative;}
+.file-insert .input-box + .input-box{margin-top: 4px;}
+.file-insert .input-box input.file_name{height: 36px; padding: 0 12px;}
+.file-insert .input-box label.file_add_btn{ height: 36px; cursor: pointer; line-height: 35px; font-size: 12px; padding: 0 12px; display: inline-block; border-radius: 3px;}
+.file-upload{border-radius: 4px; padding:9px 24px; font-weight: bold; display:inline-block; vertical-align: top;}
+
+.del-btn{background-color:#fff; z-index: 99; cursor: pointer; height: 20px; width: 20px; position: absolute; right: -20px; top: 50%; transform: translateY(-50%);}
+.del-btn::before{background-color:#f00; content: ""; height: 13px; width: 1px; position: absolute; right: 7px; bottom:0;transform: rotate(45deg); }
+.del-btn::after{background-color: #f00; content: ""; height: 1px; width: 13px; position: absolute; left:6px; top: 13px; transform: rotate(45deg);}
+
+.add-btn{ position: absolute;height: 20px; width: 20px;  right: -20px; top: 50%; transform: translateY(-50%); z-index: 999; cursor: pointer; background-color: #fff;}
+.add-btn::before{background-color:#0f76a8; content: ""; height: 14px; width: 2px; position: absolute; right: 6px; bottom:3px;}
+.add-btn::after{background-color: #0f76a8; content: ""; height: 2px; width: 14px; position: absolute; left:6px; top: 9px; }
+
+
+
+/* 카테고리관리 */
+.category-container.row{margin-left:-16px; margin-right:-16px;}
+.category-container.row > li{padding-left:16px; padding-right:16px; margin-top:24px;}
+.category-container.row > li > div{border:1px solid #dcdee1; border-radius: 8px; padding:24px;} 
+
+.sort-control-container{position: relative; top:0; right:0;}
+.sort-control-container > .post-box{padding:16px;}
+.sort-control-container .insert{display: block; position: relative;}
+
+/* 위아래버튼 리모콘 */
+.controller-btn{padding-left:28px; line-height: 2; font-size: 14px;}
+.controller-btn img{left:0; top:5px; border:1px solid #dcdee1; border-radius: 2px; background-color: #fff; position: absolute; cursor: pointer; width:22px; height:22px;}
+
+.sort-control-insert-wrap .insert-input-btn input{width: 100%; height:32px;  font-size: 14px;}
+
+
+/* 테이블 추가 기능 테이블 */
+.tabel-edit-wrap{max-width: 1600px; overflow-x: auto;}
+.table-edit tr{border-top: 1px solid #ddd; border-bottom:1px solid #ddd}
+.table-edit tr + tr{border-top: 0;}
+.table-edit tr td{padding: 8px 24px;}
+.table-edit tr td + td{border-left:1px solid #ddd}
+
+/* 버튼 on/off */
+
+.set-switch{/* display: flex */ margin-left: auto; position: relative; }
+.switch{position: relative; display: inline-block; width: 30px; height: 16px;}
+.main-set-switch:before, .main-set-switch:after {
+   
+    width: 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 5px;
+    opacity:0.5
+}
+/* .main-set-switch{margin-left: 100px;} */
+.main-set-switch::before{content: "OFF"; }
+.main-set-switch::after{content: "ON";}
+.main-set-switch.active::before{opacity: 1; }
+.main-set-switch.active::after{opacity: 1; }
+.switch input{opacity: 0; width: 0; height: 0;}
+.slide.round{border-radius: 38px;}
+.slide.round::before{border-radius: 50%}
+
+input:checked + .slide{background-color: #18b0e2; /* background-image: linear-gradient(to right,#1488cc 0%, #2b32b2 100%); */} 
+input:checked + .slide::before { -webkit-transform: translateX(16px); -ms-transform: translateX(16px); transform: translateX(16px);}
+
+.slide{position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;background-color: #ddd; transition:.4s; -webkit-transition:.4s;}
+.slide:before{position: absolute; content: ""; height: 17px; width: 17px; left: -2px; bottom: 0; background-color:#fff; box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2); transition:.4s; -webkit-transition:.4s;}
+
+
+
+
+/* ********************************************* *
+   side
+* ********************************************* */
+
+.adm_aside{width: 240px; height: 100vh; background-color: #1d2b36; position: fixed; left: 0; top: 0; z-index: 90; color:#fff;  box-shadow: 5px 3px 5px rgba(0,0,0,0.1);}
+.adm_aside_title{padding: 50px 0 }
+.adm_aside_title h1{width:110px; display: block; margin: 0 auto;}
+.adm_aside_title h1 a{width: 100%; display: block;}
+.adm_aside_title h1 img{width: 100%; display: block;}
+
+.adm_log{width: 100%; padding-top: 20px;}
+.adm_log span{width: 90px; display: block; margin: 0 auto; text-align: center; padding:5px; /* background-color:#dcbbbb; */background-color:#0f76a8;
+     border-radius: 30px; color:#fff; font-size: 13px; font-weight: 700; cursor: pointer;}
+
+.side_main_menu{width: 100%; height: 100%; }
+.side_main_menu ul li{ font-size: 15px; padding: 2px 12px;}
+.side_main_menu ul.adm_side_depth01>li>a{display: block; width: 100%; padding: 12px; position: relative;}
+.side_main_menu ul.adm_side_depth01>li>a .arrow{position: absolute; right: 5px; top: 50%; transform: translateY(-50%) rotate(-90deg); border-radius: 3px;   
+     border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+transition: all .3s;
+}
+.side_main_menu ul.adm_side_depth01>li>a .arrow.rotate{transform: rotate(0);}
+.side_main_menu ul.adm_side_depth02{display: none;}
+.side_main_menu ul.adm_side_depth02>li>a{display: block; width: 100%; padding: 8px; transition: all .2s; }
+.side_main_menu ul.adm_side_depth02>li>a:hover{opacity: 0.8;}
+.side_main_menu ul li.active{background-color:#151e26 ;}
+
+
+
+
+/* ********************************************* *
+    footer
+* ********************************************* */
+.adm_footer{width: 100%; position: relative;; bottom: 0 ; left: 0; }
+.adm_footer .adm_footer_copy{text-align: center; padding:12px; border-top: 1px solid #aaa; font-size: 12px;}
+
+
+
+/* ********************************************* *
+    login
+* ********************************************* */
+
+.admin_bg{width: 100%; height: 100vh; display: flex; background-color: #f5f5f5 /* background-image: linear-gradient(to right, #000428 , #004e92); */}
+.admin_bg .admin_loginBox{width:800px; height: 600px; padding: 32px; position: relative; margin: auto; overflow-y: auto;  }
+.admin_bg .admin_loginForm{width:100%;  background-color: #fff; box-shadow:1px 1px 20px rgba(0,0,0,0.1); border-radius: 10px;}
+.admin_loginCon{width: 100%; padding-bottom: 20px;}
+.admin_loginCon a{display: block; margin: 0 auto;}
+.admin_loginCon a img{display: block; margin:  0 auto;}
+.admin_loginCon p{text-align: center;padding-top: 10px; color: #3d3d3d;}
+.admin_loginForm p.logintext{font-size: 30px; font-weight: 600; padding-bottom: 10px;}
+.admin_loginForm{padding: 70px;}
+.admin_loginForm input{width: 100%; padding: 10px; outline: none; margin-bottom: 10px; border: 1px solid #aeaeae;}
+.admin_loginForm input::placeholder{font-size: 16px; color: #888;}
+.admin_loginForm button{width: 100%; padding: 10px; display: block; background-color: #0f76a8; color: #fff; margin-top:10px}
+
+/* loading */
+.loading{width:100%;height:100%;position:fixed;left:0px;top:0px;background:#fff;opacity:0.5;z-index:1000;display:none; /* 이 값으로 레이어의 위치를 조정합니다. */}
+.loading_img{position:absolute; top : 50%; margin-top : -100px; left : 50%; margin-left : -100px;};
