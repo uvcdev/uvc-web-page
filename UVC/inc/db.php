@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	class db{
 		private $conn;
 		
@@ -7,8 +7,8 @@
 		function __construct($dataBase){
 			// Create connection
 			$this->dataBase = $dataBase;
-			$this->conn = new \mysqli('localhost', 'root', 'opcua5497WKd', "uvc");
-			// $this->conn = new \mysqli('kyungmin7306.cafe24.com', 'kyungmin7306', 'min14-73065917!', $dataBase);
+			// $this->conn = new \mysqli('localhost', 'root', 'opcua5497WKd', "uvc");
+			$this->conn = new \mysqli('uvcweb-server.mysql.database.azure.com', 'jckmzbgbjx', 'TD8K6HD5Z72036P4$', 'uvcweb-database')
       // Check connection
 			if ($this->conn->connect_error) {
 				die("데이터베이스 연결실패: " . $this->conn->connect_error);
