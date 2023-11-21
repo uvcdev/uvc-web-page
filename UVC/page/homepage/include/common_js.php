@@ -17,6 +17,10 @@
 <script type="text/javascript" src="UVC/page/homepage/js/tab.js<?php echo $version;?>"></script>
 <script type="text/javascript" src="UVC/page/homepage/js/header.js<?php echo $version;?>"></script>
 
+<!-- Mirae Script Ver 2.0 -->
+<script async="true" src="//log1.toup.net/mirae_log_chat_common.js?adkey=srzcn" charset="UTF-8"></script>
+<!-- Mirae Script END Ver 2.0 -->
+
 <!-- WOW -->
 <script>
 	new WOW().init();
