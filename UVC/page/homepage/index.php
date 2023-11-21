@@ -16,6 +16,9 @@
     <!-- SCRIPT -->
     <?php include_once $this->dir."page/homepage/include/common_js.php"; ?>
     <script type="text/javascript" src="<?php echo $this->project_name;?>/page/homepage/js/index.js<?php echo $version;?>"></script>
+    <!-- Mirae Script Ver 2.0 -->
+    <script async="true" src="//log1.toup.net/mirae_log_chat_common.js?adkey=srzcn" charset="UTF-8"></script>
+    <!-- Mirae Script END Ver 2.0 -->
 
     
 
