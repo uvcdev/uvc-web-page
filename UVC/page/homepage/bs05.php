@@ -64,7 +64,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon52.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon52.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>
                                   UVC
@@ -76,7 +76,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon53.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon53.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>Mentors
                                   <span><?php echo $this->utillLangController->lang("bs05","디지털 트윈 최고의 길무진들로 구성된 멘토");?></span>
@@ -87,7 +87,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon54.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon54.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>Recruit
                                   <span><?php echo $this->utillLangController->lang("bs05","100개의 협력기업으로 취업연계 및 지원시스템");?></span>
@@ -109,7 +109,7 @@
                       <ul>
                         <li>
                           <div class="con_wrap wow fadeInUp">
-                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img57.png" alt=""/></div>
+                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img57.png" alt="디지털트윈"/></div>
                             <div class="right">
                               <div class="txt_wrap">
                                 <span><?php echo $this->utillLangController->lang("bs05","빡세게 간다!");?></span>
@@ -121,7 +121,7 @@
                         </li>
                         <li>
                           <div class="con_wrap fadeInUp" data-wow-delay="0.3s">
-                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img58.png" alt=""/></div>
+                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img58.png" alt="디지털트윈"/></div>
                             <div class="right">
                               <div class="txt_wrap">
                                 <span><?php echo $this->utillLangController->lang("bs05","국내 최초 디지털 트윈 교육!");?></span>
@@ -146,7 +146,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon47.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon47.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs05","스마트 인더스트리");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs05","4차산업혁명으로 인한 스마트 팩토리, 스마트 시티 어플리케이션 개발자");?></p>
@@ -155,7 +155,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon48.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon48.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs05","IT개발자");?> </b>
                                 <p><?php echo $this->utillLangController->lang("bs05","특정한 도메인에 속하지 않는 IT 제네럴 리스트, 어플리케이션의 BACK END 또는 FONT END를 담당");?></p>
@@ -164,7 +164,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon49.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon49.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs05","데이터 분석가");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs05","산업 IoT 센싱으로 수집된 데이터로 이상데이터 탐지, 패터분석 후 고장예지 수행 및 레포트 작성");?></p>
@@ -173,7 +173,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon50.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon50.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs05","IOT 공정 전문가");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs05","수많은 제조 공정들이 있는 제조분야의 디지털전환을 수행");?></p>
@@ -182,7 +182,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon51.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon51.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs05","메타버스 전문가");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs05","사물인터넷(IoT)으로 인한 업무나 생활을 제어, 디지털 트윈이 기반이 되는 전문가");?></p>
@@ -201,7 +201,7 @@
                       <ul>
                         <li>
                           <div class="con_wrap wow fadeInUp">
-                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img59.png" alt=""/></div>
+                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img59.png" alt="디지털트윈"/></div>
                             <div class="right">
                               <div class="txt_wrap">
                                 <span><?php echo $this->utillLangController->lang("bs05","메타바스, 디지털 트윈등");?></span>
@@ -212,7 +212,7 @@
                         </li>
                         <li>
                           <div class="con_wrap  wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img60.png" alt=""/></div>
+                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img60.png" alt="디지털트윈"/></div>
                             <div class="right">
                               <div class="txt_wrap">
                                 <span><?php echo $this->utillLangController->lang("bs05","팀 프로젝트");?></span>
@@ -223,7 +223,7 @@
                         </li>
                         <li>
                           <div class="con_wrap  wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img61.png" alt=""/></div>
+                            <div class="left"><img src="UVC/page/homepage/img/sub/ser_img61.png" alt="디지털트윈"/></div>
                             <div class="right">
                               <div class="txt_wrap">
                                 <span><?php echo $this->utillLangController->lang("bs05","100여개의 협력 기업");?></span>

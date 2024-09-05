@@ -42,7 +42,7 @@
           <div class="swiper main_slide">
               <div class="swiper-wrapper">
                   <div class="swiper-slide slide01">
-                    <video controls width="250" type="video/mp4" autoplay="" data-keepplaying="" muted="" loop="" alt="" >
+                    <video controls width="250" type="video/mp4" autoplay="" data-keepplaying="" muted="" loop="" alt="디지털트윈" >
                           <source src="UVC/page/homepage/img/main_video02.mp4" >
                       </video>
                       <div class="txt_wrap">
@@ -77,10 +77,10 @@
           <div class="main_slide_arrow">
             <ul>
               <li class="left main_arrow_left">
-                <img src="UVC/page/homepage/img/main/left_arrow.png" alt="left arrow"/>
+                <img src="UVC/page/homepage/img/main/left_arrow.png" alt="디지털트윈 left arrow"/>
               </li>
               <li class="right main_arrow_right">
-                <img src="UVC/page/homepage/img/main/right_arrow.png" alt="right arrow"/>
+                <img src="UVC/page/homepage/img/main/right_arrow.png" alt="디지털트윈 right arrow"/>
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@
             </div>
             <div class="inner ">
               <div class="img_wrap wow fadeInUp"  data-wow-delay="0.3s">
-                <img src="UVC/page/homepage/img/main/sec01.svg" alt="디지털 융합 방법 이미지"/>
+                <img src="UVC/page/homepage/img/main/sec01.svg" alt="디지털트윈 디지털 융합 방법 이미지"/>
                 <p><?php echo $this->utillLangController->lang("index","디지털 트윈 기반의 인더스트리 메타버스 구축");?></p>
               </div>
             </div>
@@ -110,7 +110,7 @@
               </p>
             </div>
             <div class="img_wrap img_wrap02 wow fadeInUp"  data-wow-delay="0.6s">
-              <img src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/main/sec02_2.png");?> alt=""/>
+              <img src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/main/sec02_2.png");?> alt="디지털트윈"/>
             </div>
           </div>
 
@@ -134,7 +134,7 @@
               <ul class="row">
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon02.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon02.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b><?php echo $this->utillLangController->lang("index","디지털트윈 <span>DigitalTwin</span>");?></b>
                       <p><?php echo $this->utillLangController->lang("index","IT X OT융합 클라우드 Saas로 빠르고 합리적으로 도입가능합니다.");?></p>
@@ -144,7 +144,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon03.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon03.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b><?php echo $this->utillLangController->lang("index","메타버스 <span>Metaverse</span>");?></b>
                       <p><?php echo $this->utillLangController->lang("index","DT & 메타버스로 제조 엔지니어링을 지능화 하고 서비스로 전환합니다.");?></p>
@@ -154,7 +154,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon04.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon04.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b><?php echo $this->utillLangController->lang("index","엣지 디바이스 <span>EdgeDevice</span>");?></b>
                       <p><?php echo $this->utillLangController->lang("index","엣지디바이스를 통해 쉽고 빠르게 DT & 메타버스 구착화하고 지능화합니다.");?></p>
@@ -164,7 +164,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon05.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon05.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b><?php echo $this->utillLangController->lang("index","스마트팩토리 <span>SmartFactory</span>");?></b>
                       <p><?php echo $this->utillLangController->lang("index","전문 장비를 직접 구매하고, 플랫폼 기반 개발로 이중비용 지출을 절감합니다.");?></p>
@@ -174,7 +174,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon06.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/icon06.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b><?php echo $this->utillLangController->lang("index","교육사업 <span>Education</span>");?></b>
                       <p><?php echo $this->utillLangController->lang("index","UVC 교구를 이용해서 보다 실용적인 커리큘럼을 구성하고 있습니다.");?></p>
@@ -194,7 +194,7 @@
                 <b class="wow fadeInUp">REFERENCE</b>
                 <p  class="wow fadeInUp" data-wow-delay="0.3s"><?php echo $this->utillLangController->lang("index","유비씨의 기술력으로 만들어진 결과물을 만나보세요.");?></p>
                 <div class="btn_wrap wow fadeInUp" data-wow-delay="0.6s">
-                  <a href="?param=ref"><?php echo $this->utillLangController->lang("index","바로가기");?> <img src="UVC/page/homepage/img/sub/go_arrow.svg" alt="더보기 화살표"/></a>
+                  <a href="?param=ref"><?php echo $this->utillLangController->lang("index","바로가기");?> <img src="UVC/page/homepage/img/sub/go_arrow.svg" alt="디지털트윈 더보기 화살표"/></a>
                 </div>
             </div>
           </div>
@@ -217,7 +217,7 @@
               <ul class="row">
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img06.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img06.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b>CPS</b>
                       <p><?php echo $this->utillLangController->lang("index","SaaS(서비스형 소프트웨어)로 원하는 기능만 저렴한 비용으로 도입");?></p>
@@ -227,7 +227,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img07.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img07.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b> XR</b>
                       <p><?php echo $this->utillLangController->lang("index","현실 공장의 OT 기술과 가상공간의 IT 기술을 융합한 제조 메타버스 서비스");?></p>
@@ -237,7 +237,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img08.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img08.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b>MES</b>
                       <p><?php echo $this->utillLangController->lang("index","제품 주문에 의한 착수에서 완성품의 품질검사까지 전 생산 활동을 관리");?></p>
@@ -247,7 +247,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img09.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/main/sec02_img09.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b>EDGE</b>
                       <p><?php echo $this->utillLangController->lang("index","다양한 디바이스 및 타 시스템과의 연계 기능");?></p>
@@ -257,7 +257,7 @@
                 </li>
                 <li class="col">
                   <div class="con_wrap">
-                    <div class="img_wrap bg-gray" ><img src="UVC/page/homepage/img/main/sec02_img10.png" alt=""/></div>
+                    <div class="img_wrap bg-gray" ><img src="UVC/page/homepage/img/main/sec02_img10.png" alt="디지털트윈"/></div>
                     <div class="txt_wrap">
                       <b>EDUKIT</b>
                       <p><?php echo $this->utillLangController->lang("index","산업프로토콜 표준인 OPC UA 기반에 UVC 교구를 이용");?></p>
@@ -286,7 +286,7 @@
                 <div class="swiper-wrapper" data-wrap="wrap" id="wrap">
                     <!-- <div class="swiper-slide slide01">
                         <a href="">       
-                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt=""/></div>                   
+                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt="디지털트윈"/></div>                   
                           <div class="txt_wrap">
                             <b>NOTICE</b>
                             <p>새로운 신묘년 해를 맞이하여 홈페이지가 새롭게 리뉴얼되었습니다. </p>
@@ -296,7 +296,7 @@
                     </div>
                     <div class="swiper-slide slide01">
                         <a href="">       
-                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt=""/></div>                   
+                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt="디지털트윈"/></div>                   
                           <div class="txt_wrap">
                             <b>NOTICE</b>
                             <p>새로운 신묘년 해를 맞이하여 홈페이지가 새롭게 리뉴얼되었습니다. </p>
@@ -306,7 +306,7 @@
                     </div>
                     <div class="swiper-slide slide01">
                         <a href="">       
-                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt=""/></div>                   
+                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt="디지털트윈"/></div>                   
                           <div class="txt_wrap">
                             <b>NOTICE</b>
                             <p>새로운 신묘년 해를 맞이하여 홈페이지가 새롭게 리뉴얼되었습니다. </p>
@@ -316,7 +316,7 @@
                     </div>
                     <div class="swiper-slide slide01">
                         <a href="">       
-                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt=""/></div>                   
+                          <div class="img_wrap"><img src="UVC/page/homepage/img/main/news_img.png" alt="디지털트윈"/></div>                   
                           <div class="txt_wrap">
                             <b>NOTICE</b>
                             <p>새로운 신묘년 해를 맞이하여 홈페이지가 새롭게 리뉴얼되었습니다. </p>

@@ -25,12 +25,12 @@ function page_init() {
         page_num : {
             elem : obj.elem.paging, //페이징을 추가할 div
             page_name : "move_page",
-            prev_first : ' <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev.png" alt=""/></div></li>',
-            prev_one : '<li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev2.png" alt=""/></div></li>',
+            prev_first : ' <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev.png" alt="디지털트윈"/></div></li>',
+            prev_one : '<li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev2.png" alt="디지털트윈"/></div></li>',
             number_active : '<li><p class="page_on">1</p></li>',
             number : '<li><p>2</p></li>',
-            next_one : '<li><div class="navi"><img src="UVC/page/homepage/img/arrow_next2.png" alt=""/></div></li>', 
-            next_last : '<li><div class="navi"><img src="UVC/page/homepage/img/arrow_next.png" alt=""/></div></li>'
+            next_one : '<li><div class="navi"><img src="UVC/page/homepage/img/arrow_next2.png" alt="디지털트윈"/></div></li>', 
+            next_last : '<li><div class="navi"><img src="UVC/page/homepage/img/arrow_next.png" alt="디지털트윈"/></div></li>'
         },
 
         havior : function(result){

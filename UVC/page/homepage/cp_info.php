@@ -25,7 +25,7 @@
         <!-- 인증서 확대 팝업 -->
         <div class="certi_popup" style="display:none;" id="certi_popup">
             <div class="img_wrap">
-                <img id="popup_img" alt=""/>
+                <img id="popup_img" alt="디지털트윈"/>
                 <p onclick="close_popup();">X</p>
             </div>
         </div>   
@@ -54,7 +54,7 @@
                     <div class="con con01 pt-0">
                       <div class="bd-lg dis-f">
                             <div class="left">
-                               <img src="UVC/page/homepage/img/logo-color.svg"  alt=""/>
+                               <img src="UVC/page/homepage/img/logo-color.svg"  alt="디지털트윈"/>
                             </div>
                             <div class="right">
                               <div class="txt_wrap">
@@ -245,58 +245,58 @@
                         <div class="bd-lg">
                             <ul class="row dis-f flex-wrap" data-wrap="partner_wrap" id="partner_wrap">
                                 <!-- <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img01.png" alt="kepco 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img01.png" alt="디지털트윈 kepco 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img02.png" alt="hyundai 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img02.png" alt="디지털트윈 hyundai 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img03.png" alt="kia 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img03.png" alt="디지털트윈 kia 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img04.png" alt="삼성물산 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img04.png" alt="디지털트윈 삼성물산 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img05.png" alt="mando 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img05.png" alt="디지털트윈 mando 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img06.png" alt="hyunai autoever 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img06.png" alt="디지털트윈 hyunai autoever 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img07.png" alt="gs power 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img07.png" alt="디지털트윈 gs power 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img08.png" alt="gs energy 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img08.png" alt="디지털트윈 gs energy 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img09.png" alt="sgc energy 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img09.png" alt="디지털트윈 sgc energy 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img10.png" alt="naver 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img10.png" alt="디지털트윈 naver 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img11.png" alt="lg u+ 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img11.png" alt="디지털트윈 lg u+ 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img12.png" alt="adt caps 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img12.png" alt="디지털트윈 adt caps 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img13.png" alt="산업통상자원부 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img13.png" alt="디지털트윈 산업통상자원부 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img14.png" alt="과학기술정보통신부 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img14.png" alt="디지털트윈 과학기술정보통신부 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img15.png" alt="중소벤처기업부 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img15.png" alt="디지털트윈 중소벤처기업부 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img16.png" alt="한국산업지능화협회 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img16.png" alt="디지털트윈 한국산업지능화협회 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img17.png" alt="매타버스 얼라이언스 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img17.png" alt="디지털트윈 매타버스 얼라이언스 로고"/></div>
                                 </li>
                                 <li class="col-md-2 col-sm-3 col-xxs-4">
-                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img18.png" alt="한국메타버스산엽회 로고"/></div>
+                                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/partner_img18.png" alt="디지털트윈 한국메타버스산엽회 로고"/></div>
                                 </li> -->
                             </ul>
                         </div>

@@ -1,7 +1,7 @@
 <header id="header" class="header ">
     <div class="">
         <nav class="main_nav">
-            <h1 class="logo"><a href="?param=index">UVC</a></h1>
+            <h1 class="logo"><a href="?param=index" title="디지털트윈">UVC</a></h1>
             <!-- 언어 선택 메뉴 -->
               <div class="language">
                 <ul id="current_lang">
@@ -73,7 +73,7 @@
             <!-- 헤더 contact us -->
             <div class="h_contact">
                <!-- <p>C/S CENTER</p>  -->
-                <img src="UVC/page/homepage/img/main/icon01.png" alt="상담 아이콘"/>
+                <img src="UVC/page/homepage/img/main/icon01.png" alt="디지털트윈 상담 아이콘"/>
                 <div>
                     <span><?php echo $this->utillLangController->lang("ser06","제품 및 견적 문의");?></span>
                     <a href="tel:031.346.3366"><?php echo $this->utillLangController->lang("location","031.346.3366");?></a>

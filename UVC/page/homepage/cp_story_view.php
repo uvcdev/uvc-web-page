@@ -54,11 +54,11 @@
                                 </table>
                                 <div  id="file_wrap">
                                     <!-- <p class="table_add_file">
-                                        <span><img src="UVC/page/homepage/img/sub/disc.png" alt="첨부파일이미지"/></span>
+                                        <span><img src="UVC/page/homepage/img/sub/disc.png" alt="디지털트윈 첨부파일이미지"/></span>
                                         <span class="news_file">첨부파일 제목<span>
                                     </p>
                                     <p class="table_add_file">
-                                        <span><img src="UVC/page/homepage/img/sub/disc.png" alt="첨부파일이미지"/></span>
+                                        <span><img src="UVC/page/homepage/img/sub/disc.png" alt="디지털트윈 첨부파일이미지"/></span>
                                         <span class="news_file">첨부파일 제목<span>
                                     </p> -->
                                 </div>
@@ -92,7 +92,7 @@
 
         <div style="display:none;">
             <p class="table_add_file" id="file_copy">
-                <span><img src="UVC/page/homepage/img/sub/disc.png" alt="첨부파일이미지"/></span>
+                <span><img src="UVC/page/homepage/img/sub/disc.png" alt="디지털트윈 첨부파일이미지"/></span>
                 <span class="news_file" data-title><span>
             </p>
         </div>

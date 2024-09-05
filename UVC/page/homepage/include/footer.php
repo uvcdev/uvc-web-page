@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="right">
-                <div class="f-logo"><img src="UVC/page/homepage/img/logo-color.png" alt="logo"/></div>
+                <div class="f-logo"><img src="UVC/page/homepage/img/logo-color.png" alt="디지털트윈 logo"/></div>
             </div>
         </div>
     </div>

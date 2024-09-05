@@ -61,7 +61,7 @@
                 <div class="con bg-gray">
                   <div class="bd-lg">
                     <b class="sec-title"><?php echo $this->utillLangController->lang("bs02","산업 메타버스 All-In-One 솔루션");?></b>
-                    <div class="img_wrap"><img src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/sub/ser_img47.png");?> alt=""/></div>
+                    <div class="img_wrap"><img src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/sub/ser_img47.png");?> alt="디지털트윈"/></div>
                     <!-- 아래내용은 요청에 의해 삭제 230209 -->
                     <!-- <div class="con_in">
                       <b class="sub-title-point">가상세계</b>
@@ -131,8 +131,8 @@
                     </div>
                     <div class="con_in">
                       <div class="img_wrap">
-                        <img src="UVC/page/homepage/img/sub/ser_img29.png" alt=""/>
-                        <img class="m_on" src="UVC/page/homepage/img/sub/ser_img30.png" alt=""/>
+                        <img src="UVC/page/homepage/img/sub/ser_img29.png" alt="디지털트윈"/>
+                        <img class="m_on" src="UVC/page/homepage/img/sub/ser_img30.png" alt="디지털트윈"/>
                       </div>
                     </div>
                   </div>

@@ -67,7 +67,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-xs-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img style="" src="UVC/page/homepage/img/sub/ser_icon25.png" alt=""/></div>
+                              <div class="icon_wrap"><img style="" src="UVC/page/homepage/img/sub/ser_icon25.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs04","실시간성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs04","웹과 연계된 실시간 생산 현황 모니터링");?></p>
@@ -76,7 +76,7 @@
                           </li>
                           <li class="col-md-4 col-xs-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img style="" src="UVC/page/homepage/img/sub/ser_icon26.png" alt=""/></div>
+                              <div class="icon_wrap"><img style="" src="UVC/page/homepage/img/sub/ser_icon26.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs03","효율성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs04","기업의 생산 특성에 따른 생산관리 시스템 구축");?></p>
@@ -85,7 +85,7 @@
                           </li>
                           <li class="col-md-4 col-xs-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img style="" src="UVC/page/homepage/img/sub/ser_icon27.png" alt=""/></div>
+                              <div class="icon_wrap"><img style="" src="UVC/page/homepage/img/sub/ser_icon27.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs04","확장성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs04","PLC, ERP, CPS와 연계된 생산 현황 모듈 적용");?></p>
@@ -147,7 +147,7 @@
                         <ul class="row dis-f">
                           <li class="col-md-4 col-xxs-12">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_icon28.png" alt=""/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_icon28.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap bg-gray">
                                 <span>01</span>
                                 <p class=""><?php echo $this->utillLangController->lang("bs04","현장 공정 및 환경 분석");?></p>
@@ -156,7 +156,7 @@
                           </li>
                           <li class="col-md-4 col-xxs-12">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_icon29.png" alt=""/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_icon29.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap bg-gray">
                                 <span>02</span>
                                 <p class=""><?php echo $this->utillLangController->lang("bs04","생산라인 실무자 인터뷰를 통한 맞춤 설비/기능 설계");?></p>
@@ -165,7 +165,7 @@
                           </li>
                           <li class="col-md-4 col-xxs-12">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_icon30.png" alt=""/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_icon30.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap bg-gray">
                                 <span>03</span>
                                 <p class=""><?php echo $this->utillLangController->lang("bs04","도입기업 맞춤 스마트팩토리 제시");?></p>
@@ -226,7 +226,7 @@
                             <b><?php echo $this->utillLangController->lang("bs04","생산계획의 유연화 / 실시간 정보 공유");?></b>
                             <p><?php echo $this->utillLangController->lang("bs04","공정 투입에서 공정 운영, 제품 출하까지 전 생산과정의 통합정보 시스템 구축");?></p>
                             <p><?php echo $this->utillLangController->lang("bs04","관련 공정별 실시간으로 데이터를 공유함으로써 활용시간 절약은 물론 현장 생산성 향상");?></p>
-                            <img src="UVC/page/homepage/img/sub/ser_icon31.png" alt=""/>
+                            <img src="UVC/page/homepage/img/sub/ser_icon31.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="txt_wrap dot col-md-6 col-xs-12 ">
@@ -234,7 +234,7 @@
                             <b><?php echo $this->utillLangController->lang("bs04","효율적인 공정 관리 실현");?></b>
                             <p><?php echo $this->utillLangController->lang("bs04","공정시작과 현재 공정 처리 현황을 실시간으로 모니터링");?></p>
                             <p><?php echo $this->utillLangController->lang("bs04","공정 이동과 다음 공정의 상황을 실시간 공유");?></p>
-                            <img src="UVC/page/homepage/img/sub/ser_icon32.png" alt=""/>
+                            <img src="UVC/page/homepage/img/sub/ser_icon32.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="txt_wrap dot col-md-6 col-xs-12">
@@ -243,7 +243,7 @@
                             <p><?php echo $this->utillLangController->lang("bs04","종이 작업지시서의 이동을 없앰");?></p>
                             <p><?php echo $this->utillLangController->lang("bs04","작업 공정에서 디지털 작업지시서 확인");?></p>
                             <p><?php echo $this->utillLangController->lang("bs04","실시간 데이터 입력으로 데이터의 실시간성과 중복 입력 방지");?></p>
-                            <img src="UVC/page/homepage/img/sub/ser_icon33.png" alt=""/>
+                            <img src="UVC/page/homepage/img/sub/ser_icon33.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="txt_wrap dot col-md-6 col-xs-12">
@@ -251,7 +251,7 @@
                             <b><?php echo $this->utillLangController->lang("bs04","파일에 산재하던 데이터의 DB화 및 실시간 데이터 연동");?></b>
                             <p><?php echo $this->utillLangController->lang("bs04","개인 PC 파일을 중앙 서버, 클라우드로 이관");?></p>
                             <p><?php echo $this->utillLangController->lang("bs04","프로세스에 의한 업무 처리 및 프로세스 체계화");?></p>
-                            <img src="UVC/page/homepage/img/sub/ser_icon34.png" alt=""/>
+                            <img src="UVC/page/homepage/img/sub/ser_icon34.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="txt_wrap dot col-md-6 col-xs-12">
@@ -259,7 +259,7 @@
                             <b><?php echo $this->utillLangController->lang("bs04","상품재고 업무 효율 향상");?></b>
                             <p><?php echo $this->utillLangController->lang("bs04","상품재고 파악 힘듦으로 불용재고 산재");?></p>
                             <p><?php echo $this->utillLangController->lang("bs04","상품재고 코드 도입으로 관리 효율 증대");?></p>
-                            <img src="UVC/page/homepage/img/sub/ser_icon35.png" alt=""/>
+                            <img src="UVC/page/homepage/img/sub/ser_icon35.png" alt="디지털트윈"/>
                           </div>
                         </div>
                       </div>
