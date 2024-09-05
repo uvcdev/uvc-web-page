@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
 
-	<title>UVC</title>
+	<title>디지털트윈 UVC / (주)유비씨</title>
+  <meta name="description" content="디지털트윈 OPC UA Foundation Member로서 국내 최초로 국제 인증 3건을 획득한 스마트팩토리 부분의 CPS 플랫폼을 개발하는 기술 중심의 기업">
 
     <!-- FONT -->
 
