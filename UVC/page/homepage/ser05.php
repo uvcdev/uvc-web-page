@@ -52,7 +52,7 @@
                         <p><?php echo $this->utillLangController->lang("ser05","산업프로토콜 표준인 OPC UA 기반에 UVC 교구를 이용해서 <br> 보다 실용적인 커리큘럼을 구성하고 있습니다.");?></p>
                       </div>
                       <div class="img_wrap">
-                        <img src="UVC/page/homepage/img/sub/ser_img01.png" alt=""/>
+                        <img src="UVC/page/homepage/img/sub/ser_img01.png" alt="디지털트윈"/>
                       </div>
                     </div>
                   </div>
@@ -66,7 +66,7 @@
                       <ul class="row dis-f flex-wrap">
                         <li class="col-md-4 col-sm-12">
                           <div class="con_wrap bg-w">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon01.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon01.png" alt="디지털트윈"/></div>
                             <div class="txt_wrap">
                               <b><?php echo $this->utillLangController->lang("ser05","실무에 강한 커리큘럼");?></b>
                               <p><?php echo $this->utillLangController->lang("ser05","스마트팩토리의 전문 교육 과정 <br>기반으로 하여  커리큘럼을 구성");?></p>
@@ -75,7 +75,7 @@
                         </li>
                         <li class="col-md-4 col-sm-12">
                           <div class="con_wrap bg-w">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon02.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon02.png" alt="디지털트윈"/></div>
                             <div class="txt_wrap">
                               <b><?php echo $this->utillLangController->lang("ser05","현장과 유사한 실습 환경");?></b>
                               <p><?php echo $this->utillLangController->lang("ser05","공정 모델링과 시뮬레이션이 가능한 실습 환경과 실제 시스템 구축과 동일한 임베디드 디바이스, 액션 모듈, 대시보드 등을 통한 실습 가능");?></p>
@@ -84,7 +84,7 @@
                         </li>
                         <li class="col-md-4 col-sm-12">
                           <div class="con_wrap bg-w">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon03.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon03.png" alt="디지털트윈"/></div>
                             <div class="txt_wrap">
                               <b><?php echo $this->utillLangController->lang("ser05","스마트팩토리 통신 플랫폼의 완벽한 이해");?></b>
                               <p><?php echo $this->utillLangController->lang("ser05","실무자 및 학생들이 개별적인 복수의 OPC UA 임베디드 디바이스를 사용하여 표준 통신 플랫폼에 대해 이해할 수 있음");?></p>
@@ -104,39 +104,39 @@
                               <div class="left">
                                 <div class="img_wrap row dis-f flex-wrap">
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img02.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img02.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","1호기 반출공정");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img11.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img11.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","2호기 가공공정");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img12.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img12.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","3호기 분류공정");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img13.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img13.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","컨베이어 벨트");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img14.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img14.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","컬러 센서");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img15.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img15.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","Vision 센서");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img16.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img16.png" alt="디지털트윈"/>
                                     <p><?php echo $this->utillLangController->lang("ser05","제어용 PLC");?></p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img17.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img17.png" alt="디지털트윈"/>
                                     <p>HMI</p>
                                   </div>
                                   <div class="img col width-20">
-                                    <img src="UVC/page/homepage/img/sub/ser_img18.png" alt=""/>
+                                    <img src="UVC/page/homepage/img/sub/ser_img18.png" alt="디지털트윈"/>
                                     <p>Edge PC</p>
                                   </div>
                                 </div>
@@ -156,7 +156,7 @@
                         </li>
                         <li>
                           <div class="con_wrap">
-                            <div class="img_wrap" style="width:450px; max-width:100%; margin:32px auto 64px auto;"><img src="UVC/page/homepage/img/sub/ser_img01.png" alt=""/></div>
+                            <div class="img_wrap" style="width:450px; max-width:100%; margin:32px auto 64px auto;"><img src="UVC/page/homepage/img/sub/ser_img01.png" alt="디지털트윈"/></div>
                           </div>
                         </li>
                         <li class="">
@@ -164,7 +164,7 @@
                             <div class="top">
                               <div class="left">
                                 <div class="img_wrap row dis-f flex-wrap">
-                                  <img class="mb-0 col col-md-12 " src="UVC/page/homepage/img/sub/ser_img03.png" alt=""/>
+                                  <img class="mb-0 col col-md-12 " src="UVC/page/homepage/img/sub/ser_img03.png" alt="디지털트윈"/>
                                 </div>
                               </div>
                               <div class="right">
@@ -174,25 +174,25 @@
                                     <div class="swiper-wrapper" style="height: 50%;">
                                       <div class="swiper-slide">
                                         <div class="img_wrap">
-                                          <img class="mb-0" src="UVC/page/homepage/img/sub/edu_con_2.png" alt=""/>
+                                          <img class="mb-0" src="UVC/page/homepage/img/sub/edu_con_2.png" alt="디지털트윈"/>
                                           <p><?php echo $this->utillLangController->lang("ser05","장비 데이터 확인, 장비 제어, 알람 세팅, 알람 확인");?></p>
                                         </div>
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="img_wrap">
-                                          <img class="mb-0"  src="UVC/page/homepage/img/sub/edu_model.png" alt=""/>
+                                          <img class="mb-0"  src="UVC/page/homepage/img/sub/edu_model.png" alt="디지털트윈"/>
                                           <p><?php echo $this->utillLangController->lang("ser05","EDUKiT 모듈 OPC UA 모델링");?></p>
                                         </div>
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="img_wrap">
-                                          <img class="mb-0" src="UVC/page/homepage/img/sub/edu_dash.png" alt=""/>
+                                          <img class="mb-0" src="UVC/page/homepage/img/sub/edu_dash.png" alt="디지털트윈"/>
                                           <p><?php echo $this->utillLangController->lang("ser05","Edukit Dashboard 모니터링");?></p>
                                         </div>
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="img_wrap">
-                                          <img class="mb-0"  src="UVC/page/homepage/img/sub/edu_tag.png" alt=""/>
+                                          <img class="mb-0"  src="UVC/page/homepage/img/sub/edu_tag.png" alt="디지털트윈"/>
                                           <p>Modeler Tag Setting</p>
                                         </div>
                                       </div>
@@ -218,7 +218,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon04.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon04.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","공장 구성");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","키트 조립, 선 연결을 통한 공장 구성 학습");?></p>
@@ -227,7 +227,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon05.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon05.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","PLC 제어 구성");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","PLC 메모리 맵 프로토콜 문서 제공");?></p>
@@ -236,7 +236,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon06.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon06.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","레더 프로그래밍");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","PLC 조작 및 레더 프로그래밍");?></p>
@@ -245,7 +245,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon07.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon07.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","센서 및 모터 제어");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","Edge를 통한 센서 데이터 수집, 장비 제어");?></p>
@@ -254,7 +254,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon08.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon08.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","HMI 운전 실습");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","실제 공장에서 사용하는 HMI 운전 실습");?></p>
@@ -263,7 +263,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon09.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon09.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","HMI 제작");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","HMI 화면 구성 및 운전");?></p>
@@ -280,7 +280,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon10.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon10.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","비전 영상 인식 실습");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","Python 코드를 활용한 비전 영상 인식 실습");?></p>
@@ -289,7 +289,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon11.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon11.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","OPC UA 모델링 실습");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","OPC UA 표준 서버 모델링");?></p>
@@ -298,7 +298,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon12.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon12.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","OPC UA 프로토콜 연동");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","TAG 값 연동");?></p>
@@ -307,7 +307,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon13.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon13.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","생산 효율 제어");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","장비 속도와 수요 향상 관계 학습");?></p>
@@ -316,7 +316,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon14.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon14.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","Dashboard 구성");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","교육키트 Dashboard 구성");?></p>
@@ -325,7 +325,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-gray">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon15.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon15.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser05","데이터 분석");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser05","교육키트 데이터 분석");?></p>

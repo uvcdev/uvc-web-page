@@ -44,7 +44,7 @@
                         <ul class="row" data-wrap="wrap" id="wrap">
                           <!-- <li class="col-md-4 col-xs-6">
                             <div class="con_wrap" onClick="location.href='?param=ref_view'">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="뉴스 썸네일 예시"/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="디지털트윈뉴스 썸네일 예시"/></div>
                               <div class="txt_wrap">
                                 <p>레퍼런스 자료 게시판입니다.</p>
                                 <span>23.01.18</span>
@@ -53,7 +53,7 @@
                           </li>
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="뉴스 썸네일 예시"/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="디지털트윈 뉴스 썸네일 예시"/></div>
                               <div class="txt_wrap">
                                 <p>레퍼런스 자료 게시판입니다.</p>
                                 <span>23.01.18</span>
@@ -62,7 +62,7 @@
                           </li>
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="뉴스 썸네일 예시"/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="디지털트윈 뉴스 썸네일 예시"/></div>
                               <div class="txt_wrap">
                                 <p>레퍼런스 자료 게시판입니다.</p>
                                 <span>23.01.18</span>
@@ -71,7 +71,7 @@
                           </li>
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="뉴스 썸네일 예시"/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="디지털트윈 뉴스 썸네일 예시"/></div>
                               <div class="txt_wrap">
                                 <p>레퍼런스 자료 게시판입니다.</p>
                                 <span>23.01.18</span>
@@ -80,7 +80,7 @@
                           </li>
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap">
-                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="뉴스 썸네일 예시"/></div>
+                              <div class="img_wrap"><img src="UVC/page/homepage/img/sub/news_thum.png" alt="디지털트윈 뉴스 썸네일 예시"/></div>
                               <div class="txt_wrap">
                                 <p>레퍼런스 자료 게시판입니다.</p>
                                 <span>23.01.18</span>
@@ -91,13 +91,13 @@
                         <div class="pagination">
                           <div class="page">
                               <ul id="paging" style="display:none;">
-                                  <!-- <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev.png" alt=""/></div></li>
-                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev2.png" alt=""/></div></li>
+                                  <!-- <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev.png" alt="디지털트윈"/></div></li>
+                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev2.png" alt="디지털트윈"/></div></li>
                                   <li><p class="page_on">1</p></li>
                                   <li><p>2</p></li>
                                   <li><p>3</p></li>
-                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next2.png" alt=""/></div></li>
-                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next.png" alt=""/></div></li> -->
+                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next2.png" alt="디지털트윈"/></div></li>
+                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next.png" alt="디지털트윈"/></div></li> -->
                               </ul>
                           </div>
                       </div>

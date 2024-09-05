@@ -13,7 +13,7 @@
         <div class="bd-xl">
             <div class="inner">
                 <div class="navi">
-                    <p class="h-btn"><a href="?param=index"><img src="UVC/page/homepage/img/sub/h_btn.svg" alt="home btn"/><span class="hidden">Home</span></a></p>
+                    <p class="h-btn"><a href="?param=index"><img src="UVC/page/homepage/img/sub/h_btn.svg" alt="디지털트윈 home btn"/><span class="hidden">Home</span></a></p>
                     <p><a href="?param=cp_info">COMPANY</a></p>
                     <p class="now_page">
                         <span class="view_on cp-info" style=";"><a href="?param=cp_info">About Us</a></span>

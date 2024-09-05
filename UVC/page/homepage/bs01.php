@@ -78,7 +78,7 @@
                                 <b><?php echo $this->utillLangController->lang("bs01","IT x OT 융합");?></b>
                               </div>
                               <div class="mid">
-                                <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img40.png" alt="휴먼트윈 이미지"/></div>
+                                <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img40.png" alt="디지털트윈 휴먼트윈 이미지"/></div>
                                 <p><?php echo $this->utillLangController->lang("bs01",'기계 로봇 제어 노하우의 <i class="fc-g">지능화 AI');?></i></p>
                               </div>
                             </div>
@@ -116,7 +116,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap "><img src="UVC/page/homepage/img/main/icon07.png" alt=""/></div>
+                              <div class="icon_wrap "><img src="UVC/page/homepage/img/main/icon07.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs01","데이터 통합과 상호연동");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs01","다양한 메이커 로봇, 설비 혼재 등으로 데이터 통합과 상호연동 문제 해결");?></p>
@@ -125,7 +125,7 @@
                           </li>
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap "><img src="UVC/page/homepage/img/main/icon08.png" alt=""/></div>
+                              <div class="icon_wrap "><img src="UVC/page/homepage/img/main/icon08.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs01","비용 감소");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs01","과다한 스마트팩토리 구축 비용에 대한 부담이 감소");?></p>
@@ -134,7 +134,7 @@
                           </li>
                           <li class="col-md-4 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap "><img src="UVC/page/homepage/img/main/icon09.png" alt=""/></div>
+                              <div class="icon_wrap "><img src="UVC/page/homepage/img/main/icon09.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("bs01","전문 기술 보유");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs01","불확실성과 전문성 부족으로 인한 도입 의사결정 문제 해결");?></p>
@@ -226,13 +226,13 @@
                         <div class="txt_wrap dot col-md-6 col-xs-12 ">
                           <div class="txt_in h-100 bg-gray">
                             <b><?php echo $this->utillLangController->lang("bs01","모니터링/ 제어/ 데이터분석");?></b>
-                            <img class="" src="UVC/page/homepage/img/sub/ser_img44.png" alt=""/>
+                            <img class="" src="UVC/page/homepage/img/sub/ser_img44.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="txt_wrap dot  col-md-6 col-xs-12 ">
                           <div class="txt_in h-100 bg-gray">
                             <b><?php echo $this->utillLangController->lang("bs01","OPC UA 웹 모델러/ 프로파일 메이커");?></b>
-                            <img class="" src="UVC/page/homepage/img/sub/ser_img45.png" alt=""/>
+                            <img class="" src="UVC/page/homepage/img/sub/ser_img45.png" alt="디지털트윈"/>
                           </div>
                         </div>
                       </div>

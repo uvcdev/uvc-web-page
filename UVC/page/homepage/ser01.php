@@ -60,7 +60,7 @@
 
                 <div class="con con03 pt-0">
                   <div class="bd-lg">
-                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img21_2.png" alt=""/></div>
+                    <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img21_2.png" alt="디지털트윈"/></div>
                   </div>
                 </div>
 
@@ -110,13 +110,13 @@
                 <div class="con con03">
                   <div class="bd-lg">
                     <b class="sec-title">FLEXING CPS</b>
-                    <div class="img_wrap"><img src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/sub/ser_img46.png");?> alt=""/></div>
+                    <div class="img_wrap"><img src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/sub/ser_img46.png");?> alt="디지털트윈"/></div>
                   </div>
                 </div>
                 <div class="con">
                   <div class="bd-lg">
                     <b class="sec-title"> CPS <span>(CONTROL/METAVERSE/<?php echo $this->utillLangController->lang("ser01","생산관리/데이터관리");?>)</span></b>
-                    <div class="img_wrap"><img style="width:1172px; max-width:100%; margin:0 auto;" src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/sub/ser_img20.png");?> alt=""/></div>
+                    <div class="img_wrap"><img style="width:1172px; max-width:100%; margin:0 auto;" src=<?php echo $this->utillLangController->lang("bs02","UVC/page/homepage/img/sub/ser_img20.png");?> alt="디지털트윈"/></div>
                   </div>
                 </div>
               </div>

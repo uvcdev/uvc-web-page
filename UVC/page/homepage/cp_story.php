@@ -89,13 +89,13 @@
                       <div class="pagination">
                           <div class="page">
                               <ul id="paging" style="display:none;">
-                                  <!-- <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev.png" alt=""/></div></li>
-                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev2.png" alt=""/></div></li>
+                                  <!-- <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev.png" alt="디지털트윈"/></div></li>
+                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_prev2.png" alt="디지털트윈"/></div></li>
                                   <li><p class="page_on">1</p></li>
                                   <li><p>2</p></li>
                                   <li><p>3</p></li>
-                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next2.png" alt=""/></div></li>
-                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next.png" alt=""/></div></li> -->
+                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next2.png" alt="디지털트윈"/></div></li>
+                                  <li><div class="navi"><img src="UVC/page/homepage/img/arrow_next.png" alt="디지털트윈"/></div></li> -->
                               </ul>
                           </div>
                       </div>

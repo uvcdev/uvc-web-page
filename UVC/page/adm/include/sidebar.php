@@ -5,7 +5,7 @@
 <aside class="adm_aside">
 	<div class="adm_aside_title adm_lang_en">
 		<h1 class="logo">
-			<a href="?"><img src="UVC/page/homepage/img/logo-w.png"></a>
+			<a href="?" title="디지털트윈"><img src="UVC/page/homepage/img/logo-w.png"></a>
 		</h1>
 		<!-- 로고영역// -->
 		<div class="adm_log"><span class="adm_logout" onclick="logout()">로그아웃</span></div>

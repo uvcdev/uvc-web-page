@@ -93,22 +93,22 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="img_wrap">
-                            <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img53.png" alt=""/>
+                            <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img53.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="img_wrap">
-                            <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img54.png" alt=""/>
+                            <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img54.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="img_wrap">
-                            <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img55.png" alt=""/>
+                            <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img55.png" alt="디지털트윈"/>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="img_wrap">
-                            <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img56.png" alt=""/>
+                            <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img56.png" alt="디지털트윈"/>
                           </div>
                         </div>
                       </div>

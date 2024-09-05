@@ -110,22 +110,22 @@
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img25.png" alt=""/>
+                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img25.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img31.png" alt=""/>
+                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img31.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img32.png" alt=""/>
+                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img32.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img33.png" alt=""/>
+                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img33.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                 </div>
@@ -142,7 +142,7 @@
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0" src="UVC/page/homepage/img/sub/bs_img01.png" alt=""/>
+                                      <img class="mb-0" src="UVC/page/homepage/img/sub/bs_img01.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                 </div>
@@ -159,22 +159,22 @@
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img34.png" alt=""/>
+                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img34.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img35.png" alt=""/>
+                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img35.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img36.png" alt=""/>
+                                      <img class="mb-0" src="UVC/page/homepage/img/sub/ser_img36.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
                                     <div class="img_wrap">
-                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img37.png" alt=""/>
+                                      <img class="mb-0"  src="UVC/page/homepage/img/sub/ser_img37.png" alt="디지털트윈"/>
                                     </div>
                                   </div>
                                 </div>
@@ -205,11 +205,11 @@
                         <b class="sub-title-point"><?php echo $this->utillLangController->lang("bs03","관련 화면");?></b>
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-6 col-xs-6">
-                            <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img38.png" alt=""/></div>
+                            <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img38.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("bs03","OPC UA 웹 모델러");?></p>
                           </li>
                           <li class="col-md-6 col-xs-6">
-                            <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img39.png" alt=""/></div>
+                            <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img39.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("bs03","프로파일 메이커");?></p>
                           </li>
                         </ul>
@@ -221,7 +221,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon36.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon36.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","표준화");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","상호연동성");?></p>
@@ -230,7 +230,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon37.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon37.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","독립성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","특정 OS 의존성 없음");?></p>
@@ -239,7 +239,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon38.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon38.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","보안성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","높은 보안기술");?></p>
@@ -248,7 +248,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon39.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon39.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","사용자 정의");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","합리적 가격");?></p>
@@ -264,7 +264,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon40.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon40.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","효율성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","No Coding 원격");?></p>
@@ -273,7 +273,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon41.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon41.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","무정지");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","엣지 클러스터링");?></p>
@@ -282,7 +282,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon42.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon42.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","보안성");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","분산 제어");?></p>
@@ -291,7 +291,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon43.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon43.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap mt-0">
                                 <b class="fc-g"><?php echo $this->utillLangController->lang("bs03","지능화");?></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","학습 모듈 탑재");?></p>
@@ -307,7 +307,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-w">
-                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img04.gif" alt=""/></div>
+                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img04.gif" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">1</i></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","전원 넣는다.");?></p>
@@ -316,7 +316,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-w">
-                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img05.gif" alt=""/></div>
+                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img05.gif" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">2</i></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","LAN 선을 꽂는다.");?></p>
@@ -325,7 +325,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-w">
-                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img06.gif" alt=""/></div>
+                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img06.gif" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">3</i></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","전원 버튼을 누른다.");?></p>
@@ -334,7 +334,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-w">
-                              <div class="icon_wrap"><img  style="width:auto; object-fit:contain; height:190px;  max-width:100%; "src="UVC/page/homepage/img/sub/ser_img07.png" alt=""/></div>
+                              <div class="icon_wrap"><img  style="width:auto; object-fit:contain; height:190px;  max-width:100%; "src="UVC/page/homepage/img/sub/ser_img07.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">4</i></b>
                                 <p><?php echo $this->utillLangController->lang("bs03","PROCESS 자동로드");?></p>

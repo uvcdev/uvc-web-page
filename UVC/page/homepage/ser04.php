@@ -109,7 +109,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-gray">
-                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img04.gif" alt=""/></div>
+                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img04.gif" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">1</i></b>
                                 <p><?php echo $this->utillLangController->lang("ser04","전원 넣는다");?>.</p>
@@ -118,7 +118,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-gray">
-                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img05.gif" alt=""/></div>
+                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img05.gif" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">2</i></b>
                                 <p><?php echo $this->utillLangController->lang("ser04","LAN 선을 꽂는다");?>.</p>
@@ -127,7 +127,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-gray">
-                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img06.gif" alt=""/></div>
+                              <div class="icon_wrap"><img style="width:auto; object-fit:contain; height:190px;  max-width:100%; " src="UVC/page/homepage/img/sub/ser_img06.gif" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">3</i></b>
                                 <p><?php echo $this->utillLangController->lang("ser04","전원 버튼을 누른다");?>.</p>
@@ -136,7 +136,7 @@
                           </li>
                           <li class="col-md-3 col-xs-6">
                             <div class="con_wrap arrow bg-gray">
-                              <div class="icon_wrap"><img  style="width:auto; object-fit:contain; height:190px;  max-width:100%; "src="UVC/page/homepage/img/sub/ser_img07.png" alt=""/></div>
+                              <div class="icon_wrap"><img  style="width:auto; object-fit:contain; height:190px;  max-width:100%; "src="UVC/page/homepage/img/sub/ser_img07.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b>STEP <i class="fc-g">4</i></b>
                                 <p><?php echo $this->utillLangController->lang("ser04","PROCESS 자동로드");?></p>
@@ -161,10 +161,10 @@
                             <div class="img_list">
                               <ul class="row">
                                 <li class="col-md-4 col-xs-6">
-                                  <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img09.png" alt=""/></div>
+                                  <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img09.png" alt="디지털트윈"/></div>
                                 </li>
                                 <li class="col-md-4 col-xs-6">
-                                  <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img10.png" alt=""/></div>
+                                  <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img10.png" alt="디지털트윈"/></div>
                                 </li>
                               </ul>
                             </div>
@@ -254,7 +254,7 @@
                           <div class="img_list">
                               <ul class="row">
                                 <li class="col-md-4 col-xs-6">
-                                  <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img08.png" alt=""/></div>
+                                  <div class="img_wrap"><img src="UVC/page/homepage/img/sub/ser_img08.png" alt="디지털트윈"/></div>
                                 </li>
                               </ul>
                             </div>

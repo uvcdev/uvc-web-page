@@ -57,13 +57,13 @@
                         <div class="swiper mySwiper">
                           <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                              <img src="UVC/page/homepage/img/sub/ser_img50.png" alt=""/>
+                              <img src="UVC/page/homepage/img/sub/ser_img50.png" alt="디지털트윈"/>
                             </div>
                             <div class="swiper-slide">
-                              <img src="UVC/page/homepage/img/sub/ser_img51.png" alt=""/>
+                              <img src="UVC/page/homepage/img/sub/ser_img51.png" alt="디지털트윈"/>
                             </div>
                             <div class="swiper-slide">
-                              <img src="UVC/page/homepage/img/sub/ser_img52.png" alt=""/>
+                              <img src="UVC/page/homepage/img/sub/ser_img52.png" alt="디지털트윈"/>
                             </div>
                           </div>
                           <div class="swiper-pagination"></div>
@@ -76,36 +76,36 @@
 
                 <div class="con con03 bg-gray">
                   <div class="bd-lg">
-                  <!-- <div class="center"><img src="UVC/page/homepage/img/sub/ser_img19.png" alt=""/></div> -->
+                  <!-- <div class="center"><img src="UVC/page/homepage/img/sub/ser_img19.png" alt="디지털트윈"/></div> -->
                     <div class="list_con03">
                       <ul class="row-wide dis-f justi-c list_con03_01 wow fadeInUp">
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon16.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon16.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","원자재");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","수입검사");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon18.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon18.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g"><?php echo $this->utillLangController->lang("ser03","자재 현황 / 입출고");?></i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon19.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon19.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","생산계획");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon20.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon20.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","작업지시");?></p>
                           </div>
                         </li>
@@ -113,31 +113,31 @@
                       <ul class="row-wide dis-f flex-revers-row justi-c list_con03_02 wow fadeInUp" data-wow-delay="0.3s">
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon21.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon21.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g">POP</i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon22.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon22.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","공정 이동 및 진행");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon23.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon23.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g">POP</i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g"><?php echo $this->utillLangController->lang("ser03","품질검사");?></i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon24.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon24.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","출하");?></p>
                           </div>
                         </li>
@@ -146,61 +146,61 @@
                       <ul class="row-wide dis-f flex-revers-row justi-c  list_con03_01 list_con03_02_02 wow fadeInUp" data-wow-delay="0.3s">
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon16.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon16.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","원자재");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","수입검사");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon18.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon18.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g"><?php echo $this->utillLangController->lang("ser03","자재 현황 / 입출고");?></i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon19.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon19.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","생산계획");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon20.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon20.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","작업지시");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon21.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon21.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g">POP</i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon22.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon22.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","공정 이동 및 진행");?></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon23.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon23.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g">POP</i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon17.png" alt="디지털트윈"/></div>
                             <p><i class="fc-g"><?php echo $this->utillLangController->lang("ser03","품질검사");?></i></p>
                           </div>
                         </li>
                         <li class="col">
                           <div class="con_wrap">
-                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon24.png" alt=""/></div>
+                            <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon24.png" alt="디지털트윈"/></div>
                             <p><?php echo $this->utillLangController->lang("ser03","출하");?></p>
                           </div>
                         </li>
@@ -288,7 +288,7 @@
                         <ul class="row dis-f flex-wrap">
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon44.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon44.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser03","업무 간소화");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser03","생산현장에서 발생하는 모든 DATA를 실시간으로 등록/ 관리함으로써 사무실,현상 이동의 번거로움 및 문서작업의 감소");?></p>
@@ -297,7 +297,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon45.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon45.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser03","효율성 향상");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser03","생산계획, 작업지시를 현장 작업자가 실시간으로 확인할 수 있으므로 작업자의 업무 효율성과 생산성이 증가");?></p>
@@ -306,7 +306,7 @@
                           </li>
                           <li class="col-md-4 col-sm-12">
                             <div class="con_wrap bg-w">
-                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon46.png" alt=""/></div>
+                              <div class="icon_wrap"><img src="UVC/page/homepage/img/sub/ser_icon46.png" alt="디지털트윈"/></div>
                               <div class="txt_wrap">
                                 <b><?php echo $this->utillLangController->lang("ser03","정확도 향상");?></b>
                                 <p><?php echo $this->utillLangController->lang("ser03","CPS 기능을 활용하여 설비로부터 직접 DATA를 송수신함으로써 보다 신뢰도 높은 자료수집 가능");?></p>

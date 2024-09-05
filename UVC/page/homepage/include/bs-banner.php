@@ -14,7 +14,7 @@
         <div class="bd-xl">
             <div class="inner">
                 <div class="navi">
-                    <p class="h-btn"><a href="?param=index"><img src="UVC/page/homepage/img/sub/h_btn.svg" alt="home btn"/><span class="hidden">홈버튼</span></a></p>
+                    <p class="h-btn"><a href="?param=index"><img src="UVC/page/homepage/img/sub/h_btn.svg" alt="디지털트윈 home btn"/><span class="hidden">홈버튼</span></a></p>
                     <p><a href="?param=cp_info">BUSINESS</a></p>
                     <p class="now_page">
                         <span class="view_on bs-01" style=";"><a href="?param=bs01">DigitalTwin</a></span>
